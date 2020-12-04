@@ -4,7 +4,7 @@ heroImage: /hero.gif
 heroText: kangkang 的学习笔记
 tagline: 记录个人技术栈学习记录和心得
 actionText: 开始阅读
-actionLink: /zh/guide/
+actionLink: /guide/
 features:
 - title: 简洁至上
   details: 以 Markdown 为中心的项目结构，以最少的配置帮助你专注于写作。
