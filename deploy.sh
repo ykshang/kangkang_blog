@@ -13,10 +13,7 @@ git init
 git add -A
 git commit -m 'Automatic build'
 
-# 如果发布到 https://<USERNAME>.github.io
-# git push -f git@github.com:<USERNAME>/<USERNAME>.github.io.git master
-
-# 如果发布到 https://<USERNAME>.github.io/<REPO>
+# 发布到gh-pages分支
 git push -f git@github.com:ykshang/kangkang_blog.git master:gh-pages
 
 cd -
