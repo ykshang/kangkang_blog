@@ -10,7 +10,7 @@ module.exports = [
   //   ]
   // },
   {
-    title: 'Git文档',
+    title: 'Git',
     children: [{
       title: '基本介绍',
       path: '/git/overview',
@@ -26,46 +26,33 @@ module.exports = [
         title: 'git branch',
         path: '/git/syntax/git_branch',  
       }]
+    }, {
+        title: '各种操作实践',
+        children: [{
+          title: '各种骚操作总结',
+          path: '/git/advanced_skills/great_skills'
+        }, {
+          title: '通过分支管理需求、问题单的最佳实践',
+          path: '/git/advanced_skills/best_practices'
+        }, {
+          title: 'merge、rebase、cherry-pick的区别',
+          path: '/git/advanced_skills/different',
+        }]
     }]
-  },
-  // {
-  //   title: 'Git',
-  //   path: '/git/',
-  //   children: [{
-  //     title: '基本介绍',
-  //     path: 'overview.md'
-  //   }, {
-  //     title: '基本语法',
-  //     children: [
-  //       }, {
-  //         title: 'git add',
-  //         path: ''
-  //       }, {
-  //         title: 'git branch',
-  //         path: '',
-  //       }]
-  //   }]
-  // }, {
-  //   title: '各种操作实践',
-  //   children: [{
-  //     title: '各种骚操作总结',
-  //     path: ''
-  //   }, {
-  //     title: '通过分支管理代码的最佳实践',
-  //     path: ''
-  //   }, {
-  //     title: 'merge、rebase、cherry-pick的区别',
-  //     path: '',
-  //   }]
-  // }, {
-  //   title: 'Vue.js', path: ''
-  // }, {
-  //   title: 'React.js', path: ''
-  // }, {
-  //   title: 'Node.js', path: ''
-  // }, {
-  //   title: '菜谱的自我修养', path: ''
-  // }, {
-  //   title: '自由行记录', path: ''
-  // }
+  }, {
+    title: 'Vue.js',
+    path: ''
+  }, {
+    title: 'React.js',
+    path: ''
+  }, {
+    title: 'Node.js',
+    path: ''
+  }, {
+    title: '菜谱的自我修养',
+    path: ''
+  }, {
+    title: '自由行记录',
+    path: ''
+  }
 ]

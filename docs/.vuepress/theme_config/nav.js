@@ -3,7 +3,7 @@ module.exports =  [
   {
     text: '主页', link: '/'
   }, {
-    text: 'Git文档',
+    text: 'Git',
     items: [{
       text: '基本介绍',
       link: '/git/overview'
@@ -25,24 +25,29 @@ module.exports =  [
       link: '',
       items: [{
         text: '各种骚操作总结',
-        link: ''
+        link: '/git/advanced_skills/great_skills'
       }, {
-        text: '通过分支管理代码的最佳实践',
-        link: ''
+        text: '通过分支管理需求、问题单的最佳实践',
+        link: '/git/advanced_skills/best_practices'
       }, {
         text: 'merge、rebase、cherry-pick的区别',
-        link: '',
+        link: '/git/advanced_skills/different',
       }]
     }]
   }, {
-    text: 'Vue.js', link: ''
+    text: 'Vue.js',
+    link: ''
   }, {
-    text: 'React.js', link: ''
+    text: 'React.js',
+    link: ''
   }, {
-    text: 'Node.js', link: ''
+    text: 'Node.js',
+    link: ''
   }, {
-    text: '菜谱的自我修养', link: ''
+    text: '菜谱的自我修养',
+    link: ''
   }, {
-    text: '自由行记录', link: ''
+    text: '自由行记录',
+    link: ''
   }
 ]
