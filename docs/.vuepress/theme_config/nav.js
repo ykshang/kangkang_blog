@@ -3,22 +3,22 @@ module.exports =  [
   {
     text: '主页', link: '/'
   }, {
-    text: 'Git',
+    text: 'Git文档',
     items: [{
       text: '基本介绍',
-      link: ''
+      link: '/git/overview'
     }, {
       text: '基本语法',
       link: '',
       items: [{
         text: '常见的操作符',
-        link: ''
+        link: '/git/syntax/oper_symbol'
       }, {
         text: 'git add',
-        link: ''
+        link: '/git/syntax/git_add'
       }, {
         text: 'git branch',
-        link: '',
+        link: '/git/syntax/git_branch',
       }]
     }, {
       text: '各种操作实践',
