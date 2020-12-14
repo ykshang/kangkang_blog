@@ -25,6 +25,9 @@ module.exports = [
       }, {
         title: 'git branch',
         path: '/git/syntax/git_branch',  
+      }, {
+        title: 'git checkout',
+        path: '/git/syntax/git_checkout',  
       }]
     }, {
         title: '各种操作实践',
