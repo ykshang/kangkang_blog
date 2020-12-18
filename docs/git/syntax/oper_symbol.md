@@ -92,10 +92,10 @@ git diff f5a199a0..2b44e5df --output=diff.diff
 
 ![二者差别](../img/diff.png)
 
-`E..H`的结果：`F`>`G`>`H`
+`E..H`的结果：`E`>`F`>`G`>`H`
 
 `E...H`的结果：`B`>`C`>`D`>`E`>`F`>`G`>`H`
 
-`H..E`的结果：`C`>`D`>`E`
+`H..E`的结果：`H`>`C`>`D`>`E`
 
 `H...E`的结果：`B`>`F`>`G`>`H`>`C`>`D`>`E`
