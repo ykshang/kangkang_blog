@@ -81,10 +81,16 @@ Automatic merge failed; fix conflicts and then commit the result.
 git add .
 ```
 
-然后继续进行merge
+然后继续进行merge，或者进行commit提交 ，两种处理方式都可
 
 ``` git
 git merge --continue
+## 或
+git commit -m "merge原因"
 ```
 
-遇到冲突冲突重复以上步骤，即可
+::: warning 说明
+- 和rebase不同的是，分支merge过程中产生的所有冲突，在合并完成后，最后一次性处理。
+- 而rebase是把提交一个一个的合并，如果一个提交遇到冲突，需要处理完当前提交冲突，才能继续进行下个提交的处理。
+- merge不会改变提交内容，而rebase会，这是本质区别。
+:::
