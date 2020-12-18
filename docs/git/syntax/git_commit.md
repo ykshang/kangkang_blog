@@ -1,13 +1,13 @@
-# git clone
+# git commit
 
 ::: tip 主要作用
-clone一个库到某路径下
+commit一个库到某路径下
 :::
 
 ### 语法
 
 ```git
-git clone [--template=<template_directory>]
+git commit [--template=<template_directory>]
           [-l] [-s] [--no-hardlinks] [-q] [-n] [--bare] [--mirror]
           [-o <name>] [-b <name>] [-u <upload-pack>] [--reference <repository>]
           [--dissociate] [--separate-git-dir <git dir>]
@@ -20,19 +20,19 @@ git clone [--template=<template_directory>]
 
 ### 常用的参数
 
-| 参数                | 解释      |
-|:----------------- |:------- |
-| --depth \<depth\> | 克隆的深度   |
-| -b \<branch\>     | 只克隆某个分支 |
+| 参数  | 解释      |
+|:--- |:------- |
+| -m  | 提交信息    |
+| -a,--all  | 提交全部文件，包括工作区，还没添加到暂存区的 |
 
-- 只克隆某个远端库的master分支
+- 提交代码
   
   ```git
-  git clone -b master git@github.com:ykshang/kangkang_blog.git
+  git commit -m "提交信息"
   ```
 
-- 克隆深度1
+- 添加全部修改并提交
   
   ```git
-  git clone --depth 1 git@github.com:ykshang/kangkang_blog.git
+  git commit -am "提交信息"
   ```

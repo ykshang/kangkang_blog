@@ -25,6 +25,9 @@ module.exports =  [
       }, {
         text: 'git clone',
         link: '/git/syntax/git_clone',
+      }, {
+        text: 'git commit',
+        link: '/git/syntax/git_commit',
       }]
     }, {
       text: '各种操作实践',

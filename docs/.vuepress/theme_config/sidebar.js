@@ -31,6 +31,9 @@ module.exports = [
       }, {
         title: 'git clone',
         path: '/git/syntax/git_clone',
+      }, {
+        title: 'git commit',
+        path: '/git/syntax/git_commit',
       }]
     }, {
         title: '各种操作实践',
