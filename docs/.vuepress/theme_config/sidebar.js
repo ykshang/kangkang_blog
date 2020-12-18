@@ -18,16 +18,19 @@ module.exports = [
       title: '基本语法',
       children: [{
         title: '常见的操作符',
-        path: '/git/syntax/oper_symbol',  
+        path: '/git/syntax/oper_symbol',
       }, {
         title: 'git add',
-        path: '/git/syntax/git_add',  
+        path: '/git/syntax/git_add',
       }, {
         title: 'git branch',
-        path: '/git/syntax/git_branch',  
+        path: '/git/syntax/git_branch',
       }, {
         title: 'git checkout',
-        path: '/git/syntax/git_checkout',  
+        path: '/git/syntax/git_checkout',
+      }, {
+        title: 'git clone',
+        path: '/git/syntax/git_clone',
       }]
     }, {
         title: '各种操作实践',

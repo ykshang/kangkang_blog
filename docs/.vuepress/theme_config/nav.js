@@ -22,6 +22,9 @@ module.exports =  [
       }, {
         text: 'git checkout',
         link: '/git/syntax/git_checkout',
+      }, {
+        text: 'git clone',
+        link: '/git/syntax/git_clone',
       }]
     }, {
       text: '各种操作实践',
