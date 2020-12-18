@@ -28,6 +28,9 @@ module.exports =  [
       }, {
         text: 'git commit',
         link: '/git/syntax/git_commit',
+      }, {
+        text: 'git merge',
+        link: '/git/syntax/git_merge',
       }]
     }, {
       text: '各种操作实践',

@@ -34,6 +34,9 @@ module.exports = [
       }, {
         title: 'git commit',
         path: '/git/syntax/git_commit',
+      }, {
+        title: 'git merge',
+        path: '/git/syntax/git_merge',
       }]
     }, {
         title: '各种操作实践',
