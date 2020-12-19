@@ -29,6 +29,9 @@ module.exports =  [
         text: 'git commit',
         link: '/git/syntax/git_commit',
       }, {
+        text: 'git diff',
+        link: '/git/syntax/git_diff',
+      }, {
         text: 'git merge',
         link: '/git/syntax/git_merge',
       }]

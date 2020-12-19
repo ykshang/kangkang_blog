@@ -35,6 +35,9 @@ module.exports = [
         title: 'git commit',
         path: '/git/syntax/git_commit',
       }, {
+        title: 'git diff',
+        path: '/git/syntax/git_diff',
+      }, {
         title: 'git merge',
         path: '/git/syntax/git_merge',
       }]
