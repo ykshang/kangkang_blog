@@ -25,6 +25,8 @@ git commit [--template=<template_directory>]
 | -m       | 提交信息                   |
 | -a,--all | 提交全部文件，包括工作区，还没添加到暂存区的 |
 
+### 常用命令举例：
+
 - 提交代码
   
   ```git

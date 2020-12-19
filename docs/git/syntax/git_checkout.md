@@ -25,6 +25,8 @@ git checkout (-p|--patch) [<tree-ish>] [--] [<pathspec>…​]
 | -f, --force   | 强制，丢弃当前修改，并检出  |
 | ### 常用命令举例：   |                |
 
+### 常用命令举例：
+
 - 切换到分支hotfix
   
   ```git

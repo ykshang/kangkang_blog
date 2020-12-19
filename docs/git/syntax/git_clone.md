@@ -25,6 +25,8 @@ git clone [--template=<template_directory>]
 | --depth \<depth\> | 克隆的深度   |
 | -b \<branch\>     | 只克隆某个分支 |
 
+### 常用命令举例：
+
 - 只克隆某个远端库的master分支
   
   ```git

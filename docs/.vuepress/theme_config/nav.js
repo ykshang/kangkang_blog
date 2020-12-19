@@ -23,6 +23,9 @@ module.exports =  [
         text: 'git checkout',
         link: '/git/syntax/git_checkout',
       }, {
+        text: 'git cherry-pick',
+        link: '/git/syntax/git_cherry-pick',
+      }, {
         text: 'git clone',
         link: '/git/syntax/git_clone',
       }, {
@@ -32,8 +35,50 @@ module.exports =  [
         text: 'git diff',
         link: '/git/syntax/git_diff',
       }, {
+        text: 'git fetch',
+        link: '/git/syntax/git_fetch',
+      }, {
+        text: 'git init',
+        link: '/git/syntax/git_init',
+      }, {
+        text: 'git log',
+        link: '/git/syntax/git_log',
+      }, {
         text: 'git merge',
         link: '/git/syntax/git_merge',
+      }, {
+        text: 'git mv',
+        link: '/git/syntax/git_mv',
+      }, {
+        text: 'git pull',
+        link: '/git/syntax/git_pull',
+      }, {
+        text: 'git push',
+        link: '/git/syntax/git_push',
+      }, {
+        text: 'git reabse',
+        link: '/git/syntax/git_rebase',
+      }, {
+        text: 'git reset',
+        link: '/git/syntax/git_reset',
+      }, {
+        text: 'git restore',
+        link: '/git/syntax/git_restore',
+      }, {
+        text: 'git rm',
+        link: '/git/syntax/git_rm',
+      }, {
+        text: 'git show',
+        link: '/git/syntax/git_show',
+      }, {
+        text: 'git stage',
+        link: '/git/syntax/git_stage',
+      }, {
+        text: 'git stash',
+        link: '/git/syntax/git_stash',
+      }, {
+        text: 'git status',
+        link: '/git/syntax/git_status',
       }]
     }, {
       text: '各种操作实践',

@@ -25,6 +25,8 @@ git merge (--continue | --abort | --quit)
 | --quit     | 跳过当前冲突，继续合并          |
 | -m \<msg\> | 指定合并提交的信息            |
 
+### 常用命令举例：
+
 - 将DTS分支合并到当前分支
   
   ```git
