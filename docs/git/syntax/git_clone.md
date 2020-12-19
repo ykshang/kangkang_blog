@@ -25,6 +25,12 @@ git clone [--template=<template_directory>]
 | --depth \<depth\> | 克隆的深度   |
 | -b \<branch\>     | 只克隆某个分支 |
 
+::: warning 提示
+
+- 可以利用`--depth`，`-b <branch>`参数下载默认分支，提高构建速度。
+
+:::
+
 ### 常用命令举例：
 
 - 只克隆某个远端库的master分支

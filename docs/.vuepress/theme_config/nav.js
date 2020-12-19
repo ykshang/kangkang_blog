@@ -59,6 +59,9 @@ module.exports =  [
         text: 'git reabse',
         link: '/git/syntax/git_rebase',
       }, {
+        text: 'git remote',
+        link: '/git/syntax/git_remote',
+      }, {
         text: 'git reset',
         link: '/git/syntax/git_reset',
       }, {
