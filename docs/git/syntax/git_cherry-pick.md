@@ -36,8 +36,33 @@ git cherry-pick (--continue | --skip | --abort | --quit)
   git git_cherry-pick 765461f9a0..3a20bf181a548
   ```
 
-- 输出某一段提交的变化，建议格式使用git_cherry-pick，这样可以自带格式
+- 遴选多个提交
   
   ```git
-  git git_cherry-pick 765461f9a0..3a20bf181a548 --output=git_cherry-pick.git_cherry-pick
+  git cherry-pick 3a20bf181a5483c 765461f9a0..3a20bf181a548
   ```
+  
+  ::: warning 提示
+  建议顺序按照时间先后降序排序，即提交晚的在最前，有利于减少冲突的产生
+  :::
+  
+  ### 详细介绍
+
+- cherry-pick的实质就是将一个或者多个提交合并到目标分支，合并的过程按照参数顺序一个个的合并。
+
+- 如果遇到冲突，遴选会停下来，需要处理完成当前冲突以后，才能继续遴选。
+
+- 可以处理一个提交，也可以处理一段提交。
+
+### 处理冲突
+
+遇到冲突，处理冲突内容的方式都是类似的
+
+最终需要将代码添加到暂存区以后，继续当前的遴选进程。
+
+```git
+## 将代码添加到暂存区
+git add .
+## 继续遴选
+git cherry-pick --continue
+```
