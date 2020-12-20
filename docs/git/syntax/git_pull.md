@@ -1,50 +1,49 @@
 # git git_cherry-pick
 
 ::: tip 主要作用
-显示提交之间，提交和工作区之间的差异
+拉取远端，更新本地代码
 :::
 
 ### 语法
 
 ```git
-git git_cherry-pick [<options>] [<commit>] [--] [<path>…​]
-git git_cherry-pick [<options>] --cached [<commit>] [--] [<path>…​]
-git git_cherry-pick [<options>] <commit> [<commit>…​] <commit> [--] [<path>…​]
-git git_cherry-pick [<options>] <commit>…​<commit> [--] [<path>…​]
-git git_cherry-pick [<options>] <blob> <blob>
-git git_cherry-pick [<options>] --no-index [--] <path> <path>
+git pull [<options>] [<repository> [<refspec>…​]]
 ```
 
 ### 常用的参数
 
-| 参数                | 解释       |
-|:----------------- |:-------- |
-| --output=\<file\> | 输出差异到文件里 |
+| 参数             | 解释                                      |
+|:-------------- |:--------------------------------------- |
+| -r,--rebase    | 不带此参数，默认是merge的形式结束，以变基的形式更新代码，防止产生合并提交 |
+| -t ,--tags     | 将tag更新到本地                               |
+| --set-upstream | 建立跟踪关系，如果已存在则更新                         |
+
+::: warning 提示
+利用`--set-upstream`参数建/更新立跟踪关系以后，后续更新代码可以省略对应的参数
+:::
 
 ### 常用命令举例：
 
-- 输出当前最新提交的变化
+- 更新代码
   
   ```git
-  git git_cherry-pick
-  ## 或者
-  git git_cherry-pick head
+  git pull
   ```
 
-- 输出某个提交的变化
+- 以变基的形式更新代码
   
   ```git
-  git git_cherry-pick 765461f9a0
+  git pull --rebase
   ```
 
-- 输出某一段提交的变化
+- 将source远端的master更新到当前分支
   
   ```git
-  git git_cherry-pick 765461f9a0..3a20bf181a548
+  git pull source master
   ```
 
-- 输出某一段提交的变化，建议格式使用git_cherry-pick，这样可以自带格式
+- 将source远端的master更新到当前分支，同时建立跟踪关系
   
   ```git
-  git git_cherry-pick 765461f9a0..3a20bf181a548 --output=git_cherry-pick.git_cherry-pick
+  git pull --set-upstream source master  
   ```
