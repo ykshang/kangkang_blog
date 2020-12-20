@@ -88,6 +88,9 @@ module.exports = [
       }, {
         title: 'git status',
         path: '/git/syntax/git_status',
+      }, {
+        title: 'git tag',
+        path: '/git/syntax/git_tag',
       }]
     }, {
         title: '各种操作实践',
