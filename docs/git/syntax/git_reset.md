@@ -1,50 +1,44 @@
 # git reset
 
 ::: tip 主要作用
-显示提交之间，提交和工作区之间的差异
+重置工作区，将文件从暂存移动到工作区
 :::
 
 ### 语法
 
 ```git
-git reset [<options>] [<commit>] [--] [<path>…​]
-git reset [<options>] --cached [<commit>] [--] [<path>…​]
-git reset [<options>] <commit> [<commit>…​] <commit> [--] [<path>…​]
-git reset [<options>] <commit>…​<commit> [--] [<path>…​]
-git reset [<options>] <blob> <blob>
-git reset [<options>] --no-index [--] <path> <path>
+git reset [-q] [<tree-ish>] [--] <pathspec>…​
+git reset [-q] [--pathspec-from-file=<file> [--pathspec-file-nul]] [<tree-ish>]
+git reset (--patch | -p) [<tree-ish>] [--] [<pathspec>…​]
+git reset [--soft | --mixed [-N] | --hard | --merge | --keep] [-q] [<commit>]
+DEPRECATED: git reset [-q] [--stdin [-z]] [<tree-ish>]
 ```
 
 ### 常用的参数
 
 | 参数                | 解释       |
 |:----------------- |:-------- |
-| --output=\<file\> | 输出差异到文件里 |
+| --soft | 软重置，撤回到某个时间点，中间的提交全部恢复到暂存区 |
+| --mixed | 混合重置 |
+| --hard | 硬重置，重置工作区到某个时间点 |
+| --soft | 软重置 |
 
 ### 常用命令举例：
 
-- 输出当前最新提交的变化
+- 重置工作区和origin远端master分支保持一致
   
   ```git
-  git reset
-  ## 或者
-  git reset head
+  git reset --hard origin/master
   ```
 
-- 输出某个提交的变化
+- 撤回提交到 09f13ce5e02644
   
   ```git
-  git reset 765461f9a0
+  git reset --hard 765461f9a0
   ```
 
-- 输出某一段提交的变化
+- 软重置，撤回上次提交
   
   ```git
-  git reset 765461f9a0..3a20bf181a548
-  ```
-
-- 输出某一段提交的变化，建议格式使用reset，这样可以自带格式
-  
-  ```git
-  git reset 765461f9a0..3a20bf181a548 --output=reset.reset
+  git reset --soft head~1
   ```
