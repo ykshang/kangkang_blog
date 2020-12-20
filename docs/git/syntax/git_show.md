@@ -1,25 +1,18 @@
 # git show
 
 ::: tip 主要作用
-显示提交之间，提交和工作区之间的差异
+查看变化
 :::
 
 ### 语法
 
 ```git
-git show [<options>] [<commit>] [--] [<path>…​]
-git show [<options>] --cached [<commit>] [--] [<path>…​]
-git show [<options>] <commit> [<commit>…​] <commit> [--] [<path>…​]
-git show [<options>] <commit>…​<commit> [--] [<path>…​]
-git show [<options>] <blob> <blob>
-git show [<options>] --no-index [--] <path> <path>
+git show [<options>] [<object>…​]
 ```
 
 ### 常用的参数
 
-| 参数                | 解释       |
-|:----------------- |:-------- |
-| --output=\<file\> | 输出差异到文件里 |
+暂无推荐参数
 
 ### 常用命令举例：
 
@@ -43,8 +36,8 @@ git show [<options>] --no-index [--] <path> <path>
   git show 765461f9a0..3a20bf181a548
   ```
 
-- 输出某一段提交的变化，建议格式使用show，这样可以自带格式
+- 查看某个分支最新提交
   
   ```git
-  git show 765461f9a0..3a20bf181a548 --output=show.show
+  git show origin/master
   ```
