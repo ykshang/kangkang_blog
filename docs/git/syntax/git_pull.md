@@ -1,4 +1,4 @@
-# git git_cherry-pick
+# git pull
 
 ::: tip 主要作用
 拉取远端，更新本地代码
