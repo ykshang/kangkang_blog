@@ -1,7 +1,7 @@
 # git rebase
 
 ::: tip 主要作用
-显示提交之间，提交和工作区之间的差异
+操作分支，变基，会改变提交历史
 :::
 
 ### 语法
@@ -19,32 +19,58 @@ git rebase [<options>] --no-index [--] <path> <path>
 
 | 参数                | 解释       |
 |:----------------- |:-------- |
-| --output=\<file\> | 输出差异到文件里 |
+| --continue | 处理完冲突，继续变基 |
+| --abort | 中断当前处理，放弃变基 |
+| -i,--interactive | 交互式变基，操作commit，增删改 |
 
 ### 常用命令举例：
 
-- 输出当前最新提交的变化
+- 将DTS分支变基到当前分支
   
   ```git
-  git rebase
-  ## 或者
-  git rebase head
+  git rebase DTS
   ```
 
-- 输出某个提交的变化
+- 交互式变基处理当前提交历史
   
   ```git
-  git rebase 765461f9a0
+  git rebase -i head~11
   ```
 
-- 输出某一段提交的变化
-  
-  ```git
-  git rebase 765461f9a0..3a20bf181a548
-  ```
+### 详细介绍
 
-- 输出某一段提交的变化，建议格式使用rebase，这样可以自带格式
-  
-  ```git
-  git rebase 765461f9a0..3a20bf181a548 --output=rebase.rebase
-  ```
+假设当前有以下`DTS`和`master`分支
+
+![merge图示](./assets/merge.png)
+
+将`DTS`分支合并到`master`分支
+
+```git
+git rebase DTS
+```
+
+那么他的合并结果：
+
+!["merge 合并结果"](./assets/rebase_result.png)
+
+::: warning 提示
+rebase变基过来的分支，其实和原分支的提交已经不再一致。  
+如果没有遇到冲突，仅仅只是提交的hash值（commit-id）变了
+如果遇到冲突，则冲突的提交内容也会发生改变
+:::
+
+### 冲突的处理
+
+冲突处理都是一致的，可以参考merge一节
+
+处理完冲突以后，添加到暂存区
+
+```git
+git add .
+```
+
+继续变基
+
+``` git 
+git rebase --continue
+```
