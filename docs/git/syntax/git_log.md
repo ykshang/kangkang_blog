@@ -12,8 +12,8 @@ git log [<options>] [<revision range>] [[--] <path>…​]
 
 ### 常用的参数
 
-| 参数                | 解释       |
-|:----------------- |:-------- |
+| 参数      | 解释              |
+|:------- |:--------------- |
 | --graph | 以Ascii的形式显示日志记录 |
 
 ### 常用命令举例：
@@ -24,7 +24,7 @@ git log [<options>] [<revision range>] [[--] <path>…​]
   git log
   ```
 
--  以Ascii的形式显示日志记录
+- 以Ascii的形式显示日志记录
   
   ```git
   git log --graph

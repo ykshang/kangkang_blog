@@ -1,50 +1,37 @@
 # git mv
 
 ::: tip 主要作用
-显示提交之间，提交和工作区之间的差异
+重命名或者移动一个文件或文件夹
 :::
 
 ### 语法
 
 ```git
-git mv [<options>] [<commit>] [--] [<path>…​]
-git mv [<options>] --cached [<commit>] [--] [<path>…​]
-git mv [<options>] <commit> [<commit>…​] <commit> [--] [<path>…​]
-git mv [<options>] <commit>…​<commit> [--] [<path>…​]
-git mv [<options>] <blob> <blob>
-git mv [<options>] --no-index [--] <path> <path>
+git mv <options>…​ <args>…​
 ```
 
 ### 常用的参数
 
-| 参数                | 解释       |
-|:----------------- |:-------- |
-| --output=\<file\> | 输出差异到文件里 |
+| 参数         | 解释               |
+|:---------- |:---------------- |
+| -f,--force | 强制执行，即便目标位置文件已存在 |
 
 ### 常用命令举例：
 
-- 输出当前最新提交的变化
+- 将一个文件更改名字
   
   ```git
-  git mv
-  ## 或者
-  git mv head
+  git mv old_name new_name
   ```
 
-- 输出某个提交的变化
+- 将一个文件移动位置
   
   ```git
-  git mv 765461f9a0
+  git mv a/1.txt b/1.TXT
   ```
 
-- 输出某一段提交的变化
-  
-  ```git
-  git mv 765461f9a0..3a20bf181a548
-  ```
+::: warning 提示
 
-- 输出某一段提交的变化，建议格式使用mv，这样可以自带格式
-  
-  ```git
-  git mv 765461f9a0..3a20bf181a548 --output=mv.mv
-  ```
+文件名大小写导致环境编译失败，或者启动失败等，需要使用`mv`来修改大小写，因为windows下对文件名的大小写不敏感，但是linux下是敏感的
+
+:::

@@ -16,6 +16,7 @@ git init [-q | --quiet] [--bare] [--template=<template_directory>]
 ### 常用的参数
 
 暂无推荐
+
 ### 常用命令举例：
 
 - 将当前文件夹初始化成git目录
