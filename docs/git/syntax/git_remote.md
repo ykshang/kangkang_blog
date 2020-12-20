@@ -1,50 +1,58 @@
 # git mv
 
 ::: tip 主要作用
-显示提交之间，提交和工作区之间的差异
+远端配置有关
 :::
 
 ### 语法
 
 ```git
-git mv [<options>] [<commit>] [--] [<path>…​]
-git mv [<options>] --cached [<commit>] [--] [<path>…​]
-git mv [<options>] <commit> [<commit>…​] <commit> [--] [<path>…​]
-git mv [<options>] <commit>…​<commit> [--] [<path>…​]
-git mv [<options>] <blob> <blob>
-git mv [<options>] --no-index [--] <path> <path>
+git remote [-v | --verbose]
+git remote add [-t <branch>] [-m <master>] [-f] [--[no-]tags] [--mirror=(fetch|push)] <name> <url>
+git remote rename <old> <new>
+git remote remove <name>
+git remote set-head <name> (-a | --auto | -d | --delete | <branch>)
+git remote set-branches [--add] <name> <branch>…​
+git remote get-url [--push] [--all] <name>
+git remote set-url [--push] <name> <newurl> [<oldurl>]
+git remote set-url --add [--push] <name> <newurl>
+git remote set-url --delete [--push] <name> <url>
+git remote [-v | --verbose] show [-n] <name>…​
+git remote prune [-n | --dry-run] <name>…​
+git remote [-v | --verbose] update [-p | --prune] [(<group> | <remote>)…​]
 ```
 
 ### 常用的参数
 
-| 参数                | 解释       |
-|:----------------- |:-------- |
-| --output=\<file\> | 输出差异到文件里 |
+| 参数           | 解释        |
+|:------------ |:--------- |
+| add          | 添加一个远端配置  |
+| rename       | 对远端重命名    |
+| rm,remove    | 删除某个远端    |
+| -v,--verbose | 查看远端的详细配置 |
 
 ### 常用命令举例：
 
-- 输出当前最新提交的变化
+- 添加一个远端配置
   
   ```git
-  git mv
-  ## 或者
-  git mv head
+  git remote add origin git@github.com:ykshang/kangkang_blog.git
   ```
 
-- 输出某个提交的变化
+- 重命名远端
   
   ```git
-  git mv 765461f9a0
+  git remote rename old_name new_name
   ```
 
-- 输出某一段提交的变化
+- 删除某个远端配置
   
   ```git
-  git mv 765461f9a0..3a20bf181a548
+  git remote remove <name>
   ```
 
-- 输出某一段提交的变化，建议格式使用mv，这样可以自带格式
+- 查看远端详细配置
   
   ```git
-  git mv 765461f9a0..3a20bf181a548 --output=mv.mv
+  git remote -v
   ```
