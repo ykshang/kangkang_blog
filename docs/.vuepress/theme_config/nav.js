@@ -91,7 +91,6 @@ module.exports =  [
       }]
     }, {
       text: '各种操作实践',
-      link: '',
       items: [{
         text: '各种骚操作总结',
         link: '/git/advanced_skills/great_skills'

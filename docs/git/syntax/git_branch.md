@@ -64,6 +64,11 @@ git branch --edit-description [<branchname>]
   git branch -a
   git branch --all
   ```
+- 基于某次提交创建分支
+  
+  ```git
+  git branch hotfix 006b1c5
+  ```
 
 - 新建hotfix分支
   
