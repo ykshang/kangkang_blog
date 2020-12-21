@@ -32,6 +32,9 @@ module.exports = [
         title: 'git cherry-pick',
         path: '/git/syntax/git_cherry-pick',
       }, {
+        title: 'git clean',
+        path: '/git/syntax/git_clean',
+      }, {
         title: 'git clone',
         path: '/git/syntax/git_clone',
       }, {
@@ -91,6 +94,9 @@ module.exports = [
       }, {
         title: 'git status',
         path: '/git/syntax/git_status',
+      }, {
+        title: 'git switch',
+        path: '/git/syntax/git_switch',
       }, {
         title: 'git tag',
         path: '/git/syntax/git_tag',

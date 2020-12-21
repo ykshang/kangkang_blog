@@ -26,6 +26,9 @@ module.exports =  [
         text: 'git cherry-pick',
         link: '/git/syntax/git_cherry-pick',
       }, {
+        text: 'git clean',
+        link: '/git/syntax/git_clean',
+      }, {
         text: 'git clone',
         link: '/git/syntax/git_clone',
       }, {
@@ -85,6 +88,9 @@ module.exports =  [
       }, {
         text: 'git status',
         link: '/git/syntax/git_status',
+      }, {
+        text: 'git switch',
+        link: '/git/syntax/git_switch',
       }, {
         text: 'git tag',
         link: '/git/syntax/git_tag',

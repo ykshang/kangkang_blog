@@ -19,12 +19,12 @@ git tag -v [--format=<format>] <tagname>…​
 
 ### 常用的参数
 
-| 参数                | 解释       |
-|:----------------- |:-------- |
-| -d,--delete | 删除某个tag |
-|-l,--list|查看tag列表|
-|-m \<msg\>,--message=\<msg\>|添加描述|
-|-a,--annotate|不带注释的标签|
+| 参数                           | 解释      |
+|:---------------------------- |:------- |
+| -d,--delete                  | 删除某个tag |
+| -l,--list                    | 查看tag列表 |
+| -m \<msg\>,--message=\<msg\> | 添加描述    |
+| -a,--annotate                | 不带注释的标签 |
 
 ### 常用命令举例：
 
@@ -35,13 +35,13 @@ git tag -v [--format=<format>] <tagname>…​
   ```
 
 -删除某一个标签
-  
-  ```git
+
+```git
   git tag -d tag_name
-  ```
+```
 
 - 查看某个tag
-
+  
   ```git
   git show tag_name
   ```
