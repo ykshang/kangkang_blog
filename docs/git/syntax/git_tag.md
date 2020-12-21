@@ -1,50 +1,47 @@
 # git restore
 
 ::: tip 主要作用
-显示提交之间，提交和工作区之间的差异
+标签，标记某个历史节点，实际也是个指针，指向某一个commit
 :::
 
 ### 语法
 
 ```git
-git restore [<options>] [<commit>] [--] [<path>…​]
-git restore [<options>] --cached [<commit>] [--] [<path>…​]
-git restore [<options>] <commit> [<commit>…​] <commit> [--] [<path>…​]
-git restore [<options>] <commit>…​<commit> [--] [<path>…​]
-git restore [<options>] <blob> <blob>
-git restore [<options>] --no-index [--] <path> <path>
+git tag [-a | -s | -u <keyid>] [-f] [-m <msg> | -F <file>] [-e]
+        <tagname> [<commit> | <object>]
+git tag -d <tagname>…​
+git tag [-n[<num>]] -l [--contains <commit>] [--no-contains <commit>]
+        [--points-at <object>] [--column[=<options>] | --no-column]
+        [--create-reflog] [--sort=<key>] [--format=<format>]
+        [--merged <commit>] [--no-merged <commit>] [<pattern>…​]
+git tag -v [--format=<format>] <tagname>…​
 ```
 
 ### 常用的参数
 
 | 参数                | 解释       |
 |:----------------- |:-------- |
-| --output=\<file\> | 输出差异到文件里 |
+| -d,--delete | 删除某个tag |
+|-l,--list|查看tag列表|
+|-m \<msg\>,--message=\<msg\>|添加描述|
+|-a,--annotate|不带注释的标签|
 
 ### 常用命令举例：
 
-- 输出当前最新提交的变化
+- 查看当前标签列表
   
   ```git
-  git restore
-  ## 或者
-  git restore head
+  git tag --list
   ```
 
-- 输出某个提交的变化
+-删除某一个标签
   
   ```git
-  git restore 765461f9a0
+  git tag -d tag_name
   ```
 
-- 输出某一段提交的变化
-  
-  ```git
-  git restore 765461f9a0..3a20bf181a548
-  ```
+- 查看某个tag
 
-- 输出某一段提交的变化，建议格式使用restore，这样可以自带格式
-  
   ```git
-  git restore 765461f9a0..3a20bf181a548 --output=restore.restore
+  git show tag_name
   ```
