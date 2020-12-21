@@ -2,7 +2,7 @@
 
 - 快速切换到上一个分支
 
-``` git 
+```git
 git checkout -
 git swotch -
 ```
