@@ -52,6 +52,7 @@ git merge story#22306 --squash
 ### 1. 创建临时分支，将`story#22306`分支整体压缩成一个提交，然后将该临时分支遴选到`L2020JS1201`分支
 
 操作示意图：
+
 ![代码示意图](./assets/best_practices1.png)
 
 #### 详细操作
