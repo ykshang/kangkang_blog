@@ -1,4 +1,4 @@
-# git restore
+# git tag
 
 ::: tip 主要作用
 标签，标记某个历史节点，实际也是个指针，指向某一个commit

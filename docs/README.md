@@ -11,6 +11,6 @@ features:
 - title: 美食日记
   details: 爱好美食，记录生活的点点滴滴
 - title: 旅行日记
-  details: 记录日常旅行
+  details: 记录日常旅行，攻略，风土人情
 footer: MIT Licensed | Copyright © 2018-kangkang shang
 ---
