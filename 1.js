@@ -24,7 +24,7 @@ if (err) {
     var operList = ["+", "-", "*", "/"];
     for (let qq = 0; qq < orderList.length; qq++) {
         var order = orderList[qq].split("");
-        resStr = calc(arry[order[0]], arry[order[1]], arry[order[2]], arry[order[3]]);
+        resStr = calc(parseInt(arry[order[0]]), parseInt(arry[order[1]]), parseInt(arry[order[2]]), parseInt(arry[order[3]]));
         if (resStr) {
             break;
         }
