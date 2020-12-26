@@ -56,3 +56,26 @@ git remote [-v | --verbose] update [-p | --prune] [(<group> | <remote>)…​]
   ```git
   git remote -v
   ```
+
+- 查看远端和本地的分支关联区别等
+
+```git
+git remote show origin
+```
+
+```bash
+PS D:\code\kangkang_blog> git remote show origin
+* remote origin
+  Fetch URL: git@github.com:ykshang/kangkang_blog.git
+  Push  URL: git@github.com:ykshang/kangkang_blog.git
+  HEAD branch: master
+  Remote branches:
+    gh-pages tracked
+    master   tracked
+  Local branches configured for 'git pull':
+    gh-pages merges with remote gh-pages
+    master   merges with remote master
+  Local refs configured for 'git push':
+    gh-pages pushes to gh-pages (up to date)
+    master   pushes to master   (up to date)
+```
