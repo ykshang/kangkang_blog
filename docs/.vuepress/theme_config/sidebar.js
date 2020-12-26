@@ -10,6 +10,9 @@ module.exports = [
   //   ]
   // },
   {
+    title: 'Hello Word！',
+    path: '/guide/'
+  }, {
     title: 'Git',
     children: [{
       title: '基本介绍',
@@ -102,20 +105,20 @@ module.exports = [
         path: '/git/syntax/git_tag',
       }]
     }, {
-        title: '各种操作实践',
-        children: [{
-          title: '各种骚操作总结',
-          path: '/git/advanced_skills/great_skills'
-        }, {
-          title: '通过分支管理需求、问题单的最佳实践',
-          path: '/git/advanced_skills/best_practices'
-        }, {
-          title: 'merge、rebase、cherry-pick的区别',
-          path: '/git/advanced_skills/different'
-        }, {
-          title: '第三方工具推荐',
-          path: '/git/advanced_skills/tool'
-        }]
+      title: '各种操作实践',
+      children: [{
+        title: '各种骚操作总结',
+        path: '/git/advanced_skills/great_skills'
+      }, {
+        title: '通过分支管理需求、问题单的最佳实践',
+        path: '/git/advanced_skills/best_practices'
+      }, {
+        title: 'merge、rebase、cherry-pick的区别',
+        path: '/git/advanced_skills/different'
+      }, {
+        title: '第三方工具推荐',
+        path: '/git/advanced_skills/tool'
+      }]
     }]
   }, {
     title: 'Vue.js',

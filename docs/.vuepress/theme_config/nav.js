@@ -1,7 +1,8 @@
 // 导航栏配置
-module.exports =  [
+module.exports = [
   {
-    text: '主页', link: '/'
+    text: '主页',
+    link: '/'
   }, {
     text: 'Git',
     items: [{

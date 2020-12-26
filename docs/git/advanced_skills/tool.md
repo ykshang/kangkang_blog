@@ -1,6 +1,6 @@
 # 第三方工具推荐
 
-## 分支描述查看插件 git-br <Badge text="Node.js" type="tip" vertical="top"/><Badge text="npm" type="tip" vertical="top"/>
+## git-br 分支描述查看插件 <Badge text="Node.js" type="tip" vertical="top"/><Badge text="npm" type="tip" vertical="top"/>
 
 主要用来查看分支的描述，其中描述主要是用来标记分支的作用。
 
@@ -59,7 +59,7 @@ TortoiseGit拥有常见的git基本操作，包括配置管理，克隆，初始
 如果使用VsCode作为开发IDE的话Git Graph是一款不错的插件。嵌入到IDE使用比较方便
 具备常见的管理配置，检出，查看历史等诸多功能。
 
-![Git Graph](./assets/git-graph.png);
+![Git Graph](./assets/git-graph.png)
 
 ![Git Graph](./assets/git-graph1.png)
 
@@ -69,6 +69,6 @@ TortoiseGit拥有常见的git基本操作，包括配置管理，克隆，初始
 
 最优秀的点在于行历史功能
 
-![Gitlents](./assets/gitlents.png);
+![Gitlents](./assets/gitlents.png)
 
-![Gitlents](./assets/gitlents1.png);
+![Gitlents](./assets/gitlents1.png)
