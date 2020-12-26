@@ -4,7 +4,7 @@
 仓库的配置
 :::
 
-### 语法
+## 语法
 
 ```git
 git config [<file-option>] [--type=<type>] [--show-origin] [--show-scope] [-z|--null] name [value [value_regex]]
@@ -24,7 +24,7 @@ git config [<file-option>] --get-colorbool name [stdout-is-tty]
 git config [<file-option>] -e | --edit
 ```
 
-### 常用的参数
+## 常用的参数
 
 | 参数        | 解释                    |
 |:--------- |:--------------------- |
@@ -39,7 +39,7 @@ git config [<file-option>] -e | --edit
 
 :::
 
-### 常用命令举例：
+## 常用命令举例：
 
 - 查看当前仓库配置
   

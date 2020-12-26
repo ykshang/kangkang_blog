@@ -4,7 +4,7 @@
 移除工作区和暂存区的文件
 :::
 
-### 语法
+## 语法
 
 ```git
 git rm [-f | --force] [-n] [-r] [--cached] [--ignore-unmatch]
@@ -12,13 +12,13 @@ git rm [-f | --force] [-n] [-r] [--cached] [--ignore-unmatch]
           [--] [<pathspec>…​]
 ```
 
-### 常用的参数
+## 常用的参数
 
 | 参数         | 解释   |
 |:---------- |:---- |
 | -f,--force | 强制执行 |
 
-### 常用命令举例：
+## 常用命令举例：
 
 - 移除a.txt
   

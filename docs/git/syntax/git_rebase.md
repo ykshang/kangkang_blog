@@ -4,7 +4,7 @@
 操作分支，变基，会改变提交历史
 :::
 
-### 语法
+## 语法
 
 ```git
 git rebase [<options>] [<commit>] [--] [<path>…​]
@@ -15,7 +15,7 @@ git rebase [<options>] <blob> <blob>
 git rebase [<options>] --no-index [--] <path> <path>
 ```
 
-### 常用的参数
+## 常用的参数
 
 | 参数               | 解释                 |
 |:---------------- |:------------------ |
@@ -23,7 +23,7 @@ git rebase [<options>] --no-index [--] <path> <path>
 | --abort          | 中断当前处理，放弃变基        |
 | -i,--interactive | 交互式变基，操作commit，增删改 |
 
-### 常用命令举例：
+## 常用命令举例：
 
 - 将DTS分支变基到当前分支
   
@@ -37,7 +37,7 @@ git rebase [<options>] --no-index [--] <path> <path>
   git rebase -i head~11
   ```
 
-### 详细介绍
+## 详细介绍
 
 假设当前有以下`DTS`和`master`分支
 
@@ -59,7 +59,7 @@ rebase变基过来的分支，其实和原分支的提交已经不再一致。
 如果遇到冲突，则冲突的提交内容也会发生改变
 :::
 
-### 冲突的处理
+## 冲突的处理
 
 冲突处理都是一致的，可以参考merge一节
 

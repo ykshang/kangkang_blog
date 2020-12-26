@@ -4,7 +4,7 @@
 将本地代码推送到远端
 :::
 
-### 语法
+## 语法
 
 ```git
 git push [--all | --mirror | --tags] [--follow-tags] [--atomic] [-n | --dry-run] [--receive-pack=<git-receive-pack>]
@@ -15,7 +15,7 @@ git push [--all | --mirror | --tags] [--follow-tags] [--atomic] [-n | --dry-run]
            [--no-verify] [<repository> [<refspec>…​]]
 ```
 
-### 常用的参数
+## 常用的参数
 
 | 参数                | 解释            |
 |:----------------- |:------------- |
@@ -33,7 +33,7 @@ git push [--all | --mirror | --tags] [--follow-tags] [--atomic] [-n | --dry-run]
 
 :::
 
-### 常用命令举例：
+## 常用命令举例：
 
 - 推送代码
   

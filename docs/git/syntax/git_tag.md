@@ -4,7 +4,7 @@
 标签，标记某个历史节点，实际也是个指针，指向某一个commit
 :::
 
-### 语法
+## 语法
 
 ```git
 git tag [-a | -s | -u <keyid>] [-f] [-m <msg> | -F <file>] [-e]
@@ -17,7 +17,7 @@ git tag [-n[<num>]] -l [--contains <commit>] [--no-contains <commit>]
 git tag -v [--format=<format>] <tagname>…​
 ```
 
-### 常用的参数
+## 常用的参数
 
 | 参数                           | 解释      |
 |:---------------------------- |:------- |
@@ -26,7 +26,7 @@ git tag -v [--format=<format>] <tagname>…​
 | -m \<msg\>,--message=\<msg\> | 添加描述    |
 | -a,--annotate                | 不带注释的标签 |
 
-### 常用命令举例：
+## 常用命令举例：
 
 - 查看当前标签列表
   

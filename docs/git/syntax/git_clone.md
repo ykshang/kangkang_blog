@@ -4,7 +4,7 @@
 clone一个库到某路径下
 :::
 
-### 语法
+## 语法
 
 ```git
 git clone [--template=<template_directory>]
@@ -18,7 +18,7 @@ git clone [--template=<template_directory>]
           [<directory>]
 ```
 
-### 常用的参数
+## 常用的参数
 
 | 参数                | 解释      |
 |:----------------- |:------- |
@@ -31,7 +31,7 @@ git clone [--template=<template_directory>]
 
 :::
 
-### 常用命令举例：
+## 常用命令举例：
 
 - 只克隆某个远端库的master分支
   

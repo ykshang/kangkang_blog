@@ -4,7 +4,7 @@
 远端配置有关
 :::
 
-### 语法
+## 语法
 
 ```git
 git remote [-v | --verbose]
@@ -22,7 +22,7 @@ git remote prune [-n | --dry-run] <name>…​
 git remote [-v | --verbose] update [-p | --prune] [(<group> | <remote>)…​]
 ```
 
-### 常用的参数
+## 常用的参数
 
 | 参数           | 解释        |
 |:------------ |:--------- |
@@ -31,7 +31,7 @@ git remote [-v | --verbose] update [-p | --prune] [(<group> | <remote>)…​]
 | rm,remove    | 删除某个远端    |
 | -v,--verbose | 查看远端的详细配置 |
 
-### 常用命令举例：
+## 常用命令举例：
 
 - 添加一个远端配置
   

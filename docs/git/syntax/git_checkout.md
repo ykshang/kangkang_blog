@@ -4,7 +4,7 @@
 切换分支，重置工作区，检出文件
 :::
 
-### 语法
+## 语法
 
 ```git
 git checkout [-q] [-f] [-m] [<branch>]
@@ -16,7 +16,7 @@ git checkout [-f|--ours|--theirs|-m|--conflict=<style>] [<tree-ish>] --pathspec-
 git checkout (-p|--patch) [<tree-ish>] [--] [<pathspec>…​]
 ```
 
-### 常用的参数
+## 常用的参数
 
 | 参数            | 解释             |
 |:------------- |:-------------- |
@@ -24,7 +24,7 @@ git checkout (-p|--patch) [<tree-ish>] [--] [<pathspec>…​]
 | -B \<branch\> | 创建/重置，并检出一个新分支 |
 | -f, --force   | 强制，丢弃当前修改，并检出  |
 
-### 常用命令举例：
+## 常用命令举例：
 
 - 切换到分支hotfix
   

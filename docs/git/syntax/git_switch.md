@@ -4,7 +4,7 @@
 切换分支
 :::
 
-### 语法
+## 语法
 
 ```git
 git switch [<options>] [--no-guess] <branch>
@@ -13,11 +13,11 @@ git switch [<options>] (-c|-C) <new-branch> [<start-point>]
 git switch [<options>] --orphan <new-branch>
 ```
 
-### 常用的参数
+## 常用的参数
 
 暂无推荐参数
 
-### 常用命令举例：
+## 常用命令举例：
 
 - 切换到分支hotfix
   

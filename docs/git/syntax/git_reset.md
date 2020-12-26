@@ -4,7 +4,7 @@
 重置工作区，将文件从暂存移动到工作区
 :::
 
-### 语法
+## 语法
 
 ```git
 git reset [-q] [<tree-ish>] [--] <pathspec>…​
@@ -14,7 +14,7 @@ git reset [--soft | --mixed [-N] | --hard | --merge | --keep] [-q] [<commit>]
 DEPRECATED: git reset [-q] [--stdin [-z]] [<tree-ish>]
 ```
 
-### 常用的参数
+## 常用的参数
 
 | 参数      | 解释                         |
 |:------- |:-------------------------- |
@@ -23,7 +23,7 @@ DEPRECATED: git reset [-q] [--stdin [-z]] [<tree-ish>]
 | --hard  | 硬重置，重置工作区到某个时间点            |
 | --soft  | 软重置                        |
 
-### 常用命令举例：
+## 常用命令举例：
 
 - 重置工作区和origin远端master分支保持一致
   

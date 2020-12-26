@@ -4,7 +4,7 @@
 将一个离线文件夹，创建成一个git仓库
 :::
 
-### 语法
+## 语法
 
 ```git
 git init [-q | --quiet] [--bare] [--template=<template_directory>]
@@ -13,11 +13,11 @@ git init [-q | --quiet] [--bare] [--template=<template_directory>]
           [--shared[=<permissions>]] [directory]
 ```
 
-### 常用的参数
+## 常用的参数
 
 暂无推荐
 
-### 常用命令举例：
+## 常用命令举例：
 
 - 将当前文件夹初始化成git目录
   

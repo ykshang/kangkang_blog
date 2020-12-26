@@ -4,7 +4,7 @@
 commit一个库到某路径下
 :::
 
-### 语法
+## 语法
 
 ```git
 git commit [--template=<template_directory>]
@@ -18,14 +18,14 @@ git commit [--template=<template_directory>]
           [<directory>]
 ```
 
-### 常用的参数
+## 常用的参数
 
 | 参数       | 解释                     |
 |:-------- |:---------------------- |
 | -m       | 提交信息                   |
 | -a,--all | 提交全部文件，包括工作区，还没添加到暂存区的 |
 
-### 常用命令举例：
+## 常用命令举例：
 
 - 提交代码
   

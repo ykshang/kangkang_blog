@@ -4,7 +4,7 @@
 操作分支，对分支进行merge操作
 :::
 
-### 语法
+## 语法
 
 ```git
 git merge [-n] [--stat] [--no-commit] [--squash] [--[no-]edit]
@@ -14,7 +14,7 @@ git merge [-n] [--stat] [--no-commit] [--squash] [--[no-]edit]
 git merge (--continue | --abort | --quit)
 ```
 
-### 常用的参数
+## 常用的参数
 
 | 参数         | 解释                   |
 |:---------- |:-------------------- |
@@ -25,7 +25,7 @@ git merge (--continue | --abort | --quit)
 | --quit     | 跳过当前冲突，继续合并          |
 | -m \<msg\> | 指定合并提交的信息            |
 
-### 常用命令举例：
+## 常用命令举例：
 
 - 将DTS分支合并到当前分支
   
@@ -39,7 +39,7 @@ git merge (--continue | --abort | --quit)
   git merge DTS --squash
   ```
 
-### 详细介绍
+## 详细介绍
 
 假设当前有以下`DTS`和`master`分支
 
@@ -65,7 +65,7 @@ git merge DTS
 第一种没有遇到冲突的合并场景，可以使用`--no-ff`参数强制以合并提交形式结束
 :::
 
-### 冲突的处理
+## 冲突的处理
 
 一般发生冲突都会有类似以下信息：
 

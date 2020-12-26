@@ -5,7 +5,7 @@
 分支的实质是一个指针。  
 :::
 
-### 语法
+## 语法
 
 ```git
 git branch [--color[=<when>] | --no-color] [--show-current]
@@ -25,7 +25,7 @@ git branch (-d | -D) [-r] <branchname>…​
 git branch --edit-description [<branchname>]
 ```
 
-### 常用的参数
+## 常用的参数
 
 | 参数                                 | 解释                                                           |
 |:---------------------------------- |:------------------------------------------------------------ |
@@ -42,7 +42,7 @@ git branch --edit-description [<branchname>]
 | -l, --list                         | 列出本地分支列表                                                     |
 | -f, --force                        | 强制执行，用于移动、复制、删除等操作时                                          |
 
-### 常用命令举例：
+## 常用命令举例：
 
 - 查看本地分支列表
   

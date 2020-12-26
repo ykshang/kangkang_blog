@@ -4,7 +4,7 @@
 操作提交，主要作用就是分支之间遴选提交，进行分支之间的部分代码合并
 :::
 
-### 语法
+## 语法
 
 ```git
 git cherry-pick [--edit] [-n] [-m parent-number] [-s] [-x] [--ff]
@@ -12,7 +12,7 @@ git cherry-pick [--edit] [-n] [-m parent-number] [-s] [-x] [--ff]
 git cherry-pick (--continue | --skip | --abort | --quit)
 ```
 
-### 常用的参数
+## 常用的参数
 
 | 参数             | 解释                  |
 |:-------------- |:------------------- |
@@ -28,7 +28,7 @@ git cherry-pick (--continue | --skip | --abort | --quit)
 
 :::
 
-### 常用命令举例：
+## 常用命令举例：
 
 - 遴选某个提交到当前分支
   
@@ -48,7 +48,7 @@ git cherry-pick (--continue | --skip | --abort | --quit)
   git cherry-pick 3a20bf181a5483c 765461f9a0..3a20bf181a548
   ```
 
-### 详细介绍
+## 详细介绍
 
 示意图：
 
@@ -62,7 +62,7 @@ git cherry-pick (--continue | --skip | --abort | --quit)
 
 - 可以处理一个提交，也可以处理一段提交。
 
-### 处理冲突
+## 处理冲突
 
 遇到冲突，处理冲突内容的方式都是类似的
 

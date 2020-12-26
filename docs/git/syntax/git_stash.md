@@ -4,7 +4,7 @@
 将暂存区，工作区的修改存储到栈里，分支之间是通用的
 :::
 
-### 语法
+## 语法
 
 ```git
 git stash list [<options>]
@@ -21,7 +21,7 @@ git stash create [<message>]
 git stash store [-m|--message <message>] [-q|--quiet] <commit>
 ```
 
-### 常用的参数
+## 常用的参数
 
 | 参数          | 解释            |
 |:----------- |:------------- |
@@ -31,9 +31,8 @@ git stash store [-m|--message <message>] [-q|--quiet] <commit>
 | apply       | 应用备份          |
 | drop        | 清空备份          |
 | save        | 将当前修改备份       |
-| ### 常用命令举例： |               |
 
-### 常用命令举例：
+## 常用命令举例：
 
 - 查看当前备份列表
   
