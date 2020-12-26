@@ -25,6 +25,7 @@
   },
   "dependencies": {
     "vuepress-plugin-gotop-plus": "^1.0.4",
+    "vuepress-plugin-helper-live2d": "^1.0.2",
     "vuepress-plugin-reading-progress": "^1.0.10"
   }
 }

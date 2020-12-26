@@ -1,4 +1,4 @@
-let sidebar_config = require("./theme_config/sidebar"); // 导入侧边栏配置
+// let sidebar_config = require("./theme_config/sidebar"); // 导入侧边栏配置
 let nav_config = require("./theme_config/nav"); // 导入导航栏配置
 module.exports = {
   title: '个人笔记', // 导航栏左侧的标题
@@ -8,6 +8,7 @@ module.exports = {
   // },
   plugins: [
     'reading-progress',
+    'vuepress-plugin-helper-live2d',
     [
       "vuepress-plugin-gotop-plus",
       {
@@ -17,9 +18,10 @@ module.exports = {
   ],
   themeConfig: {
     displayAllHeaders: true,
+    sidebar: 'auto',
     logo: '/assets/img/logo.gif', // 导航栏的logo
     nav: nav_config, // 导航栏右侧的链接配置
-    sidebar: sidebar_config, // 侧边栏配置
+    // sidebar: sidebar_config, // 侧边栏配置
     lastUpdated: true, // 文档的最后更新时间 可选值: string | boolean
     repo: 'ykshang/kangkang_blog', // 假定是 GitHub. 同时也可以是一个完整的 GitLab URL
     repoLabel: '查看源码',// 自定义仓库链接文字。
