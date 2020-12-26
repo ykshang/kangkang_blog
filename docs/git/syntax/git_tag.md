@@ -34,13 +34,27 @@ git tag -v [--format=<format>] <tagname>…​
   git tag --list
   ```
 
--删除某一个标签
+- 查看当前tag列表和描述
+  
+  ```git
+  git tag -l -n
+  ## 也可以使用参数查看描述的行数，不带参数默认只展示一行
+  git tag -l -n11
+  ```
 
-```git
+- 删除某一个本地标签
+  
+  ```git
   git tag -d tag_name
-```
+  ```
 
-- 查看某个tag
+- 删掉远端的某个tag
+  
+  ```tag
+  git push origin :refs/tags/v1.0.0
+  ```
+
+- 查看某个tag的内容
   
   ```git
   git show tag_name

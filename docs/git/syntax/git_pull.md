@@ -42,8 +42,14 @@ git pull [<options>] [<repository> [<refspec>…​]]
   git pull source master
   ```
 
+- 将source远端的master更新到指定分支
+  
+  ```git
+   git pull source master:target_branch
+  ```
+
 - 将source远端的master更新到当前分支，同时建立跟踪关系
   
   ```git
-  git pull --set-upstream source master  
+  git pull --set-upstream source master
   ```

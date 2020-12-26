@@ -43,7 +43,7 @@ git diff [<options>] --no-index [--] <path> <path>
   git diff 765461f9a0..3a20bf181a548
   ```
 
-- 输出某一段提交的变化，建议格式使用diff，这样可以自带格式
+- 输出某一段提交的变化，建议格式使用diff，这样可以自带格式，使用ide查看的时候自带颜色格式。
   
   ```git
   git diff 765461f9a0..3a20bf181a548 --output=diff.diff

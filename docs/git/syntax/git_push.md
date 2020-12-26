@@ -53,10 +53,16 @@ git push [--all | --mirror | --tags] [--follow-tags] [--atomic] [-n | --dry-run]
   git push -u origin master
   ```
 
-- 将本地的DTS推送到origin远端的DTS分支，如果远端不存在则新建此分支
+- 删掉远端的某个tag
+  
+  ```tag
+  git push origin :refs/tags/v1.0.0
+  ```
+
+- 推送标签
   
   ```git
-  git push origin DTS:DTS
+  git push origin v1.0.0
   ```
 
 - 删除origin远端的DTS分支
@@ -64,3 +70,20 @@ git push [--all | --mirror | --tags] [--follow-tags] [--atomic] [-n | --dry-run]
   ```git
   git push -d origin DTS
   ```
+
+- 将本地的DTS推送到origin远端的DTS分支，如果远端不存在则新建此分支
+  
+  ```git
+  git push origin DTS:DTS
+  ```
+  
+  ::: warning 提示
+  推送某个标签
+  
+  ```git
+  git push origin 标签名
+  ## 相当于
+  git push origin refs/tags/源标签名:refs/tags/目的标签名
+  ```
+  
+  :::

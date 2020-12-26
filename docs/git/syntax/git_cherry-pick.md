@@ -21,7 +21,7 @@ git cherry-pick (--continue | --skip | --abort | --quit)
 | --quit         | 跳过当前冲突的处理，继续遴选      |
 | --abort        | 放弃当前冲突的处理，直接跳出      |
 | -n,--no-commit | 手动处理，而不是自动处理，不推荐    |
-  
+
 ::: warning 提示
 
 - 在遴选多个提交的时候，建议顺序按照时间先后降序排序，即提交晚的在最前，有利于减少冲突的产生
@@ -47,8 +47,14 @@ git cherry-pick (--continue | --skip | --abort | --quit)
   ```git
   git cherry-pick 3a20bf181a5483c 765461f9a0..3a20bf181a548
   ```
-  
+
 ### 详细介绍
+
+示意图：
+
+![](./assets/cherry-pick.png)
+
+- 遴选的结果类似于rebase
 
 - cherry-pick的实质就是将一个或者多个提交合并到目标分支，合并的过程按照参数顺序一个个的合并。
 
