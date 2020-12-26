@@ -1,11 +1,11 @@
 # 各种骚操作
 
 - 快速切换到上一个分支
-
-```git
-git checkout -
-git swotch -
-```
+  
+  ```git
+  git checkout -
+  git swotch -
+  ```
 
 - 配置别名实现快速操作
   
