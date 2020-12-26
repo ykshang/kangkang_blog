@@ -22,5 +22,9 @@
   "homepage": "https://github.com/ykshang/kangkang_blog#readme",
   "devDependencies": {
     "vuepress": "^1.7.1"
+  },
+  "dependencies": {
+    "vuepress-plugin-gotop-plus": "^1.0.4",
+    "vuepress-plugin-reading-progress": "^1.0.10"
   }
 }
