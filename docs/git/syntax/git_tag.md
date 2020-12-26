@@ -59,3 +59,30 @@ git tag -v [--format=<format>] <tagname>…​
   ```git
   git show tag_name
   ```
+
+- 推送标签
+  
+  ```git
+  git push origin v1.0.0
+  ```
+  
+  ::: warning 提示
+  推送某个标签
+  
+  ```git
+  git push origin 标签名
+  ## 相当于
+  git push origin refs/tags/源标签名:refs/tags/目的标签名
+  ```
+  
+  :::
+
+- 删掉远端的某个tag
+  
+  ```tag
+  git push origin :refs/tags/v1.0.0
+  ```
+  
+  ::: warning 提示
+  相当于用一个null去替换远端的标签。然后远端标签就没了
+  :::

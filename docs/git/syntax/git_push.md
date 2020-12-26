@@ -53,18 +53,6 @@ git push [--all | --mirror | --tags] [--follow-tags] [--atomic] [-n | --dry-run]
   git push -u origin master
   ```
 
-- 删掉远端的某个tag
-  
-  ```tag
-  git push origin :refs/tags/v1.0.0
-  ```
-
-- 推送标签
-  
-  ```git
-  git push origin v1.0.0
-  ```
-
 - 删除origin远端的DTS分支
   
   ```git
@@ -78,6 +66,16 @@ git push [--all | --mirror | --tags] [--follow-tags] [--atomic] [-n | --dry-run]
   ```
   
   ::: warning 提示
+  `git push origin :gh-pages` 可以删掉远端分支
+  :::
+
+- 推送标签
+  
+  ```git
+  git push origin v1.0.0
+  ```
+  
+  ::: warning 提示
   推送某个标签
   
   ```git
@@ -86,4 +84,14 @@ git push [--all | --mirror | --tags] [--follow-tags] [--atomic] [-n | --dry-run]
   git push origin refs/tags/源标签名:refs/tags/目的标签名
   ```
   
+  :::
+
+- 删掉远端的某个tag
+  
+  ```tag
+  git push origin :refs/tags/v1.0.0
+  ```
+  
+  ::: warning 提示
+  相当于用一个null去替换远端的标签。然后远端标签就没了
   :::
