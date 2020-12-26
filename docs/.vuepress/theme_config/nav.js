@@ -97,9 +97,9 @@ module.exports = [
         link: '/git/syntax/git_tag',
       }]
     }, {
-      text: '各种操作实践',
+      text: '操作实践',
       items: [{
-        text: '各种骚操作总结',
+        text: '各种骚操作',
         link: '/git/advanced_skills/great_skills'
       }, {
         text: '通过分支管理需求、问题单的最佳实践',

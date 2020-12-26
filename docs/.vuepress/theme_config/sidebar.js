@@ -105,9 +105,9 @@ module.exports = [
         path: '/git/syntax/git_tag',
       }]
     }, {
-      title: '各种操作实践',
+      title: '操作实践',
       children: [{
-        title: '各种骚操作总结',
+        title: '各种骚操作',
         path: '/git/advanced_skills/great_skills'
       }, {
         title: '通过分支管理需求、问题单的最佳实践',
