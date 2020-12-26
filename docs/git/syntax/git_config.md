@@ -68,3 +68,10 @@ git config [<file-option>] -e | --edit
   git config --global alias.lg="log --graph"
   git config --global alias.psmr="pull source master --rebase"
   ```
+- 配置分支描述
+  
+  ```git
+  git config --global branch.master.description="主干代码"
+  git config --global branch.L2020JS1201.description="L2020JS1201江苏1201分支"
+  ```
+
