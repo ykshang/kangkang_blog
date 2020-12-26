@@ -34,7 +34,7 @@
   - 使用`clean`，清空工作区未提交的修改
     
     ```bash
-    git reset -df
+    git clean -df
     ```
 
 - 在历史某个版本上拉出分支
