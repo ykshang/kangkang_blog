@@ -23,7 +23,6 @@ git checkout (-p|--patch) [<tree-ish>] [--] [<pathspec>…​]
 | -b \<branch\> | 创建并检出一个新分支     |
 | -B \<branch\> | 创建/重置，并检出一个新分支 |
 | -f, --force   | 强制，丢弃当前修改，并检出  |
-| ### 常用命令举例：   |                |
 
 ### 常用命令举例：
 
@@ -37,6 +36,12 @@ git checkout (-p|--patch) [<tree-ish>] [--] [<pathspec>…​]
   
   ```git
   git checkout -
+  ```
+
+- 删除本地做出的修改，恢复和远端一致。
+  
+  ```git
+  git checkout -- .
   ```
 
 - 基于远端origin/master分支创建本地gotfix分支
