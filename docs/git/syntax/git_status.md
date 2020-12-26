@@ -6,7 +6,7 @@
 
 ## 语法
 
-```git
+```bash
 git status [<options>…​] [--] [<pathspec>…​]
 ```
 
@@ -18,6 +18,6 @@ git status [<options>…​] [--] [<pathspec>…​]
 
 - 查看当前工作区状态
   
-  ```git
+  ```bash
   git status
   ```

@@ -6,7 +6,7 @@
 
 ## 语法
 
-```git
+```bash
 git remote [-v | --verbose]
 git remote add [-t <branch>] [-m <master>] [-f] [--[no-]tags] [--mirror=(fetch|push)] <name> <url>
 git remote rename <old> <new>
@@ -35,31 +35,31 @@ git remote [-v | --verbose] update [-p | --prune] [(<group> | <remote>)…​]
 
 - 添加一个远端配置
   
-  ```git
+  ```bash
   git remote add origin git@github.com:ykshang/kangkang_blog.git
   ```
 
 - 重命名远端
   
-  ```git
+  ```bash
   git remote rename old_name new_name
   ```
 
 - 删除某个远端配置
   
-  ```git
+  ```bash
   git remote remove <name>
   ```
 
 - 查看远端详细配置
   
-  ```git
+  ```bash
   git remote -v
   ```
 
 - 查看远端和本地的分支关联区别等
 
-```git
+```bash
 git remote show origin
 ```
 

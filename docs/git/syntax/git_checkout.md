@@ -6,7 +6,7 @@
 
 ## 语法
 
-```git
+```bash
 git checkout [-q] [-f] [-m] [<branch>]
 git checkout [-q] [-f] [-m] --detach [<branch>]
 git checkout [-q] [-f] [-m] [--detach] <commit>
@@ -28,24 +28,24 @@ git checkout (-p|--patch) [<tree-ish>] [--] [<pathspec>…​]
 
 - 切换到分支hotfix
   
-  ```git
+  ```bash
   git checkout hotfix
   ```
 
 - 切换到上一个分支
   
-  ```git
+  ```bash
   git checkout -
   ```
 
 - 删除本地做出的修改，恢复和远端一致。
   
-  ```git
+  ```bash
   git checkout -- .
   ```
 
 - 基于远端origin/master分支创建本地gotfix分支
   
-  ```git
+  ```bash
   git checkout -b hotfix origin/master
   ```

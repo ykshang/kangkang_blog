@@ -20,7 +20,7 @@
 ::: warning 说明
 如果是`story#22306`分支早于`L2020JS1201`分支，那么问题就很简单，我们直接将`story#22306`分支压缩合并过去即可
 
-```git
+```bash
 git merge story#22306 --squash
 ```
 
@@ -59,19 +59,19 @@ git merge story#22306 --squash
 
 - 首先基于提交`C`创建`temp`临时分支
   
-  ```git
+  ```bash
   git branch temp C
   ```
 
 - 切换到该分支
   
-  ```git
+  ```bash
   git checkout temp
   ```
 
 - 将`story#22306`分支压缩合并到该分支，生成一个新的提交`L`  
   
-  ```git
+  ```bash
   git merge story#22306 --squash 
   ```
   
@@ -81,7 +81,7 @@ git merge story#22306 --squash
 
 - 切换到`L2020JS1201`分支，将压缩合并产生的新提交`L`遴选过来，就算完成了。
   
-  ```git
+  ```bash
   git checkout L2020JS1201
   git cherry-pick L 
   ```
@@ -93,21 +93,21 @@ git merge story#22306 --squash
 
 - 首先使用`cherry-pick`将代码遴选到`L2020JS1201`分支
   
-  ```git
+  ```bash
   git checkout L2020JS1201
   git cheerry-pick J..K
   ```
 
 - 使用交互式变基将代码压缩成一个新的提交`L`，因为`J..K`共两个提交，所以参数为2。
   
-  ```
+  ```bash
   git rebase -i HEAD~2
   ```
 
 ::: warning 补充
 某条分支上最新的一段提交压缩成为一个提交，使用reset也可以达到同样的效果
 
-```git
+```bash
 git reset --soft I
 git commit -m "message"
 ```

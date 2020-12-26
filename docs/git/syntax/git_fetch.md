@@ -7,7 +7,7 @@
 
 ## 语法
 
-```git
+```bash
 git fetch [<options>] [<repository> [<refspec>…​]]
 git fetch [<options>] <group>
 git fetch --multiple [<options>] [(<repository> | <group>)…​]
@@ -24,6 +24,6 @@ git fetch --all [<options>]
 
 - 更新全部分支，指针没有正常更新的时候，使用这个可以更新。
   
-  ```git
+  ```bash
   git fetch --all 
   ```

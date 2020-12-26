@@ -6,7 +6,7 @@
 
 ## 语法
 
-```git
+```bash
 git add [--verbose | -v] [--dry-run | -n] [--force | -f] [--interactive | -i] [--patch | -p]
   [--edit | -e] [--[no-]all | --[no-]ignore-removal | [--update | -u]]
   [--intent-to-add | -N] [--refresh] [--ignore-errors] [--ignore-missing] [--renormalize]
@@ -25,14 +25,14 @@ git add [--verbose | -v] [--dry-run | -n] [--force | -f] [--interactive | -i] [-
 
 - 将某个文件或文件夹添加到暂存区
   
-  ```git
+  ```bash
   git add file_name
   git add folder_name
   ```
 
 - 默认将当前全部修改添加到暂存区
   
-  ```git
+  ```bash
   git add .
   git add -a
   git add --all
@@ -40,7 +40,7 @@ git add [--verbose | -v] [--dry-run | -n] [--force | -f] [--interactive | -i] [-
 
 - 将某个被忽略的文件强制添加到暂存区
   
-  ```git
+  ```bash
   git add -f node_nodules
   git add --force node_modules
   ```

@@ -6,7 +6,7 @@
 
 ## 语法
 
-```git
+```bash
 git diff [<options>] [<commit>] [--] [<path>…​]
 git diff [<options>] --cached [<commit>] [--] [<path>…​]
 git diff [<options>] <commit> [<commit>…​] <commit> [--] [<path>…​]
@@ -25,7 +25,7 @@ git diff [<options>] --no-index [--] <path> <path>
 
 - 输出当前最新提交的变化
   
-  ```git
+  ```bash
   git diff
   ## 或者
   git diff head
@@ -33,18 +33,18 @@ git diff [<options>] --no-index [--] <path> <path>
 
 - 输出某个提交的变化
   
-  ```git
+  ```bash
   git diff 765461f9a0
   ```
 
 - 输出某一段提交的变化
   
-  ```git
+  ```bash
   git diff 765461f9a0..3a20bf181a548
   ```
 
 - 输出某一段提交的变化，建议格式使用diff，这样可以自带格式，使用ide查看的时候自带颜色格式。
   
-  ```git
+  ```bash
   git diff 765461f9a0..3a20bf181a548 --output=diff.diff
   ```

@@ -6,7 +6,7 @@
 
 ## 语法
 
-```git
+```bash
 git clean [-d] [-f] [-i] [-n] [-q] [-e <pattern>] [-x | -X] [--] <path>…​
 ```
 
@@ -21,12 +21,12 @@ git clean [-d] [-f] [-i] [-n] [-q] [-e <pattern>] [-x | -X] [--] <path>…​
 
 - 移除新增的文件
   
-  ```git
+  ```bash
   git clean --f .
   ```
 
 - 移除新增的文件和文件夹
   
-  ```git
+  ```bash
   git clean -df .
   ```

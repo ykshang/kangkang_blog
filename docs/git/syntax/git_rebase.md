@@ -6,7 +6,7 @@
 
 ## 语法
 
-```git
+```bash
 git rebase [<options>] [<commit>] [--] [<path>…​]
 git rebase [<options>] --cached [<commit>] [--] [<path>…​]
 git rebase [<options>] <commit> [<commit>…​] <commit> [--] [<path>…​]
@@ -27,13 +27,13 @@ git rebase [<options>] --no-index [--] <path> <path>
 
 - 将DTS分支变基到当前分支
   
-  ```git
+  ```bash
   git rebase DTS
   ```
 
 - 交互式变基处理当前提交历史
   
-  ```git
+  ```bash
   git rebase -i head~11
   ```
 
@@ -45,7 +45,7 @@ git rebase [<options>] --no-index [--] <path> <path>
 
 将`DTS`分支合并到`master`分支
 
-```git
+```bash
 git rebase DTS
 ```
 
@@ -65,12 +65,12 @@ rebase变基过来的分支，其实和原分支的提交已经不再一致。
 
 处理完冲突以后，添加到暂存区
 
-```git
+```bash
 git add .
 ```
 
 继续变基
 
-```git
+```bash
 git rebase --continue
 ```

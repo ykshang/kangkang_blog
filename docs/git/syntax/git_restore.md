@@ -6,7 +6,7 @@
 
 ## 语法
 
-```git
+```bash
 git restore [<options>] [--source=<tree>] [--staged] [--worktree] [--] <pathspec>…​
 git restore [<options>] [--source=<tree>] [--staged] [--worktree] --pathspec-from-file=<file> [--pathspec-file-nul]
 git restore (-p|--patch) [<options>] [--source=<tree>] [--staged] [--worktree] [--] [<pathspec>…​]
@@ -23,12 +23,12 @@ git restore (-p|--patch) [<options>] [--source=<tree>] [--staged] [--worktree] [
 
 - 撤销暂存区的修改，恢复到工作区
   
-  ```git
+  ```bash
   git restore --staged .
   ```
 
 - 撤销工作区的变化
   
-  ```git
+  ```bash
   git restore --worktree .
   ```

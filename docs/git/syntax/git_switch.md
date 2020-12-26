@@ -6,7 +6,7 @@
 
 ## 语法
 
-```git
+```bash
 git switch [<options>] [--no-guess] <branch>
 git switch [<options>] --detach [<start-point>]
 git switch [<options>] (-c|-C) <new-branch> [<start-point>]
@@ -21,12 +21,12 @@ git switch [<options>] --orphan <new-branch>
 
 - 切换到分支hotfix
   
-  ```git
+  ```bash
   git switch hotfix
   ```
 
 - 切换到上一个分支
   
-  ```git
+  ```bash
   git switch -
   ```

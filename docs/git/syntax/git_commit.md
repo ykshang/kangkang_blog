@@ -6,7 +6,7 @@ commit一个库到某路径下
 
 ## 语法
 
-```git
+```bash
 git commit [--template=<template_directory>]
           [-l] [-s] [--no-hardlinks] [-q] [-n] [--bare] [--mirror]
           [-o <name>] [-b <name>] [-u <upload-pack>] [--reference <repository>]
@@ -29,12 +29,12 @@ git commit [--template=<template_directory>]
 
 - 提交代码
   
-  ```git
+  ```bash
   git commit -m "提交信息"
   ```
 
 - 添加全部修改并提交
   
-  ```git
+  ```bash
   git commit -am "提交信息"
   ```

@@ -6,7 +6,7 @@
 
 ## 语法
 
-```git
+```bash
 git push [--all | --mirror | --tags] [--follow-tags] [--atomic] [-n | --dry-run] [--receive-pack=<git-receive-pack>]
            [--repo=<repository>] [-f | --force] [-d | --delete] [--prune] [-v | --verbose]
            [-u | --set-upstream] [-o <string> | --push-option=<string>]
@@ -37,31 +37,31 @@ git push [--all | --mirror | --tags] [--follow-tags] [--atomic] [-n | --dry-run]
 
 - 推送代码
   
-  ```git
+  ```bash
   git push
   ```
 
 - 将当前代码推送到origin远端master分支
   
-  ```git
+  ```bash
   git push origin master
   ```
 
 - 将当前代码推送到origin远端master分支，并更新跟踪关系到此分支
   
-  ```git
+  ```bash
   git push -u origin master
   ```
 
 - 删除origin远端的DTS分支
   
-  ```git
+  ```bash
   git push -d origin DTS
   ```
 
 - 将本地的DTS推送到origin远端的DTS分支，如果远端不存在则新建此分支
   
-  ```git
+  ```bash
   git push origin DTS:DTS
   ```
   
@@ -71,14 +71,14 @@ git push [--all | --mirror | --tags] [--follow-tags] [--atomic] [-n | --dry-run]
 
 - 推送标签
   
-  ```git
+  ```bash
   git push origin v1.0.0
   ```
   
   ::: warning 提示
   推送某个标签
   
-  ```git
+  ```bash
   git push origin 标签名
   ## 相当于
   git push origin refs/tags/源标签名:refs/tags/目的标签名

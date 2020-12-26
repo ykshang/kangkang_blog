@@ -6,7 +6,7 @@ clone一个库到某路径下
 
 ## 语法
 
-```git
+```bash
 git clone [--template=<template_directory>]
           [-l] [-s] [--no-hardlinks] [-q] [-n] [--bare] [--mirror]
           [-o <name>] [-b <name>] [-u <upload-pack>] [--reference <repository>]
@@ -35,12 +35,12 @@ git clone [--template=<template_directory>]
 
 - 只克隆某个远端库的master分支
   
-  ```git
+  ```bash
   git clone -b master git@github.com:ykshang/kangkang_blog.git
   ```
 
 - 克隆深度1
   
-  ```git
+  ```bash
   git clone --depth 1 git@github.com:ykshang/kangkang_blog.git
   ```

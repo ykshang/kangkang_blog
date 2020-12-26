@@ -4,7 +4,7 @@
 
 #### 安装及运行方式
 
-``` git 
+```bash 
 npm install
 npm run dev
 ```

@@ -6,7 +6,7 @@
 
 ## 语法
 
-```git
+```bash
 git merge [-n] [--stat] [--no-commit] [--squash] [--[no-]edit]
         [--no-verify] [-s <strategy>] [-X <strategy-option>] [-S[<keyid>]]
         [--[no-]allow-unrelated-histories]
@@ -29,13 +29,13 @@ git merge (--continue | --abort | --quit)
 
 - 将DTS分支合并到当前分支
   
-  ```git
+  ```bash
   git merge DTS
   ```
 
 - 将DTS分支捏成一个提交合并到当前分支
   
-  ```git
+  ```bash
   git merge DTS --squash
   ```
 
@@ -47,7 +47,7 @@ git merge (--continue | --abort | --quit)
 
 将`DTS`分支合并到`master`分支
 
-```git
+```bash
 git merge DTS
 ```
 
@@ -80,13 +80,13 @@ Automatic merge failed; fix conflicts and then commit the result.
 
 编辑完冲突内容后，将冲突文件添加到暂存区
 
-```git
+```bash
 git add .
 ```
 
 然后继续进行merge，或者进行commit提交 ，两种处理方式都可
 
-```git
+```bash
 git merge --continue
 ## 或
 git commit -m "merge原因"

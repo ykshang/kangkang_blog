@@ -6,7 +6,7 @@
 
 ## 语法
 
-```git
+```bash
 git config [<file-option>] [--type=<type>] [--show-origin] [--show-scope] [-z|--null] name [value [value_regex]]
 git config [<file-option>] [--type=<type>] --add name value
 git config [<file-option>] [--type=<type>] --replace-all name value [value_regex]
@@ -43,7 +43,7 @@ git config [<file-option>] -e | --edit
 
 - 查看当前仓库配置
   
-  ```git
+  ```bash
   git config --list
   ## 或者
   git config --local --list
@@ -51,27 +51,27 @@ git config [<file-option>] -e | --edit
 
 - 查看当前全局配置
   
-  ```git
+  ```bash
   git config --global --list
   ```
 
 - 配置用户相关信息
   
-  ```git
+  ```bash
   git config --global user.name="shangyukang"
   git config --global user.email="535634238@qq.com"
   ```
 
 - 配置别名
   
-  ```git
+  ```bash
   git config --global alias.lg="log --graph"
   git config --global alias.psmr="pull source master --rebase"
   ```
 
 - 配置分支描述
   
-  ```git
+  ```bash
   git config branch.master.description "主干代码"
   git config branch.L2020JS1201.description "L2020JS1201江苏1201分支"
   ```

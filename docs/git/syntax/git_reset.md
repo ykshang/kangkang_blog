@@ -6,7 +6,7 @@
 
 ## 语法
 
-```git
+```bash
 git reset [-q] [<tree-ish>] [--] <pathspec>…​
 git reset [-q] [--pathspec-from-file=<file> [--pathspec-file-nul]] [<tree-ish>]
 git reset (--patch | -p) [<tree-ish>] [--] [<pathspec>…​]
@@ -27,18 +27,18 @@ DEPRECATED: git reset [-q] [--stdin [-z]] [<tree-ish>]
 
 - 重置工作区和origin远端master分支保持一致
   
-  ```git
+  ```bash
   git reset --hard origin/master
   ```
 
 - 撤回提交到 09f13ce5e02644
   
-  ```git
+  ```bash
   git reset --hard 765461f9a0
   ```
 
 - 软重置，撤回上次提交
   
-  ```git
+  ```bash
   git reset --soft head~1
   ```

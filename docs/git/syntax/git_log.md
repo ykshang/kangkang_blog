@@ -6,7 +6,7 @@
 
 ## 语法
 
-```git
+```bash
 git log [<options>] [<revision range>] [[--] <path>…​]
 ```
 
@@ -20,12 +20,12 @@ git log [<options>] [<revision range>] [[--] <path>…​]
 
 - 输出当前日志
   
-  ```git
+  ```bash
   git log
   ```
 
 - 以Ascii的形式显示日志记录
   
-  ```git
+  ```bash
   git log --graph
   ```

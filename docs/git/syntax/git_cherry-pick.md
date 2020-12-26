@@ -6,7 +6,7 @@
 
 ## 语法
 
-```git
+```bash
 git cherry-pick [--edit] [-n] [-m parent-number] [-s] [-x] [--ff]
                   [-S[<keyid>]] <commit>…​
 git cherry-pick (--continue | --skip | --abort | --quit)
@@ -32,19 +32,19 @@ git cherry-pick (--continue | --skip | --abort | --quit)
 
 - 遴选某个提交到当前分支
   
-  ```git
+  ```bash
   git git_cherry-pick 765461f9a0
   ```
 
 - 遴选一段提交到当前分支
   
-  ```git
+  ```bash
   git git_cherry-pick 765461f9a0..3a20bf181a548
   ```
 
 - 遴选多个提交
   
-  ```git
+  ```bash
   git cherry-pick 3a20bf181a5483c 765461f9a0..3a20bf181a548
   ```
 
@@ -68,7 +68,7 @@ git cherry-pick (--continue | --skip | --abort | --quit)
 
 最终需要将代码添加到暂存区以后，继续当前的遴选进程。
 
-```git
+```bash
 ## 将代码添加到暂存区
 git add .
 ## 继续遴选

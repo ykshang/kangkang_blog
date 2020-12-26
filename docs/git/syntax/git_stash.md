@@ -6,7 +6,7 @@
 
 ## 语法
 
-```git
+```bash
 git stash list [<options>]
 git stash show [<options>] [<stash>]
 git stash drop [-q|--quiet] [<stash>]
@@ -36,30 +36,30 @@ git stash store [-m|--message <message>] [-q|--quiet] <commit>
 
 - 查看当前备份列表
   
-  ```git
+  ```bash
   git stash list
   ```
 
 - 查看某一个备份
   
-  ```git
+  ```bash
   git stash show stash@{1}
   ```
 
 - 清空备份
   
-  ```git
+  ```bash
   git stash drop
   ```
 
 - 弹出最新的备份
   
-  ```git
+  ```bash
   git stash pop
   ```
 
 - 应用某一个备份
   
-  ```git
+  ```bash
   git stash apply stash@{1}
   ```

@@ -6,7 +6,7 @@
 
 ## 语法
 
-```git
+```bash
 git init [-q | --quiet] [--bare] [--template=<template_directory>]
           [--separate-git-dir <git dir>] [--object-format=<format>]
           [-b <branch-name> | --initial-branch=<branch-name>]
@@ -21,6 +21,6 @@ git init [-q | --quiet] [--bare] [--template=<template_directory>]
 
 - 将当前文件夹初始化成git目录
   
-  ```git
+  ```bash
   git init
   ```

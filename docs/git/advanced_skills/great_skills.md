@@ -2,14 +2,14 @@
 
 ## 快速切换到上一个分支
   
-  ```git
+  ```bash
   git checkout -
   git swotch -
   ```
 
 ## 配置别名实现快速操作
   
-  ```git
+  ```bash
   git config alias.lg="log -graph"
   git config alias.bra="branch -a"
   git config alias.brr="branch -r"
@@ -17,7 +17,7 @@
   
   使用：
   
-  ```git
+  ```bash
   git lg
   git bra
   git brr
@@ -27,19 +27,19 @@
   
   - 使用`reset`，恢复到和某个远端分支一致
     
-    ```git
+    ```bash
     git reset -hard origin/分支名
     ```
   
   - 使用`clean`，清空工作区未提交的修改
     
-    ```git
+    ```bash
     git reset -df
     ```
 
 - 在历史某个版本上拉出分支
   
-  ```git
+  ```bash
   ## 基于某个提交
   git branch DTS b54d17b
   ## 基于tag

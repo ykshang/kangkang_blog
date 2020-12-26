@@ -8,7 +8,7 @@
 
 ### 举例
 
-```git
+```bash
 ## 将全部修改添加到暂存区
 git add .
 ## 将暂存区的全部修改还原回工作区
@@ -23,7 +23,7 @@ git reset .
 
 ### 举例
 
-```git
+```bash
 ## 重置工作区代码和某个远端分支保持一致
 git reset --hard origin/master
 ```
@@ -40,20 +40,20 @@ git reset --hard origin/master
 
 - 推送本地分支代码到远端
   
-  ```git
+  ```bash
   git push origin master:master
   ```
 
 - 推动标签到远端
   
-  ```git
+  ```bash
   git push origin refs/tags/源标签名:refs/tags/目的标签名
   ```
   
   ::: warning 提示
   如果左边来源没传，则等同于删除右侧的远端目标，例如：
   
-  ```git
+  ```bash
   ## 删除远端的DTS分支
   git push origin :DTS
   ## 删除远端v1.1.1标签
@@ -70,7 +70,7 @@ git reset --hard origin/master
 
 ### 举例
 
-```git
+```bash
 ## 重置工作区为当前提交的父提交
 git reset head~1
 git reset head^1
@@ -86,7 +86,7 @@ git reset ^head
 
 ### 举例
 
-```git
+```bash
 ## 取出但不删除某个暂存备份
 git stash apply stash@{1}
 ```
@@ -99,7 +99,7 @@ git stash apply stash@{1}
 
 ### 举例
 
-```git
+```bash
 ## 遴选某一段提交到当前分支
 git cherry-pick f5a199a0..2b44e5df
 git cherry-pick f5a199a0...2b44e5df

@@ -6,7 +6,7 @@
 
 ## 语法
 
-```git
+```bash
 git rm [-f | --force] [-n] [-r] [--cached] [--ignore-unmatch]
           [--quiet] [--pathspec-from-file=<file> [--pathspec-file-nul]]
           [--] [<pathspec>…​]
@@ -22,12 +22,12 @@ git rm [-f | --force] [-n] [-r] [--cached] [--ignore-unmatch]
 
 - 移除a.txt
   
-  ```git
+  ```bash
   git rm a.txt
   ```
 
 - 强制移除a.txt
   
-  ```git
+  ```bash
   git rm a.txt -f
   ```

@@ -6,7 +6,7 @@
 
 ## 语法
 
-```git
+```bash
 git mv <options>…​ <args>…​
 ```
 
@@ -20,13 +20,13 @@ git mv <options>…​ <args>…​
 
 - 将一个文件更改名字
   
-  ```git
+  ```bash
   git mv old_name new_name
   ```
 
 - 将一个文件移动位置
   
-  ```git
+  ```bash
   git mv a/1.txt b/1.TXT
   ```
 

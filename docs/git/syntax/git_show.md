@@ -6,7 +6,7 @@
 
 ## 语法
 
-```git
+```bash
 git show [<options>] [<object>…​]
 ```
 
@@ -18,7 +18,7 @@ git show [<options>] [<object>…​]
 
 - 输出当前最新提交的变化
   
-  ```git
+  ```bash
   git show
   ## 或者
   git show head
@@ -26,18 +26,18 @@ git show [<options>] [<object>…​]
 
 - 输出某个提交的变化
   
-  ```git
+  ```bash
   git show 765461f9a0
   ```
 
 - 输出某一段提交的变化
   
-  ```git
+  ```bash
   git show 765461f9a0..3a20bf181a548
   ```
 
 - 查看某个分支最新提交
   
-  ```git
+  ```bash
   git show origin/master
   ```

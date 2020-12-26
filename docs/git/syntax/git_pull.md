@@ -6,7 +6,7 @@
 
 ## 语法
 
-```git
+```bash
 git pull [<options>] [<repository> [<refspec>…​]]
 ```
 
@@ -26,30 +26,30 @@ git pull [<options>] [<repository> [<refspec>…​]]
 
 - 更新代码
   
-  ```git
+  ```bash
   git pull
   ```
 
 - 以变基的形式更新代码
   
-  ```git
+  ```bash
   git pull --rebase
   ```
 
 - 将source远端的master更新到当前分支
   
-  ```git
+  ```bash
   git pull source master
   ```
 
 - 将source远端的master更新到指定分支
   
-  ```git
+  ```bash
    git pull source master:target_branch
   ```
 
 - 将source远端的master更新到当前分支，同时建立跟踪关系
   
-  ```git
+  ```bash
   git pull --set-upstream source master
   ```

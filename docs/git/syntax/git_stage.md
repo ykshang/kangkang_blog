@@ -6,7 +6,7 @@
 
 ## 语法
 
-```git
+```bash
 git stage args…​
 ```
 
@@ -18,6 +18,6 @@ git stage args…​
 
 - 输出当前最新提交的变化
   
-  ```git
+  ```bash
   git stage .
   ```

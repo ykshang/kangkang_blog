@@ -7,7 +7,7 @@
 
 ## 语法
 
-```git
+```bash
 git branch [--color[=<when>] | --no-color] [--show-current]
         [-v [--abbrev=<length> | --no-abbrev]]
         [--column[=<options>] | --no-column] [--sort=<key>]
@@ -46,39 +46,39 @@ git branch --edit-description [<branchname>]
 
 - 查看本地分支列表
   
-  ```git
+  ```bash
   git branch -l
   git branch list
   ```
 
 - 查看远端分支列表
   
-  ```git
+  ```bash
   git branch -r
   git branch --remotes
   ```
 
 - 查看本地和远端的全部分支
   
-  ```git
+  ```bash
   git branch -a
   git branch --all
   ```
 
 - 基于某次提交创建分支
   
-  ```git
+  ```bash
   git branch hotfix 006b1c5
   ```
 
 - 新建hotfix分支
   
-  ```git
+  ```bash
   git branch hotfix
   ```
 
 - 删除hotfix分支
   
-  ```git
+  ```bash
   git branch -D hotfix
   ```

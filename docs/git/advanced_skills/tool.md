@@ -6,19 +6,19 @@
 
 - 安装插件
   
-  ```shell
+  ```bash
   npm i git-br
   ```
 
 - 使用插件
   
-  ```shell
+  ```bash
   git br
   ```
 
 - 配置分支描述数据
   
-  ```git
+  ```bash
   git config branch.master.description 主干代码
   git config branch.gh-pages.description 用于gihub页面展示
   ```
