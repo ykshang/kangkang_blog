@@ -72,6 +72,6 @@ git config [<file-option>] -e | --edit
 - 配置分支描述
   
   ```git
-  git config --global branch.master.description="主干代码"
-  git config --global branch.L2020JS1201.description="L2020JS1201江苏1201分支"
+  git config branch.master.description "主干代码"
+  git config branch.L2020JS1201.description "L2020JS1201江苏1201分支"
   ```

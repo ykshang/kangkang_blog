@@ -27,3 +27,8 @@ Git 与 SVN 区别点：
 - **5、Git 的内容完整性要优于 SVN:** Git 的内容存储使用的是 SHA-1 哈希算法。这能确保代码内容的完整性，确保在遇到磁盘故障和网络问题时降低对版本库的破坏。
 
 ![图示](./img/git-svn.jpg)
+
+## 推荐文档
+
+> 官方文档 Git - Book [http://git-scm.com/book/zh/v2](http://git-scm.com/book/zh/v2)  
+> 菜鸟教程 Git教程 [https://www.runoob.com/git/git-tutorial.html](https://www.runoob.com/git/git-tutorial.html)
