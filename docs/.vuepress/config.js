@@ -1,7 +1,7 @@
 let sidebar_config = require("./theme_config/sidebar"); // 导入侧边栏配置
 let nav_config = require("./theme_config/nav"); // 导入导航栏配置
 module.exports = {
-  title: '个人笔记1', // 导航栏左侧的标题
+  title: '个人笔记', // 导航栏左侧的标题
   base: '/kangkang_blog/',
   head: [
     ['link', { rel: 'shortcut icon', type: "image/x-icon", href: "/logo.png" }]
