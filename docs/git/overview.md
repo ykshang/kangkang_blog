@@ -1,4 +1,6 @@
-# 基本介绍
+# Git教程
+
+## 基本介绍
 
 ![Git 教程](./img/git_logo.png)
 
