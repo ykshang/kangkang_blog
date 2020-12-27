@@ -7,6 +7,7 @@ module.exports = {
     ['link', { rel: 'shortcut icon', type: "image/x-icon", href: "/logo.png" }]
   ],
   description: '记录学习成长', // 不知道干嘛的
+  displayAllHeaders: true,
   // markdown: {
   //   lineNumbers: true // 显示行号
   // },
@@ -37,6 +38,8 @@ module.exports = {
   themeConfig: {
     displayAllHeaders: true,
     logo: '/assets/img/logo.gif', // 导航栏的logo
+    nextLinks: true,
+    prevLinks: true,
     nav: nav_config, // 导航栏右侧的链接配置
     sidebar: 'auto', // 自动将打开的页面输出导航至侧边栏
     // sidebar: sidebar_config, // 侧边栏配置
