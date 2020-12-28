@@ -20,7 +20,12 @@
     "url": "https://github.com/ykshang/kangkang_blog/issues"
   },
   "homepage": "https://github.com/ykshang/kangkang_blog#readme",
-  "devDependencies": {},
+  "devDependencies": {
+    "eslint": "^7.16.0",
+    "eslint-config-airbnb-base": "^14.2.1",
+    "eslint-plugin-import": "^2.22.1",
+    "eslint-plugin-vue": "^7.4.0"
+  },
   "dependencies": {
     "vuepress": "^1.7.1",
     "vuepress-plugin-gotop-plus": "^1.0.4",
