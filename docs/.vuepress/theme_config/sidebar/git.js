@@ -99,7 +99,7 @@ module.exports =  {
       title: '各种骚操作',
       path: '/git/advanced_skills/great_skills'
     }, {
-      title: '通过分支管理需求、问题单的最佳实践',
+      title: '通过分支管理需求、问题单',
       path: '/git/advanced_skills/best_practices'
     }, {
       title: 'merge、rebase、cherry-pick的区别',
