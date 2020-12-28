@@ -8,12 +8,12 @@
 
 ```bash
 git tag [-a | -s | -u <keyid>] [-f] [-m <msg> | -F <file>] [-e]
-        <tagname> [<commit> | <object>]
+  <tagname> [<commit> | <object>]
 git tag -d <tagname>…​
 git tag [-n[<num>]] -l [--contains <commit>] [--no-contains <commit>]
-        [--points-at <object>] [--column[=<options>] | --no-column]
-        [--create-reflog] [--sort=<key>] [--format=<format>]
-        [--merged <commit>] [--no-merged <commit>] [<pattern>…​]
+  [--points-at <object>] [--column[=<options>] | --no-column]
+  [--create-reflog] [--sort=<key>] [--format=<format>]
+  [--merged <commit>] [--no-merged <commit>] [<pattern>…​]
 git tag -v [--format=<format>] <tagname>…​
 ```
 

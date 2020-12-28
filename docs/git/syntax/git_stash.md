@@ -13,9 +13,9 @@ git stash drop [-q|--quiet] [<stash>]
 git stash ( pop | apply ) [--index] [-q|--quiet] [<stash>]
 git stash branch <branchname> [<stash>]
 git stash [push [-p|--patch] [-k|--[no-]keep-index] [-q|--quiet]
-             [-u|--include-untracked] [-a|--all] [-m|--message <message>]
-             [--pathspec-from-file=<file> [--pathspec-file-nul]]
-             [--] [<pathspec>…​]]
+  [-u|--include-untracked] [-a|--all] [-m|--message <message>]
+  [--pathspec-from-file=<file> [--pathspec-file-nul]]
+  [--] [<pathspec>…​]]
 git stash clear
 git stash create [<message>]
 git stash store [-m|--message <message>] [-q|--quiet] <commit>

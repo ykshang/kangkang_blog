@@ -9,13 +9,13 @@
 
 ```bash
 git branch [--color[=<when>] | --no-color] [--show-current]
-        [-v [--abbrev=<length> | --no-abbrev]]
-        [--column[=<options>] | --no-column] [--sort=<key>]
-        [--merged [<commit>]] [--no-merged [<commit>]]
-        [--contains [<commit>]] [--no-contains [<commit>]]
-        [--points-at <object>] [--format=<format>]
-        [(-r | --remotes) | (-a | --all)]
-        [--list] [<pattern>…​]
+  [-v [--abbrev=<length> | --no-abbrev]]
+  [--column[=<options>] | --no-column] [--sort=<key>]
+  [--merged [<commit>]] [--no-merged [<commit>]]
+  [--contains [<commit>]] [--no-contains [<commit>]]
+  [--points-at <object>] [--format=<format>]
+  [(-r | --remotes) | (-a | --all)]
+  [--list] [<pattern>…​]
 git branch [--track | --no-track] [-f] <branchname> [<start-point>]
 git branch (--set-upstream-to=<upstream> | -u <upstream>) [<branchname>]
 git branch --unset-upstream [<branchname>]
@@ -106,5 +106,5 @@ git branch --edit-description [<branchname>]
   ~
   ~
   ~
-  D:/code/kangkang_blog/.git/EDIT_DESCRIPTION [unix] (12:04 28/12/2020)             4,1 全部
+  D:/code/kangkang_blog/.git/EDIT_DESCRIPTION [unix] (12:04 28/12/2020)       4,1 全部
   ```

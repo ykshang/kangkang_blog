@@ -8,8 +8,8 @@
 
 ```bash
 git rm [-f | --force] [-n] [-r] [--cached] [--ignore-unmatch]
-          [--quiet] [--pathspec-from-file=<file> [--pathspec-file-nul]]
-          [--] [<pathspec>…​]
+  [--quiet] [--pathspec-from-file=<file> [--pathspec-file-nul]]
+  [--] [<pathspec>…​]
 ```
 
 ## 常用的参数

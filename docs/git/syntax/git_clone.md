@@ -8,14 +8,14 @@ clone一个库到某路径下
 
 ```bash
 git clone [--template=<template_directory>]
-          [-l] [-s] [--no-hardlinks] [-q] [-n] [--bare] [--mirror]
-          [-o <name>] [-b <name>] [-u <upload-pack>] [--reference <repository>]
-          [--dissociate] [--separate-git-dir <git dir>]
-          [--depth <depth>] [--[no-]single-branch] [--no-tags]
-          [--recurse-submodules[=<pathspec>]] [--[no-]shallow-submodules]
-          [--[no-]remote-submodules] [--jobs <n>] [--sparse]
-          [--filter=<filter>] [--] <repository>
-          [<directory>]
+  [-l] [-s] [--no-hardlinks] [-q] [-n] [--bare] [--mirror]
+  [-o <name>] [-b <name>] [-u <upload-pack>] [--reference <repository>]
+  [--dissociate] [--separate-git-dir <git dir>]
+  [--depth <depth>] [--[no-]single-branch] [--no-tags]
+  [--recurse-submodules[=<pathspec>]] [--[no-]shallow-submodules]
+  [--[no-]remote-submodules] [--jobs <n>] [--sparse]
+  [--filter=<filter>] [--] <repository>
+  [<directory>]
 ```
 
 ## 常用的参数
