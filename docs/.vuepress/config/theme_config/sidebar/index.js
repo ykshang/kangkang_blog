@@ -1,6 +1,7 @@
-// 侧边栏配置
 let git = require('./git');
+let cookbook = require('./cookbook');
 
+// 侧边栏配置
 module.exports = [
   // {
   //   title: 'Group 1',   // 必要的
@@ -23,10 +24,7 @@ module.exports = [
   }, {
     title: 'Node.js',
     path: ''
-  }, {
-    title: '菜谱的自我修养',
-    path: ''
-  }, {
+  }, cookbook, {
     title: '旅行日记',
     path: ''
   }

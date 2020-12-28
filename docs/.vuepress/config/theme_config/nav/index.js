@@ -1,5 +1,7 @@
-// 导航栏配置
 let git = require('./git');
+let cookbook = require('./cookbook');
+
+// 导航栏配置
 module.exports = [
   {
     text: '欢迎',
@@ -13,10 +15,7 @@ module.exports = [
   }, {
     text: 'Node.js',
     link: ''
-  }, {
-    text: '菜谱的自我修养',
-    link: ''
-  }, {
+  }, cookbook, {
     text: '旅行日记',
     link: ''
   }
