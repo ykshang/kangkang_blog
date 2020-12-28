@@ -104,9 +104,9 @@ module.exports =  {
     }, {
       title: 'merge、rebase、cherry-pick的区别',
       path: '/git/advanced_skills/different'
-    }, {
-      title: '第三方工具推荐',
-      path: '/git/advanced_skills/tool'
     }]
+  }, {
+    title: '第三方工具推荐',
+    path: '/git/tool/tool'
   }]
 }
