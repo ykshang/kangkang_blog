@@ -93,6 +93,9 @@ module.exports =  {
   }, {
     title: '操作实践',
     children: [{
+      title: '使用规范',
+      path: '/git/advanced_skills/rule'
+    }, {
       title: '各种骚操作',
       path: '/git/advanced_skills/great_skills'
     }, {
