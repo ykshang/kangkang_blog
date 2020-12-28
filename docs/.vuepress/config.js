@@ -5,7 +5,6 @@ module.exports = {
     ['link', { rel: 'shortcut icon', type: "image/x-icon", href: "/logo.png" }]
   ],
   description: '记录学习成长', // 不知道干嘛的
-  displayAllHeaders: true,
   // markdown: {
   //   lineNumbers: true // 显示行号
   // },
