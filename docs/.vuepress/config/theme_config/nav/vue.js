@@ -1,4 +1,4 @@
 module.exports = {
-  text: 'vue',
+  text: 'Vue.js',
   link: '/vue/index'
 }

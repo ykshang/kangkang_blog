@@ -1,4 +1,4 @@
 module.exports = {
-  title: 'vue',
+  title: 'Vue.js',
   path: '/vue/'
 }
