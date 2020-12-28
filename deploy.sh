@@ -13,6 +13,8 @@ npm run build
 cd docs/.vuepress/dist
 
 git init
+git config user.email "535634238@qq.com"
+git config --global user.name "kangkang shang"
 git add -A
 git commit -m 'Automatic build'
 
