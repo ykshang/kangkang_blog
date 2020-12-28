@@ -17,7 +17,7 @@ module.exports = [
     text: '菜谱的自我修养',
     link: ''
   }, {
-    text: '自由行记录',
+    text: '旅行日记',
     link: ''
   }
 ]

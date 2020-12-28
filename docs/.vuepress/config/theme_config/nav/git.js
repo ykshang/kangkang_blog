@@ -1,5 +1,5 @@
 module.exports = {
-  text: 'Git',
+  text: 'Git笔记',
   items: [{
     text: '基本介绍',
     link: '/git/overview'

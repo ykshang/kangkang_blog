@@ -13,14 +13,14 @@
 [查看文档](../git/overview)
 :::
 
-## Vue.js <Badge text="待开发" type="warn" vertical="top"/>
+## Vue.js <Badge text="计划" type="warn" vertical="top"/>
 
 ::: warning  描述
 基本语法，搭建  
 插件封装，引用
 :::
 
-## React.js <Badge text="待开发" type="warn" vertical="top"/>
+## React.js <Badge text="计划" type="warn" vertical="top"/>
 
 ::: warning  描述 
 基本语法，搭建  
@@ -28,13 +28,13 @@
 JSX语法
 :::
 
-## 菜谱的自我修养 <Badge text="待开发" type="warn" vertical="top"/>
+## 菜谱的自我修养 <Badge text="开发中" type="tip" vertical="top"/>
 
-::: warning 描述 
+::: tip 描述 
 记录美食日常，分享生活里的小确幸
 :::
 
-## 自由行记录 <Badge text="待开发" type="warn" vertical="top"/>
+## 旅行记录 <Badge text="计划" type="warn" vertical="top"/>
 
 ::: warning 描述 
 去过的国家，去过的景点，认识的有趣的人

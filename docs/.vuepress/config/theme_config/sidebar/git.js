@@ -1,5 +1,5 @@
 module.exports =  {
-  title: 'Git',
+  title: 'Git笔记',
   children: [{
     title: '基本介绍',
     path: '/git/overview',
