@@ -18,7 +18,7 @@ git pull [<options>] [<repository> [<refspec>…​]]
 | -t ,--tags     | 将tag更新到本地                               |
 | --set-upstream | 建立跟踪关系，如果已存在则更新                         |
 
-::: warning 提示
+::: warning 举一反三
 利用`--set-upstream`参数建/更新立跟踪关系以后，后续更新代码可以省略对应的参数
 :::
 

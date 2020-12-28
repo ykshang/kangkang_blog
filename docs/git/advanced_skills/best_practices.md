@@ -104,7 +104,7 @@ git merge story#22306 --squash
   git rebase -i HEAD~2
   ```
 
-::: warning 补充
+::: warning 举一反三
 某条分支上最新的一段提交压缩成为一个提交，使用reset也可以达到同样的效果
 
 ```bash

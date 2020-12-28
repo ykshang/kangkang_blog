@@ -41,8 +41,15 @@ git branch --edit-description [<branchname>]
 | -C                                 | 复制一个分支，即便不存在                                                 |
 | -l, --list                         | 列出本地分支列表                                                     |
 | -f, --force                        | 强制执行，用于移动、复制、删除等操作时                                          |
+| --edit-description                 | 给分支添加描述,使用vim编辑器修改                                           |
 
 ## 常用命令举例：
+
+- 创建新分支
+  
+  ```bash
+  git branch branch_name
+  ```
 
 - 查看本地分支列表
   
@@ -81,4 +88,23 @@ git branch --edit-description [<branchname>]
   
   ```bash
   git branch -D hotfix
+  ```
+
+- 修改分支描述，进入vim编辑完成后，退出
+  
+  ```bash
+  git branch --edit-description master
+  ```
+  
+  ```vim
+  主干代码
+  # Please edit the description for the branch
+  #   master
+  # Lines starting with '#' will be stripped.
+  ~
+  ~
+  ~
+  ~
+  ~
+  D:/code/kangkang_blog/.git/EDIT_DESCRIPTION [unix] (12:04 28/12/2020)             4,1 全部
   ```

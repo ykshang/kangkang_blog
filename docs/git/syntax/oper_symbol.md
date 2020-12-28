@@ -50,7 +50,7 @@ git reset --hard origin/master
   git push origin refs/tags/源标签名:refs/tags/目的标签名
   ```
   
-  ::: warning 提示
+  ::: warning 举一反三
   如果左边来源没传，则等同于删除右侧的远端目标，例如：
   
   ```bash
