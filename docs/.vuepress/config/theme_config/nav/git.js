@@ -94,7 +94,7 @@ module.exports = {
   }, {
     text: '操作实践',
     items: [{
-      text: '使用规范',
+      text: '若干建议规范',
       link: '/git/advanced_skills/rule'
     }, {
       text: '各种骚操作',
