@@ -4,11 +4,13 @@
 
 # 主要内容
 
-## GIt <Badge text="开发中" type="tip" vertical="top"/>
+## GIt <Badge text="Beta" type="tip" vertical="top"/>
 
 ::: tip 描述
 基本介绍，描述常用的语法，参数，命令  
 常见的骚操作，快捷操作，常用的操作的一些区别
+
+[查看文档](/git/overview)
 :::
 
 ## Vue.js <Badge text="待开发" type="warn" vertical="top"/>
