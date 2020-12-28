@@ -44,7 +44,7 @@ cd -
 ```
 #### 自动部署
 
-- 将本地用户名下的id_rsa私钥拷贝出来，配置到`settings`>`scription`下，`title`需要设置为`ACTION_DEPLOY_KEY`,和执行脚本对应起来
+- 将本地用户名下的id_rsa私钥拷贝出来，配置到`settings`>`secrets`下，`title`需要设置为`ACTION_DEPLOY_KEY`,和执行脚本对应起来
 - 在github的`Actions`页签下创建一个自动执行脚本
 
   脚本内容：
