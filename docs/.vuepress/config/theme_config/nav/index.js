@@ -1,22 +1,21 @@
-let git = require('./git');
-let cookbook = require('./cookbook');
+let git = require('./git');
+let cookbook = require('./cookbook');
+let vue = require('./vue');
+let react = require('./react');
+let travel = require('./travel');
+let nodejs = require('./nodejs');
+let welcome = {
+  text: 'Hello Word！',
+  link: '/guide/'
+};
 
-// 导航栏配置
-module.exports = [
-  {
-    text: '欢迎',
-    link: '/guide/'
-  }, git, {
-    text: 'Vue.js',
-    link: ''
-  }, {
-    text: 'React.js',
-    link: ''
-  }, {
-    text: 'Node.js',
-    link: ''
-  }, cookbook, {
-    text: '旅行日记',
-    link: ''
-  }
-]
+// 导航栏配置
+module.exports = [
+  welcome,
+  git,
+  vue,
+  react,
+  nodejs,
+  cookbook,
+  travel
+];

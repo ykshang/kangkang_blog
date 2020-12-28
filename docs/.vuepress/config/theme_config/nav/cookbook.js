@@ -1,4 +1,3 @@
-
 module.exports = {
   text: '菜谱的自我修养',
   items: [{
