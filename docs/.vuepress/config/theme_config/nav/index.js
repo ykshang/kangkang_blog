@@ -5,7 +5,7 @@ let react = require('./react');
 let travel = require('./travel');
 let nodejs = require('./nodejs');
 let welcome = {
-  text: 'Hello Word！',
+  text: '欢迎',
   link: '/guide/'
 };
 
