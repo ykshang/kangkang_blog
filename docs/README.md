@@ -14,5 +14,3 @@ features:
   details: 记录日常旅行，攻略，风土人情
 footer: MIT Licensed | Copyright © 2018-kangkang shang
 ---
-
-

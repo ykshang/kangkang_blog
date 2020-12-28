@@ -49,7 +49,7 @@ cd -
 
   脚本内容：
 
-  ```` shell
+  ``` shell
   # This is a basic workflow to help you get started with Actions
 
   name: CI
