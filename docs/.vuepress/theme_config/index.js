@@ -5,8 +5,8 @@ module.exports = {
   nextLinks: true,
   prevLinks: true,
   nav: require("./nav/index"), // 导航栏右侧的链接配置
-  // sidebar: 'auto', // 自动将打开的页面输出导航至侧边栏
-  sidebar: require("./sidebar/index"), // 侧边栏配置
+  sidebar: 'auto', // 自动将打开的页面输出导航至侧边栏
+  // sidebar: require("./sidebar/index"), // 侧边栏配置
   lastUpdated: "最后更新", // 文档的最后更新时间 可选值: string | boolean
   repo: 'ykshang/kangkang_blog', // 假定是 GitHub. 同时也可以是一个完整的 GitLab URL
   repoLabel: '查看源码',// 自定义仓库链接文字。

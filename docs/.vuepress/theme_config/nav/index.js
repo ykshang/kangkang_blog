@@ -2,8 +2,8 @@
 let git = require('./git');
 module.exports = [
   {
-    text: '主页',
-    link: '/'
+    text: '欢迎',
+    link: '/guide/'
   }, git, {
     text: 'Vue.js',
     link: ''
