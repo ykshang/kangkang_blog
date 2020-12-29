@@ -3,5 +3,8 @@ module.exports = {
   children: [{
     title: '列表',
     path: '/cookbook/list'
+  }, {
+    title: '香菇蒸滑鸡',
+    path: '/cookbook/1'
   }]
 }

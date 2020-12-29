@@ -3,5 +3,8 @@ module.exports = {
   items: [{
     text: '列表',
     link: '/cookbook/list'
+  }, {
+    text: '香菇蒸滑鸡',
+    link: '/cookbook/1'
   }]
 }
