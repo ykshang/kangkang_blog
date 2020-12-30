@@ -1,238 +1,160 @@
 # 弹性元素
 
-## flex-direction
+## order
 
-设置主轴方向和默认的元素排列方向（即起始线和终止线的位置）
+该属性定义项目的排列顺序。数值越小，排列越靠前，默认为0
 
-### 可选值
-
-```css
-flex-direction: row || row-reverse || column || column-reverse; 
+```html
+<div>
+  <div style="order: 1">1</div>
+  <div style="order: 2">2</div>
+  <div style="order: 1">1</div>
+  <div style="order: 2">2</div>
+  <div style="order: 3">3</div>
+  <div style="order: 0">0</div>
+  <div>无</div>
+  <div style="order: 1">1</div>
+</div>
 ```
 
-- row（默认值）：主轴为水平方向，起点在左端。
-- row-reverse：主轴为水平方向，起点在右端。
-- column：主轴为垂直方向，起点在上沿。
-- column-reverse：主轴为垂直方向，起点在下沿。
+示意图
 
-### 示意图
+<div class="container" style="height: 50px">
+  <div class="item flex1" style="order: 1">1</div>
+  <div class="item flex1" style="order: 2">2</div>
+  <div class="item flex1" style="order: 1">1</div>
+  <div class="item flex1" style="order: 2">2</div>
+  <div class="item flex1" style="order: 3">3</div>
+  <div class="item flex1" style="order: 0">0</div>
+  <div class="item flex1" >无</div>
+  <div class="item flex1" style="order: 1">1</div>
+</div>
+<br/>
+<div class="container" style="flex-direction: column; height: 200px; width: 150px">
+  <div class="item flex1" style="order: 1">1</div>
+  <div class="item flex1" style="order: 2">2</div>
+  <div class="item flex1" style="order: 1">1</div>
+  <div class="item flex1" style="order: 2">2</div>
+  <div class="item flex1" style="order: 3">3</div>
+  <div class="item flex1" style="order: 0">0</div>
+  <div class="item flex1" >无</div>
+  <div class="item flex1" style="order: 1">1</div>
+</div>
 
-![flex-direction](../assets/flex-direction.png)
 
-## flex-wrap 允许换行
+## flex-grow
 
-### 可选值
+该属性定义项目在主轴上的的放大比例，默认为0，即如果存在剩余空间，也不放大。
 
-```css
-flex-wrap: nowrap | wrap | wrap-reverse 
+flex-grow 若被赋值为一个正整数， flex 元素会以 flex-basis 为基础，沿主轴方向增长尺寸。这会使该元素延展，并占据此方向轴上的可用空间（available space，即正向自由空间）。如果有多个元素被允许延展，那么他们会按照flex-grow的值为比例分配剩余的可空间（正向自由空间），以填满容器主轴方向上的空间。
+
+```html
+<div class="container" style="height: 50px">
+  <div>11111</div>
+  <div style="flex-grow: 0">11111</div>
+  <div style="flex-grow: 1">11111</div>
+  <div style="flex-grow: 2">11111</div>
+  <div style="flex-grow: 3">11111</div>
+</div>
 ```
 
-默认情况下，项目都沿着主轴方向排列。flex-wrap属性定义，如果一条轴线排不下，如何换行。它可能有三个取值：
+示意图
 
-- nowrap（默认）：不换行，如果超宽则溢出
+![](../assets/item1.png)
 
-![nowrap](../assets/nowrap.png)  
 
-- wrap：超宽允许换行，由上往下，由左往右换行
+## flex-shrink
 
-![wrap](../assets/wrap.png)
+该属性定义了项目的缩小比例，默认为1，即如果空间不足，该项目将缩小。
 
-- wrap-reverse：超宽允许逆序换行，由下往上，由左往右换行
+flex-grow属性是处理flex元素在主轴上增加空间的问题，相反flex-shrink属性是处理flex元素收缩的问题。如果容器中空间不足以容纳全部的子元素，可以通过设置flex-shrink属性设置为正整数来缩小它所占的空间。与flex-grow属性一样，可以赋予不同的值来控制flex元素收缩的程度，其数值代表了收缩的比例。在计算flex元素收缩的大小时，它的最小尺寸（**min-content**）也会被考虑进去，就是说实际上flex-shrink属性可能会和flex-grow属性表现的不一致。
 
-![](http://localhost:4444/static/img/wrap-reverse.ec93a82.png)
-
-## justify-content属性定义了项目在主轴上的对齐方式。
-
-### 可选值
-
-```css
-justify-content: flex-start | flex-end | center | space-between | space-around; 
+```html
+<div class="container" style="height: 50px">
+  <div style="flex-shrink: 0; width: 300px">11111</div>
+  <div style="width: 300px">11111</div>
+  <div style="flex-shrink: 1; width: 300px">11111</div>
+  <div style="flex-shrink: 2; width: 300px">11111</div>
+  <div style="flex-shrink: 3; width: 300px">11111</div>
+</div>
 ```
 
-- flex-start（默认值）：起始线对齐（可以当作左对齐理解）
-- flex-end：终止线对齐
-- center： 居中
-- space-between：两端对齐，项目之间的间隔都相等。
-- space-around：每个弹性子元素两侧分配相等的空间。所以，子元素之间的间隔比项目与边框的间隔大一倍。
-- space-evenly：在主轴上平均分配间隔，等效于所有的子元素设置margin：auto
+## flex-basis
 
-# flex-start
+该属性定义了在分配空间之前，项目占据的主轴空间（main size）。
 
-111111
+浏览器根据这个属性，计算主轴是否有多余空间。它的默认值为auto，即项目的本来大小。如果元素设置主轴方向的宽度（**width**或者**height**），那么flex-basis会默认使用这个值，它可以设为具体的值（比如350px），则项目将占据固定空间。flex-basis 属性在任何空间分配发生之前初始化flex子元素的尺寸. 此属性的初始值为 auto. 如果 flex-basis 设置为 auto , 浏览器会先检查flex子元素的主尺寸是否设置了绝对值再计算出flex子元素的初始值. 比如说你已经给你的flex子元素设置了200px 的宽，则200px 就是这个flex子元素的 flex-basis.
 
-1111111
-
-1111111111
-
-111111
-
-1111111
-
-# flex-end
-
-1111111111
-
-1111111111
-
-111111
-
-1111111111
-
-1111111
-
-# center
-
-1111111111
-
-1111111111
-
-1111111111
-
-1111111111
-
-1111111
-
-# space-between
-
-1111111
-
-1111111111
-
-1111
-
-1111111111
-
-111
-
-# space-around
-
-1111
-
-11111
-
-11111
-
-1111
-
-111111
-
-# space-evenly
-
-11111111
-
-11111111
-
-111
-
-11111
-
-1111
-
-## align-items:属性定义了项目在交叉轴上的对齐方式
-
-# 可选值：
-
-```css
-  align-items: flex-start | flex-end | center | baseline | stretch 
+```html
+<div class="container" style="height: 50px">
+  <div>11111</div>
+  <div style="flex-basis: auto">11111</div>
+  <div style="flex-basis: 100px">11111</div>
+  <div style="flex-basis: 200px">11111</div>
+  <div style="flex-basis: 300px">11111</div>
+</div>
 ```
 
-- flex-start：交叉轴的起点对齐。
-- flex-end：交叉轴的终点对齐。
-- center：交叉轴的中点对齐。
-- baseline: 项目的第一行文字的基线对齐。
-- stretch（默认值）：如果项目未设置高度或设为auto，将占满整个容器的高度。设置了高度的元素，不生效
+## flex
 
-# flex-start
+该属性是flex-grow, flex-shrink 和 flex-basis的简写，默认值为0 1 auto。后两个属性可选。
 
-11111
+- flex: initial 是把flex元素重置为Flexbox的初始值，它相当于 flex: 0 1 auto。在这里 flex-grow 的值为0，所以flex元素不会超过它们 flex-basis 的尺寸。flex-shrink 的值为1, 所以可以缩小flex元素来防止它们溢出。flex-basis 的值为 auto. Flex元素尺寸可以是在主维度上设置的，也可以是根据内容自动得到的。
+- flex: auto 等同于 flex: 1 1 auto；和上面的 flex:initial 基本相同，但是这种情况下，flex元素在需要的时候既可以拉伸也可以收缩。
+- flex: none 可以把flex元素设置为不可伸缩。它和设置为 flex: 0 0 auto 是一样的。元素既不能拉伸或者收缩，但是元素会按具有 flex-basis: auto 属性的flexbox进行布局。
+- 你在教程中常看到的 flex: 1 或者 flex: 2 等等。它相当于flex: 1 1 0。元素可以在flex-basis为0的基础上伸缩
 
-11111
+## align-self
 
-11111
+该属性允许单个项目有与其他项目不一样的对齐方式，可覆盖align-items属性。
 
-11111
-
-11111
-
-11111
-
-# flex-end
-
-11111
-
-11111
-
-11111
-
-11111
-
-11111
-
-11111
-
-# center
-
-11111
-
-11111
-
-11111
-
-11111
-
-11111
-
-11111
-
-# baseline
-
-11111
-
-11111
-
-11111
-
-11111
-
-11111
-
-11111
-
-# stretch
-
-11111
-
-11111
-
-11111
-
-11111
-
-11111
-
-11111
-
-## flex-flow属性是flex-direction属性和flex-wrap属性的简写形式
-
-# 默认值为row nowrap。
-
-```css
-  flex-flow: row nowrap; 
+```html
+<div class="container" style="height: 200px; align-items: flex-start">
+  <div class="item" style="height: 40px">11111</div>
+  <div class="item" style="height: 50px">11111</div>
+  <div class="item" style="height: 110px">11111</div>
+  <div class="item" style="height: 80px; align-self:flex-end">11111</div>
+  <div class="item" style="height: 30px">11111</div>
+  <div class="item" style="height: 170px">11111</div>
+</div>
 ```
 
-## align-content属性定义了多根轴线的对齐方式。如果项目只有一根轴线，该属性不起作用。
-
-# 可选值：
-
-```css
-  align-content: flex-start | flex-end | center | space-between | space-around | stretch; 
-```
-
+- 默认值为auto，表示继承父元素的align-items属性，如果没有父元素，则等同于stretch。
 - flex-start：与交叉轴的起点对齐。
 - flex-end：与交叉轴的终点对齐。
 - center：与交叉轴的中点对齐。
 - space-between：与交叉轴两端对齐，轴线之间的间隔平均分布。
 - space-around：每根轴线两侧的间隔都相等。所以，轴线之间的间隔比轴线与边框的间隔大一倍。
-- stretch（默认值）：轴线占满整个交叉轴。
+- stretch：轴线占满整个交叉轴。
 
-![](http://localhost:4444/static/img/align-content.b0da261.png)
+
+
+
+
+<style scoped>
+img {
+  max-width: 70%;
+  height: auto;
+}
+.item {
+  border: 1px dashed;
+  display: flex;
+  font-size: 20px;
+  justify-content: center;
+  align-items: center;
+  background: cyan;
+}
+.container {
+  display: flex;
+  border: 1px dashed red;
+  background: yellow;
+  width: 100%;
+}
+.flex1 {
+  flex: 1;
+}
+.layout {
+  margin:20px;
+  width:1200px;
+}
+</style>
