@@ -1,6 +1,6 @@
 # 弹性容器
 
-## flex-direction 
+## flex-direction
 
 设置主轴方向和默认的元素排列方向（即起始线和终止线的位置）
 
@@ -19,7 +19,9 @@ flex-direction: row || row-reverse || column || column-reverse;
 
 ![flex-direction](../assets/flex-direction.png)
 
-## flex-wrap 允许换行
+## flex-wrap
+
+允许换行
 
 ### 可选值
 
@@ -41,7 +43,9 @@ flex-wrap: nowrap | wrap | wrap-reverse
 
 ![](http://localhost:4444/static/img/wrap-reverse.ec93a82.png)
 
-## justify-content属性定义了项目在主轴上的对齐方式。
+## justify-content
+
+该属性定义了项目在主轴上的对齐方式。
 
 ### 可选值
 
@@ -58,9 +62,11 @@ justify-content: flex-start | flex-end | center | space-between | space-around;
 
 ![justify-content](../assets/container1.png)
 
-## align-items:属性定义了项目在交叉轴上的对齐方式
+## align-items
 
-# 可选值：
+该 属性定义了项目在交叉轴上的对齐方式
+
+### 可选值：
 
 ```css
 align-items: flex-start | flex-end | center | baseline | stretch 
@@ -72,15 +78,19 @@ align-items: flex-start | flex-end | center | baseline | stretch
 - baseline: 项目的第一行文字的基线对齐。
 - stretch（默认值）：如果项目未设置高度或设为auto，将占满整个容器的高度。设置了高度的元素，不生效
 
-## flex-flow属性是flex-direction属性和flex-wrap属性的简写形式
+## flex-flow
 
-# 默认值为row nowrap。
+该属性是flex-direction属性和flex-wrap属性的简写形式
+
+> 默认值为row nowrap。
 
 ```css
-  flex-flow: row nowrap; 
+flex-flow: row nowrap; 
 ```
 
-## align-content属性定义了多根轴线的对齐方式。如果项目只有一根轴线，该属性不起作用。
+## align-content
+
+该属性定义了多根轴线的对齐方式。如果项目只有一根轴线，该属性不起作用。
 
 ### 可选值
 
