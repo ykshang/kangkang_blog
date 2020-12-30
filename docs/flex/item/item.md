@@ -75,22 +75,22 @@ flex-grow属性是处理flex元素在主轴上增加空间的问题，相反flex
 
 ```html
 <div class="container" style="height: 50px">
-  <div style="flex-shrink: 0; width: 300px">11111</div>
-  <div style="width: 300px">11111</div>
-  <div style="flex-shrink: 1; width: 300px">11111</div>
-  <div style="flex-shrink: 2; width: 300px">11111</div>
-  <div style="flex-shrink: 3; width: 300px">11111</div>
+  <div style="flex-shrink: 0; width: 200px">111</div>
+  <div style="width: 200px">111</div>
+  <div style="flex-shrink: 1; width: 200px">111</div>
+  <div style="flex-shrink: 2; width: 200px">111</div>
+  <div style="flex-shrink: 3; width: 200px">111</div>
 </div>
 ```
 
 示意图
 
 <div class="container" style="height: 50px">
-  <div class="item" style="flex-shrink: 0; width: 300px">11111</div>
-  <div class="item" style="width: 300px">11111</div>
-  <div class="item" style="flex-shrink: 1; width: 300px">11111</div>
-  <div class="item" style="flex-shrink: 2; width: 300px">11111</div>
-  <div class="item" style="flex-shrink: 3; width: 300px">11111</div>
+  <div class="item" style="flex-shrink: 0; width: 200px">111</div>
+  <div class="item" style="width: 200px">111</div>
+  <div class="item" style="flex-shrink: 1; width: 200px">111</div>
+  <div class="item" style="flex-shrink: 2; width: 200px">111</div>
+  <div class="item" style="flex-shrink: 3; width: 200px">111</div>
 </div>
 
 ## flex-basis
