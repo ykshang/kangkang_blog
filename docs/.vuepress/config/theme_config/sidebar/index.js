@@ -4,6 +4,7 @@ let vue = require('./vue');
 let react = require('./react');
 let travel = require('./travel');
 let nodejs = require('./nodejs');
+let flex= require('./flex');
 let welcome = {
   title: 'Hello Word！',
   path: '/guide/'
@@ -21,6 +22,7 @@ module.exports = [
   // },
   welcome,
   git,
+  flex,
   vue,
   react,
   nodejs,
