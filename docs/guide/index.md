@@ -13,6 +13,15 @@
 [查看文档](../git/overview)
 :::
 
+## flex弹性布局 <Badge text="Beta" type="tip" vertical="top"/>
+
+::: tip 描述
+基本介绍，弹性元素和容器的属性，布局受影响的一些外在因素  
+实战Demo及源码
+
+[查看文档](../flex/)
+:::
+
 ## Vue.js <Badge text="计划" type="warn" vertical="top"/>
 
 ::: warning  描述
