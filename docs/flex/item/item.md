@@ -17,7 +17,7 @@
 </div>
 ```
 
-示意图
+示意图:
 
 <div class="container" style="height: 50px">
   <div class="item flex1" style="order: 1">1</div>
