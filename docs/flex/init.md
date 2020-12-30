@@ -95,7 +95,4 @@
   background: #ffe5644d;
   width: 100%;
 }
-ol li {
-  line-height: 30px;
-}
 </style>
