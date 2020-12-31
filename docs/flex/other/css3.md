@@ -4,19 +4,17 @@
 direction：ltr | rtl 
 ```
 
-<el-form :inline="true" :model="formInline">
-  <el-form-item label="direction:">
-    <el-select v-model="formInline.value" placeholder="请选择" @change="changeItem" clearable>
-      <el-option v-for="item in options" :key="item.value" :label="item.label" :value="item.value"></el-option>
-    </el-select>
-  </el-form-item>
-  <el-form-item label="flex-direction:">
-    <el-select v-model="formInline.value1" placeholder="请选择" @change="changeItem1" clearable>
-      <el-option v-for="item in options1" :key="item.value" :label="item.label" :value="item.value"></el-option>
-    </el-select>
-  </el-form-item>
-</el-form>
-
+<div style="display: flex">
+  <div class="form-label">direction</div>
+  <el-select v-model="formInline.value" placeholder="请选择" @change="changeItem" clearable>
+    <el-option v-for="item in options" :key="item.value" :label="item.label" :value="item.value"></el-option>
+  </el-select>
+  <div class="form-label">flex-direction</div>
+  <el-select v-model="formInline.value1" placeholder="请选择" @change="changeItem1" clearable>
+    <el-option v-for="item in options1" :key="item.value" :label="item.label" :value="item.value"></el-option>
+  </el-select>
+</div>
+<br/>
 <div :class="'flex container' + css + css1">
   <div class="item">1</div>
   <div class="item">2</div>
@@ -78,6 +76,15 @@ export default {
 }
 .column {
   flex-direction: column;
+}
+.form-label {
+  vertical-align: middle;
+  font-size: 14px;
+  color: #606266;
+  line-height: 40px;
+  padding: 0 12px 0 0;
+  margin: 0 10px;
+  box-sizing: border-box;
 }
 .column-reverse {
   flex-direction: column-reverse;
