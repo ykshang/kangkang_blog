@@ -17,8 +17,8 @@
 </div>
 <br/>
 <div class="flex">
-  <div class="div1">adadadadadasdad dasdadada dadadasds sa asda sdasd </div>
-  <div class="div2">adadadadadasdad dasdadada dadadasds sa asda sdasd </div>
+  <div class="div1">adadadasdad dasdadada dadadasds sa asda sdasd </div>
+  <div class="div2">adadadasdad dasdadada dadadasds sa asda sdasd </div>
 </div>
 
 ## 什么是max-content
