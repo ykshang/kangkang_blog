@@ -78,7 +78,7 @@ width: max-content;
 
 <style scoped>
 .div1 {
-  width: 180px;
+  width: 160px;
   height: 100px;
   background: yellow;
   border: dashed 1px;
