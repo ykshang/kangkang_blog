@@ -8,7 +8,7 @@ position为arelative的元素不会导致元素脱离文档流，但也影响fle
 <div class="container flex">
   <div class="item">1111111111 11111111</div>
   <div class="item">11111111111 111111111111</div>
-  <div class="item" style="position: absolute; top:40px; left:100px">1111 11111</div>
+  <div class="item" style="position: absolute; top:40px; left:90px">1111 11111</div>
   <div class="item">111111111 1111111111</div>
 </div>
 ```
@@ -16,7 +16,7 @@ position为arelative的元素不会导致元素脱离文档流，但也影响fle
 <div class="container flex" style="position: relative">
     <div class="item">1111111111 11111111</div>
     <div class="item">11111111111 111111111111</div>
-    <div class="item" style="position: absolute; top:40px; left:100px">1111 111111111</div>
+    <div class="item" style="position: absolute; top:40px; left:90px">1111 111111111</div>
     <div class="item">111111111 1111111111</div>
 </div>
 
