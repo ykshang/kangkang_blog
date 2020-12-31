@@ -1,6 +1,6 @@
 # min-width
 
-- 在一个flex布局中，对于一个设置了flex属性设置为1的div容器，再对其设置min-width：0，保证内容不超出外层容器
+- 在一个flex布局中，对于一个设置了flex属性设置为1的div容器，再对其设置min-width：0，保证元素不溢出外层容器
 
 ```html
 <div class="container">
