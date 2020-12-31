@@ -17,8 +17,8 @@
 </div>
 <br/>
 <div class="flex">
-  <div class="div1">adadadadaadadadadadadasdad daasdasdadasdadada daasdasdadadasds sa asda sdasd </div>
-  <div class="div2">adadadadaadadadadadadasdad daasdasdadasdadada daasdasdadadasds sa asda sdasd </div>
+  <div class="div1">adadadadadadasdad dasdadada dadadasds sa asda sdasd </div>
+  <div class="div2">adadadadadadasdad dasdadada dadadasds sa asda sdasd </div>
 </div>
 
 ## 什么是max-content
@@ -27,7 +27,7 @@
 width: max-content; 
 ```
 
-<div class="div3">adadadasdad daasdasdadasdadada daasdasdadadasds sa asda sdasd </div>
+<div class="div3">adsdad daasdasdadasdadada sa asda sdasd </div>
 
 ## 怎么影响flex布局，影响哪些范围
 
