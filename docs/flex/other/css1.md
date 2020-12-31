@@ -4,7 +4,7 @@
 
 ```css
 .div1 {
-  width: 100px;
+  width: 180px;
 }
 .div2 {
   width: min-content;
@@ -17,8 +17,8 @@
 </div>
 <br/>
 <div class="flex">
-  <div class="div1">adadadasdad dasdadada dadadasds sa asda sdasd </div>
-  <div class="div2">adadadasdad dasdadada dadadasds sa asda sdasd </div>
+  <div class="div1">adadadasdad daadada dadadasds sa asda sdasd </div>
+  <div class="div2">adadadasdad daadada dadadasds sa asda sdasd </div>
 </div>
 
 ## 什么是max-content
@@ -78,7 +78,7 @@ width: max-content;
 
 <style scoped>
 .div1 {
-  width: 200px;
+  width: 190px;
   height: 100px;
   background: yellow;
   border: dashed 1px;
