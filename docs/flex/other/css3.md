@@ -82,8 +82,7 @@ export default {
   font-size: 14px;
   color: #606266;
   line-height: 40px;
-  padding: 0 12px 0 0;
-  margin: 0 10px;
+  padding: 0 5px;
   box-sizing: border-box;
 }
 .column-reverse {
