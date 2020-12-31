@@ -44,7 +44,7 @@ git checkout (-p|--patch) [<tree-ish>] [--] [<pathspec>…​]
   git checkout -- .
   ```
 
-- 基于远端origin/master分支创建本地gotfix分支
+- 基于远端origin/master分支创建本地hotfix分支
   
   ```bash
   git checkout -b hotfix origin/master

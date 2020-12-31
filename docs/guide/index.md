@@ -4,7 +4,7 @@
 
 # 主要内容
 
-## GIt <Badge text="Beta" type="tip" vertical="top"/>
+## Git笔记 <Badge text="Beta" type="tip" vertical="top"/>
 
 ::: tip 描述
 基本介绍，描述常用的语法，参数，命令  
@@ -13,7 +13,7 @@
 [查看文档](../git/overview)
 :::
 
-## flex弹性布局 <Badge text="Beta" type="tip" vertical="top"/>
+## flex弹性布局 <Badge text="开发中" type="tip" vertical="top"/>
 
 ::: tip 描述
 基本介绍，弹性元素和容器的属性，布局受影响的一些外在因素  
@@ -41,6 +41,8 @@ JSX语法
 
 ::: tip 描述 
 记录美食日常，分享生活里的小确幸
+
+[查看文档](../cookbook/list)
 :::
 
 ## 旅行记录 <Badge text="计划" type="warn" vertical="top"/>
