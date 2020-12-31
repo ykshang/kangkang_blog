@@ -50,33 +50,30 @@ width: max-content;
   有多个元素（假设是5个）均设置的了flex：1，那么一般情况他们的伸缩比例是相同的，且强制设置其在主轴上的空间为0。
   
   1. 这几个元素在主轴的上的宽度均小于平均宽度（200px）。那么分配剩余空间后，这几个元素的宽度（200px）相等
-
+     
       ![max-content](../assets/css14.png)
+2. 这几个元素有大于平均宽度（200px）的，有小于平均宽度（200px）的，但是加起来不大于1000px，此时存在：
+   
+   - 当所有的元素min-content小于等于平均宽度（200px）的时候，宽度平分，最终每一个元素都是平均宽度（200px）；
+     
+     ![max-content](../assets/css15.png)
+   
+   - 当有元素min-content大于平均宽度（200px）的时候，那么它的宽度最终为min-content，然后剩余的宽度有另外的元素平分。
+     
+     ![max-content](../assets/css16.png)
 
-  
-  2. 这几个元素有大于平均宽度（200px）的，有小于平均宽度（200px）的，但是加起来不大于1000px，此时存在：
-    
-    - 当所有的元素min-content小于等于平均宽度（200px）的时候，宽度平分，最终每一个元素都是平均宽度（200px）；
-
-      ![max-content](../assets/css15.png)
-
-    - 当有元素min-content大于平均宽度（200px）的时候，那么它的宽度最终为min-content，然后剩余的宽度有另外的元素平分。
-
-      ![max-content](../assets/css16.png)
-
-  3. 当这几个元素有大于平均宽度（200px），有小于平均宽度（200px）的，加起来大于1000px，此时存在：
-
-    - 当这几个元素的min-content均未大于平均宽度（200px），那么这几个元素平分后最终均为平均宽度（200px）；
-
-      ![max-content](../assets/css17.png)
-
-    - 当有的min-content大于平均宽度（200px），有的小于平均宽度（200px），总的加起来并未超过1000px，那么1000px减去大于平均宽度（200px）的min-content，剩下的元素平分后，宽度相等，大于平均宽度（200px）的元素宽度均为其各自的min-content。如果这时候最终总宽度大于1000px，会溢出。
-
-      ![max-content](../assets/css18.png)
-
+3. 当这几个元素有大于平均宽度（200px），有小于平均宽度（200px）的，加起来大于1000px，此时存在：
+   
+   - 当这几个元素的min-content均未大于平均宽度（200px），那么这几个元素平分后最终均为平均宽度（200px）；
+     
+     ![max-content](../assets/css17.png)
+   
+   - 当有的min-content大于平均宽度（200px），有的小于平均宽度（200px），总的加起来并未超过1000px，那么1000px减去大于平均宽度（200px）的min-content，剩下的元素平分后，宽度相等，大于平均宽度（200px）的元素宽度均为其各自的min-content。如果这时候最终总宽度大于1000px，会溢出。
+     
+     ![max-content](../assets/css18.png)
 
     - 如果所有的元素的min-content均大于平均宽度（200px），那么最终宽度为各自的min-content，溢出。
-
+    
       ![max-content](../assets/css19.png)
 
 <style scoped>
