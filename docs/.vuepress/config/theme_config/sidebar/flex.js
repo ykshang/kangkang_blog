@@ -30,8 +30,11 @@ module.exports = {
       title: 'margin',
       path: '/flex/other/css4'
     }, {
-      title: 'min-width/overflow',
+      title: 'min-width',
       path: '/flex/other/css5'
+    }, {
+      title: 'overflow',
+      path: '/flex/other/css6'
     }]
   }, {
     title: '应用实例',

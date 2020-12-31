@@ -1,6 +1,7 @@
-# min-width
+# overflow
 
-- 在一个flex布局中，对于一个设置了flex属性设置为1的div容器，再对其设置min-width：0，保证内容不超出外层容器
+给第二个元素添加overflow: hidden,效果类似min-width，但是多余的部分被遮挡了
+
 
 ```html
 <div class="container">
@@ -12,8 +13,4 @@
 </div>
 ```
 
-![](../assets/css51.png)
-
-- 给第二个元素添加min-width: 0
-
-![](../assets/css52.png)
+![overflow](../assets/css61.png)
