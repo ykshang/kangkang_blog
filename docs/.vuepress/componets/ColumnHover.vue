@@ -85,16 +85,26 @@ export default {
 .content {
   overflow: hidden;
   text-overflow: ellipsis;
-  /* white-space: nowrap; */
+  white-space: inherit;
   cursor: pointer;
 }
 .column_icon i {
-  margin: 0px 5px;
+  margin: 5px 5px;
   font: 1.5em;
   display: inline-block;
 }
 .column_icon i:hover {
   color: #409EFF;
   cursor: pointer;
+}
+
+
+@media only screen and (max-width: 500px) {
+  .column_content {
+    max-width: 200px;
+  }
+  .content {
+    white-space: initial;
+  }
 }
 </style>

@@ -2,7 +2,7 @@
 
 <div class="tableCss">
   <el-table :data="tableData" style="width: 100%" :show-header="false">
-    <el-table-column prop="id" label="Id" width="100px">
+    <el-table-column prop="id" label="Id" width="80px">
     </el-table-column>
     <el-table-column prop="name" label="名称">
       <template slot-scope="scope">
@@ -106,7 +106,7 @@ export default {
       if (value === "file") {
         return "el-icon-document";
       } else {
-        return "el-icon-folder";
+        return "el-icon-folder-opened";
       }
     },
     iconStyleRender (value) {
@@ -130,5 +130,12 @@ export default {
 /* .tableCss >>> .el-table--enable-row-hover .el-table__body tr td:hover .column_icon { */
 div >>> .el-table--enable-row-hover .el-table__body tr:hover>td .column_icon {
   display: inline-flex;
+}
+
+@media only screen and (max-width: 500px) {
+  div >>> .el-table--enable-row-hover .el-table__body tr:hover>td .column_icon {
+    display: inline-flex;
+    flex-direction: column;
+  }
 }
 </style>
