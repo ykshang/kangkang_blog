@@ -1,0 +1,391 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>表格hover组件 | 个人笔记</title>
+    <meta name="generator" content="VuePress 1.7.1">
+    <link rel="shortcut icon" type="image/x-icon" href="/kangkang_blog/logo.png">
+    <meta name="description" content="记录学习成长">
+    
+    <link rel="preload" href="/kangkang_blog/assets/css/0.styles.60e189a3.css" as="style"><link rel="preload" href="/kangkang_blog/assets/js/app.3f5ed534.js" as="script"><link rel="preload" href="/kangkang_blog/assets/js/2.dde4dcd1.js" as="script"><link rel="preload" href="/kangkang_blog/assets/js/5.df51ebcc.js" as="script"><link rel="prefetch" href="/kangkang_blog/assets/js/10.dca53bfc.js"><link rel="prefetch" href="/kangkang_blog/assets/js/11.cda9d4fc.js"><link rel="prefetch" href="/kangkang_blog/assets/js/12.70b0d130.js"><link rel="prefetch" href="/kangkang_blog/assets/js/13.7a49a94e.js"><link rel="prefetch" href="/kangkang_blog/assets/js/14.e6016a84.js"><link rel="prefetch" href="/kangkang_blog/assets/js/15.1546b699.js"><link rel="prefetch" href="/kangkang_blog/assets/js/16.d363571f.js"><link rel="prefetch" href="/kangkang_blog/assets/js/17.fd1cdc34.js"><link rel="prefetch" href="/kangkang_blog/assets/js/18.09140605.js"><link rel="prefetch" href="/kangkang_blog/assets/js/19.559b25ea.js"><link rel="prefetch" href="/kangkang_blog/assets/js/20.5fc3de3d.js"><link rel="prefetch" href="/kangkang_blog/assets/js/21.60155b24.js"><link rel="prefetch" href="/kangkang_blog/assets/js/22.2826c60a.js"><link rel="prefetch" href="/kangkang_blog/assets/js/23.ca6cd814.js"><link rel="prefetch" href="/kangkang_blog/assets/js/24.79656348.js"><link rel="prefetch" href="/kangkang_blog/assets/js/25.7bb51e7a.js"><link rel="prefetch" href="/kangkang_blog/assets/js/26.3bb56658.js"><link rel="prefetch" href="/kangkang_blog/assets/js/27.bbcc4285.js"><link rel="prefetch" href="/kangkang_blog/assets/js/28.49bbdf05.js"><link rel="prefetch" href="/kangkang_blog/assets/js/29.2432c50a.js"><link rel="prefetch" href="/kangkang_blog/assets/js/3.c7621a82.js"><link rel="prefetch" href="/kangkang_blog/assets/js/30.58c7e5f6.js"><link rel="prefetch" href="/kangkang_blog/assets/js/31.2734d03b.js"><link rel="prefetch" href="/kangkang_blog/assets/js/32.c90cb6cf.js"><link rel="prefetch" href="/kangkang_blog/assets/js/33.f7d5f0f6.js"><link rel="prefetch" href="/kangkang_blog/assets/js/34.20b0b7d2.js"><link rel="prefetch" href="/kangkang_blog/assets/js/35.fb70b978.js"><link rel="prefetch" href="/kangkang_blog/assets/js/36.f219ad3f.js"><link rel="prefetch" href="/kangkang_blog/assets/js/37.1f2aba98.js"><link rel="prefetch" href="/kangkang_blog/assets/js/38.bfcae945.js"><link rel="prefetch" href="/kangkang_blog/assets/js/39.e6c49bbc.js"><link rel="prefetch" href="/kangkang_blog/assets/js/4.87efb9ad.js"><link rel="prefetch" href="/kangkang_blog/assets/js/40.76714bc6.js"><link rel="prefetch" href="/kangkang_blog/assets/js/41.c4e8687d.js"><link rel="prefetch" href="/kangkang_blog/assets/js/42.d77676bf.js"><link rel="prefetch" href="/kangkang_blog/assets/js/43.c23b7db3.js"><link rel="prefetch" href="/kangkang_blog/assets/js/44.1fad8346.js"><link rel="prefetch" href="/kangkang_blog/assets/js/45.5f44a010.js"><link rel="prefetch" href="/kangkang_blog/assets/js/46.09cf2345.js"><link rel="prefetch" href="/kangkang_blog/assets/js/47.fc1449b6.js"><link rel="prefetch" href="/kangkang_blog/assets/js/48.9ee1303f.js"><link rel="prefetch" href="/kangkang_blog/assets/js/49.30f0e9aa.js"><link rel="prefetch" href="/kangkang_blog/assets/js/50.2108e2ee.js"><link rel="prefetch" href="/kangkang_blog/assets/js/51.283acc25.js"><link rel="prefetch" href="/kangkang_blog/assets/js/52.f1d8c10f.js"><link rel="prefetch" href="/kangkang_blog/assets/js/53.4fcb7ec9.js"><link rel="prefetch" href="/kangkang_blog/assets/js/54.bceb3b02.js"><link rel="prefetch" href="/kangkang_blog/assets/js/55.0d1c733d.js"><link rel="prefetch" href="/kangkang_blog/assets/js/56.00b5b16f.js"><link rel="prefetch" href="/kangkang_blog/assets/js/57.b91d0b2f.js"><link rel="prefetch" href="/kangkang_blog/assets/js/58.5f64a170.js"><link rel="prefetch" href="/kangkang_blog/assets/js/59.73a86167.js"><link rel="prefetch" href="/kangkang_blog/assets/js/6.1ee84e7e.js"><link rel="prefetch" href="/kangkang_blog/assets/js/60.d7c23fc6.js"><link rel="prefetch" href="/kangkang_blog/assets/js/61.f970cdf0.js"><link rel="prefetch" href="/kangkang_blog/assets/js/7.85302e38.js"><link rel="prefetch" href="/kangkang_blog/assets/js/8.5e66b7da.js"><link rel="prefetch" href="/kangkang_blog/assets/js/9.9250d6ea.js">
+    <link rel="stylesheet" href="/kangkang_blog/assets/css/0.styles.60e189a3.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container"><header class="navbar"><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/kangkang_blog/" class="home-link router-link-active"><img src="/kangkang_blog/assets/img/logo.gif" alt="个人笔记" class="logo"> <span class="site-name can-hide">个人笔记</span></a> <div class="links"><div class="search-box"><input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <nav class="nav-links can-hide"><div class="nav-item"><a href="/kangkang_blog/guide/" class="nav-link">
+  欢迎
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="Git笔记" class="dropdown-title"><span class="title">Git笔记</span> <span class="arrow down"></span></button> <button type="button" aria-label="Git笔记" class="mobile-dropdown-title"><span class="title">Git笔记</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/kangkang_blog/git/overview.html" class="nav-link">
+  基本介绍
+</a></li><li class="dropdown-item"><h4>
+          基本语法
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/kangkang_blog/git/syntax/oper_symbol.html" class="nav-link">
+  常见的操作符
+</a></li><li class="dropdown-subitem"><a href="/kangkang_blog/git/syntax/git_add.html" class="nav-link">
+  git add
+</a></li><li class="dropdown-subitem"><a href="/kangkang_blog/git/syntax/git_branch.html" class="nav-link">
+  git branch
+</a></li><li class="dropdown-subitem"><a href="/kangkang_blog/git/syntax/git_checkout.html" class="nav-link">
+  git checkout
+</a></li><li class="dropdown-subitem"><a href="/kangkang_blog/git/syntax/git_cherry-pick.html" class="nav-link">
+  git cherry-pick
+</a></li><li class="dropdown-subitem"><a href="/kangkang_blog/git/syntax/git_clean.html" class="nav-link">
+  git clean
+</a></li><li class="dropdown-subitem"><a href="/kangkang_blog/git/syntax/git_clone.html" class="nav-link">
+  git clone
+</a></li><li class="dropdown-subitem"><a href="/kangkang_blog/git/syntax/git_commit.html" class="nav-link">
+  git commit
+</a></li><li class="dropdown-subitem"><a href="/kangkang_blog/git/syntax/git_config.html" class="nav-link">
+  git config
+</a></li><li class="dropdown-subitem"><a href="/kangkang_blog/git/syntax/git_diff.html" class="nav-link">
+  git diff
+</a></li><li class="dropdown-subitem"><a href="/kangkang_blog/git/syntax/git_fetch.html" class="nav-link">
+  git fetch
+</a></li><li class="dropdown-subitem"><a href="/kangkang_blog/git/syntax/git_init.html" class="nav-link">
+  git init
+</a></li><li class="dropdown-subitem"><a href="/kangkang_blog/git/syntax/git_log.html" class="nav-link">
+  git log
+</a></li><li class="dropdown-subitem"><a href="/kangkang_blog/git/syntax/git_merge.html" class="nav-link">
+  git merge
+</a></li><li class="dropdown-subitem"><a href="/kangkang_blog/git/syntax/git_mv.html" class="nav-link">
+  git mv
+</a></li><li class="dropdown-subitem"><a href="/kangkang_blog/git/syntax/git_pull.html" class="nav-link">
+  git pull
+</a></li><li class="dropdown-subitem"><a href="/kangkang_blog/git/syntax/git_push.html" class="nav-link">
+  git push
+</a></li><li class="dropdown-subitem"><a href="/kangkang_blog/git/syntax/git_rebase.html" class="nav-link">
+  git reabse
+</a></li><li class="dropdown-subitem"><a href="/kangkang_blog/git/syntax/git_remote.html" class="nav-link">
+  git remote
+</a></li><li class="dropdown-subitem"><a href="/kangkang_blog/git/syntax/git_reset.html" class="nav-link">
+  git reset
+</a></li><li class="dropdown-subitem"><a href="/kangkang_blog/git/syntax/git_restore.html" class="nav-link">
+  git restore
+</a></li><li class="dropdown-subitem"><a href="/kangkang_blog/git/syntax/git_rm.html" class="nav-link">
+  git rm
+</a></li><li class="dropdown-subitem"><a href="/kangkang_blog/git/syntax/git_show.html" class="nav-link">
+  git show
+</a></li><li class="dropdown-subitem"><a href="/kangkang_blog/git/syntax/git_stage.html" class="nav-link">
+  git stage
+</a></li><li class="dropdown-subitem"><a href="/kangkang_blog/git/syntax/git_stash.html" class="nav-link">
+  git stash
+</a></li><li class="dropdown-subitem"><a href="/kangkang_blog/git/syntax/git_status.html" class="nav-link">
+  git status
+</a></li><li class="dropdown-subitem"><a href="/kangkang_blog/git/syntax/git_switch.html" class="nav-link">
+  git switch
+</a></li><li class="dropdown-subitem"><a href="/kangkang_blog/git/syntax/git_tag.html" class="nav-link">
+  git tag
+</a></li></ul></li><li class="dropdown-item"><h4>
+          操作实践
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/kangkang_blog/git/advanced_skills/rule.html" class="nav-link">
+  若干建议规范
+</a></li><li class="dropdown-subitem"><a href="/kangkang_blog/git/advanced_skills/great_skills.html" class="nav-link">
+  各种骚操作
+</a></li><li class="dropdown-subitem"><a href="/kangkang_blog/git/advanced_skills/best_practices.html" class="nav-link">
+  通过分支管理需求、问题单
+</a></li><li class="dropdown-subitem"><a href="/kangkang_blog/git/advanced_skills/different.html" class="nav-link">
+  merge、rebase、cherry-pick的区别
+</a></li></ul></li><li class="dropdown-item"><!----> <a href="/kangkang_blog/git/tool/tool.html" class="nav-link">
+  第三方工具推荐
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="Flex弹性布局" class="dropdown-title"><span class="title">Flex弹性布局</span> <span class="arrow down"></span></button> <button type="button" aria-label="Flex弹性布局" class="mobile-dropdown-title"><span class="title">Flex弹性布局</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/kangkang_blog/flex/index.html" class="nav-link">
+  简介
+</a></li><li class="dropdown-item"><!----> <a href="/kangkang_blog/flex/introduction.html" class="nav-link">
+  相关概念
+</a></li><li class="dropdown-item"><!----> <a href="/kangkang_blog/flex/init.html" class="nav-link">
+  初始化计算
+</a></li><li class="dropdown-item"><!----> <a href="/kangkang_blog/flex/item/item.html" class="nav-link">
+  弹性元素
+</a></li><li class="dropdown-item"><!----> <a href="/kangkang_blog/flex/container/container.html" class="nav-link">
+  弹性容器
+</a></li><li class="dropdown-item"><h4>
+          外在影响因素
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/kangkang_blog/flex/other/css1.html" class="nav-link">
+  min-content/max-content
+</a></li><li class="dropdown-subitem"><a href="/kangkang_blog/flex/other/css2.html" class="nav-link">
+  position
+</a></li><li class="dropdown-subitem"><a href="/kangkang_blog/flex/other/css3.html" class="nav-link">
+  direction
+</a></li><li class="dropdown-subitem"><a href="/kangkang_blog/flex/other/css4.html" class="nav-link">
+  margin
+</a></li><li class="dropdown-subitem"><a href="/kangkang_blog/flex/other/css5.html" class="nav-link">
+  min-width
+</a></li><li class="dropdown-subitem"><a href="/kangkang_blog/flex/other/css6.html" class="nav-link">
+  overflow
+</a></li></ul></li><li class="dropdown-item"><h4>
+          应用实例
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/kangkang_blog/flex/example/example1.html" aria-current="page" class="nav-link router-link-exact-active router-link-active">
+  表格hover组件
+</a></li><li class="dropdown-subitem"><a href="/kangkang_blog/flex/example/example2.html" class="nav-link">
+  示例2
+</a></li></ul></li></ul></div></div><div class="nav-item"><a href="/kangkang_blog/vue/index.html" class="nav-link">
+  Vue.js
+</a></div><div class="nav-item"><a href="/kangkang_blog/react/index.html" class="nav-link">
+  React.js
+</a></div><div class="nav-item"><a href="/kangkang_blog/nodejs/index.html" class="nav-link">
+  Node.js
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="菜谱的自我修养" class="dropdown-title"><span class="title">菜谱的自我修养</span> <span class="arrow down"></span></button> <button type="button" aria-label="菜谱的自我修养" class="mobile-dropdown-title"><span class="title">菜谱的自我修养</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/kangkang_blog/cookbook/list.html" class="nav-link">
+  列表
+</a></li><li class="dropdown-item"><!----> <a href="/kangkang_blog/cookbook/1.html" class="nav-link">
+  香菇蒸滑鸡
+</a></li></ul></div></div><div class="nav-item"><a href="/kangkang_blog/travel/index.html" class="nav-link">
+  旅行日记
+</a></div> <a href="https://github.com/ykshang/kangkang_blog" target="_blank" rel="noopener noreferrer" class="repo-link">
+    查看源码
+    <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></nav></div></header> <div class="sidebar-mask"></div> <aside class="sidebar"><nav class="nav-links"><div class="nav-item"><a href="/kangkang_blog/guide/" class="nav-link">
+  欢迎
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="Git笔记" class="dropdown-title"><span class="title">Git笔记</span> <span class="arrow down"></span></button> <button type="button" aria-label="Git笔记" class="mobile-dropdown-title"><span class="title">Git笔记</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/kangkang_blog/git/overview.html" class="nav-link">
+  基本介绍
+</a></li><li class="dropdown-item"><h4>
+          基本语法
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/kangkang_blog/git/syntax/oper_symbol.html" class="nav-link">
+  常见的操作符
+</a></li><li class="dropdown-subitem"><a href="/kangkang_blog/git/syntax/git_add.html" class="nav-link">
+  git add
+</a></li><li class="dropdown-subitem"><a href="/kangkang_blog/git/syntax/git_branch.html" class="nav-link">
+  git branch
+</a></li><li class="dropdown-subitem"><a href="/kangkang_blog/git/syntax/git_checkout.html" class="nav-link">
+  git checkout
+</a></li><li class="dropdown-subitem"><a href="/kangkang_blog/git/syntax/git_cherry-pick.html" class="nav-link">
+  git cherry-pick
+</a></li><li class="dropdown-subitem"><a href="/kangkang_blog/git/syntax/git_clean.html" class="nav-link">
+  git clean
+</a></li><li class="dropdown-subitem"><a href="/kangkang_blog/git/syntax/git_clone.html" class="nav-link">
+  git clone
+</a></li><li class="dropdown-subitem"><a href="/kangkang_blog/git/syntax/git_commit.html" class="nav-link">
+  git commit
+</a></li><li class="dropdown-subitem"><a href="/kangkang_blog/git/syntax/git_config.html" class="nav-link">
+  git config
+</a></li><li class="dropdown-subitem"><a href="/kangkang_blog/git/syntax/git_diff.html" class="nav-link">
+  git diff
+</a></li><li class="dropdown-subitem"><a href="/kangkang_blog/git/syntax/git_fetch.html" class="nav-link">
+  git fetch
+</a></li><li class="dropdown-subitem"><a href="/kangkang_blog/git/syntax/git_init.html" class="nav-link">
+  git init
+</a></li><li class="dropdown-subitem"><a href="/kangkang_blog/git/syntax/git_log.html" class="nav-link">
+  git log
+</a></li><li class="dropdown-subitem"><a href="/kangkang_blog/git/syntax/git_merge.html" class="nav-link">
+  git merge
+</a></li><li class="dropdown-subitem"><a href="/kangkang_blog/git/syntax/git_mv.html" class="nav-link">
+  git mv
+</a></li><li class="dropdown-subitem"><a href="/kangkang_blog/git/syntax/git_pull.html" class="nav-link">
+  git pull
+</a></li><li class="dropdown-subitem"><a href="/kangkang_blog/git/syntax/git_push.html" class="nav-link">
+  git push
+</a></li><li class="dropdown-subitem"><a href="/kangkang_blog/git/syntax/git_rebase.html" class="nav-link">
+  git reabse
+</a></li><li class="dropdown-subitem"><a href="/kangkang_blog/git/syntax/git_remote.html" class="nav-link">
+  git remote
+</a></li><li class="dropdown-subitem"><a href="/kangkang_blog/git/syntax/git_reset.html" class="nav-link">
+  git reset
+</a></li><li class="dropdown-subitem"><a href="/kangkang_blog/git/syntax/git_restore.html" class="nav-link">
+  git restore
+</a></li><li class="dropdown-subitem"><a href="/kangkang_blog/git/syntax/git_rm.html" class="nav-link">
+  git rm
+</a></li><li class="dropdown-subitem"><a href="/kangkang_blog/git/syntax/git_show.html" class="nav-link">
+  git show
+</a></li><li class="dropdown-subitem"><a href="/kangkang_blog/git/syntax/git_stage.html" class="nav-link">
+  git stage
+</a></li><li class="dropdown-subitem"><a href="/kangkang_blog/git/syntax/git_stash.html" class="nav-link">
+  git stash
+</a></li><li class="dropdown-subitem"><a href="/kangkang_blog/git/syntax/git_status.html" class="nav-link">
+  git status
+</a></li><li class="dropdown-subitem"><a href="/kangkang_blog/git/syntax/git_switch.html" class="nav-link">
+  git switch
+</a></li><li class="dropdown-subitem"><a href="/kangkang_blog/git/syntax/git_tag.html" class="nav-link">
+  git tag
+</a></li></ul></li><li class="dropdown-item"><h4>
+          操作实践
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/kangkang_blog/git/advanced_skills/rule.html" class="nav-link">
+  若干建议规范
+</a></li><li class="dropdown-subitem"><a href="/kangkang_blog/git/advanced_skills/great_skills.html" class="nav-link">
+  各种骚操作
+</a></li><li class="dropdown-subitem"><a href="/kangkang_blog/git/advanced_skills/best_practices.html" class="nav-link">
+  通过分支管理需求、问题单
+</a></li><li class="dropdown-subitem"><a href="/kangkang_blog/git/advanced_skills/different.html" class="nav-link">
+  merge、rebase、cherry-pick的区别
+</a></li></ul></li><li class="dropdown-item"><!----> <a href="/kangkang_blog/git/tool/tool.html" class="nav-link">
+  第三方工具推荐
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="Flex弹性布局" class="dropdown-title"><span class="title">Flex弹性布局</span> <span class="arrow down"></span></button> <button type="button" aria-label="Flex弹性布局" class="mobile-dropdown-title"><span class="title">Flex弹性布局</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/kangkang_blog/flex/index.html" class="nav-link">
+  简介
+</a></li><li class="dropdown-item"><!----> <a href="/kangkang_blog/flex/introduction.html" class="nav-link">
+  相关概念
+</a></li><li class="dropdown-item"><!----> <a href="/kangkang_blog/flex/init.html" class="nav-link">
+  初始化计算
+</a></li><li class="dropdown-item"><!----> <a href="/kangkang_blog/flex/item/item.html" class="nav-link">
+  弹性元素
+</a></li><li class="dropdown-item"><!----> <a href="/kangkang_blog/flex/container/container.html" class="nav-link">
+  弹性容器
+</a></li><li class="dropdown-item"><h4>
+          外在影响因素
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/kangkang_blog/flex/other/css1.html" class="nav-link">
+  min-content/max-content
+</a></li><li class="dropdown-subitem"><a href="/kangkang_blog/flex/other/css2.html" class="nav-link">
+  position
+</a></li><li class="dropdown-subitem"><a href="/kangkang_blog/flex/other/css3.html" class="nav-link">
+  direction
+</a></li><li class="dropdown-subitem"><a href="/kangkang_blog/flex/other/css4.html" class="nav-link">
+  margin
+</a></li><li class="dropdown-subitem"><a href="/kangkang_blog/flex/other/css5.html" class="nav-link">
+  min-width
+</a></li><li class="dropdown-subitem"><a href="/kangkang_blog/flex/other/css6.html" class="nav-link">
+  overflow
+</a></li></ul></li><li class="dropdown-item"><h4>
+          应用实例
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/kangkang_blog/flex/example/example1.html" aria-current="page" class="nav-link router-link-exact-active router-link-active">
+  表格hover组件
+</a></li><li class="dropdown-subitem"><a href="/kangkang_blog/flex/example/example2.html" class="nav-link">
+  示例2
+</a></li></ul></li></ul></div></div><div class="nav-item"><a href="/kangkang_blog/vue/index.html" class="nav-link">
+  Vue.js
+</a></div><div class="nav-item"><a href="/kangkang_blog/react/index.html" class="nav-link">
+  React.js
+</a></div><div class="nav-item"><a href="/kangkang_blog/nodejs/index.html" class="nav-link">
+  Node.js
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="菜谱的自我修养" class="dropdown-title"><span class="title">菜谱的自我修养</span> <span class="arrow down"></span></button> <button type="button" aria-label="菜谱的自我修养" class="mobile-dropdown-title"><span class="title">菜谱的自我修养</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/kangkang_blog/cookbook/list.html" class="nav-link">
+  列表
+</a></li><li class="dropdown-item"><!----> <a href="/kangkang_blog/cookbook/1.html" class="nav-link">
+  香菇蒸滑鸡
+</a></li></ul></div></div><div class="nav-item"><a href="/kangkang_blog/travel/index.html" class="nav-link">
+  旅行日记
+</a></div> <a href="https://github.com/ykshang/kangkang_blog" target="_blank" rel="noopener noreferrer" class="repo-link">
+    查看源码
+    <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></nav>  <ul class="sidebar-links"><li><a href="/kangkang_blog/guide/" class="sidebar-link">Hello Word！</a></li><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading"><span>Git笔记</span> <span class="arrow right"></span></p> <!----></section></li><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading open"><span>Flex弹性布局</span> <span class="arrow down"></span></p> <ul class="sidebar-links sidebar-group-items"><li><a href="/kangkang_blog/flex/" aria-current="page" class="sidebar-link">简介</a></li><li><a href="/kangkang_blog/flex/introduction.html" class="sidebar-link">相关概念</a></li><li><a href="/kangkang_blog/flex/init.html" class="sidebar-link">初始化计算</a></li><li><a href="/kangkang_blog/flex/item/item.html" class="sidebar-link">弹性元素</a></li><li><a href="/kangkang_blog/flex/container/container.html" class="sidebar-link">弹性容器</a></li><li><section class="sidebar-group collapsable is-sub-group depth-1"><p class="sidebar-heading"><span>外在影响因素</span> <span class="arrow right"></span></p> <!----></section></li><li><section class="sidebar-group collapsable is-sub-group depth-1"><p class="sidebar-heading open"><span>应用实例</span> <span class="arrow down"></span></p> <ul class="sidebar-links sidebar-group-items"><li><a href="/kangkang_blog/flex/example/example1.html" aria-current="page" class="active sidebar-link">表格hover组件</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/kangkang_blog/flex/example/example1.html#表格hover组件" class="sidebar-link">表格hover组件</a></li></ul></li><li><a href="/kangkang_blog/flex/example/example2.html" class="sidebar-link">示例2</a></li></ul></section></li></ul></section></li><li><a href="/kangkang_blog/vue/" class="sidebar-link">Vue.js</a></li><li><a href="/kangkang_blog/react/" class="sidebar-link">React.js</a></li><li><a href="/kangkang_blog/nodejs/" class="sidebar-link">Node.js</a></li><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading"><span>菜谱的自我修养</span> <span class="arrow right"></span></p> <!----></section></li><li><a href="/kangkang_blog/travel/" class="sidebar-link">旅行日记</a></li></ul> </aside> <main class="page"> <div class="theme-default-content content__default" data-v-53dcea0e data-v-53dcea0e><h2 id="表格hover组件" data-v-53dcea0e><a href="#表格hover组件" class="header-anchor" data-v-53dcea0e>#</a> 表格hover组件</h2> <blockquote data-v-53dcea0e><ul data-v-53dcea0e><li data-v-53dcea0e>移动端点击表格某一行，查看效果</li> <li data-v-53dcea0e>pc端悬浮即可查看hover效果</li></ul></blockquote> <div class="tableCss" data-v-53dcea0e><div class="el-table el-table--fit el-table--enable-row-hover el-table--enable-row-transition" style="width:100%;" data-v-53dcea0e><div class="hidden-columns"><div data-v-53dcea0e></div> <div data-v-53dcea0e></div> <div data-v-53dcea0e></div> <div data-v-53dcea0e></div></div><!----><div class="el-table__body-wrapper is-scrolling-none"><table cellspacing="0" cellpadding="0" border="0" class="el-table__body" style="width:;"><colgroup></colgroup><tbody><tr class="el-table__row"></tr><tr class="el-table__row"></tr><tr class="el-table__row"></tr><tr class="el-table__row"></tr><!----></tbody></table><!----><!----></div><!----><!----><!----><!----><div class="el-table__column-resize-proxy" style="display:none;"></div></div></div> <details class="custom-block details" data-v-53dcea0e><summary data-v-53dcea0e>查看ColumnHover.vue组件代码及引用方式</summary> <p data-v-53dcea0e><strong data-v-53dcea0e>引用方式</strong></p> <div class="language-html line-numbers-mode" data-v-53dcea0e><pre class="language-html" data-v-53dcea0e><code data-v-53dcea0e><span class="token tag" data-v-53dcea0e><span class="token tag" data-v-53dcea0e><span class="token punctuation" data-v-53dcea0e>&lt;</span>ColumnHover</span>
+  <span class="token attr-name" data-v-53dcea0e>:type</span><span class="token attr-value" data-v-53dcea0e><span class="token punctuation attr-equals" data-v-53dcea0e>=</span><span class="token punctuation" data-v-53dcea0e>&quot;</span>typeRender(scope.row.type)<span class="token punctuation" data-v-53dcea0e>&quot;</span></span>
+  <span class="token attr-name" data-v-53dcea0e>mode</span><span class="token attr-value" data-v-53dcea0e><span class="token punctuation attr-equals" data-v-53dcea0e>=</span><span class="token punctuation" data-v-53dcea0e>&quot;</span>row<span class="token punctuation" data-v-53dcea0e>&quot;</span></span>
+  <span class="token attr-name" data-v-53dcea0e>:content</span><span class="token attr-value" data-v-53dcea0e><span class="token punctuation attr-equals" data-v-53dcea0e>=</span><span class="token punctuation" data-v-53dcea0e>&quot;</span>scope.row.name<span class="token punctuation" data-v-53dcea0e>&quot;</span></span>
+  <span class="token attr-name" data-v-53dcea0e>:row</span><span class="token attr-value" data-v-53dcea0e><span class="token punctuation attr-equals" data-v-53dcea0e>=</span><span class="token punctuation" data-v-53dcea0e>&quot;</span>scope.row<span class="token punctuation" data-v-53dcea0e>&quot;</span></span>
+  <span class="token attr-name" data-v-53dcea0e>@clickContent</span><span class="token attr-value" data-v-53dcea0e><span class="token punctuation attr-equals" data-v-53dcea0e>=</span><span class="token punctuation" data-v-53dcea0e>&quot;</span>clickName<span class="token punctuation" data-v-53dcea0e>&quot;</span></span>
+  <span class="token attr-name" data-v-53dcea0e>:icon</span><span class="token attr-value" data-v-53dcea0e><span class="token punctuation attr-equals" data-v-53dcea0e>=</span><span class="token punctuation" data-v-53dcea0e>&quot;</span>iconRender(scope.row.type)<span class="token punctuation" data-v-53dcea0e>&quot;</span></span>
+  <span class="token attr-name" data-v-53dcea0e>:icon</span><span class="token style-attr language-css" data-v-53dcea0e><span class="token attr-name" data-v-53dcea0e><span class="token attr-name" data-v-53dcea0e>Style</span></span><span class="token punctuation" data-v-53dcea0e>=&quot;</span><span class="token attr-value" data-v-53dcea0e><span class="token function" data-v-53dcea0e>iconStyleRender</span><span class="token punctuation" data-v-53dcea0e>(</span>scope.row.type<span class="token punctuation" data-v-53dcea0e>)</span></span><span class="token punctuation" data-v-53dcea0e>&quot;</span></span>
+  <span class="token attr-name" data-v-53dcea0e>:iconList</span><span class="token attr-value" data-v-53dcea0e><span class="token punctuation attr-equals" data-v-53dcea0e>=</span><span class="token punctuation" data-v-53dcea0e>&quot;</span>iconList<span class="token punctuation" data-v-53dcea0e>&quot;</span></span><span class="token punctuation" data-v-53dcea0e>&gt;</span></span>
+<span class="token tag" data-v-53dcea0e><span class="token tag" data-v-53dcea0e><span class="token punctuation" data-v-53dcea0e>&lt;/</span>ColumnHover</span><span class="token punctuation" data-v-53dcea0e>&gt;</span></span>
+</code></pre> <div class="line-numbers-wrapper" data-v-53dcea0e><span class="line-number" data-v-53dcea0e>1</span><br data-v-53dcea0e><span class="line-number" data-v-53dcea0e>2</span><br data-v-53dcea0e><span class="line-number" data-v-53dcea0e>3</span><br data-v-53dcea0e><span class="line-number" data-v-53dcea0e>4</span><br data-v-53dcea0e><span class="line-number" data-v-53dcea0e>5</span><br data-v-53dcea0e><span class="line-number" data-v-53dcea0e>6</span><br data-v-53dcea0e><span class="line-number" data-v-53dcea0e>7</span><br data-v-53dcea0e><span class="line-number" data-v-53dcea0e>8</span><br data-v-53dcea0e><span class="line-number" data-v-53dcea0e>9</span><br data-v-53dcea0e><span class="line-number" data-v-53dcea0e>10</span><br data-v-53dcea0e></div></div><p data-v-53dcea0e><strong data-v-53dcea0e>源码</strong></p> <div class="language-vue line-numbers-mode" data-v-53dcea0e><pre class="language-vue" data-v-53dcea0e><code data-v-53dcea0e><span class="token tag" data-v-53dcea0e><span class="token tag" data-v-53dcea0e><span class="token punctuation" data-v-53dcea0e>&lt;</span>template</span><span class="token punctuation" data-v-53dcea0e>&gt;</span></span>
+  <span class="token tag" data-v-53dcea0e><span class="token tag" data-v-53dcea0e><span class="token punctuation" data-v-53dcea0e>&lt;</span>div</span> <span class="token attr-name" data-v-53dcea0e>class</span><span class="token attr-value" data-v-53dcea0e><span class="token punctuation attr-equals" data-v-53dcea0e>=</span><span class="token punctuation" data-v-53dcea0e>&quot;</span>column<span class="token punctuation" data-v-53dcea0e>&quot;</span></span><span class="token punctuation" data-v-53dcea0e>&gt;</span></span>
+    <span class="token tag" data-v-53dcea0e><span class="token tag" data-v-53dcea0e><span class="token punctuation" data-v-53dcea0e>&lt;</span>div</span> <span class="token attr-name" data-v-53dcea0e>class</span><span class="token attr-value" data-v-53dcea0e><span class="token punctuation attr-equals" data-v-53dcea0e>=</span><span class="token punctuation" data-v-53dcea0e>&quot;</span>column_content<span class="token punctuation" data-v-53dcea0e>&quot;</span></span><span class="token punctuation" data-v-53dcea0e>&gt;</span></span>
+      <span class="token tag" data-v-53dcea0e><span class="token tag" data-v-53dcea0e><span class="token punctuation" data-v-53dcea0e>&lt;</span>i</span> <span class="token attr-name" data-v-53dcea0e>:class</span><span class="token attr-value" data-v-53dcea0e><span class="token punctuation attr-equals" data-v-53dcea0e>=</span><span class="token punctuation" data-v-53dcea0e>&quot;</span>icon<span class="token punctuation" data-v-53dcea0e>&quot;</span></span> <span class="token attr-name" data-v-53dcea0e>v-if</span><span class="token attr-value" data-v-53dcea0e><span class="token punctuation attr-equals" data-v-53dcea0e>=</span><span class="token punctuation" data-v-53dcea0e>&quot;</span>!!icon<span class="token punctuation" data-v-53dcea0e>&quot;</span></span> <span class="token attr-name" data-v-53dcea0e>:</span><span class="token style-attr language-css" data-v-53dcea0e><span class="token attr-name" data-v-53dcea0e><span class="token attr-name" data-v-53dcea0e>style</span></span><span class="token punctuation" data-v-53dcea0e>=&quot;</span><span class="token attr-value" data-v-53dcea0e><span class="token string" data-v-53dcea0e>'margin-right: 5px; font-size: 1.3em;'</span>+ iconStyle</span><span class="token punctuation" data-v-53dcea0e>&quot;</span></span><span class="token punctuation" data-v-53dcea0e>&gt;</span></span><span class="token tag" data-v-53dcea0e><span class="token tag" data-v-53dcea0e><span class="token punctuation" data-v-53dcea0e>&lt;/</span>i</span><span class="token punctuation" data-v-53dcea0e>&gt;</span></span>
+      <span class="token tag" data-v-53dcea0e><span class="token tag" data-v-53dcea0e><span class="token punctuation" data-v-53dcea0e>&lt;</span>div</span> <span class="token attr-name" data-v-53dcea0e>:class</span><span class="token attr-value" data-v-53dcea0e><span class="token punctuation attr-equals" data-v-53dcea0e>=</span><span class="token punctuation" data-v-53dcea0e>&quot;</span>contentStyle<span class="token punctuation" data-v-53dcea0e>&quot;</span></span> <span class="token attr-name" data-v-53dcea0e>:title</span><span class="token attr-value" data-v-53dcea0e><span class="token punctuation attr-equals" data-v-53dcea0e>=</span><span class="token punctuation" data-v-53dcea0e>&quot;</span>content<span class="token punctuation" data-v-53dcea0e>&quot;</span></span> <span class="token attr-name" data-v-53dcea0e>@click</span><span class="token attr-value" data-v-53dcea0e><span class="token punctuation attr-equals" data-v-53dcea0e>=</span><span class="token punctuation" data-v-53dcea0e>&quot;</span>clickFun<span class="token punctuation" data-v-53dcea0e>&quot;</span></span><span class="token punctuation" data-v-53dcea0e>&gt;</span></span>{{content}}<span class="token tag" data-v-53dcea0e><span class="token tag" data-v-53dcea0e><span class="token punctuation" data-v-53dcea0e>&lt;/</span>div</span><span class="token punctuation" data-v-53dcea0e>&gt;</span></span>
+    <span class="token tag" data-v-53dcea0e><span class="token tag" data-v-53dcea0e><span class="token punctuation" data-v-53dcea0e>&lt;/</span>div</span><span class="token punctuation" data-v-53dcea0e>&gt;</span></span>
+    <span class="token tag" data-v-53dcea0e><span class="token tag" data-v-53dcea0e><span class="token punctuation" data-v-53dcea0e>&lt;</span>div</span> <span class="token attr-name" data-v-53dcea0e>:class</span><span class="token attr-value" data-v-53dcea0e><span class="token punctuation attr-equals" data-v-53dcea0e>=</span><span class="token punctuation" data-v-53dcea0e>&quot;</span>showMode + <span class="token punctuation" data-v-53dcea0e>'</span> column_icon<span class="token punctuation" data-v-53dcea0e>'</span><span class="token punctuation" data-v-53dcea0e>&quot;</span></span> <span class="token attr-name" data-v-53dcea0e>v-if</span><span class="token attr-value" data-v-53dcea0e><span class="token punctuation attr-equals" data-v-53dcea0e>=</span><span class="token punctuation" data-v-53dcea0e>&quot;</span>showIconListFlag<span class="token punctuation" data-v-53dcea0e>&quot;</span></span><span class="token punctuation" data-v-53dcea0e>&gt;</span></span>
+      <span class="token tag" data-v-53dcea0e><span class="token tag" data-v-53dcea0e><span class="token punctuation" data-v-53dcea0e>&lt;</span>i</span> <span class="token attr-name" data-v-53dcea0e>v-for</span><span class="token attr-value" data-v-53dcea0e><span class="token punctuation attr-equals" data-v-53dcea0e>=</span><span class="token punctuation" data-v-53dcea0e>&quot;</span>(item, index) in icons<span class="token punctuation" data-v-53dcea0e>&quot;</span></span> <span class="token attr-name" data-v-53dcea0e>:key</span><span class="token attr-value" data-v-53dcea0e><span class="token punctuation attr-equals" data-v-53dcea0e>=</span><span class="token punctuation" data-v-53dcea0e>&quot;</span>index<span class="token punctuation" data-v-53dcea0e>&quot;</span></span> <span class="token attr-name" data-v-53dcea0e>:class</span><span class="token attr-value" data-v-53dcea0e><span class="token punctuation attr-equals" data-v-53dcea0e>=</span><span class="token punctuation" data-v-53dcea0e>&quot;</span>item.icon<span class="token punctuation" data-v-53dcea0e>&quot;</span></span> <span class="token attr-name" data-v-53dcea0e>@click</span><span class="token attr-value" data-v-53dcea0e><span class="token punctuation attr-equals" data-v-53dcea0e>=</span><span class="token punctuation" data-v-53dcea0e>&quot;</span>item.handler(row)<span class="token punctuation" data-v-53dcea0e>&quot;</span></span><span class="token punctuation" data-v-53dcea0e>&gt;</span></span><span class="token tag" data-v-53dcea0e><span class="token tag" data-v-53dcea0e><span class="token punctuation" data-v-53dcea0e>&lt;/</span>i</span><span class="token punctuation" data-v-53dcea0e>&gt;</span></span>
+    <span class="token tag" data-v-53dcea0e><span class="token tag" data-v-53dcea0e><span class="token punctuation" data-v-53dcea0e>&lt;/</span>div</span><span class="token punctuation" data-v-53dcea0e>&gt;</span></span>
+  <span class="token tag" data-v-53dcea0e><span class="token tag" data-v-53dcea0e><span class="token punctuation" data-v-53dcea0e>&lt;/</span>div</span><span class="token punctuation" data-v-53dcea0e>&gt;</span></span>
+<span class="token tag" data-v-53dcea0e><span class="token tag" data-v-53dcea0e><span class="token punctuation" data-v-53dcea0e>&lt;/</span>template</span><span class="token punctuation" data-v-53dcea0e>&gt;</span></span>
+
+<span class="token tag" data-v-53dcea0e><span class="token tag" data-v-53dcea0e><span class="token punctuation" data-v-53dcea0e>&lt;</span>script</span><span class="token punctuation" data-v-53dcea0e>&gt;</span></span><span class="token script" data-v-53dcea0e><span class="token language-javascript" data-v-53dcea0e>
+<span class="token keyword" data-v-53dcea0e>export</span> <span class="token keyword" data-v-53dcea0e>default</span> <span class="token punctuation" data-v-53dcea0e>{</span>
+  name<span class="token operator" data-v-53dcea0e>:</span> <span class="token string" data-v-53dcea0e>'ColumnHover'</span><span class="token punctuation" data-v-53dcea0e>,</span>
+  props<span class="token operator" data-v-53dcea0e>:</span> <span class="token punctuation" data-v-53dcea0e>[</span><span class="token string" data-v-53dcea0e>&quot;icon&quot;</span><span class="token punctuation" data-v-53dcea0e>,</span> <span class="token string" data-v-53dcea0e>&quot;type&quot;</span><span class="token punctuation" data-v-53dcea0e>,</span> <span class="token string" data-v-53dcea0e>&quot;iconStyle&quot;</span><span class="token punctuation" data-v-53dcea0e>,</span> <span class="token string" data-v-53dcea0e>&quot;row&quot;</span><span class="token punctuation" data-v-53dcea0e>,</span> <span class="token string" data-v-53dcea0e>&quot;content&quot;</span><span class="token punctuation" data-v-53dcea0e>,</span> <span class="token string" data-v-53dcea0e>&quot;iconList&quot;</span><span class="token punctuation" data-v-53dcea0e>,</span> <span class="token string" data-v-53dcea0e>&quot;mode&quot;</span><span class="token punctuation" data-v-53dcea0e>]</span><span class="token punctuation" data-v-53dcea0e>,</span>
+  <span class="token function" data-v-53dcea0e>data</span> <span class="token punctuation" data-v-53dcea0e>(</span><span class="token punctuation" data-v-53dcea0e>)</span> <span class="token punctuation" data-v-53dcea0e>{</span>
+    <span class="token keyword" data-v-53dcea0e>return</span> <span class="token punctuation" data-v-53dcea0e>{</span>
+      contentStyle<span class="token operator" data-v-53dcea0e>:</span> <span class="token string" data-v-53dcea0e>&quot;&quot;</span><span class="token punctuation" data-v-53dcea0e>,</span>
+      showIconListFlag<span class="token operator" data-v-53dcea0e>:</span> <span class="token boolean" data-v-53dcea0e>false</span><span class="token punctuation" data-v-53dcea0e>,</span>
+      icons<span class="token operator" data-v-53dcea0e>:</span> <span class="token punctuation" data-v-53dcea0e>[</span><span class="token punctuation" data-v-53dcea0e>]</span><span class="token punctuation" data-v-53dcea0e>,</span>
+      showMode<span class="token operator" data-v-53dcea0e>:</span> <span class="token string" data-v-53dcea0e>&quot;&quot;</span>
+    <span class="token punctuation" data-v-53dcea0e>}</span><span class="token punctuation" data-v-53dcea0e>;</span>
+  <span class="token punctuation" data-v-53dcea0e>}</span><span class="token punctuation" data-v-53dcea0e>,</span>
+  <span class="token function" data-v-53dcea0e>mounted</span> <span class="token punctuation" data-v-53dcea0e>(</span><span class="token punctuation" data-v-53dcea0e>)</span> <span class="token punctuation" data-v-53dcea0e>{</span>
+    <span class="token keyword" data-v-53dcea0e>let</span> self <span class="token operator" data-v-53dcea0e>=</span> <span class="token keyword" data-v-53dcea0e>this</span><span class="token punctuation" data-v-53dcea0e>;</span>
+    <span class="token keyword" data-v-53dcea0e>if</span> <span class="token punctuation" data-v-53dcea0e>(</span><span class="token keyword" data-v-53dcea0e>this</span><span class="token punctuation" data-v-53dcea0e>.</span>type <span class="token operator" data-v-53dcea0e>===</span> <span class="token string" data-v-53dcea0e>&quot;text&quot;</span><span class="token punctuation" data-v-53dcea0e>)</span> <span class="token punctuation" data-v-53dcea0e>{</span>
+      <span class="token keyword" data-v-53dcea0e>this</span><span class="token punctuation" data-v-53dcea0e>.</span>contentStyle <span class="token operator" data-v-53dcea0e>=</span> <span class="token string" data-v-53dcea0e>&quot;content&quot;</span><span class="token punctuation" data-v-53dcea0e>;</span>
+    <span class="token punctuation" data-v-53dcea0e>}</span> <span class="token keyword" data-v-53dcea0e>else</span> <span class="token punctuation" data-v-53dcea0e>{</span>
+      <span class="token keyword" data-v-53dcea0e>this</span><span class="token punctuation" data-v-53dcea0e>.</span>contentStyle <span class="token operator" data-v-53dcea0e>=</span> <span class="token string" data-v-53dcea0e>&quot;content el-button--text&quot;</span><span class="token punctuation" data-v-53dcea0e>;</span>
+    <span class="token punctuation" data-v-53dcea0e>}</span>
+    <span class="token keyword" data-v-53dcea0e>if</span> <span class="token punctuation" data-v-53dcea0e>(</span><span class="token keyword" data-v-53dcea0e>this</span><span class="token punctuation" data-v-53dcea0e>.</span>mode <span class="token operator" data-v-53dcea0e>!==</span> <span class="token string" data-v-53dcea0e>&quot;column&quot;</span><span class="token punctuation" data-v-53dcea0e>)</span> <span class="token punctuation" data-v-53dcea0e>{</span>
+      <span class="token keyword" data-v-53dcea0e>this</span><span class="token punctuation" data-v-53dcea0e>.</span>mode <span class="token operator" data-v-53dcea0e>=</span> <span class="token string" data-v-53dcea0e>&quot;row&quot;</span><span class="token punctuation" data-v-53dcea0e>;</span>
+    <span class="token punctuation" data-v-53dcea0e>}</span>
+    <span class="token keyword" data-v-53dcea0e>this</span><span class="token punctuation" data-v-53dcea0e>.</span>showMode <span class="token operator" data-v-53dcea0e>=</span> <span class="token keyword" data-v-53dcea0e>this</span><span class="token punctuation" data-v-53dcea0e>.</span>mode<span class="token punctuation" data-v-53dcea0e>;</span>
+    <span class="token keyword" data-v-53dcea0e>this</span><span class="token punctuation" data-v-53dcea0e>.</span><span class="token function" data-v-53dcea0e>init</span><span class="token punctuation" data-v-53dcea0e>(</span><span class="token punctuation" data-v-53dcea0e>)</span><span class="token punctuation" data-v-53dcea0e>;</span>
+    <span class="token keyword" data-v-53dcea0e>if</span> <span class="token punctuation" data-v-53dcea0e>(</span><span class="token operator" data-v-53dcea0e>!</span><span class="token keyword" data-v-53dcea0e>this</span><span class="token punctuation" data-v-53dcea0e>.</span>row<span class="token punctuation" data-v-53dcea0e>)</span> <span class="token punctuation" data-v-53dcea0e>{</span>
+      <span class="token keyword" data-v-53dcea0e>throw</span> <span class="token keyword" data-v-53dcea0e>new</span> <span class="token class-name" data-v-53dcea0e>Error</span><span class="token punctuation" data-v-53dcea0e>(</span><span class="token string" data-v-53dcea0e>&quot;The prop 'row' is Required&quot;</span><span class="token punctuation" data-v-53dcea0e>)</span><span class="token punctuation" data-v-53dcea0e>;</span>
+    <span class="token punctuation" data-v-53dcea0e>}</span>
+  <span class="token punctuation" data-v-53dcea0e>}</span><span class="token punctuation" data-v-53dcea0e>,</span>
+  methods<span class="token operator" data-v-53dcea0e>:</span> <span class="token punctuation" data-v-53dcea0e>{</span>
+    <span class="token function" data-v-53dcea0e>init</span> <span class="token punctuation" data-v-53dcea0e>(</span><span class="token punctuation" data-v-53dcea0e>)</span> <span class="token punctuation" data-v-53dcea0e>{</span>
+      <span class="token keyword" data-v-53dcea0e>this</span><span class="token punctuation" data-v-53dcea0e>.</span>icons <span class="token operator" data-v-53dcea0e>=</span> <span class="token punctuation" data-v-53dcea0e>[</span><span class="token punctuation" data-v-53dcea0e>]</span><span class="token punctuation" data-v-53dcea0e>;</span>
+      <span class="token keyword" data-v-53dcea0e>this</span><span class="token punctuation" data-v-53dcea0e>.</span>iconList<span class="token punctuation" data-v-53dcea0e>.</span><span class="token function" data-v-53dcea0e>forEach</span><span class="token punctuation" data-v-53dcea0e>(</span><span class="token parameter" data-v-53dcea0e>item</span> <span class="token operator" data-v-53dcea0e>=&gt;</span> <span class="token punctuation" data-v-53dcea0e>{</span>
+        <span class="token keyword" data-v-53dcea0e>if</span> <span class="token punctuation" data-v-53dcea0e>(</span>item<span class="token punctuation" data-v-53dcea0e>.</span>icon <span class="token operator" data-v-53dcea0e>&amp;&amp;</span> <span class="token class-name" data-v-53dcea0e>Object</span><span class="token punctuation" data-v-53dcea0e>.</span>prototype<span class="token punctuation" data-v-53dcea0e>.</span><span class="token function" data-v-53dcea0e>toString</span><span class="token punctuation" data-v-53dcea0e>.</span><span class="token function" data-v-53dcea0e>call</span><span class="token punctuation" data-v-53dcea0e>(</span>item<span class="token punctuation" data-v-53dcea0e>.</span>handler<span class="token punctuation" data-v-53dcea0e>)</span> <span class="token operator" data-v-53dcea0e>===</span> <span class="token string" data-v-53dcea0e>&quot;[object Function]&quot;</span><span class="token punctuation" data-v-53dcea0e>)</span> <span class="token punctuation" data-v-53dcea0e>{</span>
+          <span class="token keyword" data-v-53dcea0e>if</span> <span class="token punctuation" data-v-53dcea0e>(</span>item<span class="token punctuation" data-v-53dcea0e>.</span>enabled <span class="token operator" data-v-53dcea0e>===</span> <span class="token keyword" data-v-53dcea0e>undefined</span> <span class="token operator" data-v-53dcea0e>||</span> item<span class="token punctuation" data-v-53dcea0e>.</span>enabled <span class="token operator" data-v-53dcea0e>===</span> <span class="token boolean" data-v-53dcea0e>true</span> <span class="token operator" data-v-53dcea0e>||</span> <span class="token punctuation" data-v-53dcea0e>(</span><span class="token class-name" data-v-53dcea0e>Object</span><span class="token punctuation" data-v-53dcea0e>.</span>prototype<span class="token punctuation" data-v-53dcea0e>.</span><span class="token function" data-v-53dcea0e>toString</span><span class="token punctuation" data-v-53dcea0e>.</span><span class="token function" data-v-53dcea0e>call</span><span class="token punctuation" data-v-53dcea0e>(</span>item<span class="token punctuation" data-v-53dcea0e>.</span>enabled<span class="token punctuation" data-v-53dcea0e>)</span> <span class="token operator" data-v-53dcea0e>===</span> <span class="token string" data-v-53dcea0e>&quot;[object Function]&quot;</span> <span class="token operator" data-v-53dcea0e>&amp;&amp;</span> item<span class="token punctuation" data-v-53dcea0e>.</span><span class="token function" data-v-53dcea0e>enabled</span><span class="token punctuation" data-v-53dcea0e>(</span><span class="token keyword" data-v-53dcea0e>this</span><span class="token punctuation" data-v-53dcea0e>.</span>row<span class="token punctuation" data-v-53dcea0e>)</span> <span class="token operator" data-v-53dcea0e>===</span> <span class="token boolean" data-v-53dcea0e>true</span><span class="token punctuation" data-v-53dcea0e>)</span><span class="token punctuation" data-v-53dcea0e>)</span> <span class="token punctuation" data-v-53dcea0e>{</span>
+            <span class="token keyword" data-v-53dcea0e>this</span><span class="token punctuation" data-v-53dcea0e>.</span>icons<span class="token punctuation" data-v-53dcea0e>.</span><span class="token function" data-v-53dcea0e>push</span><span class="token punctuation" data-v-53dcea0e>(</span><span class="token punctuation" data-v-53dcea0e>{</span>
+              icon<span class="token operator" data-v-53dcea0e>:</span> item<span class="token punctuation" data-v-53dcea0e>.</span>icon<span class="token punctuation" data-v-53dcea0e>,</span>
+              handler<span class="token operator" data-v-53dcea0e>:</span> item<span class="token punctuation" data-v-53dcea0e>.</span>handler
+            <span class="token punctuation" data-v-53dcea0e>}</span><span class="token punctuation" data-v-53dcea0e>)</span><span class="token punctuation" data-v-53dcea0e>;</span>
+          <span class="token punctuation" data-v-53dcea0e>}</span>
+        <span class="token punctuation" data-v-53dcea0e>}</span>
+      <span class="token punctuation" data-v-53dcea0e>}</span><span class="token punctuation" data-v-53dcea0e>)</span><span class="token punctuation" data-v-53dcea0e>;</span>
+      <span class="token keyword" data-v-53dcea0e>if</span> <span class="token punctuation" data-v-53dcea0e>(</span><span class="token keyword" data-v-53dcea0e>this</span><span class="token punctuation" data-v-53dcea0e>.</span>icons<span class="token punctuation" data-v-53dcea0e>.</span>length <span class="token operator" data-v-53dcea0e>&gt;</span> <span class="token number" data-v-53dcea0e>0</span><span class="token punctuation" data-v-53dcea0e>)</span> <span class="token punctuation" data-v-53dcea0e>{</span>
+        <span class="token keyword" data-v-53dcea0e>this</span><span class="token punctuation" data-v-53dcea0e>.</span>showIconListFlag <span class="token operator" data-v-53dcea0e>=</span> <span class="token boolean" data-v-53dcea0e>true</span><span class="token punctuation" data-v-53dcea0e>;</span>
+      <span class="token punctuation" data-v-53dcea0e>}</span> <span class="token keyword" data-v-53dcea0e>else</span> <span class="token punctuation" data-v-53dcea0e>{</span>
+        <span class="token keyword" data-v-53dcea0e>this</span><span class="token punctuation" data-v-53dcea0e>.</span>showIconListFlag <span class="token operator" data-v-53dcea0e>=</span> <span class="token boolean" data-v-53dcea0e>false</span><span class="token punctuation" data-v-53dcea0e>;</span>
+      <span class="token punctuation" data-v-53dcea0e>}</span>
+    <span class="token punctuation" data-v-53dcea0e>}</span><span class="token punctuation" data-v-53dcea0e>,</span>
+    <span class="token function" data-v-53dcea0e>clickFun</span> <span class="token punctuation" data-v-53dcea0e>(</span><span class="token punctuation" data-v-53dcea0e>)</span> <span class="token punctuation" data-v-53dcea0e>{</span>
+      <span class="token keyword" data-v-53dcea0e>if</span> <span class="token punctuation" data-v-53dcea0e>(</span><span class="token keyword" data-v-53dcea0e>this</span><span class="token punctuation" data-v-53dcea0e>.</span>type <span class="token operator" data-v-53dcea0e>===</span> <span class="token string" data-v-53dcea0e>&quot;text&quot;</span><span class="token punctuation" data-v-53dcea0e>)</span> <span class="token punctuation" data-v-53dcea0e>{</span>
+        <span class="token keyword" data-v-53dcea0e>return</span> <span class="token boolean" data-v-53dcea0e>false</span><span class="token punctuation" data-v-53dcea0e>;</span>
+      <span class="token punctuation" data-v-53dcea0e>}</span> <span class="token keyword" data-v-53dcea0e>else</span> <span class="token punctuation" data-v-53dcea0e>{</span>
+        <span class="token keyword" data-v-53dcea0e>this</span><span class="token punctuation" data-v-53dcea0e>.</span><span class="token function" data-v-53dcea0e>$emit</span><span class="token punctuation" data-v-53dcea0e>(</span><span class="token string" data-v-53dcea0e>&quot;clickContent&quot;</span><span class="token punctuation" data-v-53dcea0e>,</span> <span class="token keyword" data-v-53dcea0e>this</span><span class="token punctuation" data-v-53dcea0e>.</span>row<span class="token punctuation" data-v-53dcea0e>)</span><span class="token punctuation" data-v-53dcea0e>;</span>
+      <span class="token punctuation" data-v-53dcea0e>}</span>
+    <span class="token punctuation" data-v-53dcea0e>}</span>
+  <span class="token punctuation" data-v-53dcea0e>}</span>
+<span class="token punctuation" data-v-53dcea0e>}</span><span class="token punctuation" data-v-53dcea0e>;</span>
+</span></span><span class="token tag" data-v-53dcea0e><span class="token tag" data-v-53dcea0e><span class="token punctuation" data-v-53dcea0e>&lt;/</span>script</span><span class="token punctuation" data-v-53dcea0e>&gt;</span></span>
+<span class="token tag" data-v-53dcea0e><span class="token tag" data-v-53dcea0e><span class="token punctuation" data-v-53dcea0e>&lt;</span>style</span> <span class="token attr-name" data-v-53dcea0e>scoped</span><span class="token punctuation" data-v-53dcea0e>&gt;</span></span><span class="token style" data-v-53dcea0e><span class="token language-css" data-v-53dcea0e>
+<span class="token selector" data-v-53dcea0e>.column</span> <span class="token punctuation" data-v-53dcea0e>{</span>
+  <span class="token property" data-v-53dcea0e>display</span><span class="token punctuation" data-v-53dcea0e>:</span> flex<span class="token punctuation" data-v-53dcea0e>;</span>
+  <span class="token property" data-v-53dcea0e>flex-direction</span><span class="token punctuation" data-v-53dcea0e>:</span> row<span class="token punctuation" data-v-53dcea0e>;</span>
+  <span class="token property" data-v-53dcea0e>align-items</span><span class="token punctuation" data-v-53dcea0e>:</span> center<span class="token punctuation" data-v-53dcea0e>;</span>
+<span class="token punctuation" data-v-53dcea0e>}</span>
+<span class="token selector" data-v-53dcea0e>.column_content</span> <span class="token punctuation" data-v-53dcea0e>{</span>
+  <span class="token property" data-v-53dcea0e>flex</span><span class="token punctuation" data-v-53dcea0e>:</span> 1<span class="token punctuation" data-v-53dcea0e>;</span>
+  <span class="token property" data-v-53dcea0e>min-width</span><span class="token punctuation" data-v-53dcea0e>:</span> 0<span class="token punctuation" data-v-53dcea0e>;</span>
+  <span class="token property" data-v-53dcea0e>display</span><span class="token punctuation" data-v-53dcea0e>:</span> flex<span class="token punctuation" data-v-53dcea0e>;</span>
+  <span class="token property" data-v-53dcea0e>align-items</span><span class="token punctuation" data-v-53dcea0e>:</span> center<span class="token punctuation" data-v-53dcea0e>;</span>
+<span class="token punctuation" data-v-53dcea0e>}</span>
+<span class="token selector" data-v-53dcea0e>.column_icon</span> <span class="token punctuation" data-v-53dcea0e>{</span>
+  <span class="token property" data-v-53dcea0e>display</span><span class="token punctuation" data-v-53dcea0e>:</span> none<span class="token punctuation" data-v-53dcea0e>;</span>
+ <span class="token punctuation" data-v-53dcea0e>}</span>
+<span class="token selector" data-v-53dcea0e>.content</span> <span class="token punctuation" data-v-53dcea0e>{</span>
+  <span class="token property" data-v-53dcea0e>overflow</span><span class="token punctuation" data-v-53dcea0e>:</span> hidden<span class="token punctuation" data-v-53dcea0e>;</span>
+  <span class="token property" data-v-53dcea0e>text-overflow</span><span class="token punctuation" data-v-53dcea0e>:</span> ellipsis<span class="token punctuation" data-v-53dcea0e>;</span>
+  <span class="token property" data-v-53dcea0e>white-space</span><span class="token punctuation" data-v-53dcea0e>:</span> inherit<span class="token punctuation" data-v-53dcea0e>;</span>
+  <span class="token property" data-v-53dcea0e>cursor</span><span class="token punctuation" data-v-53dcea0e>:</span> pointer<span class="token punctuation" data-v-53dcea0e>;</span>
+<span class="token punctuation" data-v-53dcea0e>}</span>
+<span class="token selector" data-v-53dcea0e>.column_icon i</span> <span class="token punctuation" data-v-53dcea0e>{</span>
+  <span class="token property" data-v-53dcea0e>margin</span><span class="token punctuation" data-v-53dcea0e>:</span> 5px 5px<span class="token punctuation" data-v-53dcea0e>;</span>
+  <span class="token property" data-v-53dcea0e>font</span><span class="token punctuation" data-v-53dcea0e>:</span> 1.5em<span class="token punctuation" data-v-53dcea0e>;</span>
+  <span class="token property" data-v-53dcea0e>display</span><span class="token punctuation" data-v-53dcea0e>:</span> inline-block<span class="token punctuation" data-v-53dcea0e>;</span>
+<span class="token punctuation" data-v-53dcea0e>}</span>
+<span class="token selector" data-v-53dcea0e>.column_icon i:hover</span> <span class="token punctuation" data-v-53dcea0e>{</span>
+  <span class="token property" data-v-53dcea0e>color</span><span class="token punctuation" data-v-53dcea0e>:</span> #409EFF<span class="token punctuation" data-v-53dcea0e>;</span>
+  <span class="token property" data-v-53dcea0e>cursor</span><span class="token punctuation" data-v-53dcea0e>:</span> pointer<span class="token punctuation" data-v-53dcea0e>;</span>
+<span class="token punctuation" data-v-53dcea0e>}</span>
+<span class="token atrule" data-v-53dcea0e><span class="token rule" data-v-53dcea0e>@media</span> <span class="token keyword" data-v-53dcea0e>only</span> screen <span class="token keyword" data-v-53dcea0e>and</span> <span class="token punctuation" data-v-53dcea0e>(</span><span class="token property" data-v-53dcea0e>max-width</span><span class="token punctuation" data-v-53dcea0e>:</span> 500px<span class="token punctuation" data-v-53dcea0e>)</span></span> <span class="token punctuation" data-v-53dcea0e>{</span>
+  <span class="token selector" data-v-53dcea0e>.column_content</span> <span class="token punctuation" data-v-53dcea0e>{</span>
+    <span class="token property" data-v-53dcea0e>max-width</span><span class="token punctuation" data-v-53dcea0e>:</span> 200px<span class="token punctuation" data-v-53dcea0e>;</span>
+  <span class="token punctuation" data-v-53dcea0e>}</span>
+  <span class="token selector" data-v-53dcea0e>.content</span> <span class="token punctuation" data-v-53dcea0e>{</span>
+    <span class="token property" data-v-53dcea0e>white-space</span><span class="token punctuation" data-v-53dcea0e>:</span> initial<span class="token punctuation" data-v-53dcea0e>;</span>
+  <span class="token punctuation" data-v-53dcea0e>}</span>
+<span class="token punctuation" data-v-53dcea0e>}</span>
+</span></span><span class="token tag" data-v-53dcea0e><span class="token tag" data-v-53dcea0e><span class="token punctuation" data-v-53dcea0e>&lt;/</span>style</span><span class="token punctuation" data-v-53dcea0e>&gt;</span></span>
+</code></pre> <div class="line-numbers-wrapper" data-v-53dcea0e><span class="line-number" data-v-53dcea0e>1</span><br data-v-53dcea0e><span class="line-number" data-v-53dcea0e>2</span><br data-v-53dcea0e><span class="line-number" data-v-53dcea0e>3</span><br data-v-53dcea0e><span class="line-number" data-v-53dcea0e>4</span><br data-v-53dcea0e><span class="line-number" data-v-53dcea0e>5</span><br data-v-53dcea0e><span class="line-number" data-v-53dcea0e>6</span><br data-v-53dcea0e><span class="line-number" data-v-53dcea0e>7</span><br data-v-53dcea0e><span class="line-number" data-v-53dcea0e>8</span><br data-v-53dcea0e><span class="line-number" data-v-53dcea0e>9</span><br data-v-53dcea0e><span class="line-number" data-v-53dcea0e>10</span><br data-v-53dcea0e><span class="line-number" data-v-53dcea0e>11</span><br data-v-53dcea0e><span class="line-number" data-v-53dcea0e>12</span><br data-v-53dcea0e><span class="line-number" data-v-53dcea0e>13</span><br data-v-53dcea0e><span class="line-number" data-v-53dcea0e>14</span><br data-v-53dcea0e><span class="line-number" data-v-53dcea0e>15</span><br data-v-53dcea0e><span class="line-number" data-v-53dcea0e>16</span><br data-v-53dcea0e><span class="line-number" data-v-53dcea0e>17</span><br data-v-53dcea0e><span class="line-number" data-v-53dcea0e>18</span><br data-v-53dcea0e><span class="line-number" data-v-53dcea0e>19</span><br data-v-53dcea0e><span class="line-number" data-v-53dcea0e>20</span><br data-v-53dcea0e><span class="line-number" data-v-53dcea0e>21</span><br data-v-53dcea0e><span class="line-number" data-v-53dcea0e>22</span><br data-v-53dcea0e><span class="line-number" data-v-53dcea0e>23</span><br data-v-53dcea0e><span class="line-number" data-v-53dcea0e>24</span><br data-v-53dcea0e><span class="line-number" data-v-53dcea0e>25</span><br data-v-53dcea0e><span class="line-number" data-v-53dcea0e>26</span><br data-v-53dcea0e><span class="line-number" data-v-53dcea0e>27</span><br data-v-53dcea0e><span class="line-number" data-v-53dcea0e>28</span><br data-v-53dcea0e><span class="line-number" data-v-53dcea0e>29</span><br data-v-53dcea0e><span class="line-number" data-v-53dcea0e>30</span><br data-v-53dcea0e><span class="line-number" data-v-53dcea0e>31</span><br data-v-53dcea0e><span class="line-number" data-v-53dcea0e>32</span><br data-v-53dcea0e><span class="line-number" data-v-53dcea0e>33</span><br data-v-53dcea0e><span class="line-number" data-v-53dcea0e>34</span><br data-v-53dcea0e><span class="line-number" data-v-53dcea0e>35</span><br data-v-53dcea0e><span class="line-number" data-v-53dcea0e>36</span><br data-v-53dcea0e><span class="line-number" data-v-53dcea0e>37</span><br data-v-53dcea0e><span class="line-number" data-v-53dcea0e>38</span><br data-v-53dcea0e><span class="line-number" data-v-53dcea0e>39</span><br data-v-53dcea0e><span class="line-number" data-v-53dcea0e>40</span><br data-v-53dcea0e><span class="line-number" data-v-53dcea0e>41</span><br data-v-53dcea0e><span class="line-number" data-v-53dcea0e>42</span><br data-v-53dcea0e><span class="line-number" data-v-53dcea0e>43</span><br data-v-53dcea0e><span class="line-number" data-v-53dcea0e>44</span><br data-v-53dcea0e><span class="line-number" data-v-53dcea0e>45</span><br data-v-53dcea0e><span class="line-number" data-v-53dcea0e>46</span><br data-v-53dcea0e><span class="line-number" data-v-53dcea0e>47</span><br data-v-53dcea0e><span class="line-number" data-v-53dcea0e>48</span><br data-v-53dcea0e><span class="line-number" data-v-53dcea0e>49</span><br data-v-53dcea0e><span class="line-number" data-v-53dcea0e>50</span><br data-v-53dcea0e><span class="line-number" data-v-53dcea0e>51</span><br data-v-53dcea0e><span class="line-number" data-v-53dcea0e>52</span><br data-v-53dcea0e><span class="line-number" data-v-53dcea0e>53</span><br data-v-53dcea0e><span class="line-number" data-v-53dcea0e>54</span><br data-v-53dcea0e><span class="line-number" data-v-53dcea0e>55</span><br data-v-53dcea0e><span class="line-number" data-v-53dcea0e>56</span><br data-v-53dcea0e><span class="line-number" data-v-53dcea0e>57</span><br data-v-53dcea0e><span class="line-number" data-v-53dcea0e>58</span><br data-v-53dcea0e><span class="line-number" data-v-53dcea0e>59</span><br data-v-53dcea0e><span class="line-number" data-v-53dcea0e>60</span><br data-v-53dcea0e><span class="line-number" data-v-53dcea0e>61</span><br data-v-53dcea0e><span class="line-number" data-v-53dcea0e>62</span><br data-v-53dcea0e><span class="line-number" data-v-53dcea0e>63</span><br data-v-53dcea0e><span class="line-number" data-v-53dcea0e>64</span><br data-v-53dcea0e><span class="line-number" data-v-53dcea0e>65</span><br data-v-53dcea0e><span class="line-number" data-v-53dcea0e>66</span><br data-v-53dcea0e><span class="line-number" data-v-53dcea0e>67</span><br data-v-53dcea0e><span class="line-number" data-v-53dcea0e>68</span><br data-v-53dcea0e><span class="line-number" data-v-53dcea0e>69</span><br data-v-53dcea0e><span class="line-number" data-v-53dcea0e>70</span><br data-v-53dcea0e><span class="line-number" data-v-53dcea0e>71</span><br data-v-53dcea0e><span class="line-number" data-v-53dcea0e>72</span><br data-v-53dcea0e><span class="line-number" data-v-53dcea0e>73</span><br data-v-53dcea0e><span class="line-number" data-v-53dcea0e>74</span><br data-v-53dcea0e><span class="line-number" data-v-53dcea0e>75</span><br data-v-53dcea0e><span class="line-number" data-v-53dcea0e>76</span><br data-v-53dcea0e><span class="line-number" data-v-53dcea0e>77</span><br data-v-53dcea0e><span class="line-number" data-v-53dcea0e>78</span><br data-v-53dcea0e><span class="line-number" data-v-53dcea0e>79</span><br data-v-53dcea0e><span class="line-number" data-v-53dcea0e>80</span><br data-v-53dcea0e><span class="line-number" data-v-53dcea0e>81</span><br data-v-53dcea0e><span class="line-number" data-v-53dcea0e>82</span><br data-v-53dcea0e><span class="line-number" data-v-53dcea0e>83</span><br data-v-53dcea0e><span class="line-number" data-v-53dcea0e>84</span><br data-v-53dcea0e><span class="line-number" data-v-53dcea0e>85</span><br data-v-53dcea0e><span class="line-number" data-v-53dcea0e>86</span><br data-v-53dcea0e><span class="line-number" data-v-53dcea0e>87</span><br data-v-53dcea0e><span class="line-number" data-v-53dcea0e>88</span><br data-v-53dcea0e><span class="line-number" data-v-53dcea0e>89</span><br data-v-53dcea0e><span class="line-number" data-v-53dcea0e>90</span><br data-v-53dcea0e><span class="line-number" data-v-53dcea0e>91</span><br data-v-53dcea0e><span class="line-number" data-v-53dcea0e>92</span><br data-v-53dcea0e><span class="line-number" data-v-53dcea0e>93</span><br data-v-53dcea0e><span class="line-number" data-v-53dcea0e>94</span><br data-v-53dcea0e><span class="line-number" data-v-53dcea0e>95</span><br data-v-53dcea0e><span class="line-number" data-v-53dcea0e>96</span><br data-v-53dcea0e><span class="line-number" data-v-53dcea0e>97</span><br data-v-53dcea0e><span class="line-number" data-v-53dcea0e>98</span><br data-v-53dcea0e><span class="line-number" data-v-53dcea0e>99</span><br data-v-53dcea0e><span class="line-number" data-v-53dcea0e>100</span><br data-v-53dcea0e><span class="line-number" data-v-53dcea0e>101</span><br data-v-53dcea0e><span class="line-number" data-v-53dcea0e>102</span><br data-v-53dcea0e><span class="line-number" data-v-53dcea0e>103</span><br data-v-53dcea0e><span class="line-number" data-v-53dcea0e>104</span><br data-v-53dcea0e><span class="line-number" data-v-53dcea0e>105</span><br data-v-53dcea0e><span class="line-number" data-v-53dcea0e>106</span><br data-v-53dcea0e><span class="line-number" data-v-53dcea0e>107</span><br data-v-53dcea0e><span class="line-number" data-v-53dcea0e>108</span><br data-v-53dcea0e></div></div></details> <div class="custom-block warning" data-v-53dcea0e><p class="custom-block-title" data-v-53dcea0e>注意</p> <p data-v-53dcea0e>引用的时候，需要在父层容器或者全局下将组件设置为弹性元素
+例如element-ui表格组件el-tab</p> <div class="language-css line-numbers-mode" data-v-53dcea0e><pre class="language-css" data-v-53dcea0e><code data-v-53dcea0e>  <span class="token selector" data-v-53dcea0e>div &gt;&gt;&gt; .el-table--enable-row-hover .el-table__body tr:hover&gt;td .column_icon</span> <span class="token punctuation" data-v-53dcea0e>{</span>
+    <span class="token property" data-v-53dcea0e>display</span><span class="token punctuation" data-v-53dcea0e>:</span> inline-flex<span class="token punctuation" data-v-53dcea0e>;</span>
+  <span class="token punctuation" data-v-53dcea0e>}</span>
+  <span class="token comment" data-v-53dcea0e>/* 适应移动端设备 */</span>
+  <span class="token atrule" data-v-53dcea0e><span class="token rule" data-v-53dcea0e>@media</span> <span class="token keyword" data-v-53dcea0e>only</span> screen <span class="token keyword" data-v-53dcea0e>and</span> <span class="token punctuation" data-v-53dcea0e>(</span><span class="token property" data-v-53dcea0e>max-width</span><span class="token punctuation" data-v-53dcea0e>:</span>580px<span class="token punctuation" data-v-53dcea0e>)</span></span> <span class="token punctuation" data-v-53dcea0e>{</span>
+    <span class="token selector" data-v-53dcea0e>div &gt;&gt;&gt; .el-table--enable-row-hover .el-table__body tr:hover&gt;td .column_icon</span> <span class="token punctuation" data-v-53dcea0e>{</span>
+      <span class="token property" data-v-53dcea0e>display</span><span class="token punctuation" data-v-53dcea0e>:</span> inline-flex<span class="token punctuation" data-v-53dcea0e>;</span>
+      <span class="token property" data-v-53dcea0e>flex-direction</span><span class="token punctuation" data-v-53dcea0e>:</span> column<span class="token punctuation" data-v-53dcea0e>;</span>
+    <span class="token punctuation" data-v-53dcea0e>}</span>
+  <span class="token punctuation" data-v-53dcea0e>}</span>
+</code></pre> <div class="line-numbers-wrapper" data-v-53dcea0e><span class="line-number" data-v-53dcea0e>1</span><br data-v-53dcea0e><span class="line-number" data-v-53dcea0e>2</span><br data-v-53dcea0e><span class="line-number" data-v-53dcea0e>3</span><br data-v-53dcea0e><span class="line-number" data-v-53dcea0e>4</span><br data-v-53dcea0e><span class="line-number" data-v-53dcea0e>5</span><br data-v-53dcea0e><span class="line-number" data-v-53dcea0e>6</span><br data-v-53dcea0e><span class="line-number" data-v-53dcea0e>7</span><br data-v-53dcea0e><span class="line-number" data-v-53dcea0e>8</span><br data-v-53dcea0e><span class="line-number" data-v-53dcea0e>9</span><br data-v-53dcea0e><span class="line-number" data-v-53dcea0e>10</span><br data-v-53dcea0e></div></div></div></div> <footer class="page-edit"><div class="edit-link"><a href="https://github.com/ykshang/kangkang_blog/edit/master/docs/flex/example/example1.md" target="_blank" rel="noopener noreferrer">编辑此文档</a> <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></div> <div class="last-updated"><span class="prefix">最后更新:</span> <span class="time">1/3/2021, 10:30:07 AM</span></div></footer> <div class="page-nav"><p class="inner"><span class="prev">
+      ←
+      <a href="/kangkang_blog/flex/other/css6.html" class="prev">
+        overflow
+      </a></span> <span class="next"><a href="/kangkang_blog/flex/example/example2.html">
+        示例2
+      </a>
+      →
+    </span></p></div> </main></div><div class="global-ui"><!----><!----><div id="live2d-widget" class="live2d-widget-container" style="position:fixed;right:50px;bottom:50px;width:180px;height:400px;z-index:99999;opacity:0.8;pointer-events:none;"><canvas id="live2d_canvas" width="180" height="400" class="live2d_canvas" style="position:absolute;left:0px;top:0px;width:180px;height:400px;"></canvas></div></div></div>
+    <script src="/kangkang_blog/assets/js/app.3f5ed534.js" defer></script><script src="/kangkang_blog/assets/js/2.dde4dcd1.js" defer></script><script src="/kangkang_blog/assets/js/5.df51ebcc.js" defer></script>
+  </body>
+</html>
