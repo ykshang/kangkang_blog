@@ -132,7 +132,7 @@ div >>> .el-table--enable-row-hover .el-table__body tr:hover>td .column_icon {
   display: inline-flex;
 }
 
-@media only screen and (max-width: 500px) {
+@media only screen and (max-width:580px) {
   div >>> .el-table--enable-row-hover .el-table__body tr:hover>td .column_icon {
     display: inline-flex;
     flex-direction: column;
