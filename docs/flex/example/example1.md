@@ -28,8 +28,8 @@
   </el-table>
 </div>
 
-
 ::: details 查看ColumnHover.vue组件代码
+
 ```vue
 <template>
   <div class="column">
@@ -130,8 +130,6 @@ export default {
   color: #409EFF;
   cursor: pointer;
 }
-
-
 @media only screen and (max-width: 500px) {
   .column_content {
     max-width: 200px;
@@ -141,14 +139,15 @@ export default {
   }
 }
 </style>
-
 ```
+
 :::
 
 ::: warning 注意
   引用的时候，需要在父层容器或者全局下将组件设置为弹性元素
   例如element-ui表格组件el-tab
-  ``` css
+
+```css
   div >>> .el-table--enable-row-hover .el-table__body tr:hover>td .column_icon {
     display: inline-flex;
   }
@@ -159,8 +158,10 @@ export default {
       flex-direction: column;
     }
   }
-  ```
+```
+
 :::
+
 <script>
 import ColumnHover from "../../.vuepress/componets/ColumnHover";
 export default {
@@ -263,7 +264,6 @@ export default {
 div >>> .el-table--enable-row-hover .el-table__body tr:hover>td .column_icon {
   display: inline-flex;
 }
-
 @media only screen and (max-width:580px) {
   div >>> .el-table--enable-row-hover .el-table__body tr:hover>td .column_icon {
     display: inline-flex;
