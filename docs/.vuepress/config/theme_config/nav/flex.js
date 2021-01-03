@@ -42,7 +42,7 @@ module.exports = {
       text: '表格hover组件',
       link: '/flex/example/example1'
     }, {
-      text: '表格hover组件2',
+      text: '示例2',
       link: '/flex/example/example2'
     }]
   }]
