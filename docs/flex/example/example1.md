@@ -28,7 +28,24 @@
   </el-table>
 </div>
 
-::: details 查看ColumnHover.vue组件代码
+::: details 查看ColumnHover.vue组件代码及引用方式
+
+**引用方式**
+
+```html
+<ColumnHover
+  :type="typeRender(scope.row.type)"
+  mode="row"
+  :content="scope.row.name"
+  :row="scope.row"
+  @clickContent="clickName"
+  :icon="iconRender(scope.row.type)"
+  :iconStyle="iconStyleRender(scope.row.type)"
+  :iconList="iconList">
+</ColumnHover>
+```
+
+**源码**
 
 ```vue
 <template>
