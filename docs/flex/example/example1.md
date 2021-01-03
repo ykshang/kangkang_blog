@@ -5,9 +5,9 @@
 
 <div class="tableCss">
   <el-table :data="tableData" style="width: 100%" :show-header="false">
-    <el-table-column prop="id" label="Id" width="80px">
+    <el-table-column prop="id" label="Id" min-width="80">
     </el-table-column>
-    <el-table-column prop="name" label="名称">
+    <el-table-column prop="name" label="名称" min-width="150">
       <template slot-scope="scope">
         <ColumnHover
           :type="typeRender(scope.row.type)"
@@ -21,9 +21,9 @@
         </ColumnHover>
       </template>
     </el-table-column>
-    <el-table-column prop="date" label="日期" width="60px">
+    <el-table-column prop="date" label="日期" min-width="60">
     </el-table-column>
-    <el-table-column prop="des" label="描述" width="80px">
+    <el-table-column prop="des" label="描述" min-width="70">
     </el-table-column>
   </el-table>
 </div>
