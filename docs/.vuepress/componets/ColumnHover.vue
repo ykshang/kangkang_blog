@@ -85,7 +85,7 @@ export default {
 .content {
   overflow: hidden;
   text-overflow: ellipsis;
-  white-space: nowrap;
+  /* white-space: nowrap; */
   cursor: pointer;
 }
 .column_icon i {
