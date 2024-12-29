@@ -5,6 +5,7 @@ let react = require('./react');
 let travel = require('./travel');
 let nodejs = require('./nodejs');
 let flex= require('./flex');
+let interview= require('./interview');
 
 let welcome = {
   text: '欢迎',
@@ -20,5 +21,6 @@ module.exports = [
   react,
   nodejs,
   cookbook,
-  travel
+  travel,
+  interview,
 ];
