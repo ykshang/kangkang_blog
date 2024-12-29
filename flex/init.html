@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>初始化 | 个人笔记</title>
+    <meta name="generator" content="VuePress 1.9.10">
+    <link rel="shortcut icon" type="image/x-icon" href="/kangkang_blog/logo.png">
+    <meta name="description" content="记录学习成长">
+    
+    <link rel="preload" href="/kangkang_blog/assets/css/0.styles.b89ce085.css" as="style"><link rel="preload" href="/kangkang_blog/assets/js/app.da7f16f8.js" as="script"><link rel="preload" href="/kangkang_blog/assets/js/2.9708e627.js" as="script"><link rel="preload" href="/kangkang_blog/assets/js/1.5df086e8.js" as="script"><link rel="preload" href="/kangkang_blog/assets/js/25.222b877a.js" as="script"><link rel="prefetch" href="/kangkang_blog/assets/js/10.9a3d24d5.js"><link rel="prefetch" href="/kangkang_blog/assets/js/11.b5a82e55.js"><link rel="prefetch" href="/kangkang_blog/assets/js/12.71237375.js"><link rel="prefetch" href="/kangkang_blog/assets/js/13.2e656bfb.js"><link rel="prefetch" href="/kangkang_blog/assets/js/14.d2fe2c94.js"><link rel="prefetch" href="/kangkang_blog/assets/js/15.4e9197a1.js"><link rel="prefetch" href="/kangkang_blog/assets/js/16.93be7540.js"><link rel="prefetch" href="/kangkang_blog/assets/js/17.fd641f60.js"><link rel="prefetch" href="/kangkang_blog/assets/js/18.97ddd38b.js"><link rel="prefetch" href="/kangkang_blog/assets/js/19.60203e38.js"><link rel="prefetch" href="/kangkang_blog/assets/js/20.8a43b3c4.js"><link rel="prefetch" href="/kangkang_blog/assets/js/21.896d46c5.js"><link rel="prefetch" href="/kangkang_blog/assets/js/22.6d34ee43.js"><link rel="prefetch" href="/kangkang_blog/assets/js/23.da31ee4e.js"><link rel="prefetch" href="/kangkang_blog/assets/js/24.2138cdc0.js"><link rel="prefetch" href="/kangkang_blog/assets/js/26.9cf55529.js"><link rel="prefetch" href="/kangkang_blog/assets/js/27.e98c55af.js"><link rel="prefetch" href="/kangkang_blog/assets/js/28.42cff242.js"><link rel="prefetch" href="/kangkang_blog/assets/js/29.9487da16.js"><link rel="prefetch" href="/kangkang_blog/assets/js/3.a96d696c.js"><link rel="prefetch" href="/kangkang_blog/assets/js/30.53feb616.js"><link rel="prefetch" href="/kangkang_blog/assets/js/31.6d54797d.js"><link rel="prefetch" href="/kangkang_blog/assets/js/32.7366da65.js"><link rel="prefetch" href="/kangkang_blog/assets/js/33.a5cae244.js"><link rel="prefetch" href="/kangkang_blog/assets/js/34.eaead00f.js"><link rel="prefetch" href="/kangkang_blog/assets/js/35.6d2f968f.js"><link rel="prefetch" href="/kangkang_blog/assets/js/36.93e32238.js"><link rel="prefetch" href="/kangkang_blog/assets/js/37.2f712d1a.js"><link rel="prefetch" href="/kangkang_blog/assets/js/38.0f3626da.js"><link rel="prefetch" href="/kangkang_blog/assets/js/39.07512d4f.js"><link rel="prefetch" href="/kangkang_blog/assets/js/4.88794156.js"><link rel="prefetch" href="/kangkang_blog/assets/js/40.b25eb92f.js"><link rel="prefetch" href="/kangkang_blog/assets/js/41.658601bb.js"><link rel="prefetch" href="/kangkang_blog/assets/js/42.f22f518e.js"><link rel="prefetch" href="/kangkang_blog/assets/js/43.cad56a86.js"><link rel="prefetch" href="/kangkang_blog/assets/js/44.c6913701.js"><link rel="prefetch" href="/kangkang_blog/assets/js/45.5a70465b.js"><link rel="prefetch" href="/kangkang_blog/assets/js/46.fb890674.js"><link rel="prefetch" href="/kangkang_blog/assets/js/47.72b75c68.js"><link rel="prefetch" href="/kangkang_blog/assets/js/48.af028104.js"><link rel="prefetch" href="/kangkang_blog/assets/js/49.08fcc400.js"><link rel="prefetch" href="/kangkang_blog/assets/js/5.b624d556.js"><link rel="prefetch" href="/kangkang_blog/assets/js/50.4702331b.js"><link rel="prefetch" href="/kangkang_blog/assets/js/51.0faeae7b.js"><link rel="prefetch" href="/kangkang_blog/assets/js/52.717394ed.js"><link rel="prefetch" href="/kangkang_blog/assets/js/53.8d8a3901.js"><link rel="prefetch" href="/kangkang_blog/assets/js/54.081e2770.js"><link rel="prefetch" href="/kangkang_blog/assets/js/55.5744129a.js"><link rel="prefetch" href="/kangkang_blog/assets/js/56.c8855caf.js"><link rel="prefetch" href="/kangkang_blog/assets/js/57.e2dae07b.js"><link rel="prefetch" href="/kangkang_blog/assets/js/58.4fca624f.js"><link rel="prefetch" href="/kangkang_blog/assets/js/59.e930e699.js"><link rel="prefetch" href="/kangkang_blog/assets/js/6.5afe2469.js"><link rel="prefetch" href="/kangkang_blog/assets/js/60.c13c95b1.js"><link rel="prefetch" href="/kangkang_blog/assets/js/61.3151efc7.js"><link rel="prefetch" href="/kangkang_blog/assets/js/62.88add6d0.js"><link rel="prefetch" href="/kangkang_blog/assets/js/63.edde2f6f.js"><link rel="prefetch" href="/kangkang_blog/assets/js/64.4bca4fe5.js"><link rel="prefetch" href="/kangkang_blog/assets/js/65.591e3e8d.js"><link rel="prefetch" href="/kangkang_blog/assets/js/66.2b332f5d.js"><link rel="prefetch" href="/kangkang_blog/assets/js/67.184905ae.js"><link rel="prefetch" href="/kangkang_blog/assets/js/68.7e7dd592.js"><link rel="prefetch" href="/kangkang_blog/assets/js/69.46cb9bdd.js"><link rel="prefetch" href="/kangkang_blog/assets/js/7.418da0f0.js"><link rel="prefetch" href="/kangkang_blog/assets/js/70.51090e6a.js"><link rel="prefetch" href="/kangkang_blog/assets/js/71.3d0bc3f3.js"><link rel="prefetch" href="/kangkang_blog/assets/js/72.52ff5f45.js"><link rel="prefetch" href="/kangkang_blog/assets/js/73.1f00ddf5.js"><link rel="prefetch" href="/kangkang_blog/assets/js/74.cbbd51db.js"><link rel="prefetch" href="/kangkang_blog/assets/js/75.e5a47b6a.js"><link rel="prefetch" href="/kangkang_blog/assets/js/76.f7c6c35f.js"><link rel="prefetch" href="/kangkang_blog/assets/js/77.a6b8b587.js"><link rel="prefetch" href="/kangkang_blog/assets/js/78.2e0955ca.js"><link rel="prefetch" href="/kangkang_blog/assets/js/79.d5217cc3.js"><link rel="prefetch" href="/kangkang_blog/assets/js/vendors~docsearch.556c5cf2.js">
+    <link rel="stylesheet" href="/kangkang_blog/assets/css/0.styles.b89ce085.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container"><header class="navbar"><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/kangkang_blog/" class="home-link router-link-active"><img src="/kangkang_blog/assets/img/logo.gif" alt="个人笔记" class="logo"> <span class="site-name can-hide">个人笔记</span></a> <div class="links"><div class="search-box"><input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <nav class="nav-links can-hide"><div class="nav-item"><a href="/kangkang_blog/guide/" class="nav-link">
+  欢迎
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="Git笔记" class="dropdown-title"><span class="title">Git笔记</span> <span class="arrow down"></span></button> <button type="button" aria-label="Git笔记" class="mobile-dropdown-title"><span class="title">Git笔记</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/kangkang_blog/git/overview.html" class="nav-link">
+  基本介绍
+</a></li><li class="dropdown-item"><h4>
+          基本语法
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/kangkang_blog/git/syntax/oper_symbol.html" class="nav-link">
+  常见的操作符
+</a></li><li class="dropdown-subitem"><a href="/kangkang_blog/git/syntax/git_add.html" class="nav-link">
+  git add
+</a></li><li class="dropdown-subitem"><a href="/kangkang_blog/git/syntax/git_branch.html" class="nav-link">
+  git branch
+</a></li><li class="dropdown-subitem"><a href="/kangkang_blog/git/syntax/git_checkout.html" class="nav-link">
+  git checkout
+</a></li><li class="dropdown-subitem"><a href="/kangkang_blog/git/syntax/git_cherry-pick.html" class="nav-link">
+  git cherry-pick
+</a></li><li class="dropdown-subitem"><a href="/kangkang_blog/git/syntax/git_clean.html" class="nav-link">
+  git clean
+</a></li><li class="dropdown-subitem"><a href="/kangkang_blog/git/syntax/git_clone.html" class="nav-link">
+  git clone
+</a></li><li class="dropdown-subitem"><a href="/kangkang_blog/git/syntax/git_commit.html" class="nav-link">
+  git commit
+</a></li><li class="dropdown-subitem"><a href="/kangkang_blog/git/syntax/git_config.html" class="nav-link">
+  git config
+</a></li><li class="dropdown-subitem"><a href="/kangkang_blog/git/syntax/git_diff.html" class="nav-link">
+  git diff
+</a></li><li class="dropdown-subitem"><a href="/kangkang_blog/git/syntax/git_fetch.html" class="nav-link">
+  git fetch
+</a></li><li class="dropdown-subitem"><a href="/kangkang_blog/git/syntax/git_init.html" class="nav-link">
+  git init
+</a></li><li class="dropdown-subitem"><a href="/kangkang_blog/git/syntax/git_log.html" class="nav-link">
+  git log
+</a></li><li class="dropdown-subitem"><a href="/kangkang_blog/git/syntax/git_merge.html" class="nav-link">
+  git merge
+</a></li><li class="dropdown-subitem"><a href="/kangkang_blog/git/syntax/git_mv.html" class="nav-link">
+  git mv
+</a></li><li class="dropdown-subitem"><a href="/kangkang_blog/git/syntax/git_pull.html" class="nav-link">
+  git pull
+</a></li><li class="dropdown-subitem"><a href="/kangkang_blog/git/syntax/git_push.html" class="nav-link">
+  git push
+</a></li><li class="dropdown-subitem"><a href="/kangkang_blog/git/syntax/git_rebase.html" class="nav-link">
+  git reabse
+</a></li><li class="dropdown-subitem"><a href="/kangkang_blog/git/syntax/git_remote.html" class="nav-link">
+  git remote
+</a></li><li class="dropdown-subitem"><a href="/kangkang_blog/git/syntax/git_reset.html" class="nav-link">
+  git reset
+</a></li><li class="dropdown-subitem"><a href="/kangkang_blog/git/syntax/git_restore.html" class="nav-link">
+  git restore
+</a></li><li class="dropdown-subitem"><a href="/kangkang_blog/git/syntax/git_rm.html" class="nav-link">
+  git rm
+</a></li><li class="dropdown-subitem"><a href="/kangkang_blog/git/syntax/git_show.html" class="nav-link">
+  git show
+</a></li><li class="dropdown-subitem"><a href="/kangkang_blog/git/syntax/git_stage.html" class="nav-link">
+  git stage
+</a></li><li class="dropdown-subitem"><a href="/kangkang_blog/git/syntax/git_stash.html" class="nav-link">
+  git stash
+</a></li><li class="dropdown-subitem"><a href="/kangkang_blog/git/syntax/git_status.html" class="nav-link">
+  git status
+</a></li><li class="dropdown-subitem"><a href="/kangkang_blog/git/syntax/git_switch.html" class="nav-link">
+  git switch
+</a></li><li class="dropdown-subitem"><a href="/kangkang_blog/git/syntax/git_tag.html" class="nav-link">
+  git tag
+</a></li></ul></li><li class="dropdown-item"><h4>
+          操作实践
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/kangkang_blog/git/advanced_skills/rule.html" class="nav-link">
+  若干建议规范
+</a></li><li class="dropdown-subitem"><a href="/kangkang_blog/git/advanced_skills/great_skills.html" class="nav-link">
+  各种骚操作
+</a></li><li class="dropdown-subitem"><a href="/kangkang_blog/git/advanced_skills/best_practices.html" class="nav-link">
+  通过分支管理需求、问题单
+</a></li><li class="dropdown-subitem"><a href="/kangkang_blog/git/advanced_skills/different.html" class="nav-link">
+  merge、rebase、cherry-pick的区别
+</a></li></ul></li><li class="dropdown-item"><!----> <a href="/kangkang_blog/git/tool/tool.html" class="nav-link">
+  第三方工具推荐
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="Flex弹性布局" class="dropdown-title"><span class="title">Flex弹性布局</span> <span class="arrow down"></span></button> <button type="button" aria-label="Flex弹性布局" class="mobile-dropdown-title"><span class="title">Flex弹性布局</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/kangkang_blog/flex/index.html" class="nav-link">
+  简介
+</a></li><li class="dropdown-item"><!----> <a href="/kangkang_blog/flex/introduction.html" class="nav-link">
+  相关概念
+</a></li><li class="dropdown-item"><!----> <a href="/kangkang_blog/flex/init.html" aria-current="page" class="nav-link router-link-exact-active router-link-active">
+  初始化计算
+</a></li><li class="dropdown-item"><!----> <a href="/kangkang_blog/flex/item/item.html" class="nav-link">
+  弹性元素
+</a></li><li class="dropdown-item"><!----> <a href="/kangkang_blog/flex/container/container.html" class="nav-link">
+  弹性容器
+</a></li><li class="dropdown-item"><h4>
+          外在影响因素
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/kangkang_blog/flex/other/css1.html" class="nav-link">
+  min-content/max-content
+</a></li><li class="dropdown-subitem"><a href="/kangkang_blog/flex/other/css2.html" class="nav-link">
+  position
+</a></li><li class="dropdown-subitem"><a href="/kangkang_blog/flex/other/css3.html" class="nav-link">
+  direction
+</a></li><li class="dropdown-subitem"><a href="/kangkang_blog/flex/other/css4.html" class="nav-link">
+  margin
+</a></li><li class="dropdown-subitem"><a href="/kangkang_blog/flex/other/css5.html" class="nav-link">
+  min-width
+</a></li><li class="dropdown-subitem"><a href="/kangkang_blog/flex/other/css6.html" class="nav-link">
+  overflow
+</a></li></ul></li><li class="dropdown-item"><h4>
+          应用实例
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/kangkang_blog/flex/example/example1.html" class="nav-link">
+  表格hover组件
+</a></li><li class="dropdown-subitem"><a href="/kangkang_blog/flex/example/example2.html" class="nav-link">
+  示例2
+</a></li></ul></li></ul></div></div><div class="nav-item"><a href="/kangkang_blog/vue/index.html" class="nav-link">
+  Vue.js
+</a></div><div class="nav-item"><a href="/kangkang_blog/react/index.html" class="nav-link">
+  React.js
+</a></div><div class="nav-item"><a href="/kangkang_blog/nodejs/index.html" class="nav-link">
+  Node.js
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="菜谱的自我修养" class="dropdown-title"><span class="title">菜谱的自我修养</span> <span class="arrow down"></span></button> <button type="button" aria-label="菜谱的自我修养" class="mobile-dropdown-title"><span class="title">菜谱的自我修养</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/kangkang_blog/cookbook/list.html" class="nav-link">
+  列表
+</a></li><li class="dropdown-item"><!----> <a href="/kangkang_blog/cookbook/1.html" class="nav-link">
+  香菇蒸滑鸡
+</a></li></ul></div></div><div class="nav-item"><a href="/kangkang_blog/travel/index.html" class="nav-link">
+  旅行日记
+</a></div><div class="nav-item"><a href="/kangkang_blog/interview/index.html" class="nav-link">
+  常见面试题
+</a></div> <a href="https://github.com/ykshang/kangkang_blog" target="_blank" rel="noopener noreferrer" class="repo-link">
+    查看源码
+    <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></nav></div></header> <div class="sidebar-mask"></div> <aside class="sidebar"><nav class="nav-links"><div class="nav-item"><a href="/kangkang_blog/guide/" class="nav-link">
+  欢迎
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="Git笔记" class="dropdown-title"><span class="title">Git笔记</span> <span class="arrow down"></span></button> <button type="button" aria-label="Git笔记" class="mobile-dropdown-title"><span class="title">Git笔记</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/kangkang_blog/git/overview.html" class="nav-link">
+  基本介绍
+</a></li><li class="dropdown-item"><h4>
+          基本语法
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/kangkang_blog/git/syntax/oper_symbol.html" class="nav-link">
+  常见的操作符
+</a></li><li class="dropdown-subitem"><a href="/kangkang_blog/git/syntax/git_add.html" class="nav-link">
+  git add
+</a></li><li class="dropdown-subitem"><a href="/kangkang_blog/git/syntax/git_branch.html" class="nav-link">
+  git branch
+</a></li><li class="dropdown-subitem"><a href="/kangkang_blog/git/syntax/git_checkout.html" class="nav-link">
+  git checkout
+</a></li><li class="dropdown-subitem"><a href="/kangkang_blog/git/syntax/git_cherry-pick.html" class="nav-link">
+  git cherry-pick
+</a></li><li class="dropdown-subitem"><a href="/kangkang_blog/git/syntax/git_clean.html" class="nav-link">
+  git clean
+</a></li><li class="dropdown-subitem"><a href="/kangkang_blog/git/syntax/git_clone.html" class="nav-link">
+  git clone
+</a></li><li class="dropdown-subitem"><a href="/kangkang_blog/git/syntax/git_commit.html" class="nav-link">
+  git commit
+</a></li><li class="dropdown-subitem"><a href="/kangkang_blog/git/syntax/git_config.html" class="nav-link">
+  git config
+</a></li><li class="dropdown-subitem"><a href="/kangkang_blog/git/syntax/git_diff.html" class="nav-link">
+  git diff
+</a></li><li class="dropdown-subitem"><a href="/kangkang_blog/git/syntax/git_fetch.html" class="nav-link">
+  git fetch
+</a></li><li class="dropdown-subitem"><a href="/kangkang_blog/git/syntax/git_init.html" class="nav-link">
+  git init
+</a></li><li class="dropdown-subitem"><a href="/kangkang_blog/git/syntax/git_log.html" class="nav-link">
+  git log
+</a></li><li class="dropdown-subitem"><a href="/kangkang_blog/git/syntax/git_merge.html" class="nav-link">
+  git merge
+</a></li><li class="dropdown-subitem"><a href="/kangkang_blog/git/syntax/git_mv.html" class="nav-link">
+  git mv
+</a></li><li class="dropdown-subitem"><a href="/kangkang_blog/git/syntax/git_pull.html" class="nav-link">
+  git pull
+</a></li><li class="dropdown-subitem"><a href="/kangkang_blog/git/syntax/git_push.html" class="nav-link">
+  git push
+</a></li><li class="dropdown-subitem"><a href="/kangkang_blog/git/syntax/git_rebase.html" class="nav-link">
+  git reabse
+</a></li><li class="dropdown-subitem"><a href="/kangkang_blog/git/syntax/git_remote.html" class="nav-link">
+  git remote
+</a></li><li class="dropdown-subitem"><a href="/kangkang_blog/git/syntax/git_reset.html" class="nav-link">
+  git reset
+</a></li><li class="dropdown-subitem"><a href="/kangkang_blog/git/syntax/git_restore.html" class="nav-link">
+  git restore
+</a></li><li class="dropdown-subitem"><a href="/kangkang_blog/git/syntax/git_rm.html" class="nav-link">
+  git rm
+</a></li><li class="dropdown-subitem"><a href="/kangkang_blog/git/syntax/git_show.html" class="nav-link">
+  git show
+</a></li><li class="dropdown-subitem"><a href="/kangkang_blog/git/syntax/git_stage.html" class="nav-link">
+  git stage
+</a></li><li class="dropdown-subitem"><a href="/kangkang_blog/git/syntax/git_stash.html" class="nav-link">
+  git stash
+</a></li><li class="dropdown-subitem"><a href="/kangkang_blog/git/syntax/git_status.html" class="nav-link">
+  git status
+</a></li><li class="dropdown-subitem"><a href="/kangkang_blog/git/syntax/git_switch.html" class="nav-link">
+  git switch
+</a></li><li class="dropdown-subitem"><a href="/kangkang_blog/git/syntax/git_tag.html" class="nav-link">
+  git tag
+</a></li></ul></li><li class="dropdown-item"><h4>
+          操作实践
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/kangkang_blog/git/advanced_skills/rule.html" class="nav-link">
+  若干建议规范
+</a></li><li class="dropdown-subitem"><a href="/kangkang_blog/git/advanced_skills/great_skills.html" class="nav-link">
+  各种骚操作
+</a></li><li class="dropdown-subitem"><a href="/kangkang_blog/git/advanced_skills/best_practices.html" class="nav-link">
+  通过分支管理需求、问题单
+</a></li><li class="dropdown-subitem"><a href="/kangkang_blog/git/advanced_skills/different.html" class="nav-link">
+  merge、rebase、cherry-pick的区别
+</a></li></ul></li><li class="dropdown-item"><!----> <a href="/kangkang_blog/git/tool/tool.html" class="nav-link">
+  第三方工具推荐
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="Flex弹性布局" class="dropdown-title"><span class="title">Flex弹性布局</span> <span class="arrow down"></span></button> <button type="button" aria-label="Flex弹性布局" class="mobile-dropdown-title"><span class="title">Flex弹性布局</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/kangkang_blog/flex/index.html" class="nav-link">
+  简介
+</a></li><li class="dropdown-item"><!----> <a href="/kangkang_blog/flex/introduction.html" class="nav-link">
+  相关概念
+</a></li><li class="dropdown-item"><!----> <a href="/kangkang_blog/flex/init.html" aria-current="page" class="nav-link router-link-exact-active router-link-active">
+  初始化计算
+</a></li><li class="dropdown-item"><!----> <a href="/kangkang_blog/flex/item/item.html" class="nav-link">
+  弹性元素
+</a></li><li class="dropdown-item"><!----> <a href="/kangkang_blog/flex/container/container.html" class="nav-link">
+  弹性容器
+</a></li><li class="dropdown-item"><h4>
+          外在影响因素
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/kangkang_blog/flex/other/css1.html" class="nav-link">
+  min-content/max-content
+</a></li><li class="dropdown-subitem"><a href="/kangkang_blog/flex/other/css2.html" class="nav-link">
+  position
+</a></li><li class="dropdown-subitem"><a href="/kangkang_blog/flex/other/css3.html" class="nav-link">
+  direction
+</a></li><li class="dropdown-subitem"><a href="/kangkang_blog/flex/other/css4.html" class="nav-link">
+  margin
+</a></li><li class="dropdown-subitem"><a href="/kangkang_blog/flex/other/css5.html" class="nav-link">
+  min-width
+</a></li><li class="dropdown-subitem"><a href="/kangkang_blog/flex/other/css6.html" class="nav-link">
+  overflow
+</a></li></ul></li><li class="dropdown-item"><h4>
+          应用实例
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/kangkang_blog/flex/example/example1.html" class="nav-link">
+  表格hover组件
+</a></li><li class="dropdown-subitem"><a href="/kangkang_blog/flex/example/example2.html" class="nav-link">
+  示例2
+</a></li></ul></li></ul></div></div><div class="nav-item"><a href="/kangkang_blog/vue/index.html" class="nav-link">
+  Vue.js
+</a></div><div class="nav-item"><a href="/kangkang_blog/react/index.html" class="nav-link">
+  React.js
+</a></div><div class="nav-item"><a href="/kangkang_blog/nodejs/index.html" class="nav-link">
+  Node.js
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="菜谱的自我修养" class="dropdown-title"><span class="title">菜谱的自我修养</span> <span class="arrow down"></span></button> <button type="button" aria-label="菜谱的自我修养" class="mobile-dropdown-title"><span class="title">菜谱的自我修养</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/kangkang_blog/cookbook/list.html" class="nav-link">
+  列表
+</a></li><li class="dropdown-item"><!----> <a href="/kangkang_blog/cookbook/1.html" class="nav-link">
+  香菇蒸滑鸡
+</a></li></ul></div></div><div class="nav-item"><a href="/kangkang_blog/travel/index.html" class="nav-link">
+  旅行日记
+</a></div><div class="nav-item"><a href="/kangkang_blog/interview/index.html" class="nav-link">
+  常见面试题
+</a></div> <a href="https://github.com/ykshang/kangkang_blog" target="_blank" rel="noopener noreferrer" class="repo-link">
+    查看源码
+    <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></nav>  <ul class="sidebar-links"><li><a href="/kangkang_blog/guide/" class="sidebar-link">Hello Word！</a></li><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading"><span>Git笔记</span> <span class="arrow right"></span></p> <!----></section></li><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading open"><span>Flex弹性布局</span> <span class="arrow down"></span></p> <ul class="sidebar-links sidebar-group-items"><li><a href="/kangkang_blog/flex/" aria-current="page" class="sidebar-link">简介</a></li><li><a href="/kangkang_blog/flex/introduction.html" class="sidebar-link">相关概念</a></li><li><a href="/kangkang_blog/flex/init.html" aria-current="page" class="active sidebar-link">初始化计算</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/kangkang_blog/flex/init.html#初始化" class="sidebar-link">初始化</a></li><li class="sidebar-sub-header"><a href="/kangkang_blog/flex/init.html#初始化的计算过程" class="sidebar-link">初始化的计算过程</a></li></ul></li><li><a href="/kangkang_blog/flex/item/item.html" class="sidebar-link">弹性元素</a></li><li><a href="/kangkang_blog/flex/container/container.html" class="sidebar-link">弹性容器</a></li><li><section class="sidebar-group collapsable is-sub-group depth-1"><p class="sidebar-heading"><span>外在影响因素</span> <span class="arrow right"></span></p> <!----></section></li><li><section class="sidebar-group collapsable is-sub-group depth-1"><p class="sidebar-heading"><span>应用实例</span> <span class="arrow right"></span></p> <!----></section></li></ul></section></li><li><a href="/kangkang_blog/vue/" class="sidebar-link">Vue.js</a></li><li><a href="/kangkang_blog/react/" class="sidebar-link">React.js</a></li><li><a href="/kangkang_blog/nodejs/" class="sidebar-link">Node.js</a></li><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading"><span>菜谱的自我修养</span> <span class="arrow right"></span></p> <!----></section></li><li><a href="/kangkang_blog/travel/" class="sidebar-link">旅行日记</a></li><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading"><span>常见面试题</span> <span class="arrow right"></span></p> <!----></section></li></ul> </aside> <main class="page"> <div class="theme-default-content content__default" data-v-1a270b94 data-v-1a270b94><h2 id="初始化" data-v-1a270b94><a href="#初始化" class="header-anchor" data-v-1a270b94>#</a> 初始化</h2> <p data-v-1a270b94>当一个元素被设置为flex容器时，那么容器内他的所有子元素具备以下行为；</p> <ul data-v-1a270b94><li data-v-1a270b94>元素排列为一行 (容器的flex-direction 属性的初始值是 row)。</li> <li data-v-1a270b94>元素从主轴的起始线开始（容器的justify-content，初始值为flex-start）。</li> <li data-v-1a270b94>元素不会在主维度方向拉伸，但是可以缩小（元素的flex-grow默认为0）。</li> <li data-v-1a270b94>元素被拉伸来填充交叉轴大小（容器的align-items，默认值为stretch）。</li> <li data-v-1a270b94>flex-basis 初始值为 auto，如果元素本身上设置了主轴方向上的宽度，那么flex-basis的值默认取那个宽度，如果单独设置了flex-basis，那么元素本身在主轴上的宽度不再起作用。</li> <li data-v-1a270b94>flex-wrap 属性为 nowrap。</li></ul> <p data-v-1a270b94>这会让你的元素呈线形排列，并且把自己的大小作为在主轴上的大小。如果有太多元素超出容器，它们会溢出而不会换行。元素会沿交叉轴被拉伸来填满它的大小。</p> <p data-v-1a270b94><img src="/kangkang_blog/assets/img/init.ee1a5b3b.png" alt="示意图" data-v-1a270b94></p> <div class="el-divider el-divider--horizontal" data-v-1a270b94 data-v-1a270b94><div class="el-divider__text is-center" data-v-1a270b94 data-v-1a270b94>一条分割线</div></div> <h2 id="初始化的计算过程" data-v-1a270b94><a href="#初始化的计算过程" class="header-anchor" data-v-1a270b94>#</a> 初始化的计算过程</h2> <ol data-v-1a270b94><li data-v-1a270b94><p data-v-1a270b94>确定弹性容器和元素</p></li> <li data-v-1a270b94><p data-v-1a270b94>根据flex-direction的确定容器内的主轴方向和起始线终止线的位置，flex-direction的初始默认值为row</p></li> <li data-v-1a270b94><p data-v-1a270b94>根据容器的justify-content的值，确认元素在主轴上的排列方式</p></li> <li data-v-1a270b94><p data-v-1a270b94>根据元素的flex-grow的值确定元素在父容器存在正向自由空间时的分配比例</p></li> <li data-v-1a270b94><p data-v-1a270b94>根据元素的flex-shirnk的值确定元素在父容器存在负向自由空间时的分配比例</p></li> <li data-v-1a270b94><p data-v-1a270b94>根据flex-wrap的值确定是否可以换行，默认值为nowrap</p> <ul data-v-1a270b94><li data-v-1a270b94>换行的前提是容器的空间不够分配</li></ul></li> <li data-v-1a270b94><p data-v-1a270b94>确定flex-basis的值，默认值为auto，正负自用空间的计算是根据flex-basis计算得到的</p> <ul data-v-1a270b94><li data-v-1a270b94><p data-v-1a270b94>如果元素设置了felx-basis的值，那么可以直接参与计算</p></li> <li data-v-1a270b94><p data-v-1a270b94>如果元素设置主轴方向上的宽度（width或者height，可以为像素值，可以为max-content/contentd等值），那么这个宽度就是flex-basis的值</p></li> <li data-v-1a270b94><p data-v-1a270b94>如果元素未设置flex-basis或者主轴方向上的宽度取元素max-content的值</p></li></ul></li> <li data-v-1a270b94><p data-v-1a270b94>根据flex-basis计算正负自由空间，容器的宽度 - ∑所有子元素的flex-basis得到的值</p> <p data-v-1a270b94>假设有n个元素，felx-basis分别为F1、F2...，flex-grow的值分别为g1、g2...，flex-shrink的值分别为s1、s2...，容器的总宽度为W</p> <p data-v-1a270b94>正/负自由空间的计算方式为值：<strong data-v-1a270b94>W自由 =W - F1 - F2 - ... - Fn</strong></p> <ul data-v-1a270b94><li data-v-1a270b94>如果为正，则存在正向自由空间，允许元素通过伸展填满父元素，具体计算方式为：</li></ul> <p data-v-1a270b94>第x个最终宽度为：<strong data-v-1a270b94>Fx+ W自由 * gx / (g1 + g2 + ... gn)</strong></p> <ul data-v-1a270b94><li data-v-1a270b94><p data-v-1a270b94>如果为负，则存在负向自由空间，需要元素进行收缩，以填满父容器</p> <ol data-v-1a270b94><li data-v-1a270b94><p data-v-1a270b94>假设有n个元素，felx-basis宽度分别为F1、F2.....,,容器的总宽度为W</p></li> <li data-v-1a270b94><p data-v-1a270b94>则第x个最终宽度为：<strong data-v-1a270b94>Fx + W自由 * sx / (F1 * s1 + F2 * s2 + ... Fn * sn)</strong></p></li> <li data-v-1a270b94><p data-v-1a270b94>按照上述公式计算所有元素的最终宽度，如果小于min-content，那么他的的flex-basis置为min-content，即最终宽度为min-content</p></li> <li data-v-1a270b94><p data-v-1a270b94>根据第3步的结果重新计算自由空间</p></li> <li data-v-1a270b94><p data-v-1a270b94>重复第3,4步的计算,直到计算出所有元素的最终宽度</p></li> <li data-v-1a270b94><p data-v-1a270b94>根据第5步的结果，如果最终还是存在负向自由空间，这时候需要看一下是否存在min-width或者overflow:hidden等影响计算的属性的元素，此时继续套用上述计算自由空间和最终宽度的公式，继续计算，直至填满父容器或者所有元素达到各自的最小宽度（min-content、min-width、0px）</p></li> <li data-v-1a270b94><p data-v-1a270b94>根据第6步的结果，假如所有的元素步如果不允许换行，最终如果总宽度等于父容器的宽度，则刚好填满，如果最终总宽度大于父容器的高度，则此时溢出，此时计算结束</p></li> <li data-v-1a270b94><p data-v-1a270b94>根据第6步的结果，如果允许换行的话，具体换行策略为，所有元素的初始宽度均为各自的最小值，一个元素一个元素排列，直到某一个元素的加入，导致溢出了，这时候这个元素换到下一行，此时上一行的元素，则重新按照第3、4、5、6步计算各自的最终宽度</p></li> <li data-v-1a270b94><p data-v-1a270b94>重复第8步，直至所有元素排列完成，并根据第3、4、5、6步计算出每一行的元素排列分布，则计算结束</p></li></ol></li></ul></li> <li data-v-1a270b94><p data-v-1a270b94>根据align-itmes，align-contentg，align-iself等几个属性，确定上述元素在交叉轴上的分布</p></li></ol></div> <footer class="page-edit"><div class="edit-link"><a href="https://github.com/ykshang/kangkang_blog/edit/master/docs/flex/init.md" target="_blank" rel="noopener noreferrer">编辑此文档</a> <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></div> <div class="last-updated"><span class="prefix">最后更新:</span> <span class="time">12/29/2024, 12:53:53 PM</span></div></footer> <div class="page-nav"><p class="inner"><span class="prev">
+      ←
+      <a href="/kangkang_blog/flex/introduction.html" class="prev">
+        相关概念
+      </a></span> <span class="next"><a href="/kangkang_blog/flex/item/item.html">
+        弹性元素
+      </a>
+      →
+    </span></p></div> </main></div><div class="global-ui"><!----><!----><div id="live2d-widget" class="live2d-widget-container" style="position:fixed;right:50px;bottom:50px;width:180px;height:400px;z-index:99999;opacity:0.8;pointer-events:none;"><canvas id="live2d_canvas" width="180" height="400" class="live2d_canvas" style="position:absolute;left:0px;top:0px;width:180px;height:400px;"></canvas></div></div></div>
+    <script src="/kangkang_blog/assets/js/app.da7f16f8.js" defer></script><script src="/kangkang_blog/assets/js/2.9708e627.js" defer></script><script src="/kangkang_blog/assets/js/1.5df086e8.js" defer></script><script src="/kangkang_blog/assets/js/25.222b877a.js" defer></script>
+  </body>
+</html>

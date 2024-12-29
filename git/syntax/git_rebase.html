@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>git rebase | 个人笔记</title>
+    <meta name="generator" content="VuePress 1.9.10">
+    <link rel="shortcut icon" type="image/x-icon" href="/kangkang_blog/logo.png">
+    <meta name="description" content="记录学习成长">
+    
+    <link rel="preload" href="/kangkang_blog/assets/css/0.styles.b89ce085.css" as="style"><link rel="preload" href="/kangkang_blog/assets/js/app.da7f16f8.js" as="script"><link rel="preload" href="/kangkang_blog/assets/js/2.9708e627.js" as="script"><link rel="preload" href="/kangkang_blog/assets/js/1.5df086e8.js" as="script"><link rel="preload" href="/kangkang_blog/assets/js/38.0f3626da.js" as="script"><link rel="prefetch" href="/kangkang_blog/assets/js/10.9a3d24d5.js"><link rel="prefetch" href="/kangkang_blog/assets/js/11.b5a82e55.js"><link rel="prefetch" href="/kangkang_blog/assets/js/12.71237375.js"><link rel="prefetch" href="/kangkang_blog/assets/js/13.2e656bfb.js"><link rel="prefetch" href="/kangkang_blog/assets/js/14.d2fe2c94.js"><link rel="prefetch" href="/kangkang_blog/assets/js/15.4e9197a1.js"><link rel="prefetch" href="/kangkang_blog/assets/js/16.93be7540.js"><link rel="prefetch" href="/kangkang_blog/assets/js/17.fd641f60.js"><link rel="prefetch" href="/kangkang_blog/assets/js/18.97ddd38b.js"><link rel="prefetch" href="/kangkang_blog/assets/js/19.60203e38.js"><link rel="prefetch" href="/kangkang_blog/assets/js/20.8a43b3c4.js"><link rel="prefetch" href="/kangkang_blog/assets/js/21.896d46c5.js"><link rel="prefetch" href="/kangkang_blog/assets/js/22.6d34ee43.js"><link rel="prefetch" href="/kangkang_blog/assets/js/23.da31ee4e.js"><link rel="prefetch" href="/kangkang_blog/assets/js/24.2138cdc0.js"><link rel="prefetch" href="/kangkang_blog/assets/js/25.222b877a.js"><link rel="prefetch" href="/kangkang_blog/assets/js/26.9cf55529.js"><link rel="prefetch" href="/kangkang_blog/assets/js/27.e98c55af.js"><link rel="prefetch" href="/kangkang_blog/assets/js/28.42cff242.js"><link rel="prefetch" href="/kangkang_blog/assets/js/29.9487da16.js"><link rel="prefetch" href="/kangkang_blog/assets/js/3.a96d696c.js"><link rel="prefetch" href="/kangkang_blog/assets/js/30.53feb616.js"><link rel="prefetch" href="/kangkang_blog/assets/js/31.6d54797d.js"><link rel="prefetch" href="/kangkang_blog/assets/js/32.7366da65.js"><link rel="prefetch" href="/kangkang_blog/assets/js/33.a5cae244.js"><link rel="prefetch" href="/kangkang_blog/assets/js/34.eaead00f.js"><link rel="prefetch" href="/kangkang_blog/assets/js/35.6d2f968f.js"><link rel="prefetch" href="/kangkang_blog/assets/js/36.93e32238.js"><link rel="prefetch" href="/kangkang_blog/assets/js/37.2f712d1a.js"><link rel="prefetch" href="/kangkang_blog/assets/js/39.07512d4f.js"><link rel="prefetch" href="/kangkang_blog/assets/js/4.88794156.js"><link rel="prefetch" href="/kangkang_blog/assets/js/40.b25eb92f.js"><link rel="prefetch" href="/kangkang_blog/assets/js/41.658601bb.js"><link rel="prefetch" href="/kangkang_blog/assets/js/42.f22f518e.js"><link rel="prefetch" href="/kangkang_blog/assets/js/43.cad56a86.js"><link rel="prefetch" href="/kangkang_blog/assets/js/44.c6913701.js"><link rel="prefetch" href="/kangkang_blog/assets/js/45.5a70465b.js"><link rel="prefetch" href="/kangkang_blog/assets/js/46.fb890674.js"><link rel="prefetch" href="/kangkang_blog/assets/js/47.72b75c68.js"><link rel="prefetch" href="/kangkang_blog/assets/js/48.af028104.js"><link rel="prefetch" href="/kangkang_blog/assets/js/49.08fcc400.js"><link rel="prefetch" href="/kangkang_blog/assets/js/5.b624d556.js"><link rel="prefetch" href="/kangkang_blog/assets/js/50.4702331b.js"><link rel="prefetch" href="/kangkang_blog/assets/js/51.0faeae7b.js"><link rel="prefetch" href="/kangkang_blog/assets/js/52.717394ed.js"><link rel="prefetch" href="/kangkang_blog/assets/js/53.8d8a3901.js"><link rel="prefetch" href="/kangkang_blog/assets/js/54.081e2770.js"><link rel="prefetch" href="/kangkang_blog/assets/js/55.5744129a.js"><link rel="prefetch" href="/kangkang_blog/assets/js/56.c8855caf.js"><link rel="prefetch" href="/kangkang_blog/assets/js/57.e2dae07b.js"><link rel="prefetch" href="/kangkang_blog/assets/js/58.4fca624f.js"><link rel="prefetch" href="/kangkang_blog/assets/js/59.e930e699.js"><link rel="prefetch" href="/kangkang_blog/assets/js/6.5afe2469.js"><link rel="prefetch" href="/kangkang_blog/assets/js/60.c13c95b1.js"><link rel="prefetch" href="/kangkang_blog/assets/js/61.3151efc7.js"><link rel="prefetch" href="/kangkang_blog/assets/js/62.88add6d0.js"><link rel="prefetch" href="/kangkang_blog/assets/js/63.edde2f6f.js"><link rel="prefetch" href="/kangkang_blog/assets/js/64.4bca4fe5.js"><link rel="prefetch" href="/kangkang_blog/assets/js/65.591e3e8d.js"><link rel="prefetch" href="/kangkang_blog/assets/js/66.2b332f5d.js"><link rel="prefetch" href="/kangkang_blog/assets/js/67.184905ae.js"><link rel="prefetch" href="/kangkang_blog/assets/js/68.7e7dd592.js"><link rel="prefetch" href="/kangkang_blog/assets/js/69.46cb9bdd.js"><link rel="prefetch" href="/kangkang_blog/assets/js/7.418da0f0.js"><link rel="prefetch" href="/kangkang_blog/assets/js/70.51090e6a.js"><link rel="prefetch" href="/kangkang_blog/assets/js/71.3d0bc3f3.js"><link rel="prefetch" href="/kangkang_blog/assets/js/72.52ff5f45.js"><link rel="prefetch" href="/kangkang_blog/assets/js/73.1f00ddf5.js"><link rel="prefetch" href="/kangkang_blog/assets/js/74.cbbd51db.js"><link rel="prefetch" href="/kangkang_blog/assets/js/75.e5a47b6a.js"><link rel="prefetch" href="/kangkang_blog/assets/js/76.f7c6c35f.js"><link rel="prefetch" href="/kangkang_blog/assets/js/77.a6b8b587.js"><link rel="prefetch" href="/kangkang_blog/assets/js/78.2e0955ca.js"><link rel="prefetch" href="/kangkang_blog/assets/js/79.d5217cc3.js"><link rel="prefetch" href="/kangkang_blog/assets/js/vendors~docsearch.556c5cf2.js">
+    <link rel="stylesheet" href="/kangkang_blog/assets/css/0.styles.b89ce085.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container"><header class="navbar"><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/kangkang_blog/" class="home-link router-link-active"><img src="/kangkang_blog/assets/img/logo.gif" alt="个人笔记" class="logo"> <span class="site-name can-hide">个人笔记</span></a> <div class="links"><div class="search-box"><input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <nav class="nav-links can-hide"><div class="nav-item"><a href="/kangkang_blog/guide/" class="nav-link">
+  欢迎
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="Git笔记" class="dropdown-title"><span class="title">Git笔记</span> <span class="arrow down"></span></button> <button type="button" aria-label="Git笔记" class="mobile-dropdown-title"><span class="title">Git笔记</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/kangkang_blog/git/overview.html" class="nav-link">
+  基本介绍
+</a></li><li class="dropdown-item"><h4>
+          基本语法
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/kangkang_blog/git/syntax/oper_symbol.html" class="nav-link">
+  常见的操作符
+</a></li><li class="dropdown-subitem"><a href="/kangkang_blog/git/syntax/git_add.html" class="nav-link">
+  git add
+</a></li><li class="dropdown-subitem"><a href="/kangkang_blog/git/syntax/git_branch.html" class="nav-link">
+  git branch
+</a></li><li class="dropdown-subitem"><a href="/kangkang_blog/git/syntax/git_checkout.html" class="nav-link">
+  git checkout
+</a></li><li class="dropdown-subitem"><a href="/kangkang_blog/git/syntax/git_cherry-pick.html" class="nav-link">
+  git cherry-pick
+</a></li><li class="dropdown-subitem"><a href="/kangkang_blog/git/syntax/git_clean.html" class="nav-link">
+  git clean
+</a></li><li class="dropdown-subitem"><a href="/kangkang_blog/git/syntax/git_clone.html" class="nav-link">
+  git clone
+</a></li><li class="dropdown-subitem"><a href="/kangkang_blog/git/syntax/git_commit.html" class="nav-link">
+  git commit
+</a></li><li class="dropdown-subitem"><a href="/kangkang_blog/git/syntax/git_config.html" class="nav-link">
+  git config
+</a></li><li class="dropdown-subitem"><a href="/kangkang_blog/git/syntax/git_diff.html" class="nav-link">
+  git diff
+</a></li><li class="dropdown-subitem"><a href="/kangkang_blog/git/syntax/git_fetch.html" class="nav-link">
+  git fetch
+</a></li><li class="dropdown-subitem"><a href="/kangkang_blog/git/syntax/git_init.html" class="nav-link">
+  git init
+</a></li><li class="dropdown-subitem"><a href="/kangkang_blog/git/syntax/git_log.html" class="nav-link">
+  git log
+</a></li><li class="dropdown-subitem"><a href="/kangkang_blog/git/syntax/git_merge.html" class="nav-link">
+  git merge
+</a></li><li class="dropdown-subitem"><a href="/kangkang_blog/git/syntax/git_mv.html" class="nav-link">
+  git mv
+</a></li><li class="dropdown-subitem"><a href="/kangkang_blog/git/syntax/git_pull.html" class="nav-link">
+  git pull
+</a></li><li class="dropdown-subitem"><a href="/kangkang_blog/git/syntax/git_push.html" class="nav-link">
+  git push
+</a></li><li class="dropdown-subitem"><a href="/kangkang_blog/git/syntax/git_rebase.html" aria-current="page" class="nav-link router-link-exact-active router-link-active">
+  git reabse
+</a></li><li class="dropdown-subitem"><a href="/kangkang_blog/git/syntax/git_remote.html" class="nav-link">
+  git remote
+</a></li><li class="dropdown-subitem"><a href="/kangkang_blog/git/syntax/git_reset.html" class="nav-link">
+  git reset
+</a></li><li class="dropdown-subitem"><a href="/kangkang_blog/git/syntax/git_restore.html" class="nav-link">
+  git restore
+</a></li><li class="dropdown-subitem"><a href="/kangkang_blog/git/syntax/git_rm.html" class="nav-link">
+  git rm
+</a></li><li class="dropdown-subitem"><a href="/kangkang_blog/git/syntax/git_show.html" class="nav-link">
+  git show
+</a></li><li class="dropdown-subitem"><a href="/kangkang_blog/git/syntax/git_stage.html" class="nav-link">
+  git stage
+</a></li><li class="dropdown-subitem"><a href="/kangkang_blog/git/syntax/git_stash.html" class="nav-link">
+  git stash
+</a></li><li class="dropdown-subitem"><a href="/kangkang_blog/git/syntax/git_status.html" class="nav-link">
+  git status
+</a></li><li class="dropdown-subitem"><a href="/kangkang_blog/git/syntax/git_switch.html" class="nav-link">
+  git switch
+</a></li><li class="dropdown-subitem"><a href="/kangkang_blog/git/syntax/git_tag.html" class="nav-link">
+  git tag
+</a></li></ul></li><li class="dropdown-item"><h4>
+          操作实践
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/kangkang_blog/git/advanced_skills/rule.html" class="nav-link">
+  若干建议规范
+</a></li><li class="dropdown-subitem"><a href="/kangkang_blog/git/advanced_skills/great_skills.html" class="nav-link">
+  各种骚操作
+</a></li><li class="dropdown-subitem"><a href="/kangkang_blog/git/advanced_skills/best_practices.html" class="nav-link">
+  通过分支管理需求、问题单
+</a></li><li class="dropdown-subitem"><a href="/kangkang_blog/git/advanced_skills/different.html" class="nav-link">
+  merge、rebase、cherry-pick的区别
+</a></li></ul></li><li class="dropdown-item"><!----> <a href="/kangkang_blog/git/tool/tool.html" class="nav-link">
+  第三方工具推荐
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="Flex弹性布局" class="dropdown-title"><span class="title">Flex弹性布局</span> <span class="arrow down"></span></button> <button type="button" aria-label="Flex弹性布局" class="mobile-dropdown-title"><span class="title">Flex弹性布局</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/kangkang_blog/flex/index.html" class="nav-link">
+  简介
+</a></li><li class="dropdown-item"><!----> <a href="/kangkang_blog/flex/introduction.html" class="nav-link">
+  相关概念
+</a></li><li class="dropdown-item"><!----> <a href="/kangkang_blog/flex/init.html" class="nav-link">
+  初始化计算
+</a></li><li class="dropdown-item"><!----> <a href="/kangkang_blog/flex/item/item.html" class="nav-link">
+  弹性元素
+</a></li><li class="dropdown-item"><!----> <a href="/kangkang_blog/flex/container/container.html" class="nav-link">
+  弹性容器
+</a></li><li class="dropdown-item"><h4>
+          外在影响因素
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/kangkang_blog/flex/other/css1.html" class="nav-link">
+  min-content/max-content
+</a></li><li class="dropdown-subitem"><a href="/kangkang_blog/flex/other/css2.html" class="nav-link">
+  position
+</a></li><li class="dropdown-subitem"><a href="/kangkang_blog/flex/other/css3.html" class="nav-link">
+  direction
+</a></li><li class="dropdown-subitem"><a href="/kangkang_blog/flex/other/css4.html" class="nav-link">
+  margin
+</a></li><li class="dropdown-subitem"><a href="/kangkang_blog/flex/other/css5.html" class="nav-link">
+  min-width
+</a></li><li class="dropdown-subitem"><a href="/kangkang_blog/flex/other/css6.html" class="nav-link">
+  overflow
+</a></li></ul></li><li class="dropdown-item"><h4>
+          应用实例
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/kangkang_blog/flex/example/example1.html" class="nav-link">
+  表格hover组件
+</a></li><li class="dropdown-subitem"><a href="/kangkang_blog/flex/example/example2.html" class="nav-link">
+  示例2
+</a></li></ul></li></ul></div></div><div class="nav-item"><a href="/kangkang_blog/vue/index.html" class="nav-link">
+  Vue.js
+</a></div><div class="nav-item"><a href="/kangkang_blog/react/index.html" class="nav-link">
+  React.js
+</a></div><div class="nav-item"><a href="/kangkang_blog/nodejs/index.html" class="nav-link">
+  Node.js
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="菜谱的自我修养" class="dropdown-title"><span class="title">菜谱的自我修养</span> <span class="arrow down"></span></button> <button type="button" aria-label="菜谱的自我修养" class="mobile-dropdown-title"><span class="title">菜谱的自我修养</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/kangkang_blog/cookbook/list.html" class="nav-link">
+  列表
+</a></li><li class="dropdown-item"><!----> <a href="/kangkang_blog/cookbook/1.html" class="nav-link">
+  香菇蒸滑鸡
+</a></li></ul></div></div><div class="nav-item"><a href="/kangkang_blog/travel/index.html" class="nav-link">
+  旅行日记
+</a></div><div class="nav-item"><a href="/kangkang_blog/interview/index.html" class="nav-link">
+  常见面试题
+</a></div> <a href="https://github.com/ykshang/kangkang_blog" target="_blank" rel="noopener noreferrer" class="repo-link">
+    查看源码
+    <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></nav></div></header> <div class="sidebar-mask"></div> <aside class="sidebar"><nav class="nav-links"><div class="nav-item"><a href="/kangkang_blog/guide/" class="nav-link">
+  欢迎
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="Git笔记" class="dropdown-title"><span class="title">Git笔记</span> <span class="arrow down"></span></button> <button type="button" aria-label="Git笔记" class="mobile-dropdown-title"><span class="title">Git笔记</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/kangkang_blog/git/overview.html" class="nav-link">
+  基本介绍
+</a></li><li class="dropdown-item"><h4>
+          基本语法
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/kangkang_blog/git/syntax/oper_symbol.html" class="nav-link">
+  常见的操作符
+</a></li><li class="dropdown-subitem"><a href="/kangkang_blog/git/syntax/git_add.html" class="nav-link">
+  git add
+</a></li><li class="dropdown-subitem"><a href="/kangkang_blog/git/syntax/git_branch.html" class="nav-link">
+  git branch
+</a></li><li class="dropdown-subitem"><a href="/kangkang_blog/git/syntax/git_checkout.html" class="nav-link">
+  git checkout
+</a></li><li class="dropdown-subitem"><a href="/kangkang_blog/git/syntax/git_cherry-pick.html" class="nav-link">
+  git cherry-pick
+</a></li><li class="dropdown-subitem"><a href="/kangkang_blog/git/syntax/git_clean.html" class="nav-link">
+  git clean
+</a></li><li class="dropdown-subitem"><a href="/kangkang_blog/git/syntax/git_clone.html" class="nav-link">
+  git clone
+</a></li><li class="dropdown-subitem"><a href="/kangkang_blog/git/syntax/git_commit.html" class="nav-link">
+  git commit
+</a></li><li class="dropdown-subitem"><a href="/kangkang_blog/git/syntax/git_config.html" class="nav-link">
+  git config
+</a></li><li class="dropdown-subitem"><a href="/kangkang_blog/git/syntax/git_diff.html" class="nav-link">
+  git diff
+</a></li><li class="dropdown-subitem"><a href="/kangkang_blog/git/syntax/git_fetch.html" class="nav-link">
+  git fetch
+</a></li><li class="dropdown-subitem"><a href="/kangkang_blog/git/syntax/git_init.html" class="nav-link">
+  git init
+</a></li><li class="dropdown-subitem"><a href="/kangkang_blog/git/syntax/git_log.html" class="nav-link">
+  git log
+</a></li><li class="dropdown-subitem"><a href="/kangkang_blog/git/syntax/git_merge.html" class="nav-link">
+  git merge
+</a></li><li class="dropdown-subitem"><a href="/kangkang_blog/git/syntax/git_mv.html" class="nav-link">
+  git mv
+</a></li><li class="dropdown-subitem"><a href="/kangkang_blog/git/syntax/git_pull.html" class="nav-link">
+  git pull
+</a></li><li class="dropdown-subitem"><a href="/kangkang_blog/git/syntax/git_push.html" class="nav-link">
+  git push
+</a></li><li class="dropdown-subitem"><a href="/kangkang_blog/git/syntax/git_rebase.html" aria-current="page" class="nav-link router-link-exact-active router-link-active">
+  git reabse
+</a></li><li class="dropdown-subitem"><a href="/kangkang_blog/git/syntax/git_remote.html" class="nav-link">
+  git remote
+</a></li><li class="dropdown-subitem"><a href="/kangkang_blog/git/syntax/git_reset.html" class="nav-link">
+  git reset
+</a></li><li class="dropdown-subitem"><a href="/kangkang_blog/git/syntax/git_restore.html" class="nav-link">
+  git restore
+</a></li><li class="dropdown-subitem"><a href="/kangkang_blog/git/syntax/git_rm.html" class="nav-link">
+  git rm
+</a></li><li class="dropdown-subitem"><a href="/kangkang_blog/git/syntax/git_show.html" class="nav-link">
+  git show
+</a></li><li class="dropdown-subitem"><a href="/kangkang_blog/git/syntax/git_stage.html" class="nav-link">
+  git stage
+</a></li><li class="dropdown-subitem"><a href="/kangkang_blog/git/syntax/git_stash.html" class="nav-link">
+  git stash
+</a></li><li class="dropdown-subitem"><a href="/kangkang_blog/git/syntax/git_status.html" class="nav-link">
+  git status
+</a></li><li class="dropdown-subitem"><a href="/kangkang_blog/git/syntax/git_switch.html" class="nav-link">
+  git switch
+</a></li><li class="dropdown-subitem"><a href="/kangkang_blog/git/syntax/git_tag.html" class="nav-link">
+  git tag
+</a></li></ul></li><li class="dropdown-item"><h4>
+          操作实践
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/kangkang_blog/git/advanced_skills/rule.html" class="nav-link">
+  若干建议规范
+</a></li><li class="dropdown-subitem"><a href="/kangkang_blog/git/advanced_skills/great_skills.html" class="nav-link">
+  各种骚操作
+</a></li><li class="dropdown-subitem"><a href="/kangkang_blog/git/advanced_skills/best_practices.html" class="nav-link">
+  通过分支管理需求、问题单
+</a></li><li class="dropdown-subitem"><a href="/kangkang_blog/git/advanced_skills/different.html" class="nav-link">
+  merge、rebase、cherry-pick的区别
+</a></li></ul></li><li class="dropdown-item"><!----> <a href="/kangkang_blog/git/tool/tool.html" class="nav-link">
+  第三方工具推荐
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="Flex弹性布局" class="dropdown-title"><span class="title">Flex弹性布局</span> <span class="arrow down"></span></button> <button type="button" aria-label="Flex弹性布局" class="mobile-dropdown-title"><span class="title">Flex弹性布局</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/kangkang_blog/flex/index.html" class="nav-link">
+  简介
+</a></li><li class="dropdown-item"><!----> <a href="/kangkang_blog/flex/introduction.html" class="nav-link">
+  相关概念
+</a></li><li class="dropdown-item"><!----> <a href="/kangkang_blog/flex/init.html" class="nav-link">
+  初始化计算
+</a></li><li class="dropdown-item"><!----> <a href="/kangkang_blog/flex/item/item.html" class="nav-link">
+  弹性元素
+</a></li><li class="dropdown-item"><!----> <a href="/kangkang_blog/flex/container/container.html" class="nav-link">
+  弹性容器
+</a></li><li class="dropdown-item"><h4>
+          外在影响因素
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/kangkang_blog/flex/other/css1.html" class="nav-link">
+  min-content/max-content
+</a></li><li class="dropdown-subitem"><a href="/kangkang_blog/flex/other/css2.html" class="nav-link">
+  position
+</a></li><li class="dropdown-subitem"><a href="/kangkang_blog/flex/other/css3.html" class="nav-link">
+  direction
+</a></li><li class="dropdown-subitem"><a href="/kangkang_blog/flex/other/css4.html" class="nav-link">
+  margin
+</a></li><li class="dropdown-subitem"><a href="/kangkang_blog/flex/other/css5.html" class="nav-link">
+  min-width
+</a></li><li class="dropdown-subitem"><a href="/kangkang_blog/flex/other/css6.html" class="nav-link">
+  overflow
+</a></li></ul></li><li class="dropdown-item"><h4>
+          应用实例
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/kangkang_blog/flex/example/example1.html" class="nav-link">
+  表格hover组件
+</a></li><li class="dropdown-subitem"><a href="/kangkang_blog/flex/example/example2.html" class="nav-link">
+  示例2
+</a></li></ul></li></ul></div></div><div class="nav-item"><a href="/kangkang_blog/vue/index.html" class="nav-link">
+  Vue.js
+</a></div><div class="nav-item"><a href="/kangkang_blog/react/index.html" class="nav-link">
+  React.js
+</a></div><div class="nav-item"><a href="/kangkang_blog/nodejs/index.html" class="nav-link">
+  Node.js
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="菜谱的自我修养" class="dropdown-title"><span class="title">菜谱的自我修养</span> <span class="arrow down"></span></button> <button type="button" aria-label="菜谱的自我修养" class="mobile-dropdown-title"><span class="title">菜谱的自我修养</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/kangkang_blog/cookbook/list.html" class="nav-link">
+  列表
+</a></li><li class="dropdown-item"><!----> <a href="/kangkang_blog/cookbook/1.html" class="nav-link">
+  香菇蒸滑鸡
+</a></li></ul></div></div><div class="nav-item"><a href="/kangkang_blog/travel/index.html" class="nav-link">
+  旅行日记
+</a></div><div class="nav-item"><a href="/kangkang_blog/interview/index.html" class="nav-link">
+  常见面试题
+</a></div> <a href="https://github.com/ykshang/kangkang_blog" target="_blank" rel="noopener noreferrer" class="repo-link">
+    查看源码
+    <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></nav>  <ul class="sidebar-links"><li><a href="/kangkang_blog/guide/" class="sidebar-link">Hello Word！</a></li><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading open"><span>Git笔记</span> <span class="arrow down"></span></p> <ul class="sidebar-links sidebar-group-items"><li><a href="/kangkang_blog/git/overview.html" class="sidebar-link">基本介绍</a></li><li><section class="sidebar-group collapsable is-sub-group depth-1"><p class="sidebar-heading open"><span>基本语法</span> <span class="arrow down"></span></p> <ul class="sidebar-links sidebar-group-items"><li><a href="/kangkang_blog/git/syntax/oper_symbol.html" class="sidebar-link">常见的操作符</a></li><li><a href="/kangkang_blog/git/syntax/git_add.html" class="sidebar-link">git add</a></li><li><a href="/kangkang_blog/git/syntax/git_branch.html" class="sidebar-link">git branch</a></li><li><a href="/kangkang_blog/git/syntax/git_checkout.html" class="sidebar-link">git checkout</a></li><li><a href="/kangkang_blog/git/syntax/git_cherry-pick.html" class="sidebar-link">git cherry-pick</a></li><li><a href="/kangkang_blog/git/syntax/git_clean.html" class="sidebar-link">git clean</a></li><li><a href="/kangkang_blog/git/syntax/git_clone.html" class="sidebar-link">git clone</a></li><li><a href="/kangkang_blog/git/syntax/git_commit.html" class="sidebar-link">git commit</a></li><li><a href="/kangkang_blog/git/syntax/git_config.html" class="sidebar-link">git config</a></li><li><a href="/kangkang_blog/git/syntax/git_diff.html" class="sidebar-link">git diff</a></li><li><a href="/kangkang_blog/git/syntax/git_fetch.html" class="sidebar-link">git fetch</a></li><li><a href="/kangkang_blog/git/syntax/git_init.html" class="sidebar-link">git init</a></li><li><a href="/kangkang_blog/git/syntax/git_log.html" class="sidebar-link">git log</a></li><li><a href="/kangkang_blog/git/syntax/git_merge.html" class="sidebar-link">git merge</a></li><li><a href="/kangkang_blog/git/syntax/git_mv.html" class="sidebar-link">git mv</a></li><li><a href="/kangkang_blog/git/syntax/git_pull.html" class="sidebar-link">git pull</a></li><li><a href="/kangkang_blog/git/syntax/git_push.html" class="sidebar-link">git push</a></li><li><a href="/kangkang_blog/git/syntax/git_rebase.html" aria-current="page" class="active sidebar-link">git reabse</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/kangkang_blog/git/syntax/git_rebase.html#语法" class="sidebar-link">语法</a></li><li class="sidebar-sub-header"><a href="/kangkang_blog/git/syntax/git_rebase.html#常用的参数" class="sidebar-link">常用的参数</a></li><li class="sidebar-sub-header"><a href="/kangkang_blog/git/syntax/git_rebase.html#常用命令举例" class="sidebar-link">常用命令举例：</a></li><li class="sidebar-sub-header"><a href="/kangkang_blog/git/syntax/git_rebase.html#详细介绍" class="sidebar-link">详细介绍</a></li><li class="sidebar-sub-header"><a href="/kangkang_blog/git/syntax/git_rebase.html#冲突的处理" class="sidebar-link">冲突的处理</a></li></ul></li><li><a href="/kangkang_blog/git/syntax/git_remote.html" class="sidebar-link">git remote</a></li><li><a href="/kangkang_blog/git/syntax/git_reset.html" class="sidebar-link">git reset</a></li><li><a href="/kangkang_blog/git/syntax/git_restore.html" class="sidebar-link">git restore</a></li><li><a href="/kangkang_blog/git/syntax/git_rm.html" class="sidebar-link">git rm</a></li><li><a href="/kangkang_blog/git/syntax/git_show.html" class="sidebar-link">git show</a></li><li><a href="/kangkang_blog/git/syntax/git_stage.html" class="sidebar-link">git stage</a></li><li><a href="/kangkang_blog/git/syntax/git_stash.html" class="sidebar-link">git stash</a></li><li><a href="/kangkang_blog/git/syntax/git_status.html" class="sidebar-link">git status</a></li><li><a href="/kangkang_blog/git/syntax/git_switch.html" class="sidebar-link">git switch</a></li><li><a href="/kangkang_blog/git/syntax/git_tag.html" class="sidebar-link">git tag</a></li></ul></section></li><li><section class="sidebar-group collapsable is-sub-group depth-1"><p class="sidebar-heading"><span>操作实践</span> <span class="arrow right"></span></p> <!----></section></li><li><a href="/kangkang_blog/git/tool/tool.html" class="sidebar-link">第三方工具推荐</a></li></ul></section></li><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading"><span>Flex弹性布局</span> <span class="arrow right"></span></p> <!----></section></li><li><a href="/kangkang_blog/vue/" class="sidebar-link">Vue.js</a></li><li><a href="/kangkang_blog/react/" class="sidebar-link">React.js</a></li><li><a href="/kangkang_blog/nodejs/" class="sidebar-link">Node.js</a></li><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading"><span>菜谱的自我修养</span> <span class="arrow right"></span></p> <!----></section></li><li><a href="/kangkang_blog/travel/" class="sidebar-link">旅行日记</a></li><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading"><span>常见面试题</span> <span class="arrow right"></span></p> <!----></section></li></ul> </aside> <main class="page"> <div class="theme-default-content content__default"><h1 id="git-rebase"><a href="#git-rebase" class="header-anchor">#</a> git rebase</h1> <div class="custom-block tip"><p class="custom-block-title">主要作用</p> <p>操作分支，变基，会改变提交历史</p></div> <h2 id="语法"><a href="#语法" class="header-anchor">#</a> 语法</h2> <div class="language-bash line-numbers-mode"><pre class="language-bash"><code><span class="token function">git</span> rebase <span class="token punctuation">[</span><span class="token operator">&lt;</span>options<span class="token operator">&gt;</span><span class="token punctuation">]</span> <span class="token punctuation">[</span><span class="token operator">&lt;</span>commit<span class="token operator">&gt;</span><span class="token punctuation">]</span> <span class="token punctuation">[</span>--<span class="token punctuation">]</span> <span class="token punctuation">[</span><span class="token operator">&lt;</span>path<span class="token operator">&gt;</span>…​<span class="token punctuation">]</span>
+<span class="token function">git</span> rebase <span class="token punctuation">[</span><span class="token operator">&lt;</span>options<span class="token operator">&gt;</span><span class="token punctuation">]</span> <span class="token parameter variable">--cached</span> <span class="token punctuation">[</span><span class="token operator">&lt;</span>commit<span class="token operator">&gt;</span><span class="token punctuation">]</span> <span class="token punctuation">[</span>--<span class="token punctuation">]</span> <span class="token punctuation">[</span><span class="token operator">&lt;</span>path<span class="token operator">&gt;</span>…​<span class="token punctuation">]</span>
+<span class="token function">git</span> rebase <span class="token punctuation">[</span><span class="token operator">&lt;</span>options<span class="token operator">&gt;</span><span class="token punctuation">]</span> <span class="token operator">&lt;</span>commit<span class="token operator">&gt;</span> <span class="token punctuation">[</span><span class="token operator">&lt;</span>commit<span class="token operator">&gt;</span>…​<span class="token punctuation">]</span> <span class="token operator">&lt;</span>commit<span class="token operator">&gt;</span> <span class="token punctuation">[</span>--<span class="token punctuation">]</span> <span class="token punctuation">[</span><span class="token operator">&lt;</span>path<span class="token operator">&gt;</span>…​<span class="token punctuation">]</span>
+<span class="token function">git</span> rebase <span class="token punctuation">[</span><span class="token operator">&lt;</span>options<span class="token operator">&gt;</span><span class="token punctuation">]</span> <span class="token operator">&lt;</span>commit<span class="token operator">&gt;</span>…​<span class="token operator">&lt;</span>commit<span class="token operator">&gt;</span> <span class="token punctuation">[</span>--<span class="token punctuation">]</span> <span class="token punctuation">[</span><span class="token operator">&lt;</span>path<span class="token operator">&gt;</span>…​<span class="token punctuation">]</span>
+<span class="token function">git</span> rebase <span class="token punctuation">[</span><span class="token operator">&lt;</span>options<span class="token operator">&gt;</span><span class="token punctuation">]</span> <span class="token operator">&lt;</span>blob<span class="token operator">&gt;</span> <span class="token operator">&lt;</span>blob<span class="token operator">&gt;</span>
+<span class="token function">git</span> rebase <span class="token punctuation">[</span><span class="token operator">&lt;</span>options<span class="token operator">&gt;</span><span class="token punctuation">]</span> --no-index <span class="token punctuation">[</span>--<span class="token punctuation">]</span> <span class="token operator">&lt;</span>path<span class="token operator">&gt;</span> <span class="token operator">&lt;</span>path<span class="token operator">&gt;</span>
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br></div></div><h2 id="常用的参数"><a href="#常用的参数" class="header-anchor">#</a> 常用的参数</h2> <table><thead><tr><th style="text-align:left;">参数</th> <th style="text-align:left;">解释</th></tr></thead> <tbody><tr><td style="text-align:left;">--continue</td> <td style="text-align:left;">处理完冲突，继续变基</td></tr> <tr><td style="text-align:left;">--abort</td> <td style="text-align:left;">中断当前处理，放弃变基</td></tr> <tr><td style="text-align:left;">-i,--interactive</td> <td style="text-align:left;">交互式变基，操作commit，增删改</td></tr></tbody></table> <h2 id="常用命令举例"><a href="#常用命令举例" class="header-anchor">#</a> 常用命令举例：</h2> <ul><li><p>将DTS分支变基到当前分支</p> <div class="language-bash line-numbers-mode"><pre class="language-bash"><code><span class="token function">git</span> rebase DTS
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br></div></div></li> <li><p>交互式变基处理当前提交历史</p> <div class="language-bash line-numbers-mode"><pre class="language-bash"><code><span class="token function">git</span> rebase <span class="token parameter variable">-i</span> head~11
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br></div></div></li></ul> <h2 id="详细介绍"><a href="#详细介绍" class="header-anchor">#</a> 详细介绍</h2> <p>假设当前有以下<code>DTS</code>和<code>master</code>分支</p> <p><img src="/kangkang_blog/assets/img/merge.29340609.png" alt="merge图示"></p> <p>将<code>DTS</code>分支合并到<code>master</code>分支</p> <div class="language-bash line-numbers-mode"><pre class="language-bash"><code><span class="token function">git</span> rebase DTS
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br></div></div><p>那么他的合并结果：</p> <p><img src="/kangkang_blog/assets/img/rebase_result.52b5192c.png" alt="&quot;merge 合并结果&quot;"></p> <div class="custom-block warning"><p class="custom-block-title">提示</p> <p>rebase变基过来的分支，其实和原分支的提交已经不再一致。<br>
+如果没有遇到冲突，仅仅只是提交的hash值（commit-id）变了
+如果遇到冲突，则冲突的提交内容也会发生改变</p></div> <h2 id="冲突的处理"><a href="#冲突的处理" class="header-anchor">#</a> 冲突的处理</h2> <p>冲突处理都是一致的，可以参考merge一节</p> <p>处理完冲突以后，添加到暂存区</p> <div class="language-bash line-numbers-mode"><pre class="language-bash"><code><span class="token function">git</span> <span class="token function">add</span> <span class="token builtin class-name">.</span>
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br></div></div><p>继续变基</p> <div class="language-bash line-numbers-mode"><pre class="language-bash"><code><span class="token function">git</span> rebase <span class="token parameter variable">--continue</span>
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br></div></div></div> <footer class="page-edit"><div class="edit-link"><a href="https://github.com/ykshang/kangkang_blog/edit/master/docs/git/syntax/git_rebase.md" target="_blank" rel="noopener noreferrer">编辑此文档</a> <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></div> <div class="last-updated"><span class="prefix">最后更新:</span> <span class="time">12/29/2024, 12:53:53 PM</span></div></footer> <div class="page-nav"><p class="inner"><span class="prev">
+      ←
+      <a href="/kangkang_blog/git/syntax/git_push.html" class="prev">
+        git push
+      </a></span> <span class="next"><a href="/kangkang_blog/git/syntax/git_remote.html">
+        git remote
+      </a>
+      →
+    </span></p></div> </main></div><div class="global-ui"><!----><!----><div id="live2d-widget" class="live2d-widget-container" style="position:fixed;right:50px;bottom:50px;width:180px;height:400px;z-index:99999;opacity:0.8;pointer-events:none;"><canvas id="live2d_canvas" width="180" height="400" class="live2d_canvas" style="position:absolute;left:0px;top:0px;width:180px;height:400px;"></canvas></div></div></div>
+    <script src="/kangkang_blog/assets/js/app.da7f16f8.js" defer></script><script src="/kangkang_blog/assets/js/2.9708e627.js" defer></script><script src="/kangkang_blog/assets/js/1.5df086e8.js" defer></script><script src="/kangkang_blog/assets/js/38.0f3626da.js" defer></script>
+  </body>
+</html>

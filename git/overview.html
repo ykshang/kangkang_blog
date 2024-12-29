@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Git教程 | 个人笔记</title>
+    <meta name="generator" content="VuePress 1.9.10">
+    <link rel="shortcut icon" type="image/x-icon" href="/kangkang_blog/logo.png">
+    <meta name="description" content="记录学习成长">
+    
+    <link rel="preload" href="/kangkang_blog/assets/css/0.styles.b89ce085.css" as="style"><link rel="preload" href="/kangkang_blog/assets/js/app.da7f16f8.js" as="script"><link rel="preload" href="/kangkang_blog/assets/js/2.9708e627.js" as="script"><link rel="preload" href="/kangkang_blog/assets/js/1.5df086e8.js" as="script"><link rel="preload" href="/kangkang_blog/assets/js/37.2f712d1a.js" as="script"><link rel="prefetch" href="/kangkang_blog/assets/js/10.9a3d24d5.js"><link rel="prefetch" href="/kangkang_blog/assets/js/11.b5a82e55.js"><link rel="prefetch" href="/kangkang_blog/assets/js/12.71237375.js"><link rel="prefetch" href="/kangkang_blog/assets/js/13.2e656bfb.js"><link rel="prefetch" href="/kangkang_blog/assets/js/14.d2fe2c94.js"><link rel="prefetch" href="/kangkang_blog/assets/js/15.4e9197a1.js"><link rel="prefetch" href="/kangkang_blog/assets/js/16.93be7540.js"><link rel="prefetch" href="/kangkang_blog/assets/js/17.fd641f60.js"><link rel="prefetch" href="/kangkang_blog/assets/js/18.97ddd38b.js"><link rel="prefetch" href="/kangkang_blog/assets/js/19.60203e38.js"><link rel="prefetch" href="/kangkang_blog/assets/js/20.8a43b3c4.js"><link rel="prefetch" href="/kangkang_blog/assets/js/21.896d46c5.js"><link rel="prefetch" href="/kangkang_blog/assets/js/22.6d34ee43.js"><link rel="prefetch" href="/kangkang_blog/assets/js/23.da31ee4e.js"><link rel="prefetch" href="/kangkang_blog/assets/js/24.2138cdc0.js"><link rel="prefetch" href="/kangkang_blog/assets/js/25.222b877a.js"><link rel="prefetch" href="/kangkang_blog/assets/js/26.9cf55529.js"><link rel="prefetch" href="/kangkang_blog/assets/js/27.e98c55af.js"><link rel="prefetch" href="/kangkang_blog/assets/js/28.42cff242.js"><link rel="prefetch" href="/kangkang_blog/assets/js/29.9487da16.js"><link rel="prefetch" href="/kangkang_blog/assets/js/3.a96d696c.js"><link rel="prefetch" href="/kangkang_blog/assets/js/30.53feb616.js"><link rel="prefetch" href="/kangkang_blog/assets/js/31.6d54797d.js"><link rel="prefetch" href="/kangkang_blog/assets/js/32.7366da65.js"><link rel="prefetch" href="/kangkang_blog/assets/js/33.a5cae244.js"><link rel="prefetch" href="/kangkang_blog/assets/js/34.eaead00f.js"><link rel="prefetch" href="/kangkang_blog/assets/js/35.6d2f968f.js"><link rel="prefetch" href="/kangkang_blog/assets/js/36.93e32238.js"><link rel="prefetch" href="/kangkang_blog/assets/js/38.0f3626da.js"><link rel="prefetch" href="/kangkang_blog/assets/js/39.07512d4f.js"><link rel="prefetch" href="/kangkang_blog/assets/js/4.88794156.js"><link rel="prefetch" href="/kangkang_blog/assets/js/40.b25eb92f.js"><link rel="prefetch" href="/kangkang_blog/assets/js/41.658601bb.js"><link rel="prefetch" href="/kangkang_blog/assets/js/42.f22f518e.js"><link rel="prefetch" href="/kangkang_blog/assets/js/43.cad56a86.js"><link rel="prefetch" href="/kangkang_blog/assets/js/44.c6913701.js"><link rel="prefetch" href="/kangkang_blog/assets/js/45.5a70465b.js"><link rel="prefetch" href="/kangkang_blog/assets/js/46.fb890674.js"><link rel="prefetch" href="/kangkang_blog/assets/js/47.72b75c68.js"><link rel="prefetch" href="/kangkang_blog/assets/js/48.af028104.js"><link rel="prefetch" href="/kangkang_blog/assets/js/49.08fcc400.js"><link rel="prefetch" href="/kangkang_blog/assets/js/5.b624d556.js"><link rel="prefetch" href="/kangkang_blog/assets/js/50.4702331b.js"><link rel="prefetch" href="/kangkang_blog/assets/js/51.0faeae7b.js"><link rel="prefetch" href="/kangkang_blog/assets/js/52.717394ed.js"><link rel="prefetch" href="/kangkang_blog/assets/js/53.8d8a3901.js"><link rel="prefetch" href="/kangkang_blog/assets/js/54.081e2770.js"><link rel="prefetch" href="/kangkang_blog/assets/js/55.5744129a.js"><link rel="prefetch" href="/kangkang_blog/assets/js/56.c8855caf.js"><link rel="prefetch" href="/kangkang_blog/assets/js/57.e2dae07b.js"><link rel="prefetch" href="/kangkang_blog/assets/js/58.4fca624f.js"><link rel="prefetch" href="/kangkang_blog/assets/js/59.e930e699.js"><link rel="prefetch" href="/kangkang_blog/assets/js/6.5afe2469.js"><link rel="prefetch" href="/kangkang_blog/assets/js/60.c13c95b1.js"><link rel="prefetch" href="/kangkang_blog/assets/js/61.3151efc7.js"><link rel="prefetch" href="/kangkang_blog/assets/js/62.88add6d0.js"><link rel="prefetch" href="/kangkang_blog/assets/js/63.edde2f6f.js"><link rel="prefetch" href="/kangkang_blog/assets/js/64.4bca4fe5.js"><link rel="prefetch" href="/kangkang_blog/assets/js/65.591e3e8d.js"><link rel="prefetch" href="/kangkang_blog/assets/js/66.2b332f5d.js"><link rel="prefetch" href="/kangkang_blog/assets/js/67.184905ae.js"><link rel="prefetch" href="/kangkang_blog/assets/js/68.7e7dd592.js"><link rel="prefetch" href="/kangkang_blog/assets/js/69.46cb9bdd.js"><link rel="prefetch" href="/kangkang_blog/assets/js/7.418da0f0.js"><link rel="prefetch" href="/kangkang_blog/assets/js/70.51090e6a.js"><link rel="prefetch" href="/kangkang_blog/assets/js/71.3d0bc3f3.js"><link rel="prefetch" href="/kangkang_blog/assets/js/72.52ff5f45.js"><link rel="prefetch" href="/kangkang_blog/assets/js/73.1f00ddf5.js"><link rel="prefetch" href="/kangkang_blog/assets/js/74.cbbd51db.js"><link rel="prefetch" href="/kangkang_blog/assets/js/75.e5a47b6a.js"><link rel="prefetch" href="/kangkang_blog/assets/js/76.f7c6c35f.js"><link rel="prefetch" href="/kangkang_blog/assets/js/77.a6b8b587.js"><link rel="prefetch" href="/kangkang_blog/assets/js/78.2e0955ca.js"><link rel="prefetch" href="/kangkang_blog/assets/js/79.d5217cc3.js"><link rel="prefetch" href="/kangkang_blog/assets/js/vendors~docsearch.556c5cf2.js">
+    <link rel="stylesheet" href="/kangkang_blog/assets/css/0.styles.b89ce085.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container"><header class="navbar"><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/kangkang_blog/" class="home-link router-link-active"><img src="/kangkang_blog/assets/img/logo.gif" alt="个人笔记" class="logo"> <span class="site-name can-hide">个人笔记</span></a> <div class="links"><div class="search-box"><input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <nav class="nav-links can-hide"><div class="nav-item"><a href="/kangkang_blog/guide/" class="nav-link">
+  欢迎
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="Git笔记" class="dropdown-title"><span class="title">Git笔记</span> <span class="arrow down"></span></button> <button type="button" aria-label="Git笔记" class="mobile-dropdown-title"><span class="title">Git笔记</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/kangkang_blog/git/overview.html" aria-current="page" class="nav-link router-link-exact-active router-link-active">
+  基本介绍
+</a></li><li class="dropdown-item"><h4>
+          基本语法
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/kangkang_blog/git/syntax/oper_symbol.html" class="nav-link">
+  常见的操作符
+</a></li><li class="dropdown-subitem"><a href="/kangkang_blog/git/syntax/git_add.html" class="nav-link">
+  git add
+</a></li><li class="dropdown-subitem"><a href="/kangkang_blog/git/syntax/git_branch.html" class="nav-link">
+  git branch
+</a></li><li class="dropdown-subitem"><a href="/kangkang_blog/git/syntax/git_checkout.html" class="nav-link">
+  git checkout
+</a></li><li class="dropdown-subitem"><a href="/kangkang_blog/git/syntax/git_cherry-pick.html" class="nav-link">
+  git cherry-pick
+</a></li><li class="dropdown-subitem"><a href="/kangkang_blog/git/syntax/git_clean.html" class="nav-link">
+  git clean
+</a></li><li class="dropdown-subitem"><a href="/kangkang_blog/git/syntax/git_clone.html" class="nav-link">
+  git clone
+</a></li><li class="dropdown-subitem"><a href="/kangkang_blog/git/syntax/git_commit.html" class="nav-link">
+  git commit
+</a></li><li class="dropdown-subitem"><a href="/kangkang_blog/git/syntax/git_config.html" class="nav-link">
+  git config
+</a></li><li class="dropdown-subitem"><a href="/kangkang_blog/git/syntax/git_diff.html" class="nav-link">
+  git diff
+</a></li><li class="dropdown-subitem"><a href="/kangkang_blog/git/syntax/git_fetch.html" class="nav-link">
+  git fetch
+</a></li><li class="dropdown-subitem"><a href="/kangkang_blog/git/syntax/git_init.html" class="nav-link">
+  git init
+</a></li><li class="dropdown-subitem"><a href="/kangkang_blog/git/syntax/git_log.html" class="nav-link">
+  git log
+</a></li><li class="dropdown-subitem"><a href="/kangkang_blog/git/syntax/git_merge.html" class="nav-link">
+  git merge
+</a></li><li class="dropdown-subitem"><a href="/kangkang_blog/git/syntax/git_mv.html" class="nav-link">
+  git mv
+</a></li><li class="dropdown-subitem"><a href="/kangkang_blog/git/syntax/git_pull.html" class="nav-link">
+  git pull
+</a></li><li class="dropdown-subitem"><a href="/kangkang_blog/git/syntax/git_push.html" class="nav-link">
+  git push
+</a></li><li class="dropdown-subitem"><a href="/kangkang_blog/git/syntax/git_rebase.html" class="nav-link">
+  git reabse
+</a></li><li class="dropdown-subitem"><a href="/kangkang_blog/git/syntax/git_remote.html" class="nav-link">
+  git remote
+</a></li><li class="dropdown-subitem"><a href="/kangkang_blog/git/syntax/git_reset.html" class="nav-link">
+  git reset
+</a></li><li class="dropdown-subitem"><a href="/kangkang_blog/git/syntax/git_restore.html" class="nav-link">
+  git restore
+</a></li><li class="dropdown-subitem"><a href="/kangkang_blog/git/syntax/git_rm.html" class="nav-link">
+  git rm
+</a></li><li class="dropdown-subitem"><a href="/kangkang_blog/git/syntax/git_show.html" class="nav-link">
+  git show
+</a></li><li class="dropdown-subitem"><a href="/kangkang_blog/git/syntax/git_stage.html" class="nav-link">
+  git stage
+</a></li><li class="dropdown-subitem"><a href="/kangkang_blog/git/syntax/git_stash.html" class="nav-link">
+  git stash
+</a></li><li class="dropdown-subitem"><a href="/kangkang_blog/git/syntax/git_status.html" class="nav-link">
+  git status
+</a></li><li class="dropdown-subitem"><a href="/kangkang_blog/git/syntax/git_switch.html" class="nav-link">
+  git switch
+</a></li><li class="dropdown-subitem"><a href="/kangkang_blog/git/syntax/git_tag.html" class="nav-link">
+  git tag
+</a></li></ul></li><li class="dropdown-item"><h4>
+          操作实践
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/kangkang_blog/git/advanced_skills/rule.html" class="nav-link">
+  若干建议规范
+</a></li><li class="dropdown-subitem"><a href="/kangkang_blog/git/advanced_skills/great_skills.html" class="nav-link">
+  各种骚操作
+</a></li><li class="dropdown-subitem"><a href="/kangkang_blog/git/advanced_skills/best_practices.html" class="nav-link">
+  通过分支管理需求、问题单
+</a></li><li class="dropdown-subitem"><a href="/kangkang_blog/git/advanced_skills/different.html" class="nav-link">
+  merge、rebase、cherry-pick的区别
+</a></li></ul></li><li class="dropdown-item"><!----> <a href="/kangkang_blog/git/tool/tool.html" class="nav-link">
+  第三方工具推荐
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="Flex弹性布局" class="dropdown-title"><span class="title">Flex弹性布局</span> <span class="arrow down"></span></button> <button type="button" aria-label="Flex弹性布局" class="mobile-dropdown-title"><span class="title">Flex弹性布局</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/kangkang_blog/flex/index.html" class="nav-link">
+  简介
+</a></li><li class="dropdown-item"><!----> <a href="/kangkang_blog/flex/introduction.html" class="nav-link">
+  相关概念
+</a></li><li class="dropdown-item"><!----> <a href="/kangkang_blog/flex/init.html" class="nav-link">
+  初始化计算
+</a></li><li class="dropdown-item"><!----> <a href="/kangkang_blog/flex/item/item.html" class="nav-link">
+  弹性元素
+</a></li><li class="dropdown-item"><!----> <a href="/kangkang_blog/flex/container/container.html" class="nav-link">
+  弹性容器
+</a></li><li class="dropdown-item"><h4>
+          外在影响因素
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/kangkang_blog/flex/other/css1.html" class="nav-link">
+  min-content/max-content
+</a></li><li class="dropdown-subitem"><a href="/kangkang_blog/flex/other/css2.html" class="nav-link">
+  position
+</a></li><li class="dropdown-subitem"><a href="/kangkang_blog/flex/other/css3.html" class="nav-link">
+  direction
+</a></li><li class="dropdown-subitem"><a href="/kangkang_blog/flex/other/css4.html" class="nav-link">
+  margin
+</a></li><li class="dropdown-subitem"><a href="/kangkang_blog/flex/other/css5.html" class="nav-link">
+  min-width
+</a></li><li class="dropdown-subitem"><a href="/kangkang_blog/flex/other/css6.html" class="nav-link">
+  overflow
+</a></li></ul></li><li class="dropdown-item"><h4>
+          应用实例
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/kangkang_blog/flex/example/example1.html" class="nav-link">
+  表格hover组件
+</a></li><li class="dropdown-subitem"><a href="/kangkang_blog/flex/example/example2.html" class="nav-link">
+  示例2
+</a></li></ul></li></ul></div></div><div class="nav-item"><a href="/kangkang_blog/vue/index.html" class="nav-link">
+  Vue.js
+</a></div><div class="nav-item"><a href="/kangkang_blog/react/index.html" class="nav-link">
+  React.js
+</a></div><div class="nav-item"><a href="/kangkang_blog/nodejs/index.html" class="nav-link">
+  Node.js
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="菜谱的自我修养" class="dropdown-title"><span class="title">菜谱的自我修养</span> <span class="arrow down"></span></button> <button type="button" aria-label="菜谱的自我修养" class="mobile-dropdown-title"><span class="title">菜谱的自我修养</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/kangkang_blog/cookbook/list.html" class="nav-link">
+  列表
+</a></li><li class="dropdown-item"><!----> <a href="/kangkang_blog/cookbook/1.html" class="nav-link">
+  香菇蒸滑鸡
+</a></li></ul></div></div><div class="nav-item"><a href="/kangkang_blog/travel/index.html" class="nav-link">
+  旅行日记
+</a></div><div class="nav-item"><a href="/kangkang_blog/interview/index.html" class="nav-link">
+  常见面试题
+</a></div> <a href="https://github.com/ykshang/kangkang_blog" target="_blank" rel="noopener noreferrer" class="repo-link">
+    查看源码
+    <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></nav></div></header> <div class="sidebar-mask"></div> <aside class="sidebar"><nav class="nav-links"><div class="nav-item"><a href="/kangkang_blog/guide/" class="nav-link">
+  欢迎
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="Git笔记" class="dropdown-title"><span class="title">Git笔记</span> <span class="arrow down"></span></button> <button type="button" aria-label="Git笔记" class="mobile-dropdown-title"><span class="title">Git笔记</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/kangkang_blog/git/overview.html" aria-current="page" class="nav-link router-link-exact-active router-link-active">
+  基本介绍
+</a></li><li class="dropdown-item"><h4>
+          基本语法
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/kangkang_blog/git/syntax/oper_symbol.html" class="nav-link">
+  常见的操作符
+</a></li><li class="dropdown-subitem"><a href="/kangkang_blog/git/syntax/git_add.html" class="nav-link">
+  git add
+</a></li><li class="dropdown-subitem"><a href="/kangkang_blog/git/syntax/git_branch.html" class="nav-link">
+  git branch
+</a></li><li class="dropdown-subitem"><a href="/kangkang_blog/git/syntax/git_checkout.html" class="nav-link">
+  git checkout
+</a></li><li class="dropdown-subitem"><a href="/kangkang_blog/git/syntax/git_cherry-pick.html" class="nav-link">
+  git cherry-pick
+</a></li><li class="dropdown-subitem"><a href="/kangkang_blog/git/syntax/git_clean.html" class="nav-link">
+  git clean
+</a></li><li class="dropdown-subitem"><a href="/kangkang_blog/git/syntax/git_clone.html" class="nav-link">
+  git clone
+</a></li><li class="dropdown-subitem"><a href="/kangkang_blog/git/syntax/git_commit.html" class="nav-link">
+  git commit
+</a></li><li class="dropdown-subitem"><a href="/kangkang_blog/git/syntax/git_config.html" class="nav-link">
+  git config
+</a></li><li class="dropdown-subitem"><a href="/kangkang_blog/git/syntax/git_diff.html" class="nav-link">
+  git diff
+</a></li><li class="dropdown-subitem"><a href="/kangkang_blog/git/syntax/git_fetch.html" class="nav-link">
+  git fetch
+</a></li><li class="dropdown-subitem"><a href="/kangkang_blog/git/syntax/git_init.html" class="nav-link">
+  git init
+</a></li><li class="dropdown-subitem"><a href="/kangkang_blog/git/syntax/git_log.html" class="nav-link">
+  git log
+</a></li><li class="dropdown-subitem"><a href="/kangkang_blog/git/syntax/git_merge.html" class="nav-link">
+  git merge
+</a></li><li class="dropdown-subitem"><a href="/kangkang_blog/git/syntax/git_mv.html" class="nav-link">
+  git mv
+</a></li><li class="dropdown-subitem"><a href="/kangkang_blog/git/syntax/git_pull.html" class="nav-link">
+  git pull
+</a></li><li class="dropdown-subitem"><a href="/kangkang_blog/git/syntax/git_push.html" class="nav-link">
+  git push
+</a></li><li class="dropdown-subitem"><a href="/kangkang_blog/git/syntax/git_rebase.html" class="nav-link">
+  git reabse
+</a></li><li class="dropdown-subitem"><a href="/kangkang_blog/git/syntax/git_remote.html" class="nav-link">
+  git remote
+</a></li><li class="dropdown-subitem"><a href="/kangkang_blog/git/syntax/git_reset.html" class="nav-link">
+  git reset
+</a></li><li class="dropdown-subitem"><a href="/kangkang_blog/git/syntax/git_restore.html" class="nav-link">
+  git restore
+</a></li><li class="dropdown-subitem"><a href="/kangkang_blog/git/syntax/git_rm.html" class="nav-link">
+  git rm
+</a></li><li class="dropdown-subitem"><a href="/kangkang_blog/git/syntax/git_show.html" class="nav-link">
+  git show
+</a></li><li class="dropdown-subitem"><a href="/kangkang_blog/git/syntax/git_stage.html" class="nav-link">
+  git stage
+</a></li><li class="dropdown-subitem"><a href="/kangkang_blog/git/syntax/git_stash.html" class="nav-link">
+  git stash
+</a></li><li class="dropdown-subitem"><a href="/kangkang_blog/git/syntax/git_status.html" class="nav-link">
+  git status
+</a></li><li class="dropdown-subitem"><a href="/kangkang_blog/git/syntax/git_switch.html" class="nav-link">
+  git switch
+</a></li><li class="dropdown-subitem"><a href="/kangkang_blog/git/syntax/git_tag.html" class="nav-link">
+  git tag
+</a></li></ul></li><li class="dropdown-item"><h4>
+          操作实践
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/kangkang_blog/git/advanced_skills/rule.html" class="nav-link">
+  若干建议规范
+</a></li><li class="dropdown-subitem"><a href="/kangkang_blog/git/advanced_skills/great_skills.html" class="nav-link">
+  各种骚操作
+</a></li><li class="dropdown-subitem"><a href="/kangkang_blog/git/advanced_skills/best_practices.html" class="nav-link">
+  通过分支管理需求、问题单
+</a></li><li class="dropdown-subitem"><a href="/kangkang_blog/git/advanced_skills/different.html" class="nav-link">
+  merge、rebase、cherry-pick的区别
+</a></li></ul></li><li class="dropdown-item"><!----> <a href="/kangkang_blog/git/tool/tool.html" class="nav-link">
+  第三方工具推荐
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="Flex弹性布局" class="dropdown-title"><span class="title">Flex弹性布局</span> <span class="arrow down"></span></button> <button type="button" aria-label="Flex弹性布局" class="mobile-dropdown-title"><span class="title">Flex弹性布局</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/kangkang_blog/flex/index.html" class="nav-link">
+  简介
+</a></li><li class="dropdown-item"><!----> <a href="/kangkang_blog/flex/introduction.html" class="nav-link">
+  相关概念
+</a></li><li class="dropdown-item"><!----> <a href="/kangkang_blog/flex/init.html" class="nav-link">
+  初始化计算
+</a></li><li class="dropdown-item"><!----> <a href="/kangkang_blog/flex/item/item.html" class="nav-link">
+  弹性元素
+</a></li><li class="dropdown-item"><!----> <a href="/kangkang_blog/flex/container/container.html" class="nav-link">
+  弹性容器
+</a></li><li class="dropdown-item"><h4>
+          外在影响因素
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/kangkang_blog/flex/other/css1.html" class="nav-link">
+  min-content/max-content
+</a></li><li class="dropdown-subitem"><a href="/kangkang_blog/flex/other/css2.html" class="nav-link">
+  position
+</a></li><li class="dropdown-subitem"><a href="/kangkang_blog/flex/other/css3.html" class="nav-link">
+  direction
+</a></li><li class="dropdown-subitem"><a href="/kangkang_blog/flex/other/css4.html" class="nav-link">
+  margin
+</a></li><li class="dropdown-subitem"><a href="/kangkang_blog/flex/other/css5.html" class="nav-link">
+  min-width
+</a></li><li class="dropdown-subitem"><a href="/kangkang_blog/flex/other/css6.html" class="nav-link">
+  overflow
+</a></li></ul></li><li class="dropdown-item"><h4>
+          应用实例
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/kangkang_blog/flex/example/example1.html" class="nav-link">
+  表格hover组件
+</a></li><li class="dropdown-subitem"><a href="/kangkang_blog/flex/example/example2.html" class="nav-link">
+  示例2
+</a></li></ul></li></ul></div></div><div class="nav-item"><a href="/kangkang_blog/vue/index.html" class="nav-link">
+  Vue.js
+</a></div><div class="nav-item"><a href="/kangkang_blog/react/index.html" class="nav-link">
+  React.js
+</a></div><div class="nav-item"><a href="/kangkang_blog/nodejs/index.html" class="nav-link">
+  Node.js
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="菜谱的自我修养" class="dropdown-title"><span class="title">菜谱的自我修养</span> <span class="arrow down"></span></button> <button type="button" aria-label="菜谱的自我修养" class="mobile-dropdown-title"><span class="title">菜谱的自我修养</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/kangkang_blog/cookbook/list.html" class="nav-link">
+  列表
+</a></li><li class="dropdown-item"><!----> <a href="/kangkang_blog/cookbook/1.html" class="nav-link">
+  香菇蒸滑鸡
+</a></li></ul></div></div><div class="nav-item"><a href="/kangkang_blog/travel/index.html" class="nav-link">
+  旅行日记
+</a></div><div class="nav-item"><a href="/kangkang_blog/interview/index.html" class="nav-link">
+  常见面试题
+</a></div> <a href="https://github.com/ykshang/kangkang_blog" target="_blank" rel="noopener noreferrer" class="repo-link">
+    查看源码
+    <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></nav>  <ul class="sidebar-links"><li><a href="/kangkang_blog/guide/" class="sidebar-link">Hello Word！</a></li><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading open"><span>Git笔记</span> <span class="arrow down"></span></p> <ul class="sidebar-links sidebar-group-items"><li><a href="/kangkang_blog/git/overview.html" aria-current="page" class="active sidebar-link">基本介绍</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/kangkang_blog/git/overview.html#基本介绍" class="sidebar-link">基本介绍</a></li><li class="sidebar-sub-header"><a href="/kangkang_blog/git/overview.html#git-与-svn-区别" class="sidebar-link">Git 与 SVN 区别</a></li><li class="sidebar-sub-header"><a href="/kangkang_blog/git/overview.html#推荐文档" class="sidebar-link">推荐文档</a></li></ul></li><li><section class="sidebar-group collapsable is-sub-group depth-1"><p class="sidebar-heading"><span>基本语法</span> <span class="arrow right"></span></p> <!----></section></li><li><section class="sidebar-group collapsable is-sub-group depth-1"><p class="sidebar-heading"><span>操作实践</span> <span class="arrow right"></span></p> <!----></section></li><li><a href="/kangkang_blog/git/tool/tool.html" class="sidebar-link">第三方工具推荐</a></li></ul></section></li><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading"><span>Flex弹性布局</span> <span class="arrow right"></span></p> <!----></section></li><li><a href="/kangkang_blog/vue/" class="sidebar-link">Vue.js</a></li><li><a href="/kangkang_blog/react/" class="sidebar-link">React.js</a></li><li><a href="/kangkang_blog/nodejs/" class="sidebar-link">Node.js</a></li><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading"><span>菜谱的自我修养</span> <span class="arrow right"></span></p> <!----></section></li><li><a href="/kangkang_blog/travel/" class="sidebar-link">旅行日记</a></li><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading"><span>常见面试题</span> <span class="arrow right"></span></p> <!----></section></li></ul> </aside> <main class="page"> <div class="theme-default-content content__default"><h1 id="git教程"><a href="#git教程" class="header-anchor">#</a> Git教程</h1> <h2 id="基本介绍"><a href="#基本介绍" class="header-anchor">#</a> 基本介绍</h2> <p><img src="data:image/png;base64,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" alt="Git 教程"></p> <p>Git 是一个开源的分布式版本控制系统，用于敏捷高效地处理任何或小或大的项目。</p> <p>Git 是 Linus Torvalds 为了帮助管理 Linux 内核开发而开发的一个开放源码的版本控制软件。</p> <p>Git 与常用的版本控制工具 CVS, Subversion 等不同，它采用了分布式版本库的方式，不必服务器端软件支持。</p> <h2 id="git-与-svn-区别"><a href="#git-与-svn-区别" class="header-anchor">#</a> Git 与 SVN 区别</h2> <p>Git 不仅仅是个版本控制系统，它也是个内容管理系统(CMS)，工作管理系统等。</p> <p>如果你是一个具有使用 SVN 背景的人，你需要做一定的思想转换，来适应 Git 提供的一些概念和特征。</p> <p>Git 与 SVN 区别点：</p> <ul><li><p><strong>1、Git 是分布式的，SVN 不是:</strong> 这是 Git 和其它非分布式的版本控制系统，例如 SVN，CVS 等，最核心的区别。</p></li> <li><p><strong>2、Git 把内容按元数据方式存储，而 SVN 是按文件:</strong> 所有的资源控制系统都是把文件的元信息隐藏在一个类似 .svn、.cvs 等的文件夹里。</p></li> <li><p><strong>3、Git 分支和 SVN 的分支不同:</strong> 分支在 SVN 中一点都不特别，其实它就是版本库中的另外一个目录。</p></li> <li><p><strong>4、Git 没有一个全局的版本号，而 SVN 有:</strong> 目前为止这是跟 SVN 相比 Git 缺少的最大的一个特征。</p></li> <li><p><strong>5、Git 的内容完整性要优于 SVN:</strong> Git 的内容存储使用的是 SHA-1 哈希算法。这能确保代码内容的完整性，确保在遇到磁盘故障和网络问题时降低对版本库的破坏。</p></li></ul> <p><img src="/kangkang_blog/assets/img/git-svn.0defa269.jpg" alt="图示"></p> <h2 id="推荐文档"><a href="#推荐文档" class="header-anchor">#</a> 推荐文档</h2> <blockquote><p>官方文档 Git - Book <a href="http://git-scm.com/book/zh/v2" target="_blank" rel="noopener noreferrer">http://git-scm.com/book/zh/v2<span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a><br>
+菜鸟教程 Git教程 <a href="https://www.runoob.com/git/git-tutorial.html" target="_blank" rel="noopener noreferrer">https://www.runoob.com/git/git-tutorial.html<span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></p></blockquote></div> <footer class="page-edit"><div class="edit-link"><a href="https://github.com/ykshang/kangkang_blog/edit/master/docs/git/overview.md" target="_blank" rel="noopener noreferrer">编辑此文档</a> <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></div> <div class="last-updated"><span class="prefix">最后更新:</span> <span class="time">12/29/2024, 12:53:53 PM</span></div></footer> <div class="page-nav"><p class="inner"><span class="prev">
+      ←
+      <a href="/kangkang_blog/guide/" class="prev">
+        Hello Word！
+      </a></span> <span class="next"><a href="/kangkang_blog/git/syntax/oper_symbol.html">
+        常见的操作符
+      </a>
+      →
+    </span></p></div> </main></div><div class="global-ui"><!----><!----><div id="live2d-widget" class="live2d-widget-container" style="position:fixed;right:50px;bottom:50px;width:180px;height:400px;z-index:99999;opacity:0.8;pointer-events:none;"><canvas id="live2d_canvas" width="180" height="400" class="live2d_canvas" style="position:absolute;left:0px;top:0px;width:180px;height:400px;"></canvas></div></div></div>
+    <script src="/kangkang_blog/assets/js/app.da7f16f8.js" defer></script><script src="/kangkang_blog/assets/js/2.9708e627.js" defer></script><script src="/kangkang_blog/assets/js/1.5df086e8.js" defer></script><script src="/kangkang_blog/assets/js/37.2f712d1a.js" defer></script>
+  </body>
+</html>

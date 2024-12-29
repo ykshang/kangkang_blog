@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>min-width | 个人笔记</title>
+    <meta name="generator" content="VuePress 1.9.10">
+    <link rel="shortcut icon" type="image/x-icon" href="/kangkang_blog/logo.png">
+    <meta name="description" content="记录学习成长">
+    
+    <link rel="preload" href="/kangkang_blog/assets/css/0.styles.b89ce085.css" as="style"><link rel="preload" href="/kangkang_blog/assets/js/app.da7f16f8.js" as="script"><link rel="preload" href="/kangkang_blog/assets/js/2.9708e627.js" as="script"><link rel="preload" href="/kangkang_blog/assets/js/1.5df086e8.js" as="script"><link rel="preload" href="/kangkang_blog/assets/js/36.93e32238.js" as="script"><link rel="prefetch" href="/kangkang_blog/assets/js/10.9a3d24d5.js"><link rel="prefetch" href="/kangkang_blog/assets/js/11.b5a82e55.js"><link rel="prefetch" href="/kangkang_blog/assets/js/12.71237375.js"><link rel="prefetch" href="/kangkang_blog/assets/js/13.2e656bfb.js"><link rel="prefetch" href="/kangkang_blog/assets/js/14.d2fe2c94.js"><link rel="prefetch" href="/kangkang_blog/assets/js/15.4e9197a1.js"><link rel="prefetch" href="/kangkang_blog/assets/js/16.93be7540.js"><link rel="prefetch" href="/kangkang_blog/assets/js/17.fd641f60.js"><link rel="prefetch" href="/kangkang_blog/assets/js/18.97ddd38b.js"><link rel="prefetch" href="/kangkang_blog/assets/js/19.60203e38.js"><link rel="prefetch" href="/kangkang_blog/assets/js/20.8a43b3c4.js"><link rel="prefetch" href="/kangkang_blog/assets/js/21.896d46c5.js"><link rel="prefetch" href="/kangkang_blog/assets/js/22.6d34ee43.js"><link rel="prefetch" href="/kangkang_blog/assets/js/23.da31ee4e.js"><link rel="prefetch" href="/kangkang_blog/assets/js/24.2138cdc0.js"><link rel="prefetch" href="/kangkang_blog/assets/js/25.222b877a.js"><link rel="prefetch" href="/kangkang_blog/assets/js/26.9cf55529.js"><link rel="prefetch" href="/kangkang_blog/assets/js/27.e98c55af.js"><link rel="prefetch" href="/kangkang_blog/assets/js/28.42cff242.js"><link rel="prefetch" href="/kangkang_blog/assets/js/29.9487da16.js"><link rel="prefetch" href="/kangkang_blog/assets/js/3.a96d696c.js"><link rel="prefetch" href="/kangkang_blog/assets/js/30.53feb616.js"><link rel="prefetch" href="/kangkang_blog/assets/js/31.6d54797d.js"><link rel="prefetch" href="/kangkang_blog/assets/js/32.7366da65.js"><link rel="prefetch" href="/kangkang_blog/assets/js/33.a5cae244.js"><link rel="prefetch" href="/kangkang_blog/assets/js/34.eaead00f.js"><link rel="prefetch" href="/kangkang_blog/assets/js/35.6d2f968f.js"><link rel="prefetch" href="/kangkang_blog/assets/js/37.2f712d1a.js"><link rel="prefetch" href="/kangkang_blog/assets/js/38.0f3626da.js"><link rel="prefetch" href="/kangkang_blog/assets/js/39.07512d4f.js"><link rel="prefetch" href="/kangkang_blog/assets/js/4.88794156.js"><link rel="prefetch" href="/kangkang_blog/assets/js/40.b25eb92f.js"><link rel="prefetch" href="/kangkang_blog/assets/js/41.658601bb.js"><link rel="prefetch" href="/kangkang_blog/assets/js/42.f22f518e.js"><link rel="prefetch" href="/kangkang_blog/assets/js/43.cad56a86.js"><link rel="prefetch" href="/kangkang_blog/assets/js/44.c6913701.js"><link rel="prefetch" href="/kangkang_blog/assets/js/45.5a70465b.js"><link rel="prefetch" href="/kangkang_blog/assets/js/46.fb890674.js"><link rel="prefetch" href="/kangkang_blog/assets/js/47.72b75c68.js"><link rel="prefetch" href="/kangkang_blog/assets/js/48.af028104.js"><link rel="prefetch" href="/kangkang_blog/assets/js/49.08fcc400.js"><link rel="prefetch" href="/kangkang_blog/assets/js/5.b624d556.js"><link rel="prefetch" href="/kangkang_blog/assets/js/50.4702331b.js"><link rel="prefetch" href="/kangkang_blog/assets/js/51.0faeae7b.js"><link rel="prefetch" href="/kangkang_blog/assets/js/52.717394ed.js"><link rel="prefetch" href="/kangkang_blog/assets/js/53.8d8a3901.js"><link rel="prefetch" href="/kangkang_blog/assets/js/54.081e2770.js"><link rel="prefetch" href="/kangkang_blog/assets/js/55.5744129a.js"><link rel="prefetch" href="/kangkang_blog/assets/js/56.c8855caf.js"><link rel="prefetch" href="/kangkang_blog/assets/js/57.e2dae07b.js"><link rel="prefetch" href="/kangkang_blog/assets/js/58.4fca624f.js"><link rel="prefetch" href="/kangkang_blog/assets/js/59.e930e699.js"><link rel="prefetch" href="/kangkang_blog/assets/js/6.5afe2469.js"><link rel="prefetch" href="/kangkang_blog/assets/js/60.c13c95b1.js"><link rel="prefetch" href="/kangkang_blog/assets/js/61.3151efc7.js"><link rel="prefetch" href="/kangkang_blog/assets/js/62.88add6d0.js"><link rel="prefetch" href="/kangkang_blog/assets/js/63.edde2f6f.js"><link rel="prefetch" href="/kangkang_blog/assets/js/64.4bca4fe5.js"><link rel="prefetch" href="/kangkang_blog/assets/js/65.591e3e8d.js"><link rel="prefetch" href="/kangkang_blog/assets/js/66.2b332f5d.js"><link rel="prefetch" href="/kangkang_blog/assets/js/67.184905ae.js"><link rel="prefetch" href="/kangkang_blog/assets/js/68.7e7dd592.js"><link rel="prefetch" href="/kangkang_blog/assets/js/69.46cb9bdd.js"><link rel="prefetch" href="/kangkang_blog/assets/js/7.418da0f0.js"><link rel="prefetch" href="/kangkang_blog/assets/js/70.51090e6a.js"><link rel="prefetch" href="/kangkang_blog/assets/js/71.3d0bc3f3.js"><link rel="prefetch" href="/kangkang_blog/assets/js/72.52ff5f45.js"><link rel="prefetch" href="/kangkang_blog/assets/js/73.1f00ddf5.js"><link rel="prefetch" href="/kangkang_blog/assets/js/74.cbbd51db.js"><link rel="prefetch" href="/kangkang_blog/assets/js/75.e5a47b6a.js"><link rel="prefetch" href="/kangkang_blog/assets/js/76.f7c6c35f.js"><link rel="prefetch" href="/kangkang_blog/assets/js/77.a6b8b587.js"><link rel="prefetch" href="/kangkang_blog/assets/js/78.2e0955ca.js"><link rel="prefetch" href="/kangkang_blog/assets/js/79.d5217cc3.js"><link rel="prefetch" href="/kangkang_blog/assets/js/vendors~docsearch.556c5cf2.js">
+    <link rel="stylesheet" href="/kangkang_blog/assets/css/0.styles.b89ce085.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container"><header class="navbar"><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/kangkang_blog/" class="home-link router-link-active"><img src="/kangkang_blog/assets/img/logo.gif" alt="个人笔记" class="logo"> <span class="site-name can-hide">个人笔记</span></a> <div class="links"><div class="search-box"><input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <nav class="nav-links can-hide"><div class="nav-item"><a href="/kangkang_blog/guide/" class="nav-link">
+  欢迎
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="Git笔记" class="dropdown-title"><span class="title">Git笔记</span> <span class="arrow down"></span></button> <button type="button" aria-label="Git笔记" class="mobile-dropdown-title"><span class="title">Git笔记</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/kangkang_blog/git/overview.html" class="nav-link">
+  基本介绍
+</a></li><li class="dropdown-item"><h4>
+          基本语法
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/kangkang_blog/git/syntax/oper_symbol.html" class="nav-link">
+  常见的操作符
+</a></li><li class="dropdown-subitem"><a href="/kangkang_blog/git/syntax/git_add.html" class="nav-link">
+  git add
+</a></li><li class="dropdown-subitem"><a href="/kangkang_blog/git/syntax/git_branch.html" class="nav-link">
+  git branch
+</a></li><li class="dropdown-subitem"><a href="/kangkang_blog/git/syntax/git_checkout.html" class="nav-link">
+  git checkout
+</a></li><li class="dropdown-subitem"><a href="/kangkang_blog/git/syntax/git_cherry-pick.html" class="nav-link">
+  git cherry-pick
+</a></li><li class="dropdown-subitem"><a href="/kangkang_blog/git/syntax/git_clean.html" class="nav-link">
+  git clean
+</a></li><li class="dropdown-subitem"><a href="/kangkang_blog/git/syntax/git_clone.html" class="nav-link">
+  git clone
+</a></li><li class="dropdown-subitem"><a href="/kangkang_blog/git/syntax/git_commit.html" class="nav-link">
+  git commit
+</a></li><li class="dropdown-subitem"><a href="/kangkang_blog/git/syntax/git_config.html" class="nav-link">
+  git config
+</a></li><li class="dropdown-subitem"><a href="/kangkang_blog/git/syntax/git_diff.html" class="nav-link">
+  git diff
+</a></li><li class="dropdown-subitem"><a href="/kangkang_blog/git/syntax/git_fetch.html" class="nav-link">
+  git fetch
+</a></li><li class="dropdown-subitem"><a href="/kangkang_blog/git/syntax/git_init.html" class="nav-link">
+  git init
+</a></li><li class="dropdown-subitem"><a href="/kangkang_blog/git/syntax/git_log.html" class="nav-link">
+  git log
+</a></li><li class="dropdown-subitem"><a href="/kangkang_blog/git/syntax/git_merge.html" class="nav-link">
+  git merge
+</a></li><li class="dropdown-subitem"><a href="/kangkang_blog/git/syntax/git_mv.html" class="nav-link">
+  git mv
+</a></li><li class="dropdown-subitem"><a href="/kangkang_blog/git/syntax/git_pull.html" class="nav-link">
+  git pull
+</a></li><li class="dropdown-subitem"><a href="/kangkang_blog/git/syntax/git_push.html" class="nav-link">
+  git push
+</a></li><li class="dropdown-subitem"><a href="/kangkang_blog/git/syntax/git_rebase.html" class="nav-link">
+  git reabse
+</a></li><li class="dropdown-subitem"><a href="/kangkang_blog/git/syntax/git_remote.html" class="nav-link">
+  git remote
+</a></li><li class="dropdown-subitem"><a href="/kangkang_blog/git/syntax/git_reset.html" class="nav-link">
+  git reset
+</a></li><li class="dropdown-subitem"><a href="/kangkang_blog/git/syntax/git_restore.html" class="nav-link">
+  git restore
+</a></li><li class="dropdown-subitem"><a href="/kangkang_blog/git/syntax/git_rm.html" class="nav-link">
+  git rm
+</a></li><li class="dropdown-subitem"><a href="/kangkang_blog/git/syntax/git_show.html" class="nav-link">
+  git show
+</a></li><li class="dropdown-subitem"><a href="/kangkang_blog/git/syntax/git_stage.html" class="nav-link">
+  git stage
+</a></li><li class="dropdown-subitem"><a href="/kangkang_blog/git/syntax/git_stash.html" class="nav-link">
+  git stash
+</a></li><li class="dropdown-subitem"><a href="/kangkang_blog/git/syntax/git_status.html" class="nav-link">
+  git status
+</a></li><li class="dropdown-subitem"><a href="/kangkang_blog/git/syntax/git_switch.html" class="nav-link">
+  git switch
+</a></li><li class="dropdown-subitem"><a href="/kangkang_blog/git/syntax/git_tag.html" class="nav-link">
+  git tag
+</a></li></ul></li><li class="dropdown-item"><h4>
+          操作实践
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/kangkang_blog/git/advanced_skills/rule.html" class="nav-link">
+  若干建议规范
+</a></li><li class="dropdown-subitem"><a href="/kangkang_blog/git/advanced_skills/great_skills.html" class="nav-link">
+  各种骚操作
+</a></li><li class="dropdown-subitem"><a href="/kangkang_blog/git/advanced_skills/best_practices.html" class="nav-link">
+  通过分支管理需求、问题单
+</a></li><li class="dropdown-subitem"><a href="/kangkang_blog/git/advanced_skills/different.html" class="nav-link">
+  merge、rebase、cherry-pick的区别
+</a></li></ul></li><li class="dropdown-item"><!----> <a href="/kangkang_blog/git/tool/tool.html" class="nav-link">
+  第三方工具推荐
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="Flex弹性布局" class="dropdown-title"><span class="title">Flex弹性布局</span> <span class="arrow down"></span></button> <button type="button" aria-label="Flex弹性布局" class="mobile-dropdown-title"><span class="title">Flex弹性布局</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/kangkang_blog/flex/index.html" class="nav-link">
+  简介
+</a></li><li class="dropdown-item"><!----> <a href="/kangkang_blog/flex/introduction.html" class="nav-link">
+  相关概念
+</a></li><li class="dropdown-item"><!----> <a href="/kangkang_blog/flex/init.html" class="nav-link">
+  初始化计算
+</a></li><li class="dropdown-item"><!----> <a href="/kangkang_blog/flex/item/item.html" class="nav-link">
+  弹性元素
+</a></li><li class="dropdown-item"><!----> <a href="/kangkang_blog/flex/container/container.html" class="nav-link">
+  弹性容器
+</a></li><li class="dropdown-item"><h4>
+          外在影响因素
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/kangkang_blog/flex/other/css1.html" class="nav-link">
+  min-content/max-content
+</a></li><li class="dropdown-subitem"><a href="/kangkang_blog/flex/other/css2.html" class="nav-link">
+  position
+</a></li><li class="dropdown-subitem"><a href="/kangkang_blog/flex/other/css3.html" class="nav-link">
+  direction
+</a></li><li class="dropdown-subitem"><a href="/kangkang_blog/flex/other/css4.html" class="nav-link">
+  margin
+</a></li><li class="dropdown-subitem"><a href="/kangkang_blog/flex/other/css5.html" aria-current="page" class="nav-link router-link-exact-active router-link-active">
+  min-width
+</a></li><li class="dropdown-subitem"><a href="/kangkang_blog/flex/other/css6.html" class="nav-link">
+  overflow
+</a></li></ul></li><li class="dropdown-item"><h4>
+          应用实例
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/kangkang_blog/flex/example/example1.html" class="nav-link">
+  表格hover组件
+</a></li><li class="dropdown-subitem"><a href="/kangkang_blog/flex/example/example2.html" class="nav-link">
+  示例2
+</a></li></ul></li></ul></div></div><div class="nav-item"><a href="/kangkang_blog/vue/index.html" class="nav-link">
+  Vue.js
+</a></div><div class="nav-item"><a href="/kangkang_blog/react/index.html" class="nav-link">
+  React.js
+</a></div><div class="nav-item"><a href="/kangkang_blog/nodejs/index.html" class="nav-link">
+  Node.js
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="菜谱的自我修养" class="dropdown-title"><span class="title">菜谱的自我修养</span> <span class="arrow down"></span></button> <button type="button" aria-label="菜谱的自我修养" class="mobile-dropdown-title"><span class="title">菜谱的自我修养</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/kangkang_blog/cookbook/list.html" class="nav-link">
+  列表
+</a></li><li class="dropdown-item"><!----> <a href="/kangkang_blog/cookbook/1.html" class="nav-link">
+  香菇蒸滑鸡
+</a></li></ul></div></div><div class="nav-item"><a href="/kangkang_blog/travel/index.html" class="nav-link">
+  旅行日记
+</a></div><div class="nav-item"><a href="/kangkang_blog/interview/index.html" class="nav-link">
+  常见面试题
+</a></div> <a href="https://github.com/ykshang/kangkang_blog" target="_blank" rel="noopener noreferrer" class="repo-link">
+    查看源码
+    <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></nav></div></header> <div class="sidebar-mask"></div> <aside class="sidebar"><nav class="nav-links"><div class="nav-item"><a href="/kangkang_blog/guide/" class="nav-link">
+  欢迎
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="Git笔记" class="dropdown-title"><span class="title">Git笔记</span> <span class="arrow down"></span></button> <button type="button" aria-label="Git笔记" class="mobile-dropdown-title"><span class="title">Git笔记</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/kangkang_blog/git/overview.html" class="nav-link">
+  基本介绍
+</a></li><li class="dropdown-item"><h4>
+          基本语法
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/kangkang_blog/git/syntax/oper_symbol.html" class="nav-link">
+  常见的操作符
+</a></li><li class="dropdown-subitem"><a href="/kangkang_blog/git/syntax/git_add.html" class="nav-link">
+  git add
+</a></li><li class="dropdown-subitem"><a href="/kangkang_blog/git/syntax/git_branch.html" class="nav-link">
+  git branch
+</a></li><li class="dropdown-subitem"><a href="/kangkang_blog/git/syntax/git_checkout.html" class="nav-link">
+  git checkout
+</a></li><li class="dropdown-subitem"><a href="/kangkang_blog/git/syntax/git_cherry-pick.html" class="nav-link">
+  git cherry-pick
+</a></li><li class="dropdown-subitem"><a href="/kangkang_blog/git/syntax/git_clean.html" class="nav-link">
+  git clean
+</a></li><li class="dropdown-subitem"><a href="/kangkang_blog/git/syntax/git_clone.html" class="nav-link">
+  git clone
+</a></li><li class="dropdown-subitem"><a href="/kangkang_blog/git/syntax/git_commit.html" class="nav-link">
+  git commit
+</a></li><li class="dropdown-subitem"><a href="/kangkang_blog/git/syntax/git_config.html" class="nav-link">
+  git config
+</a></li><li class="dropdown-subitem"><a href="/kangkang_blog/git/syntax/git_diff.html" class="nav-link">
+  git diff
+</a></li><li class="dropdown-subitem"><a href="/kangkang_blog/git/syntax/git_fetch.html" class="nav-link">
+  git fetch
+</a></li><li class="dropdown-subitem"><a href="/kangkang_blog/git/syntax/git_init.html" class="nav-link">
+  git init
+</a></li><li class="dropdown-subitem"><a href="/kangkang_blog/git/syntax/git_log.html" class="nav-link">
+  git log
+</a></li><li class="dropdown-subitem"><a href="/kangkang_blog/git/syntax/git_merge.html" class="nav-link">
+  git merge
+</a></li><li class="dropdown-subitem"><a href="/kangkang_blog/git/syntax/git_mv.html" class="nav-link">
+  git mv
+</a></li><li class="dropdown-subitem"><a href="/kangkang_blog/git/syntax/git_pull.html" class="nav-link">
+  git pull
+</a></li><li class="dropdown-subitem"><a href="/kangkang_blog/git/syntax/git_push.html" class="nav-link">
+  git push
+</a></li><li class="dropdown-subitem"><a href="/kangkang_blog/git/syntax/git_rebase.html" class="nav-link">
+  git reabse
+</a></li><li class="dropdown-subitem"><a href="/kangkang_blog/git/syntax/git_remote.html" class="nav-link">
+  git remote
+</a></li><li class="dropdown-subitem"><a href="/kangkang_blog/git/syntax/git_reset.html" class="nav-link">
+  git reset
+</a></li><li class="dropdown-subitem"><a href="/kangkang_blog/git/syntax/git_restore.html" class="nav-link">
+  git restore
+</a></li><li class="dropdown-subitem"><a href="/kangkang_blog/git/syntax/git_rm.html" class="nav-link">
+  git rm
+</a></li><li class="dropdown-subitem"><a href="/kangkang_blog/git/syntax/git_show.html" class="nav-link">
+  git show
+</a></li><li class="dropdown-subitem"><a href="/kangkang_blog/git/syntax/git_stage.html" class="nav-link">
+  git stage
+</a></li><li class="dropdown-subitem"><a href="/kangkang_blog/git/syntax/git_stash.html" class="nav-link">
+  git stash
+</a></li><li class="dropdown-subitem"><a href="/kangkang_blog/git/syntax/git_status.html" class="nav-link">
+  git status
+</a></li><li class="dropdown-subitem"><a href="/kangkang_blog/git/syntax/git_switch.html" class="nav-link">
+  git switch
+</a></li><li class="dropdown-subitem"><a href="/kangkang_blog/git/syntax/git_tag.html" class="nav-link">
+  git tag
+</a></li></ul></li><li class="dropdown-item"><h4>
+          操作实践
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/kangkang_blog/git/advanced_skills/rule.html" class="nav-link">
+  若干建议规范
+</a></li><li class="dropdown-subitem"><a href="/kangkang_blog/git/advanced_skills/great_skills.html" class="nav-link">
+  各种骚操作
+</a></li><li class="dropdown-subitem"><a href="/kangkang_blog/git/advanced_skills/best_practices.html" class="nav-link">
+  通过分支管理需求、问题单
+</a></li><li class="dropdown-subitem"><a href="/kangkang_blog/git/advanced_skills/different.html" class="nav-link">
+  merge、rebase、cherry-pick的区别
+</a></li></ul></li><li class="dropdown-item"><!----> <a href="/kangkang_blog/git/tool/tool.html" class="nav-link">
+  第三方工具推荐
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="Flex弹性布局" class="dropdown-title"><span class="title">Flex弹性布局</span> <span class="arrow down"></span></button> <button type="button" aria-label="Flex弹性布局" class="mobile-dropdown-title"><span class="title">Flex弹性布局</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/kangkang_blog/flex/index.html" class="nav-link">
+  简介
+</a></li><li class="dropdown-item"><!----> <a href="/kangkang_blog/flex/introduction.html" class="nav-link">
+  相关概念
+</a></li><li class="dropdown-item"><!----> <a href="/kangkang_blog/flex/init.html" class="nav-link">
+  初始化计算
+</a></li><li class="dropdown-item"><!----> <a href="/kangkang_blog/flex/item/item.html" class="nav-link">
+  弹性元素
+</a></li><li class="dropdown-item"><!----> <a href="/kangkang_blog/flex/container/container.html" class="nav-link">
+  弹性容器
+</a></li><li class="dropdown-item"><h4>
+          外在影响因素
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/kangkang_blog/flex/other/css1.html" class="nav-link">
+  min-content/max-content
+</a></li><li class="dropdown-subitem"><a href="/kangkang_blog/flex/other/css2.html" class="nav-link">
+  position
+</a></li><li class="dropdown-subitem"><a href="/kangkang_blog/flex/other/css3.html" class="nav-link">
+  direction
+</a></li><li class="dropdown-subitem"><a href="/kangkang_blog/flex/other/css4.html" class="nav-link">
+  margin
+</a></li><li class="dropdown-subitem"><a href="/kangkang_blog/flex/other/css5.html" aria-current="page" class="nav-link router-link-exact-active router-link-active">
+  min-width
+</a></li><li class="dropdown-subitem"><a href="/kangkang_blog/flex/other/css6.html" class="nav-link">
+  overflow
+</a></li></ul></li><li class="dropdown-item"><h4>
+          应用实例
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/kangkang_blog/flex/example/example1.html" class="nav-link">
+  表格hover组件
+</a></li><li class="dropdown-subitem"><a href="/kangkang_blog/flex/example/example2.html" class="nav-link">
+  示例2
+</a></li></ul></li></ul></div></div><div class="nav-item"><a href="/kangkang_blog/vue/index.html" class="nav-link">
+  Vue.js
+</a></div><div class="nav-item"><a href="/kangkang_blog/react/index.html" class="nav-link">
+  React.js
+</a></div><div class="nav-item"><a href="/kangkang_blog/nodejs/index.html" class="nav-link">
+  Node.js
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="菜谱的自我修养" class="dropdown-title"><span class="title">菜谱的自我修养</span> <span class="arrow down"></span></button> <button type="button" aria-label="菜谱的自我修养" class="mobile-dropdown-title"><span class="title">菜谱的自我修养</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/kangkang_blog/cookbook/list.html" class="nav-link">
+  列表
+</a></li><li class="dropdown-item"><!----> <a href="/kangkang_blog/cookbook/1.html" class="nav-link">
+  香菇蒸滑鸡
+</a></li></ul></div></div><div class="nav-item"><a href="/kangkang_blog/travel/index.html" class="nav-link">
+  旅行日记
+</a></div><div class="nav-item"><a href="/kangkang_blog/interview/index.html" class="nav-link">
+  常见面试题
+</a></div> <a href="https://github.com/ykshang/kangkang_blog" target="_blank" rel="noopener noreferrer" class="repo-link">
+    查看源码
+    <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></nav>  <ul class="sidebar-links"><li><a href="/kangkang_blog/guide/" class="sidebar-link">Hello Word！</a></li><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading"><span>Git笔记</span> <span class="arrow right"></span></p> <!----></section></li><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading open"><span>Flex弹性布局</span> <span class="arrow down"></span></p> <ul class="sidebar-links sidebar-group-items"><li><a href="/kangkang_blog/flex/" aria-current="page" class="sidebar-link">简介</a></li><li><a href="/kangkang_blog/flex/introduction.html" class="sidebar-link">相关概念</a></li><li><a href="/kangkang_blog/flex/init.html" class="sidebar-link">初始化计算</a></li><li><a href="/kangkang_blog/flex/item/item.html" class="sidebar-link">弹性元素</a></li><li><a href="/kangkang_blog/flex/container/container.html" class="sidebar-link">弹性容器</a></li><li><section class="sidebar-group collapsable is-sub-group depth-1"><p class="sidebar-heading open"><span>外在影响因素</span> <span class="arrow down"></span></p> <ul class="sidebar-links sidebar-group-items"><li><a href="/kangkang_blog/flex/other/css1.html" class="sidebar-link">min-content/max-content</a></li><li><a href="/kangkang_blog/flex/other/css2.html" class="sidebar-link">position</a></li><li><a href="/kangkang_blog/flex/other/css3.html" class="sidebar-link">direction</a></li><li><a href="/kangkang_blog/flex/other/css4.html" class="sidebar-link">margin</a></li><li><a href="/kangkang_blog/flex/other/css5.html" aria-current="page" class="active sidebar-link">min-width</a></li><li><a href="/kangkang_blog/flex/other/css6.html" class="sidebar-link">overflow</a></li></ul></section></li><li><section class="sidebar-group collapsable is-sub-group depth-1"><p class="sidebar-heading"><span>应用实例</span> <span class="arrow right"></span></p> <!----></section></li></ul></section></li><li><a href="/kangkang_blog/vue/" class="sidebar-link">Vue.js</a></li><li><a href="/kangkang_blog/react/" class="sidebar-link">React.js</a></li><li><a href="/kangkang_blog/nodejs/" class="sidebar-link">Node.js</a></li><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading"><span>菜谱的自我修养</span> <span class="arrow right"></span></p> <!----></section></li><li><a href="/kangkang_blog/travel/" class="sidebar-link">旅行日记</a></li><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading"><span>常见面试题</span> <span class="arrow right"></span></p> <!----></section></li></ul> </aside> <main class="page"> <div class="theme-default-content content__default"><h1 id="min-width"><a href="#min-width" class="header-anchor">#</a> min-width</h1> <ul><li>在一个flex布局中，对于一个设置了flex属性设置为1的div容器，再对其设置min-width：0，保证元素不溢出外层容器</li></ul> <div class="language-html line-numbers-mode"><pre class="language-html"><code><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span>container<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span>
+  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span>item<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span>11111111111111111111111111111<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span>
+  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span>item<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span>11111111111111111 11111111111111111111111111111111111111 1111111111111 111111111111111111111111111111111111111111111111111<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span>
+  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span>item<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span>11 11111111111111111111111111111<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span>
+  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span>item<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span>111 111111111111111111111111111<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span>
+  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span>item<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span>1111111111111111 111111111111111111111<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span>
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br></div></div><p><img src="/kangkang_blog/assets/img/css51.c1a63f79.png" alt=""></p> <ul><li>给第二个元素添加min-width: 0</li></ul> <p><img src="data:image/png;base64,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" alt=""></p></div> <footer class="page-edit"><div class="edit-link"><a href="https://github.com/ykshang/kangkang_blog/edit/master/docs/flex/other/css5.md" target="_blank" rel="noopener noreferrer">编辑此文档</a> <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></div> <div class="last-updated"><span class="prefix">最后更新:</span> <span class="time">12/29/2024, 12:53:53 PM</span></div></footer> <div class="page-nav"><p class="inner"><span class="prev">
+      ←
+      <a href="/kangkang_blog/flex/other/css4.html" class="prev">
+        margin
+      </a></span> <span class="next"><a href="/kangkang_blog/flex/other/css6.html">
+        overflow
+      </a>
+      →
+    </span></p></div> </main></div><div class="global-ui"><!----><!----><div id="live2d-widget" class="live2d-widget-container" style="position:fixed;right:50px;bottom:50px;width:180px;height:400px;z-index:99999;opacity:0.8;pointer-events:none;"><canvas id="live2d_canvas" width="180" height="400" class="live2d_canvas" style="position:absolute;left:0px;top:0px;width:180px;height:400px;"></canvas></div></div></div>
+    <script src="/kangkang_blog/assets/js/app.da7f16f8.js" defer></script><script src="/kangkang_blog/assets/js/2.9708e627.js" defer></script><script src="/kangkang_blog/assets/js/1.5df086e8.js" defer></script><script src="/kangkang_blog/assets/js/36.93e32238.js" defer></script>
+  </body>
+</html>

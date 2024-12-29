@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>深拷贝和浅拷贝 | 个人笔记</title>
+    <meta name="generator" content="VuePress 1.9.10">
+    <link rel="shortcut icon" type="image/x-icon" href="/kangkang_blog/logo.png">
+    <meta name="description" content="记录学习成长">
+    
+    <link rel="preload" href="/kangkang_blog/assets/css/0.styles.b89ce085.css" as="style"><link rel="preload" href="/kangkang_blog/assets/js/app.da7f16f8.js" as="script"><link rel="preload" href="/kangkang_blog/assets/js/2.9708e627.js" as="script"><link rel="preload" href="/kangkang_blog/assets/js/1.5df086e8.js" as="script"><link rel="preload" href="/kangkang_blog/assets/js/73.1f00ddf5.js" as="script"><link rel="preload" href="/kangkang_blog/assets/js/4.88794156.js" as="script"><link rel="prefetch" href="/kangkang_blog/assets/js/10.9a3d24d5.js"><link rel="prefetch" href="/kangkang_blog/assets/js/11.b5a82e55.js"><link rel="prefetch" href="/kangkang_blog/assets/js/12.71237375.js"><link rel="prefetch" href="/kangkang_blog/assets/js/13.2e656bfb.js"><link rel="prefetch" href="/kangkang_blog/assets/js/14.d2fe2c94.js"><link rel="prefetch" href="/kangkang_blog/assets/js/15.4e9197a1.js"><link rel="prefetch" href="/kangkang_blog/assets/js/16.93be7540.js"><link rel="prefetch" href="/kangkang_blog/assets/js/17.fd641f60.js"><link rel="prefetch" href="/kangkang_blog/assets/js/18.97ddd38b.js"><link rel="prefetch" href="/kangkang_blog/assets/js/19.60203e38.js"><link rel="prefetch" href="/kangkang_blog/assets/js/20.8a43b3c4.js"><link rel="prefetch" href="/kangkang_blog/assets/js/21.896d46c5.js"><link rel="prefetch" href="/kangkang_blog/assets/js/22.6d34ee43.js"><link rel="prefetch" href="/kangkang_blog/assets/js/23.da31ee4e.js"><link rel="prefetch" href="/kangkang_blog/assets/js/24.2138cdc0.js"><link rel="prefetch" href="/kangkang_blog/assets/js/25.222b877a.js"><link rel="prefetch" href="/kangkang_blog/assets/js/26.9cf55529.js"><link rel="prefetch" href="/kangkang_blog/assets/js/27.e98c55af.js"><link rel="prefetch" href="/kangkang_blog/assets/js/28.42cff242.js"><link rel="prefetch" href="/kangkang_blog/assets/js/29.9487da16.js"><link rel="prefetch" href="/kangkang_blog/assets/js/3.a96d696c.js"><link rel="prefetch" href="/kangkang_blog/assets/js/30.53feb616.js"><link rel="prefetch" href="/kangkang_blog/assets/js/31.6d54797d.js"><link rel="prefetch" href="/kangkang_blog/assets/js/32.7366da65.js"><link rel="prefetch" href="/kangkang_blog/assets/js/33.a5cae244.js"><link rel="prefetch" href="/kangkang_blog/assets/js/34.eaead00f.js"><link rel="prefetch" href="/kangkang_blog/assets/js/35.6d2f968f.js"><link rel="prefetch" href="/kangkang_blog/assets/js/36.93e32238.js"><link rel="prefetch" href="/kangkang_blog/assets/js/37.2f712d1a.js"><link rel="prefetch" href="/kangkang_blog/assets/js/38.0f3626da.js"><link rel="prefetch" href="/kangkang_blog/assets/js/39.07512d4f.js"><link rel="prefetch" href="/kangkang_blog/assets/js/40.b25eb92f.js"><link rel="prefetch" href="/kangkang_blog/assets/js/41.658601bb.js"><link rel="prefetch" href="/kangkang_blog/assets/js/42.f22f518e.js"><link rel="prefetch" href="/kangkang_blog/assets/js/43.cad56a86.js"><link rel="prefetch" href="/kangkang_blog/assets/js/44.c6913701.js"><link rel="prefetch" href="/kangkang_blog/assets/js/45.5a70465b.js"><link rel="prefetch" href="/kangkang_blog/assets/js/46.fb890674.js"><link rel="prefetch" href="/kangkang_blog/assets/js/47.72b75c68.js"><link rel="prefetch" href="/kangkang_blog/assets/js/48.af028104.js"><link rel="prefetch" href="/kangkang_blog/assets/js/49.08fcc400.js"><link rel="prefetch" href="/kangkang_blog/assets/js/5.b624d556.js"><link rel="prefetch" href="/kangkang_blog/assets/js/50.4702331b.js"><link rel="prefetch" href="/kangkang_blog/assets/js/51.0faeae7b.js"><link rel="prefetch" href="/kangkang_blog/assets/js/52.717394ed.js"><link rel="prefetch" href="/kangkang_blog/assets/js/53.8d8a3901.js"><link rel="prefetch" href="/kangkang_blog/assets/js/54.081e2770.js"><link rel="prefetch" href="/kangkang_blog/assets/js/55.5744129a.js"><link rel="prefetch" href="/kangkang_blog/assets/js/56.c8855caf.js"><link rel="prefetch" href="/kangkang_blog/assets/js/57.e2dae07b.js"><link rel="prefetch" href="/kangkang_blog/assets/js/58.4fca624f.js"><link rel="prefetch" href="/kangkang_blog/assets/js/59.e930e699.js"><link rel="prefetch" href="/kangkang_blog/assets/js/6.5afe2469.js"><link rel="prefetch" href="/kangkang_blog/assets/js/60.c13c95b1.js"><link rel="prefetch" href="/kangkang_blog/assets/js/61.3151efc7.js"><link rel="prefetch" href="/kangkang_blog/assets/js/62.88add6d0.js"><link rel="prefetch" href="/kangkang_blog/assets/js/63.edde2f6f.js"><link rel="prefetch" href="/kangkang_blog/assets/js/64.4bca4fe5.js"><link rel="prefetch" href="/kangkang_blog/assets/js/65.591e3e8d.js"><link rel="prefetch" href="/kangkang_blog/assets/js/66.2b332f5d.js"><link rel="prefetch" href="/kangkang_blog/assets/js/67.184905ae.js"><link rel="prefetch" href="/kangkang_blog/assets/js/68.7e7dd592.js"><link rel="prefetch" href="/kangkang_blog/assets/js/69.46cb9bdd.js"><link rel="prefetch" href="/kangkang_blog/assets/js/7.418da0f0.js"><link rel="prefetch" href="/kangkang_blog/assets/js/70.51090e6a.js"><link rel="prefetch" href="/kangkang_blog/assets/js/71.3d0bc3f3.js"><link rel="prefetch" href="/kangkang_blog/assets/js/72.52ff5f45.js"><link rel="prefetch" href="/kangkang_blog/assets/js/74.cbbd51db.js"><link rel="prefetch" href="/kangkang_blog/assets/js/75.e5a47b6a.js"><link rel="prefetch" href="/kangkang_blog/assets/js/76.f7c6c35f.js"><link rel="prefetch" href="/kangkang_blog/assets/js/77.a6b8b587.js"><link rel="prefetch" href="/kangkang_blog/assets/js/78.2e0955ca.js"><link rel="prefetch" href="/kangkang_blog/assets/js/79.d5217cc3.js"><link rel="prefetch" href="/kangkang_blog/assets/js/vendors~docsearch.556c5cf2.js">
+    <link rel="stylesheet" href="/kangkang_blog/assets/css/0.styles.b89ce085.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container"><header class="navbar"><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/kangkang_blog/" class="home-link router-link-active"><img src="/kangkang_blog/assets/img/logo.gif" alt="个人笔记" class="logo"> <span class="site-name can-hide">个人笔记</span></a> <div class="links"><div class="search-box"><input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <nav class="nav-links can-hide"><div class="nav-item"><a href="/kangkang_blog/guide/" class="nav-link">
+  欢迎
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="Git笔记" class="dropdown-title"><span class="title">Git笔记</span> <span class="arrow down"></span></button> <button type="button" aria-label="Git笔记" class="mobile-dropdown-title"><span class="title">Git笔记</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/kangkang_blog/git/overview.html" class="nav-link">
+  基本介绍
+</a></li><li class="dropdown-item"><h4>
+          基本语法
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/kangkang_blog/git/syntax/oper_symbol.html" class="nav-link">
+  常见的操作符
+</a></li><li class="dropdown-subitem"><a href="/kangkang_blog/git/syntax/git_add.html" class="nav-link">
+  git add
+</a></li><li class="dropdown-subitem"><a href="/kangkang_blog/git/syntax/git_branch.html" class="nav-link">
+  git branch
+</a></li><li class="dropdown-subitem"><a href="/kangkang_blog/git/syntax/git_checkout.html" class="nav-link">
+  git checkout
+</a></li><li class="dropdown-subitem"><a href="/kangkang_blog/git/syntax/git_cherry-pick.html" class="nav-link">
+  git cherry-pick
+</a></li><li class="dropdown-subitem"><a href="/kangkang_blog/git/syntax/git_clean.html" class="nav-link">
+  git clean
+</a></li><li class="dropdown-subitem"><a href="/kangkang_blog/git/syntax/git_clone.html" class="nav-link">
+  git clone
+</a></li><li class="dropdown-subitem"><a href="/kangkang_blog/git/syntax/git_commit.html" class="nav-link">
+  git commit
+</a></li><li class="dropdown-subitem"><a href="/kangkang_blog/git/syntax/git_config.html" class="nav-link">
+  git config
+</a></li><li class="dropdown-subitem"><a href="/kangkang_blog/git/syntax/git_diff.html" class="nav-link">
+  git diff
+</a></li><li class="dropdown-subitem"><a href="/kangkang_blog/git/syntax/git_fetch.html" class="nav-link">
+  git fetch
+</a></li><li class="dropdown-subitem"><a href="/kangkang_blog/git/syntax/git_init.html" class="nav-link">
+  git init
+</a></li><li class="dropdown-subitem"><a href="/kangkang_blog/git/syntax/git_log.html" class="nav-link">
+  git log
+</a></li><li class="dropdown-subitem"><a href="/kangkang_blog/git/syntax/git_merge.html" class="nav-link">
+  git merge
+</a></li><li class="dropdown-subitem"><a href="/kangkang_blog/git/syntax/git_mv.html" class="nav-link">
+  git mv
+</a></li><li class="dropdown-subitem"><a href="/kangkang_blog/git/syntax/git_pull.html" class="nav-link">
+  git pull
+</a></li><li class="dropdown-subitem"><a href="/kangkang_blog/git/syntax/git_push.html" class="nav-link">
+  git push
+</a></li><li class="dropdown-subitem"><a href="/kangkang_blog/git/syntax/git_rebase.html" class="nav-link">
+  git reabse
+</a></li><li class="dropdown-subitem"><a href="/kangkang_blog/git/syntax/git_remote.html" class="nav-link">
+  git remote
+</a></li><li class="dropdown-subitem"><a href="/kangkang_blog/git/syntax/git_reset.html" class="nav-link">
+  git reset
+</a></li><li class="dropdown-subitem"><a href="/kangkang_blog/git/syntax/git_restore.html" class="nav-link">
+  git restore
+</a></li><li class="dropdown-subitem"><a href="/kangkang_blog/git/syntax/git_rm.html" class="nav-link">
+  git rm
+</a></li><li class="dropdown-subitem"><a href="/kangkang_blog/git/syntax/git_show.html" class="nav-link">
+  git show
+</a></li><li class="dropdown-subitem"><a href="/kangkang_blog/git/syntax/git_stage.html" class="nav-link">
+  git stage
+</a></li><li class="dropdown-subitem"><a href="/kangkang_blog/git/syntax/git_stash.html" class="nav-link">
+  git stash
+</a></li><li class="dropdown-subitem"><a href="/kangkang_blog/git/syntax/git_status.html" class="nav-link">
+  git status
+</a></li><li class="dropdown-subitem"><a href="/kangkang_blog/git/syntax/git_switch.html" class="nav-link">
+  git switch
+</a></li><li class="dropdown-subitem"><a href="/kangkang_blog/git/syntax/git_tag.html" class="nav-link">
+  git tag
+</a></li></ul></li><li class="dropdown-item"><h4>
+          操作实践
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/kangkang_blog/git/advanced_skills/rule.html" class="nav-link">
+  若干建议规范
+</a></li><li class="dropdown-subitem"><a href="/kangkang_blog/git/advanced_skills/great_skills.html" class="nav-link">
+  各种骚操作
+</a></li><li class="dropdown-subitem"><a href="/kangkang_blog/git/advanced_skills/best_practices.html" class="nav-link">
+  通过分支管理需求、问题单
+</a></li><li class="dropdown-subitem"><a href="/kangkang_blog/git/advanced_skills/different.html" class="nav-link">
+  merge、rebase、cherry-pick的区别
+</a></li></ul></li><li class="dropdown-item"><!----> <a href="/kangkang_blog/git/tool/tool.html" class="nav-link">
+  第三方工具推荐
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="Flex弹性布局" class="dropdown-title"><span class="title">Flex弹性布局</span> <span class="arrow down"></span></button> <button type="button" aria-label="Flex弹性布局" class="mobile-dropdown-title"><span class="title">Flex弹性布局</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/kangkang_blog/flex/index.html" class="nav-link">
+  简介
+</a></li><li class="dropdown-item"><!----> <a href="/kangkang_blog/flex/introduction.html" class="nav-link">
+  相关概念
+</a></li><li class="dropdown-item"><!----> <a href="/kangkang_blog/flex/init.html" class="nav-link">
+  初始化计算
+</a></li><li class="dropdown-item"><!----> <a href="/kangkang_blog/flex/item/item.html" class="nav-link">
+  弹性元素
+</a></li><li class="dropdown-item"><!----> <a href="/kangkang_blog/flex/container/container.html" class="nav-link">
+  弹性容器
+</a></li><li class="dropdown-item"><h4>
+          外在影响因素
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/kangkang_blog/flex/other/css1.html" class="nav-link">
+  min-content/max-content
+</a></li><li class="dropdown-subitem"><a href="/kangkang_blog/flex/other/css2.html" class="nav-link">
+  position
+</a></li><li class="dropdown-subitem"><a href="/kangkang_blog/flex/other/css3.html" class="nav-link">
+  direction
+</a></li><li class="dropdown-subitem"><a href="/kangkang_blog/flex/other/css4.html" class="nav-link">
+  margin
+</a></li><li class="dropdown-subitem"><a href="/kangkang_blog/flex/other/css5.html" class="nav-link">
+  min-width
+</a></li><li class="dropdown-subitem"><a href="/kangkang_blog/flex/other/css6.html" class="nav-link">
+  overflow
+</a></li></ul></li><li class="dropdown-item"><h4>
+          应用实例
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/kangkang_blog/flex/example/example1.html" class="nav-link">
+  表格hover组件
+</a></li><li class="dropdown-subitem"><a href="/kangkang_blog/flex/example/example2.html" class="nav-link">
+  示例2
+</a></li></ul></li></ul></div></div><div class="nav-item"><a href="/kangkang_blog/vue/index.html" class="nav-link">
+  Vue.js
+</a></div><div class="nav-item"><a href="/kangkang_blog/react/index.html" class="nav-link">
+  React.js
+</a></div><div class="nav-item"><a href="/kangkang_blog/nodejs/index.html" class="nav-link">
+  Node.js
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="菜谱的自我修养" class="dropdown-title"><span class="title">菜谱的自我修养</span> <span class="arrow down"></span></button> <button type="button" aria-label="菜谱的自我修养" class="mobile-dropdown-title"><span class="title">菜谱的自我修养</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/kangkang_blog/cookbook/list.html" class="nav-link">
+  列表
+</a></li><li class="dropdown-item"><!----> <a href="/kangkang_blog/cookbook/1.html" class="nav-link">
+  香菇蒸滑鸡
+</a></li></ul></div></div><div class="nav-item"><a href="/kangkang_blog/travel/index.html" class="nav-link">
+  旅行日记
+</a></div><div class="nav-item"><a href="/kangkang_blog/interview/index.html" class="nav-link">
+  常见面试题
+</a></div> <a href="https://github.com/ykshang/kangkang_blog" target="_blank" rel="noopener noreferrer" class="repo-link">
+    查看源码
+    <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></nav></div></header> <div class="sidebar-mask"></div> <aside class="sidebar"><nav class="nav-links"><div class="nav-item"><a href="/kangkang_blog/guide/" class="nav-link">
+  欢迎
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="Git笔记" class="dropdown-title"><span class="title">Git笔记</span> <span class="arrow down"></span></button> <button type="button" aria-label="Git笔记" class="mobile-dropdown-title"><span class="title">Git笔记</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/kangkang_blog/git/overview.html" class="nav-link">
+  基本介绍
+</a></li><li class="dropdown-item"><h4>
+          基本语法
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/kangkang_blog/git/syntax/oper_symbol.html" class="nav-link">
+  常见的操作符
+</a></li><li class="dropdown-subitem"><a href="/kangkang_blog/git/syntax/git_add.html" class="nav-link">
+  git add
+</a></li><li class="dropdown-subitem"><a href="/kangkang_blog/git/syntax/git_branch.html" class="nav-link">
+  git branch
+</a></li><li class="dropdown-subitem"><a href="/kangkang_blog/git/syntax/git_checkout.html" class="nav-link">
+  git checkout
+</a></li><li class="dropdown-subitem"><a href="/kangkang_blog/git/syntax/git_cherry-pick.html" class="nav-link">
+  git cherry-pick
+</a></li><li class="dropdown-subitem"><a href="/kangkang_blog/git/syntax/git_clean.html" class="nav-link">
+  git clean
+</a></li><li class="dropdown-subitem"><a href="/kangkang_blog/git/syntax/git_clone.html" class="nav-link">
+  git clone
+</a></li><li class="dropdown-subitem"><a href="/kangkang_blog/git/syntax/git_commit.html" class="nav-link">
+  git commit
+</a></li><li class="dropdown-subitem"><a href="/kangkang_blog/git/syntax/git_config.html" class="nav-link">
+  git config
+</a></li><li class="dropdown-subitem"><a href="/kangkang_blog/git/syntax/git_diff.html" class="nav-link">
+  git diff
+</a></li><li class="dropdown-subitem"><a href="/kangkang_blog/git/syntax/git_fetch.html" class="nav-link">
+  git fetch
+</a></li><li class="dropdown-subitem"><a href="/kangkang_blog/git/syntax/git_init.html" class="nav-link">
+  git init
+</a></li><li class="dropdown-subitem"><a href="/kangkang_blog/git/syntax/git_log.html" class="nav-link">
+  git log
+</a></li><li class="dropdown-subitem"><a href="/kangkang_blog/git/syntax/git_merge.html" class="nav-link">
+  git merge
+</a></li><li class="dropdown-subitem"><a href="/kangkang_blog/git/syntax/git_mv.html" class="nav-link">
+  git mv
+</a></li><li class="dropdown-subitem"><a href="/kangkang_blog/git/syntax/git_pull.html" class="nav-link">
+  git pull
+</a></li><li class="dropdown-subitem"><a href="/kangkang_blog/git/syntax/git_push.html" class="nav-link">
+  git push
+</a></li><li class="dropdown-subitem"><a href="/kangkang_blog/git/syntax/git_rebase.html" class="nav-link">
+  git reabse
+</a></li><li class="dropdown-subitem"><a href="/kangkang_blog/git/syntax/git_remote.html" class="nav-link">
+  git remote
+</a></li><li class="dropdown-subitem"><a href="/kangkang_blog/git/syntax/git_reset.html" class="nav-link">
+  git reset
+</a></li><li class="dropdown-subitem"><a href="/kangkang_blog/git/syntax/git_restore.html" class="nav-link">
+  git restore
+</a></li><li class="dropdown-subitem"><a href="/kangkang_blog/git/syntax/git_rm.html" class="nav-link">
+  git rm
+</a></li><li class="dropdown-subitem"><a href="/kangkang_blog/git/syntax/git_show.html" class="nav-link">
+  git show
+</a></li><li class="dropdown-subitem"><a href="/kangkang_blog/git/syntax/git_stage.html" class="nav-link">
+  git stage
+</a></li><li class="dropdown-subitem"><a href="/kangkang_blog/git/syntax/git_stash.html" class="nav-link">
+  git stash
+</a></li><li class="dropdown-subitem"><a href="/kangkang_blog/git/syntax/git_status.html" class="nav-link">
+  git status
+</a></li><li class="dropdown-subitem"><a href="/kangkang_blog/git/syntax/git_switch.html" class="nav-link">
+  git switch
+</a></li><li class="dropdown-subitem"><a href="/kangkang_blog/git/syntax/git_tag.html" class="nav-link">
+  git tag
+</a></li></ul></li><li class="dropdown-item"><h4>
+          操作实践
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/kangkang_blog/git/advanced_skills/rule.html" class="nav-link">
+  若干建议规范
+</a></li><li class="dropdown-subitem"><a href="/kangkang_blog/git/advanced_skills/great_skills.html" class="nav-link">
+  各种骚操作
+</a></li><li class="dropdown-subitem"><a href="/kangkang_blog/git/advanced_skills/best_practices.html" class="nav-link">
+  通过分支管理需求、问题单
+</a></li><li class="dropdown-subitem"><a href="/kangkang_blog/git/advanced_skills/different.html" class="nav-link">
+  merge、rebase、cherry-pick的区别
+</a></li></ul></li><li class="dropdown-item"><!----> <a href="/kangkang_blog/git/tool/tool.html" class="nav-link">
+  第三方工具推荐
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="Flex弹性布局" class="dropdown-title"><span class="title">Flex弹性布局</span> <span class="arrow down"></span></button> <button type="button" aria-label="Flex弹性布局" class="mobile-dropdown-title"><span class="title">Flex弹性布局</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/kangkang_blog/flex/index.html" class="nav-link">
+  简介
+</a></li><li class="dropdown-item"><!----> <a href="/kangkang_blog/flex/introduction.html" class="nav-link">
+  相关概念
+</a></li><li class="dropdown-item"><!----> <a href="/kangkang_blog/flex/init.html" class="nav-link">
+  初始化计算
+</a></li><li class="dropdown-item"><!----> <a href="/kangkang_blog/flex/item/item.html" class="nav-link">
+  弹性元素
+</a></li><li class="dropdown-item"><!----> <a href="/kangkang_blog/flex/container/container.html" class="nav-link">
+  弹性容器
+</a></li><li class="dropdown-item"><h4>
+          外在影响因素
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/kangkang_blog/flex/other/css1.html" class="nav-link">
+  min-content/max-content
+</a></li><li class="dropdown-subitem"><a href="/kangkang_blog/flex/other/css2.html" class="nav-link">
+  position
+</a></li><li class="dropdown-subitem"><a href="/kangkang_blog/flex/other/css3.html" class="nav-link">
+  direction
+</a></li><li class="dropdown-subitem"><a href="/kangkang_blog/flex/other/css4.html" class="nav-link">
+  margin
+</a></li><li class="dropdown-subitem"><a href="/kangkang_blog/flex/other/css5.html" class="nav-link">
+  min-width
+</a></li><li class="dropdown-subitem"><a href="/kangkang_blog/flex/other/css6.html" class="nav-link">
+  overflow
+</a></li></ul></li><li class="dropdown-item"><h4>
+          应用实例
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/kangkang_blog/flex/example/example1.html" class="nav-link">
+  表格hover组件
+</a></li><li class="dropdown-subitem"><a href="/kangkang_blog/flex/example/example2.html" class="nav-link">
+  示例2
+</a></li></ul></li></ul></div></div><div class="nav-item"><a href="/kangkang_blog/vue/index.html" class="nav-link">
+  Vue.js
+</a></div><div class="nav-item"><a href="/kangkang_blog/react/index.html" class="nav-link">
+  React.js
+</a></div><div class="nav-item"><a href="/kangkang_blog/nodejs/index.html" class="nav-link">
+  Node.js
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="菜谱的自我修养" class="dropdown-title"><span class="title">菜谱的自我修养</span> <span class="arrow down"></span></button> <button type="button" aria-label="菜谱的自我修养" class="mobile-dropdown-title"><span class="title">菜谱的自我修养</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/kangkang_blog/cookbook/list.html" class="nav-link">
+  列表
+</a></li><li class="dropdown-item"><!----> <a href="/kangkang_blog/cookbook/1.html" class="nav-link">
+  香菇蒸滑鸡
+</a></li></ul></div></div><div class="nav-item"><a href="/kangkang_blog/travel/index.html" class="nav-link">
+  旅行日记
+</a></div><div class="nav-item"><a href="/kangkang_blog/interview/index.html" class="nav-link">
+  常见面试题
+</a></div> <a href="https://github.com/ykshang/kangkang_blog" target="_blank" rel="noopener noreferrer" class="repo-link">
+    查看源码
+    <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></nav>  <ul class="sidebar-links"><li><a href="/kangkang_blog/guide/" class="sidebar-link">Hello Word！</a></li><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading"><span>Git笔记</span> <span class="arrow right"></span></p> <!----></section></li><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading"><span>Flex弹性布局</span> <span class="arrow right"></span></p> <!----></section></li><li><a href="/kangkang_blog/vue/" class="sidebar-link">Vue.js</a></li><li><a href="/kangkang_blog/react/" class="sidebar-link">React.js</a></li><li><a href="/kangkang_blog/nodejs/" class="sidebar-link">Node.js</a></li><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading"><span>菜谱的自我修养</span> <span class="arrow right"></span></p> <!----></section></li><li><a href="/kangkang_blog/travel/" class="sidebar-link">旅行日记</a></li><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading open"><span>常见面试题</span> <span class="arrow down"></span></p> <ul class="sidebar-links sidebar-group-items"><li><section class="sidebar-group collapsable is-sub-group depth-1"><a href="/kangkang_blog/interview/basic/index" class="sidebar-heading clickable open"><span>JS基础</span> <span class="arrow down"></span></a> <ul class="sidebar-links sidebar-group-items"><li><a href="/kangkang_blog/interview/basic/1.html" aria-current="page" class="active sidebar-link">深拷贝和浅拷贝</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/kangkang_blog/interview/basic/1.html#什么是深拷贝和浅拷贝" class="sidebar-link">什么是深拷贝和浅拷贝</a></li><li class="sidebar-sub-header"><a href="/kangkang_blog/interview/basic/1.html#常见的值操作" class="sidebar-link">常见的值操作</a></li></ul></li></ul></section></li></ul></section></li></ul> </aside> <main class="page"> <div class="theme-default-content content__default"><h1 id="深拷贝和浅拷贝"><a href="#深拷贝和浅拷贝" class="header-anchor">#</a> 深拷贝和浅拷贝</h1> <h2 id="什么是深拷贝和浅拷贝"><a href="#什么是深拷贝和浅拷贝" class="header-anchor">#</a> 什么是深拷贝和浅拷贝</h2> <p>深拷贝（Deep Copy）和浅拷贝（Shallow Copy）都是在编程中处理对象或数据的复制操作。</p> <p><strong>浅拷贝</strong>创建一个新对象或数据结构，其中包含原始对象的引用。换句话说，新对象与原始对象共享相同的内存地址，因此对其中一个对象进行更改会影响到另一个对象。浅拷贝仅复制对象的第一层结构，而不会递归复制嵌套的对象或数据。</p> <p><strong>深拷贝</strong>创建一个全新的对象或数据结构，独立于原始对象副本。新对象与原始对象具有不同的内存地址，因此彼此之间的更改是相互独立的。深拷贝会递归复制所有嵌套的对象或数据，确保整个对象及其子对象都被复制。</p> <h3 id="二者区别"><a href="#二者区别" class="header-anchor">#</a> 二者区别</h3> <ul><li><strong>内存引用</strong>：浅拷贝复制的是对象的引用，深拷贝复制的是对象的值。</li> <li><strong>对象的变化</strong>：对浅拷贝的修改会影响原始对象，因为它们共享相同的引用。而对深拷贝的修改不会影响原始对象。</li> <li><strong>嵌套对象或数据的复制</strong>：浅拷贝仅复制第一层对象或数据，嵌套的对象或数据仍然是共享的。深拷贝通过递归复制嵌套的对象或数据，确保每个对象都有独立的副本。</li></ul> <h2 id="常见的值操作"><a href="#常见的值操作" class="header-anchor">#</a> 常见的值操作</h2> <ul><li><h3 id="直接赋值"><a href="#直接赋值" class="header-anchor">#</a> 直接赋值  <span class="badge tip" style="vertical-align:top;" data-v-15b7b770>浅拷贝</span></h3> <div class="language-js line-numbers-mode"><pre class="language-js"><code><span class="token keyword">const</span> originalObj <span class="token operator">=</span> <span class="token punctuation">{</span> <span class="token literal-property property">name</span><span class="token operator">:</span> <span class="token string">&quot;John&quot;</span><span class="token punctuation">,</span> <span class="token literal-property property">age</span><span class="token operator">:</span> <span class="token number">30</span> <span class="token punctuation">}</span><span class="token punctuation">;</span>
+<span class="token keyword">const</span> shallowCopyObj <span class="token operator">=</span> originalObj<span class="token punctuation">;</span>
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br></div></div></li> <li><h3 id="扩展运算符-spread-operator-使用扩展运算符可以创建一个对象或数组的浅拷贝副本"><a href="#扩展运算符-spread-operator-使用扩展运算符可以创建一个对象或数组的浅拷贝副本" class="header-anchor">#</a> 扩展运算符+（Spread Operator）： 使用扩展运算符可以创建一个对象或数组的浅拷贝副本 <span class="badge warn" style="vertical-align:top;" data-v-15b7b770>特殊</span></h3> <ol><li><p>对象层数只有两层，即只有一层子属性。<span class="badge tip" style="vertical-align:top;" data-v-15b7b770>深拷贝</span></p></li> <li><p>如果属性超过三层，即至少两层子属性。<span class="badge tip" style="vertical-align:top;" data-v-15b7b770>浅拷贝</span></p></li></ol> <div class="language-js line-numbers-mode"><pre class="language-js"><code><span class="token keyword">const</span> originalObj <span class="token operator">=</span> <span class="token punctuation">{</span> <span class="token literal-property property">name</span><span class="token operator">:</span> <span class="token string">&quot;John&quot;</span><span class="token punctuation">,</span> <span class="token literal-property property">age</span><span class="token operator">:</span> <span class="token number">30</span> <span class="token punctuation">}</span><span class="token punctuation">;</span> <span class="token comment">// 深拷贝</span>
+<span class="token keyword">const</span> originalObj <span class="token operator">=</span> <span class="token punctuation">{</span> <span class="token literal-property property">name</span><span class="token operator">:</span> <span class="token string">&quot;John&quot;</span><span class="token punctuation">,</span> <span class="token literal-property property">age</span><span class="token operator">:</span> <span class="token number">30</span><span class="token punctuation">,</span> <span class="token literal-property property">desc</span><span class="token operator">:</span> <span class="token punctuation">{</span> <span class="token literal-property property">skill</span><span class="token operator">:</span> <span class="token string">'xxx'</span> <span class="token punctuation">}</span> <span class="token punctuation">}</span><span class="token punctuation">;</span> <span class="token comment">// 浅拷贝</span>
+<span class="token keyword">const</span> copyObj <span class="token operator">=</span> <span class="token punctuation">{</span> <span class="token operator">...</span>originalObj <span class="token punctuation">}</span><span class="token punctuation">;</span>
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br></div></div></li> <li><h3 id="object-assign-方法-使用-object-assign-可以将一个或多个源对象的属性复制到目标对象-并返回目标对象的浅拷贝。和扩展运算符类似"><a href="#object-assign-方法-使用-object-assign-可以将一个或多个源对象的属性复制到目标对象-并返回目标对象的浅拷贝。和扩展运算符类似" class="header-anchor">#</a> Object.assign() 方法：使用 Object.assign() 可以将一个或多个源对象的属性复制到目标对象，并返回目标对象的浅拷贝。和扩展运算符类似 <span class="badge warn" style="vertical-align:top;" data-v-15b7b770>特殊</span></h3> <ol><li><p>对象层数只有两层，即只有一层子属性。<span class="badge tip" style="vertical-align:top;" data-v-15b7b770>深拷贝</span></p></li> <li><p>如果属性超过三层，即至少两层子属性。<span class="badge tip" style="vertical-align:top;" data-v-15b7b770>浅拷贝</span></p></li></ol> <div class="language-js line-numbers-mode"><pre class="language-js"><code><span class="token keyword">const</span> originalObj <span class="token operator">=</span> <span class="token punctuation">{</span> <span class="token literal-property property">name</span><span class="token operator">:</span> <span class="token string">&quot;John&quot;</span><span class="token punctuation">,</span> <span class="token literal-property property">age</span><span class="token operator">:</span> <span class="token number">30</span> <span class="token punctuation">}</span><span class="token punctuation">;</span> <span class="token comment">// 深拷贝</span>
+<span class="token keyword">const</span> originalObj <span class="token operator">=</span> <span class="token punctuation">{</span> <span class="token literal-property property">name</span><span class="token operator">:</span> <span class="token string">&quot;John&quot;</span><span class="token punctuation">,</span> <span class="token literal-property property">age</span><span class="token operator">:</span> <span class="token number">30</span><span class="token punctuation">,</span> <span class="token literal-property property">desc</span><span class="token operator">:</span> <span class="token punctuation">{</span> <span class="token literal-property property">skill</span><span class="token operator">:</span> <span class="token string">'xxx'</span> <span class="token punctuation">}</span> <span class="token punctuation">}</span><span class="token punctuation">;</span> <span class="token comment">// 浅拷贝</span>
+<span class="token keyword">const</span> copyObj <span class="token operator">=</span> Object<span class="token punctuation">.</span><span class="token function">assign</span><span class="token punctuation">(</span><span class="token punctuation">{</span><span class="token punctuation">}</span><span class="token punctuation">,</span> originalObj<span class="token punctuation">)</span><span class="token punctuation">;</span>
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br></div></div></li> <li><h3 id="json-stringify-和json-parse"><a href="#json-stringify-和json-parse" class="header-anchor">#</a> JSON.stringify()和JSON.parse() <span class="badge tip" style="vertical-align:top;" data-v-15b7b770>深拷贝</span></h3> <div class="language-js line-numbers-mode"><pre class="language-js"><code><span class="token keyword">const</span> originalObj <span class="token operator">=</span> <span class="token punctuation">{</span> <span class="token literal-property property">name</span><span class="token operator">:</span> <span class="token string">&quot;John&quot;</span><span class="token punctuation">,</span> <span class="token literal-property property">age</span><span class="token operator">:</span> <span class="token number">30</span> <span class="token punctuation">}</span><span class="token punctuation">;</span> <span class="token comment">// 深拷贝</span>
+<span class="token keyword">const</span> deepCopyObj <span class="token operator">=</span> <span class="token constant">JSON</span><span class="token punctuation">.</span><span class="token function">parse</span><span class="token punctuation">(</span><span class="token constant">JSON</span><span class="token punctuation">.</span><span class="token function">stringify</span><span class="token punctuation">(</span>originalObj<span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br></div></div><div class="custom-block warning"><p class="custom-block-title">缺点</p> <ul><li><p><strong>只能复制可序列化的数据</strong>: JSON.stringify() 只能复制那些可以被 JSON 表示的数据类型。这意味着以下几种类型的数据无法被正确复制：</p> <ol><li><strong>正则表达式RegExp、Error：</strong> 转换完变成<strong>空对象{}</strong></li> <li><strong>Date 对象：</strong> Date 对象会被转换成其 <strong>ISO 字符串（2024-12-29T11:41:01.805Z）</strong> 表示。</li> <li><strong>undefined、Symbol、function：</strong> 转化后直接值丢失</li> <li><strong>NaN、Infinity、-Infinity：</strong> 转化后直接值null</li> <li><strong>循环引用</strong>: 如果对象之间存在循环引用（例如a.b=b，b.a = a），JSON.stringify() 会抛出错误。</li></ol></li> <li><p><strong>性能问题</strong>: 对于大型复杂的对象，JSON.stringify() 和 JSON.parse() 的性能开销可能比较大，特别是对于嵌套较深的对象。</p></li> <li><p><strong>数据类型丢失</strong>: 即使是可序列化的数据，在序列化和反序列化的过程中也可能发生数据类型的丢失或改变。例如，数字可能会被转换成字符串。</p></li></ul></div> <div class="custom-block tip"><p class="custom-block-title">总结</p> <ol><li>Date 对象变为字符串 RegExp、Error 对象变为空对象 {} 函数</li> <li>undefined、Symbol 属性丢失</li> <li>NaN、Infinity、-Infinity 变为 null</li> <li>enumerable 为 false 的属性丢失</li> <li>循环引用的对象不能正确拷贝</li></ol> <p>用法简单，然而使用这种方法会有一些隐藏的坑：因为在序列化 JavaScript 对象时，所有函数和原型成员会被有意忽略。
+通俗点说，JSON.parse(JSON.stringfy(X))，其中 X 只能是 Number, String, Boolean, Array, 扁平对象。即那些能够被 JSON 直接表示的数据结构。</p></div></li> <li><h3 id="‌第三方库如lodash的clonedeep方法-‌"><a href="#‌第三方库如lodash的clonedeep方法-‌" class="header-anchor">#</a> ‌第三方库如Lodash的cloneDeep方法 ‌<span class="badge tip" style="vertical-align:top;" data-v-15b7b770>深拷贝</span></h3></li></ul> <p>适用于需要快速实现深拷贝且已经使用Lodash的项目。优点是简单且功能强大，缺点是需要引入整个Lodash库。</p> <ul><li><h3 id="自己实现deepcopy-‌"><a href="#自己实现deepcopy-‌" class="header-anchor">#</a> 自己实现deepCopy ‌<span class="badge tip" style="vertical-align:top;" data-v-15b7b770>深拷贝</span></h3> <div class="language-js line-numbers-mode"><pre class="language-js"><code><span class="token keyword">function</span> <span class="token function">deepCopy</span><span class="token punctuation">(</span><span class="token parameter">source</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+  <span class="token keyword">if</span> <span class="token punctuation">(</span>source <span class="token operator">===</span> <span class="token keyword">null</span> <span class="token operator">||</span> <span class="token keyword">typeof</span> source <span class="token operator">!==</span> <span class="token string">'object'</span> <span class="token operator">||</span> source <span class="token keyword">instanceof</span> <span class="token class-name">Date</span> <span class="token operator">||</span> source <span class="token keyword">instanceof</span> <span class="token class-name">RegExp</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+      <span class="token keyword">return</span> source<span class="token punctuation">;</span>
+  <span class="token punctuation">}</span>
+  <span class="token keyword">let</span> copy <span class="token operator">=</span> Array<span class="token punctuation">.</span><span class="token function">isArray</span><span class="token punctuation">(</span>source<span class="token punctuation">)</span> <span class="token operator">?</span> <span class="token punctuation">[</span><span class="token punctuation">]</span> <span class="token operator">:</span> <span class="token punctuation">{</span><span class="token punctuation">}</span>
+  <span class="token keyword">for</span> <span class="token punctuation">(</span><span class="token keyword">let</span> key <span class="token keyword">in</span> source<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+      <span class="token keyword">if</span> <span class="token punctuation">(</span>source<span class="token punctuation">.</span><span class="token function">hasOwnProperty</span><span class="token punctuation">(</span>key<span class="token punctuation">)</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+          copy<span class="token punctuation">[</span>key<span class="token punctuation">]</span> <span class="token operator">=</span> <span class="token function">deepCopy</span><span class="token punctuation">(</span>source<span class="token punctuation">[</span>key<span class="token punctuation">]</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+      <span class="token punctuation">}</span>
+  <span class="token punctuation">}</span>
+  <span class="token keyword">return</span> copy<span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br></div></div></li></ul></div> <footer class="page-edit"><div class="edit-link"><a href="https://github.com/ykshang/kangkang_blog/edit/master/docs/interview/basic/1.md" target="_blank" rel="noopener noreferrer">编辑此文档</a> <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></div> <div class="last-updated"><span class="prefix">最后更新:</span> <span class="time">12/29/2024, 12:53:53 PM</span></div></footer> <div class="page-nav"><p class="inner"><span class="prev">
+      ←
+      <a href="/kangkang_blog/travel/" class="prev">
+        旅行日记
+      </a></span> <!----></p></div> </main></div><div class="global-ui"><!----><!----><div id="live2d-widget" class="live2d-widget-container" style="position:fixed;right:50px;bottom:50px;width:180px;height:400px;z-index:99999;opacity:0.8;pointer-events:none;"><canvas id="live2d_canvas" width="180" height="400" class="live2d_canvas" style="position:absolute;left:0px;top:0px;width:180px;height:400px;"></canvas></div></div></div>
+    <script src="/kangkang_blog/assets/js/app.da7f16f8.js" defer></script><script src="/kangkang_blog/assets/js/2.9708e627.js" defer></script><script src="/kangkang_blog/assets/js/1.5df086e8.js" defer></script><script src="/kangkang_blog/assets/js/73.1f00ddf5.js" defer></script><script src="/kangkang_blog/assets/js/4.88794156.js" defer></script>
+  </body>
+</html>
