@@ -27,8 +27,8 @@ module.exports = {
       "/revision-control/git/syntax/git_show.md",
       "/revision-control/git/syntax/git_status.md",
       "/revision-control/git/syntax/git_tag.md",
-    ],  
-  },{
+    ],
+  }, {
     text: "操作实践",
     collapsible: true,
     children: [
@@ -37,8 +37,58 @@ module.exports = {
       "/revision-control/git/advanced_skills/best_practices",
       "/revision-control/git/advanced_skills/different",
     ]
-  },{
+  }, {
     text: '第三方工具推荐',
     link: '/revision-control/git/tool/tool'
   }],
+  "/css/layout/flex/": [{
+    text: '简介',
+    link: '/css/layout/flex/README.md'
+  }, {
+    text: '相关概念',
+    link: '/css/layout/flex/introduction.md'
+  }, {
+    text: '初始化计算',
+    link: '/css/layout/flex/init'
+  }, {
+    text: '弹性元素',
+    link: '/css/layout/flex/item'
+  }, {
+    text: '弹性容器',
+    link: '/css/layout/flex/container'
+  },],
 };
+
+
+// {
+//   title: '外在影响因素',
+//     children: [{
+//       title: 'min-content/max-content',
+//       path: '/flex/other/css1'
+//     }, {
+//       title: 'position',
+//       path: '/flex/other/css2'
+//     }, {
+//       title: 'direction',
+//       path: '/flex/other/css3'
+//     }, {
+//       title: 'margin',
+//       path: '/flex/other/css4'
+//     }, {
+//       title: 'min-width',
+//       path: '/flex/other/css5'
+//     }, {
+//       title: 'overflow',
+//       path: '/flex/other/css6'
+//     }]
+// }, {
+//   title: '应用实例',
+//     children: [{
+//       title: '表格hover组件',
+//       path: '/flex/example/example1'
+//     }, {
+//       title: '示例2',
+//       path: '/flex/example/example2'
+//     }]
+// }]
+// }
