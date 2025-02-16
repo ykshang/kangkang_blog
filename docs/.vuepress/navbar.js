@@ -8,7 +8,7 @@ module.exports = [
     children: [
       {
         text: "Git",
-        link: "/revision-control/git/index",
+        link: "/revision-control/git/index.md",
       },
       // {
       //   text: "SVN",
