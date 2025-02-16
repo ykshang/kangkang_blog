@@ -4,8 +4,17 @@ module.exports = [
     link: "/intro/",
   },
   {
-    text: "基础",
-    link: "/base/",
+    text: "版本控制",
+    children: [
+      {
+        text: "Git",
+        link: "/revision-control/git/index",
+      },
+      // {
+      //   text: "SVN",
+      //   link: "/revision-control/svn/",
+      // },
+    ],
   },
   {
     text: "高级",
