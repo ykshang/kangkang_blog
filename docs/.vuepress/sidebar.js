@@ -56,39 +56,23 @@ module.exports = {
   }, {
     text: '弹性容器',
     link: '/css/layout/flex/container'
-  },],
+  }, {
+    text: '外在影响因素',
+    collapsible: true,
+    children: [
+      '/css/layout/flex/other/css1',
+      '/css/layout/flex/other/css2',
+      '/css/layout/flex/other/css3',
+      '/css/layout/flex/other/css4',
+      '/css/layout/flex/other/css5',
+      '/css/layout/flex/other/css6',
+    ]
+  }, {
+    text: '应用实例',
+    collapsible: true,
+    children: [
+      '/css/layout/flex/example/example1',
+      '/css/layout/flex/example/example2',
+    ]
+  }],
 };
-
-
-// {
-//   title: '外在影响因素',
-//     children: [{
-//       title: 'min-content/max-content',
-//       path: '/flex/other/css1'
-//     }, {
-//       title: 'position',
-//       path: '/flex/other/css2'
-//     }, {
-//       title: 'direction',
-//       path: '/flex/other/css3'
-//     }, {
-//       title: 'margin',
-//       path: '/flex/other/css4'
-//     }, {
-//       title: 'min-width',
-//       path: '/flex/other/css5'
-//     }, {
-//       title: 'overflow',
-//       path: '/flex/other/css6'
-//     }]
-// }, {
-//   title: '应用实例',
-//     children: [{
-//       title: '表格hover组件',
-//       path: '/flex/example/example1'
-//     }, {
-//       title: '示例2',
-//       path: '/flex/example/example2'
-//     }]
-// }]
-// }

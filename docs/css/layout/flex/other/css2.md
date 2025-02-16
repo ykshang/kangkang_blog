@@ -1,4 +1,4 @@
-## # position
+# position
 
 position为absolute和fixed的元素会导致元素脱离文档流，影响flex布局，不会作为弹性子元素的存在，但是可以设置在容器上进行布局
 
