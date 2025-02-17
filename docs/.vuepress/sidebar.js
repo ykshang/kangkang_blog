@@ -41,7 +41,6 @@ module.exports = {
     text: '第三方工具推荐',
     link: '/revision-control/git/tool/tool'
   }],
-
   // flex布局 ----------------------
   "/css/layout/flex/": [{
     text: '简介',
@@ -132,4 +131,10 @@ module.exports = {
       "/compiler-tool/webpack/origin/summary.md",
     ]
   }],
+  "/web-basic/": [
+    '/web-basic/1',
+    '/web-basic/2',
+    '/web-basic/3',
+    '/web-basic/4'
+  ],
 };

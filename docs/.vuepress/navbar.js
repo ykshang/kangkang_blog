@@ -10,6 +10,9 @@ module.exports = [
         text: "Flex 弹性布局",
         link: "/css/layout/flex/",
       }],
+    }, {
+      text: "Web基础",
+      link: "/web-basic/",
     }],
   }, {
     text: "工程化",
