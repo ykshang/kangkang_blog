@@ -254,4 +254,51 @@ module.exports = {
       "/framework/vue/27",
     ],
   }],
+  "/nodejs/node/": [{
+    text: "Node.js",
+    collapsible: false,
+    children: [
+      '/nodejs/node/1',
+      '/nodejs/node/2',
+      '/nodejs/node/3',
+      '/nodejs/node/4',
+      '/nodejs/node/5',
+      '/nodejs/node/6',
+      '/nodejs/node/7',
+      '/nodejs/node/8',
+      '/nodejs/node/9',
+      '/nodejs/node/10',
+      '/nodejs/node/11',
+      '/nodejs/node/12',
+      '/nodejs/node/13',
+      '/nodejs/node/14',
+      '/nodejs/node/15',
+      '/nodejs/node/16',
+      '/nodejs/node/17',
+      "/nodejs/node/18"
+    ]
+  }],
+  "/nodejs/express/": [{
+    text: "Express",
+    collapsible: false,
+    children: [
+      '/nodejs/express/1',
+      '/nodejs/express/2',
+      '/nodejs/express/3',
+      '/nodejs/express/4',
+      '/nodejs/express/5',
+      '/nodejs/express/6',
+      '/nodejs/express/7',
+    ]
+  }],
+  "/nodejs/database/": [{
+    text: "Node.js Database",
+    collapsible: false,
+    children: [
+      '/nodejs/database/1',
+      '/nodejs/database/2',
+      '/nodejs/database/3',
+      '/nodejs/database/4',
+    ]
+  }],
 };

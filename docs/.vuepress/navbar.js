@@ -30,14 +30,22 @@ module.exports = [
       link: "/framework/vue/",
     }],
   }, {
-
     text: "Node.js",
     children: [{
-      text: "构建打包",
-      children: [{
-        text: "Webpack",
-        link: "/compiler-tool/webpack/",
-      }],
+      text: "Node.js",
+      link: "/nodejs/node/",
+    }, {
+      text: "Express",
+      link: "/nodejs/express/", 
+    }, {
+      text: "数据库",
+      link: "/nodejs/database/", 
+    }],
+  }, {
+    text: "构建打包",
+    children: [{
+      text: "Webpack",
+      link: "/compiler-tool/webpack/",
     }],
   }, {
     text: "计算机基础",
