@@ -3,10 +3,13 @@ module.exports = [
     text: "主页",
     link: "/",
   }, {
-    text: "版本控制工具",
+    text: "Node.js",
     children: [{
-      text: "Git",
-      link: "/revision-control/git/",
+      text: "构建打包",
+      children: [{
+        text: "Webpack",
+        link: "/compiler-tool/webpack/",
+      }],
     }],
   }, {
     text: "前端基础",
@@ -18,11 +21,13 @@ module.exports = [
       }],
     }],
   }, {
-    text: "构建打包",
+    text: "其他",
     children: [{
-      text: "Webpack",
-      link: "/compiler-tool/webpack/",
+      text: "版本控制工具",
+      children: [{
+        text: "Git",
+        link: "/revision-control/git/",
+      }],
     }],
   },
-  
 ];
