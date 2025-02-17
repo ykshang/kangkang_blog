@@ -141,4 +141,23 @@ module.exports = {
       "/web-basic/4"
     ]
   }],
+  "/database/": [{
+    text: '数据库',
+    collapsible: false,
+    children: [{
+      text: 'MongoDB',
+      collapsible: true,
+      children: [
+        "/database/MangoDB/1",
+        "/database/MangoDB/2",
+        "/database/MangoDB/3",
+        "/database/MangoDB/4",
+        "/database/MangoDB/5",
+        "/database/MangoDB/6",
+        "/database/MangoDB/7",
+        "/database/MangoDB/8",
+        "/database/MangoDB/9",
+      ],
+    }]
+  }],
 };

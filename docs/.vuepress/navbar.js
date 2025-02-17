@@ -27,6 +27,12 @@ module.exports = [
       }],
     }],
   }, {
+    text: "数据库",
+    children: [{
+      text: "MangoDB",
+      link: "/database/MangoDB/",
+    }],
+  }, {
     text: "其他",
     children: [{
       text: "版本控制工具",
