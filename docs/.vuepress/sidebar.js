@@ -197,4 +197,28 @@ module.exports = {
       "/Algorithm/design-pattern/2",
     ]
   }],
+  "/computer/network/": [{
+    text: "网络",
+    collapsible: false,
+    children: [
+      "/computer/network/1",
+      "/computer/network/2",
+      "/computer/network/3",
+      "/computer/network/4",
+      "/computer/network/5",
+      "/computer/network/6",
+      "/computer/network/7",
+      "/computer/network/8",
+      "/computer/network/9",
+      "/computer/network/10",
+      "/computer/network/11",
+      "/computer/network/12",
+      "/computer/network/13",
+      "/computer/network/14",
+      "/computer/network/15",
+      "/computer/network/16",
+      "/computer/network/17",
+      "/computer/network/18",
+    ],
+  }],
 };

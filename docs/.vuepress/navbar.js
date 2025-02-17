@@ -33,6 +33,12 @@ module.exports = [
       }],
     }],
   }, {
+    text: "计算机基础",
+    children: [{
+      text: "网络",
+      link: "/computer/network/",
+    }],
+  }, {
     text: "数据库",
     children: [{
       text: "MangoDB",
@@ -46,9 +52,9 @@ module.exports = [
     }, {
       text: "设计模式",
       link: "/Algorithm/design-pattern/",
-    // }, {
-    //   text: "编程题",
-    //   link: "/Algorithm/Algorithm/",
+      // }, {
+      //   text: "编程题",
+      //   link: "/Algorithm/Algorithm/",
     }],
   }, {
     text: "其他",
