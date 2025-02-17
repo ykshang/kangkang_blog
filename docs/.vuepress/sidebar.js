@@ -131,10 +131,14 @@ module.exports = {
       "/compiler-tool/webpack/origin/summary.md",
     ]
   }],
-  "/web-basic/": [
-    '/web-basic/1',
-    '/web-basic/2',
-    '/web-basic/3',
-    '/web-basic/4'
-  ],
+  "/web-basic/": [{
+    text: 'web基础面试题',
+    collapsible: false,
+    children: [
+      "/web-basic/1",
+      "/web-basic/2",
+      "/web-basic/3",
+      "/web-basic/4"
+    ]
+  }],
 };

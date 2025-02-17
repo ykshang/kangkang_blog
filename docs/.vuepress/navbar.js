@@ -12,7 +12,10 @@ module.exports = [
       }],
     }, {
       text: "Web基础",
-      link: "/web-basic/",
+      children: [{
+        text: "Web基础面试题",
+        link: "/web-basic/",
+      }],
     }],
   }, {
     text: "工程化",
