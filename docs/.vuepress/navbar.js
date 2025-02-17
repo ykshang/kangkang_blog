@@ -9,9 +9,9 @@ module.exports = [
       link: "/revision-control/git/",
     }],
   }, {
-    text: "CSS",
+    text: "前端基础",
     children: [{
-      text: "CSS布局",
+      text: "CSS",
       children: [{
         text: "Flex 弹性布局",
         link: "/css/layout/flex/",
