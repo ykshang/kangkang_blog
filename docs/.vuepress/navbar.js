@@ -24,6 +24,13 @@ module.exports = [
       }],
     }],
   }, {
+    text: "前端框架",
+    children: [{
+      text: "Vue",
+      link: "/framework/vue/",
+    }],
+  }, {
+
     text: "工程化",
     children: [{
       text: "构建打包",
