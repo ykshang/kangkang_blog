@@ -6,8 +6,8 @@ module.exports = {
   base: "/MyBlog/",
   lang: "zh-CN",
   head: [["link", { rel: "icon", href: "/imgs/favicon.ico" }]],
-  title: "我的博客",
-  description: "总结记录",
+  title: "kangkang 的博客",
+  description: "记录个人技术栈学习记录和心得",
   // 主题和它的配置
   theme: "@vuepress/theme-default",
   themeConfig: {

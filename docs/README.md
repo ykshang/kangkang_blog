@@ -3,18 +3,15 @@ home: true
 title: 首页
 heroImage: /imgs/hero.gif
 actions:
-  - text: 课程介绍
-    link: /intro/
-    type: secondary
-  - text: 基础 →
-    link: /base/
+  - text: 开始阅读 →
+    link: /css/layout/flex/
     type: primary
 features:
-  - title: 💡 最新最热的技术
-    details: 使用最新 Webpack5 技术
-  - title: 🛠️ 最细致讲解
-    details: 从基础配置，到高级优化，到项目配置，最后到原理分析
-  - title: 📦 最全面的案例
-    details: 不同角度实现loader、plugin
+  - title: 🚧 框架技术文档
+    details: 陌生框架的详细描述和学习记录
+  - title: 📒 常见面试题
+    details: 整理常见的面试题
+  - title: 📈 学习经验和心得
+    details: 详细概括了学习过程的思考和经验
 footer: MIT Licensed | Copyright © kangkang shang
 ---
