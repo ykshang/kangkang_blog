@@ -3,7 +3,7 @@ module.exports = [
     text: "主页",
     link: "/",
   }, {
-    text: "版本控制",
+    text: "版本控制工具",
     children: [{
       text: "Git",
       link: "/revision-control/git/",
@@ -17,5 +17,12 @@ module.exports = [
         link: "/css/layout/flex/",
       }],
     }],
+  }, {
+    text: "构建打包",
+    children: [{
+      text: "Webpack",
+      link: "/compiler-tool/webpack/intro/",
+    }],
   },
+  
 ];
