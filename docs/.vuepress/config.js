@@ -3,7 +3,7 @@ const navbar = require("./navbar")
 const sidebar = require("./sidebar")
 module.exports = {
   // 站点配置
-  base: "/MyBlog/",
+  base: "/kangkang_blog/",
   lang: "zh-CN",
   head: [["link", { rel: "icon", href: "/imgs/favicon.ico" }]],
   title: "kangkang 的博客",

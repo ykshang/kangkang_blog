@@ -292,7 +292,7 @@ module.exports = {
     ]
   }],
   "/nodejs/database/": [{
-    text: "Node.js Database",
+    text: "数据库",
     collapsible: false,
     children: [
       '/nodejs/database/1',
