@@ -31,7 +31,7 @@ module.exports = [
     }],
   }, {
 
-    text: "工程化",
+    text: "Node.js",
     children: [{
       text: "构建打包",
       children: [{
