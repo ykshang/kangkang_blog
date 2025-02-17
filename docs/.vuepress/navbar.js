@@ -39,6 +39,18 @@ module.exports = [
       link: "/database/MangoDB/",
     }],
   }, {
+    text: "算法",
+    children: [{
+      text: "算法",
+      link: "/Algorithm/Algorithm/",
+    }, {
+      text: "设计模式",
+      link: "/Algorithm/design-pattern/",
+    // }, {
+    //   text: "编程题",
+    //   link: "/Algorithm/Algorithm/",
+    }],
+  }, {
     text: "其他",
     children: [{
       text: "版本控制工具",

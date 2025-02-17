@@ -131,7 +131,7 @@ module.exports = {
   }],
   "/database/": [{
     text: 'MongoDB',
-    collapsible: true,
+    collapsible: false,
     children: [
       "/database/MangoDB/1",
       "/database/MangoDB/2",
@@ -179,5 +179,22 @@ module.exports = {
       "/JavaScript/interview/30",
       "/JavaScript/interview/32",
     ],
+  }],
+  "/Algorithm/Algorithm/": [{
+    text: "算法",
+    collapsible: false,
+    children: [
+      "/Algorithm/Algorithm/1",
+      "/Algorithm/Algorithm/2",
+      "/Algorithm/Algorithm/3",
+    ],
+  }],
+  "/Algorithm/design-pattern/": [{
+    text: "设计模式",
+    collapsible: false,
+    children: [
+      "/Algorithm/design-pattern/1",
+      "/Algorithm/design-pattern/2",
+    ]
   }],
 };
