@@ -11,6 +11,12 @@ module.exports = [
         link: "/css/layout/flex/",
       }],
     }, {
+      text: "JavaScript",
+      children: [{
+        text: "JavaScript 面试题",
+        link: "/JavaScript/interview/",
+      }],
+    }, {
       text: "Web基础",
       children: [{
         text: "Web基础面试题",
