@@ -1,5 +1,5 @@
 module.exports = {
-  // 版本控制/git
+  // 版本控制/git ---------------
   "/revision-control/git/": [{
     text: "基本介绍",
     link: "/revision-control/git/README.md",
@@ -41,6 +41,8 @@ module.exports = {
     text: '第三方工具推荐',
     link: '/revision-control/git/tool/tool'
   }],
+
+  // flex布局 ----------------------
   "/css/layout/flex/": [{
     text: '简介',
     link: '/css/layout/flex/README.md'
@@ -73,6 +75,61 @@ module.exports = {
     children: [
       '/css/layout/flex/example/example1',
       '/css/layout/flex/example/example2',
+    ]
+  }],
+  // webpack ----------------------
+  "/compiler-tool/webpack/": [{
+    text: '介绍',
+    link: '/compiler-tool/webpack/README.md'
+  }, {
+    text: '基础配置',
+    collapsible: true,
+    children: [
+      "/compiler-tool/webpack/base/README.md",
+      "/compiler-tool/webpack/base/base.md",
+      "/compiler-tool/webpack/base/config.md",
+      "/compiler-tool/webpack/base/development.md",
+      "/compiler-tool/webpack/base/image.md",
+      "/compiler-tool/webpack/base/output.md",
+      "/compiler-tool/webpack/base/clean.md",
+      "/compiler-tool/webpack/base/font.md",
+      "/compiler-tool/webpack/base/other.md",
+      "/compiler-tool/webpack/base/javascript.md",
+      "/compiler-tool/webpack/base/html.md",
+      "/compiler-tool/webpack/base/server.md",
+      "/compiler-tool/webpack/base/production.md",
+      "/compiler-tool/webpack/base/optimizeCss.md",
+      "/compiler-tool/webpack/base/minifyHtml.md",
+      "/compiler-tool/webpack/base/summary.md",
+    ]
+  }, {
+    text: '高级优化',
+    collapsible: true,
+    children: [
+      "/compiler-tool/webpack/senior/README.md",
+      "/compiler-tool/webpack/senior/enhanceExperience.md",
+      "/compiler-tool/webpack/senior/liftingSpeed.md",
+      "/compiler-tool/webpack/senior/reduceVolume.md",
+      "/compiler-tool/webpack/senior/optimizePerformance.md",
+      "/compiler-tool/webpack/senior/summary.md",
+    ]
+  }, {
+    text: '项目配置',
+    collapsible: true,
+    children: [
+      "/compiler-tool/webpack/project/README.md",
+      "/compiler-tool/webpack/project/react-cli.md",
+      "/compiler-tool/webpack/project/vue-cli.md",
+      "/compiler-tool/webpack/project/summary.md",
+    ]
+  }, {
+    text: '原理分析',
+    collapsible: true,
+    children: [
+      "/compiler-tool/webpack/origin/README.md",
+      "/compiler-tool/webpack/origin/loader.md",
+      "/compiler-tool/webpack/origin/plugin.md",
+      "/compiler-tool/webpack/origin/summary.md",
     ]
   }],
 };

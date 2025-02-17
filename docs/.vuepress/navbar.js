@@ -21,7 +21,7 @@ module.exports = [
     text: "构建打包",
     children: [{
       text: "Webpack",
-      link: "/compiler-tool/webpack/intro/",
+      link: "/compiler-tool/webpack/",
     }],
   },
   
