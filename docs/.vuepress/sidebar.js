@@ -61,7 +61,6 @@ module.exports = {
       text: '应用实例',
       collapsible: true,
       children: [
-        '/css/layout/flex/example/example1',
         '/css/layout/flex/example/example2',
       ]
     }],
