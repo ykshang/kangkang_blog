@@ -117,6 +117,14 @@ module.exports = {
         "/compiler-tool/webpack/origin/plugin.md",
         "/compiler-tool/webpack/origin/summary.md",
       ]
+    }, {
+      text: '常见面试题',
+      collapsible: true,
+      children: [
+        "/compiler-tool/webpack/interview/1.md",
+        "/compiler-tool/webpack/interview/2.md",
+        "/compiler-tool/webpack/interview/3.md",
+      ]
     }],
   "/web-basic/": [{
     text: 'web基础面试题',
