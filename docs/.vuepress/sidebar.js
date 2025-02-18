@@ -132,6 +132,9 @@ module.exports = {
         "/compiler-tool/webpack/interview/9.md",
         "/compiler-tool/webpack/interview/10.md",
         "/compiler-tool/webpack/interview/11.md",
+        "/compiler-tool/webpack/interview/12.md",
+        "/compiler-tool/webpack/interview/13.md",
+        "/compiler-tool/webpack/interview/14.md",
       ]
     }],
   "/web-basic/": [{
