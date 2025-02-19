@@ -16,7 +16,6 @@ module.exports = {
     navbar: navbar,
     sidebar:sidebar,
   },
-  globalUIComponents: ['MyComponent'],
   plugins: [
     // https://vuepress-theme-hope.github.io/v2/copy-code/zh/
     copyCode({
