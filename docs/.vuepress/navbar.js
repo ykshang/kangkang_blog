@@ -36,16 +36,22 @@ module.exports = [
       link: "/nodejs/node/",
     }, {
       text: "Express",
-      link: "/nodejs/express/", 
+      link: "/nodejs/express/",
     }, {
       text: "数据库",
-      link: "/nodejs/database/", 
+      link: "/nodejs/database/",
     }],
   }, {
     text: "构建打包",
     children: [{
       text: "Webpack",
-      link: "/compiler-tool/webpack/",
+      children: [{
+        text: "学习笔记",
+        link: "/compiler-tool/webpack/",
+      }, {
+        text: "常见面试题",
+        link: "/compiler-tool/webpack-interview/",
+      }],
     }],
   }, {
     text: "计算机基础",
