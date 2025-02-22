@@ -63,7 +63,18 @@ module.exports = {
       children: [
         '/css/layout/flex/example/example2',
       ]
-    }],
+    }
+  ],
+  "/tool/base/": [
+    {
+      text: '基础面试题',
+      collapsible: false,
+      children: [
+        "/tool/base/1.md",
+        "/tool/base/2.md",
+      ]
+    },
+  ],
   // webpack ----------------------
   "/tool/webpack/": [
     "/tool/webpack/README.md",
