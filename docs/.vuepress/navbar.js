@@ -44,7 +44,7 @@ module.exports = [
   }, {
     text: "前端工程化",
     children: [{
-      text: "基础知识",
+      text: "常见面试题",
       link: "/tool/base/",
     },{
       text: "Webpack",
