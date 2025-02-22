@@ -47,10 +47,10 @@ module.exports = [
       text: "Webpack",
       children: [{
         text: "学习笔记",
-        link: "/compiler-tool/webpack/",
+        link: "/tool/webpack/",
       }, {
         text: "常见面试题",
-        link: "/compiler-tool/webpack-interview/",
+        link: "/tool/webpack-interview/",
       }],
     }],
   }, {
