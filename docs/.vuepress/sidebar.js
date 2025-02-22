@@ -72,6 +72,8 @@ module.exports = {
       children: [
         "/tool/base/1.md",
         "/tool/base/2.md",
+        "/tool/base/3.md",
+        "/tool/base/4.md",
       ]
     },
   ],
