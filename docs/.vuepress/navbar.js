@@ -42,8 +42,11 @@ module.exports = [
       link: "/nodejs/database/",
     }],
   }, {
-    text: "构建打包",
+    text: "前端工程化",
     children: [{
+      text: "基础知识",
+      link: "/tool/base/",
+    },{
       text: "Webpack",
       children: [{
         text: "学习笔记",
