@@ -76,6 +76,7 @@ module.exports = {
         "/tool/base/4.md",
         "/tool/base/5.md",
         "/tool/base/6.md",
+        "/tool/base/7.md",
       ]
     },
   ],
