@@ -59,7 +59,7 @@ module.exports = [
       text: "Babel",
       children: [{
         text: "常见面试题",
-        link: "/Babel/interview/",
+        link: "/babel/interview/",
       }],
     }],
   }, {
