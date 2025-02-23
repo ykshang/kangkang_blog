@@ -179,6 +179,7 @@ module.exports = {
         "/tool/base/10.md",
         "/tool/base/11.md",
         "/tool/base/12.md",
+        "/tool/base/13.md",
       ]
     },
   ],
