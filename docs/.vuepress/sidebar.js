@@ -173,7 +173,7 @@ module.exports = {
         "/tool/base/4.md",
         "/tool/base/5.md",
         "/tool/base/6.md",
-        "/tool/base/7.md", 
+        "/tool/base/7.md",
         "/tool/base/8.md",
         "/tool/base/9.md",
         "/tool/base/10.md",
@@ -191,6 +191,12 @@ module.exports = {
       "/web-basic/2",
       "/web-basic/3",
       "/web-basic/4"
+    ]
+  }],
+  "/babel/interview/": [{
+    text: 'Babel 常见面试题',
+    collapsible: false,
+    children: [
     ]
   }],
   "/database/": [{
