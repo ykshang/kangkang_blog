@@ -174,6 +174,7 @@ module.exports = {
       "/tool/webpack-interview/32",
       "/tool/webpack-interview/33",
       "/tool/webpack-interview/34",
+      "/tool/webpack-interview/35",
     ]
   }],
   "/web-basic/": [{
