@@ -65,22 +65,6 @@ module.exports = {
       ]
     }
   ],
-  "/tool/base/": [
-    {
-      text: '基础面试题',
-      collapsible: false,
-      children: [
-        "/tool/base/1.md",
-        "/tool/base/2.md",
-        "/tool/base/3.md",
-        "/tool/base/4.md",
-        "/tool/base/5.md",
-        "/tool/base/6.md",
-        "/tool/base/7.md", 
-        "/tool/base/8.md",
-      ]
-    },
-  ],
   // webpack ----------------------
   "/tool/webpack/": [
     "/tool/webpack/README.md",
@@ -175,8 +159,27 @@ module.exports = {
       "/tool/webpack-interview/33",
       "/tool/webpack-interview/34",
       "/tool/webpack-interview/35",
+      "/tool/webpack-interview/36",
     ]
   }],
+  "/tool/base/": [
+    {
+      text: '基础面试题',
+      collapsible: false,
+      children: [
+        "/tool/base/1.md",
+        "/tool/base/2.md",
+        "/tool/base/3.md",
+        "/tool/base/4.md",
+        "/tool/base/5.md",
+        "/tool/base/6.md",
+        "/tool/base/7.md", 
+        "/tool/base/8.md",
+        "/tool/base/9.md",
+        "/tool/base/10.md",
+      ]
+    },
+  ],
   "/web-basic/": [{
     text: 'web基础面试题',
     collapsible: false,
