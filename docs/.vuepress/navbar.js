@@ -27,7 +27,19 @@ module.exports = [
     text: "前端框架",
     children: [{
       text: "Vue",
-      link: "/framework/vue/",
+      children: [{
+        text: "Vue",
+        link: "/framework/vue/vue/",
+      }, {
+        text: "Vue Router",
+        link: "/framework/vue/vue-router/",
+      }, {
+        text: "Vuex",
+        link: "/framework/vue/vuex/",
+      }, {
+        text: "Vue 面试题",
+        link: "/framework/vue/interview/",
+      }],
     }],
   }, {
     text: "Node.js",
