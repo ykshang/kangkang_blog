@@ -193,6 +193,7 @@ module.exports = {
       "/web-basic/4",
       "/web-basic/5",
       "/web-basic/6",
+      "/web-basic/7",
     ]
   }],
   "/babel/interview/": [{
@@ -375,7 +376,8 @@ module.exports = {
       '/nodejs/node/15',
       '/nodejs/node/16',
       '/nodejs/node/17',
-      "/nodejs/node/18"
+      "/nodejs/node/18",
+      "/nodejs/node/19",
     ]
   }],
   "/nodejs/express/": [{
