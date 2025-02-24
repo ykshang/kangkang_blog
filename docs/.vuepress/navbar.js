@@ -28,7 +28,7 @@ module.exports = [
     children: [{
       text: "Vue",
       children: [{
-        text: "Vue",
+        text: "Vue 学习笔记",
         link: "/framework/vue/vue/",
       }, {
         text: "Vue Router",
@@ -58,7 +58,7 @@ module.exports = [
     children: [{
       text: "常见面试题",
       link: "/tool/base/",
-    },{
+    }, {
       text: "Webpack",
       children: [{
         text: "学习笔记",

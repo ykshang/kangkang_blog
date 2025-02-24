@@ -294,7 +294,7 @@ module.exports = {
     ],
   }],
   "/framework/vue/vue": [{
-    text: "Vue",
+    text: "Vue 学习笔记",
     collapsible: false,
     children: [
       "/framework/vue/vue/1",
