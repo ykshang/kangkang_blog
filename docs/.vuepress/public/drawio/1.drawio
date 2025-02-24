@@ -1,0 +1,67 @@
+<mxfile host="65bd71144e">
+    <diagram id="mJUmVaarIyfalTfcOywD" name="Page-1">
+        <mxGraphModel dx="1073" dy="612" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+            <root>
+                <mxCell id="0"/>
+                <mxCell id="1" parent="0"/>
+                <mxCell id="6" value="" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#dae8fc;dashed=1;strokeColor=#6c8ebf;" vertex="1" parent="1">
+                    <mxGeometry x="101.88" y="60" width="154.25" height="390" as="geometry"/>
+                </mxCell>
+                <mxCell id="2" value="发布者 1" style="rounded=1;whiteSpace=wrap;html=1;fontSize=16;fontStyle=1;fillColor=#d5e8d4;strokeColor=#82b366;" vertex="1" parent="1">
+                    <mxGeometry x="119" y="180" width="120" height="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="3" value="发布者 2" style="rounded=1;whiteSpace=wrap;html=1;fontSize=16;fontStyle=1;fillColor=#d5e8d4;strokeColor=#82b366;" vertex="1" parent="1">
+                    <mxGeometry x="119" y="270" width="120" height="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="4" value="发布者 3" style="rounded=1;whiteSpace=wrap;html=1;fontSize=16;fontStyle=1;fillColor=#d5e8d4;strokeColor=#82b366;" vertex="1" parent="1">
+                    <mxGeometry x="119" y="358" width="120" height="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="7" value="&lt;font&gt;&lt;b&gt;发布者&lt;/b&gt;&lt;/font&gt;" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=22;" vertex="1" parent="1">
+                    <mxGeometry x="134.01" y="100" width="90" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="8" value="" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#b0e3e6;dashed=1;strokeColor=#0e8088;" vertex="1" parent="1">
+                    <mxGeometry x="368.88" y="61" width="154.25" height="390" as="geometry"/>
+                </mxCell>
+                <mxCell id="9" value="通道 1" style="rounded=1;whiteSpace=wrap;html=1;fontSize=16;fontStyle=1;fillColor=#ffe6cc;strokeColor=#d79b00;" vertex="1" parent="1">
+                    <mxGeometry x="386" y="181" width="120" height="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="10" value="通道 2" style="rounded=1;whiteSpace=wrap;html=1;fontSize=16;fontStyle=1;fillColor=#ffe6cc;strokeColor=#d79b00;" vertex="1" parent="1">
+                    <mxGeometry x="386" y="271" width="120" height="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="11" value="通道 3" style="rounded=1;whiteSpace=wrap;html=1;fontSize=16;fontStyle=1;fillColor=#fff2cc;strokeColor=#d6b656;" vertex="1" parent="1">
+                    <mxGeometry x="386" y="359" width="120" height="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="12" value="&lt;font&gt;&lt;b&gt;消息通道&lt;/b&gt;&lt;/font&gt;" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=22;" vertex="1" parent="1">
+                    <mxGeometry x="401.01" y="100" width="90" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="13" value="" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#eeeeee;dashed=1;strokeColor=#36393d;" vertex="1" parent="1">
+                    <mxGeometry x="637.88" y="61" width="154.25" height="390" as="geometry"/>
+                </mxCell>
+                <mxCell id="14" value="订阅者 1" style="rounded=1;whiteSpace=wrap;html=1;fontSize=16;fontStyle=1;fillColor=#ffcccc;strokeColor=#36393d;" vertex="1" parent="1">
+                    <mxGeometry x="655" y="181" width="120" height="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="15" value="&lt;span style=&quot;color: rgb(0, 0, 0);&quot;&gt;订阅者&lt;/span&gt;&amp;nbsp;2" style="rounded=1;whiteSpace=wrap;html=1;fontSize=16;fontStyle=1;fillColor=#ffcccc;strokeColor=#36393d;" vertex="1" parent="1">
+                    <mxGeometry x="655" y="271" width="120" height="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="16" value="&lt;span style=&quot;color: rgb(0, 0, 0);&quot;&gt;订阅者&lt;/span&gt;&amp;nbsp;3" style="rounded=1;whiteSpace=wrap;html=1;fontSize=16;fontStyle=1;fillColor=#ffcccc;strokeColor=#36393d;" vertex="1" parent="1">
+                    <mxGeometry x="655" y="359" width="120" height="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="17" value="&lt;font&gt;&lt;b&gt;订阅者&lt;/b&gt;&lt;/font&gt;" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=22;" vertex="1" parent="1">
+                    <mxGeometry x="670.01" y="100" width="90" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="19" value="" style="shape=flexArrow;endArrow=classic;html=1;endWidth=48;endSize=12.33;width=29;fillColor=#d5e8d4;strokeColor=#82b366;" edge="1" parent="1">
+                    <mxGeometry width="50" height="50" relative="1" as="geometry">
+                        <mxPoint x="550" y="280" as="sourcePoint"/>
+                        <mxPoint x="621" y="280" as="targetPoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="23" value="" style="shape=flexArrow;endArrow=classic;html=1;endWidth=48;endSize=12.33;width=29;fillColor=#d5e8d4;strokeColor=#82b366;" edge="1" parent="1">
+                    <mxGeometry width="50" height="50" relative="1" as="geometry">
+                        <mxPoint x="281" y="280" as="sourcePoint"/>
+                        <mxPoint x="352" y="280" as="targetPoint"/>
+                    </mxGeometry>
+                </mxCell>
+            </root>
+        </mxGraphModel>
+    </diagram>
+</mxfile>

@@ -269,6 +269,7 @@ module.exports = {
     children: [
       "/Algorithm/design-pattern/1",
       "/Algorithm/design-pattern/2",
+      "/Algorithm/design-pattern/3",
     ]
   }],
   "/computer/network/": [{
