@@ -326,6 +326,13 @@ module.exports = {
       "/framework/vue/vue/27",
     ],
   }],
+  "/framework/vue/vuex/": [{
+    text: "Vuex 专题",
+    collapsible: false,
+    children: [
+      "/framework/vue/vuex/1",
+    ]
+  }],
   "/nodejs/node/": [{
     text: "Node.js",
     collapsible: false,
