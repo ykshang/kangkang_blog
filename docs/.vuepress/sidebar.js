@@ -199,7 +199,6 @@ module.exports = {
     children: [
       "/babel/interview/1",
       "/babel/interview/2",
-      "/babel/interview/3",
     ]
   }],
   "/database/": [{
