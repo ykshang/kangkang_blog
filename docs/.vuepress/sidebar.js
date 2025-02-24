@@ -333,6 +333,13 @@ module.exports = {
       "/framework/vue/vuex/1",
     ]
   }],
+  "/framework/uni-app/": [{
+    text: "Uni-App 专题",
+    collapsible: false,
+    children: [
+      "/framework/uni-app/1",
+    ]
+  }],
   "/framework/vue/vue-router/": [{
     text: "Vue Router 专题",
     collapsible: false,

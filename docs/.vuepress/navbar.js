@@ -40,6 +40,12 @@ module.exports = [
         text: "Vue 面试题",
         link: "/framework/vue/interview/",
       }],
+    }, {
+      text: 'uni-app',
+      children: [{
+        text: "uni-app",
+        link: "/framework/uni-app/",
+      }],
     }],
   }, {
     text: "Node.js",
