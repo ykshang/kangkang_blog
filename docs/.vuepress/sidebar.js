@@ -189,6 +189,7 @@ module.exports = {
     children: [
       "/css/base/interview/1",
       "/css/base/interview/2",
+      "/css/base/interview/3",
     ]
   }],
   "/web-basic/": [{
