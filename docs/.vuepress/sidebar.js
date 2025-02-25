@@ -183,6 +183,14 @@ module.exports = {
       ]
     },
   ],
+  "/css/base/interview/": [{
+    text: 'CSS 面试题',
+    collapsible: false,
+    children: [
+      "/css/base/interview/1",
+      "/css/base/interview/2",
+    ]
+  }],
   "/web-basic/": [{
     text: 'web基础面试题',
     collapsible: false,
