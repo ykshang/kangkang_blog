@@ -194,6 +194,8 @@ module.exports = {
       "/web-basic/5",
       "/web-basic/6",
       "/web-basic/7",
+      "/web-basic/8",
+      "/web-basic/9",
     ]
   }],
   "/babel/interview/": [{
