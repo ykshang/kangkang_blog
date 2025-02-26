@@ -344,6 +344,7 @@ module.exports = {
       "/computer/security/7",
       "/computer/security/8",
       "/computer/security/9",
+      "/computer/security/10",
     ],
   }],
   "/framework/vue/vue": [{
