@@ -95,6 +95,9 @@ module.exports = [
     children: [{
       text: "网络",
       link: "/computer/network/",
+    }, {
+      text: "安全",
+      link: "/computer/security/",
     }],
   }, {
     text: "数据库",
