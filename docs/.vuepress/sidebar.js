@@ -256,6 +256,7 @@ module.exports = {
       "/JavaScript/interview/1",
       "/JavaScript/interview/2",
       "/JavaScript/interview/3",
+      "/JavaScript/interview/4",
       "/JavaScript/interview/5",
       "/JavaScript/interview/6",
       "/JavaScript/interview/7",
