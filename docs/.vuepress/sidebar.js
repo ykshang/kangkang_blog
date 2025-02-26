@@ -247,6 +247,8 @@ module.exports = {
     collapsible: false,
     children: [
       "/html/interview/1",
+      "/html/interview/2",
+      "/html/interview/3",
     ],
   }],
   "/JavaScript/interview/": [{
