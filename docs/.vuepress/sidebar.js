@@ -242,6 +242,13 @@ module.exports = {
       "/database/MangoDB/9",
     ],
   }],
+  "/html/interview/": [{
+    text: 'MongoDB',
+    collapsible: false,
+    children: [
+      "/html/interview/1",
+    ],
+  }],
   "/JavaScript/interview/": [{
     text: "JavaScript 面试题",
     collapsible: false,
