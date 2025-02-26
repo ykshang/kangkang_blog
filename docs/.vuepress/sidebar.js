@@ -331,6 +331,13 @@ module.exports = {
       "/computer/network/19",
     ],
   }],
+  "/computer/security/": [{
+    text: "安全",
+    collapsible: false,
+    children: [
+      "/computer/security/1",
+    ],
+  }],
   "/framework/vue/vue": [{
     text: "Vue 学习笔记",
     collapsible: false,
