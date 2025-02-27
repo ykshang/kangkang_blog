@@ -289,6 +289,8 @@ module.exports = {
       "/JavaScript/interview/33",
       "/JavaScript/interview/34",
       "/JavaScript/interview/35",
+      "/JavaScript/interview/36",
+
     ],
   }],
   "/Algorithm/Algorithm/": [{
