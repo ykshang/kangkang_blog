@@ -362,6 +362,7 @@ module.exports = {
     children: [
       "/browser/1",
       "/browser/2",
+      "/browser/3",
     ],
   }],
   "/framework/vue/vue": [{
