@@ -356,6 +356,13 @@ module.exports = {
       "/computer/security/10",
     ],
   }],
+  "/browser/": [{
+    text: "浏览器相关",
+    collapsible: false,
+    children: [
+      "/browser/1",
+    ],
+  }],
   "/framework/vue/vue": [{
     text: "Vue 学习笔记",
     collapsible: false,

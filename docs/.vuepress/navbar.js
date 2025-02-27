@@ -32,6 +32,9 @@ module.exports = [
         text: "Web基础面试题",
         link: "/web-basic/",
       }],
+    }, {
+      text: "浏览器基础",
+      link: "/browser/",
     }],
   }, {
     text: "前端框架",
