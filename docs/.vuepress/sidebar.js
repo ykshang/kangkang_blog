@@ -361,6 +361,7 @@ module.exports = {
     collapsible: false,
     children: [
       "/browser/1",
+      "/browser/2",
     ],
   }],
   "/framework/vue/vue": [{
