@@ -218,6 +218,7 @@ module.exports = {
       "/web-basic/20",
       "/web-basic/21",
       "/web-basic/22",
+      "/web-basic/23",
     ]
   }],
   "/babel/interview/": [{
