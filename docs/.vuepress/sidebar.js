@@ -363,6 +363,8 @@ module.exports = {
       "/browser/1",
       "/browser/2",
       "/browser/3",
+      "/browser/4",
+      "/browser/5",
     ],
   }],
   "/framework/vue/vue": [{
