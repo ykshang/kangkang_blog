@@ -298,6 +298,7 @@ module.exports = {
       "/JavaScript/interview/39",
       "/JavaScript/interview/40",
       "/JavaScript/interview/41",
+      "/JavaScript/interview/42",
     ],
   }],
   "/Algorithm/Algorithm/": [{
