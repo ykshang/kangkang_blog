@@ -412,6 +412,13 @@ module.exports = {
       "/framework/vue/vuex/1",
     ]
   }],
+  "/framework/vue/interview/": [{
+    text: "Vue 面试题",
+    collapsible: false,
+    children: [
+      "/framework/vue/interview/1",
+    ]
+  }],
   "/framework/uni-app/": [{
     text: "Uni-App 专题",
     collapsible: false,
