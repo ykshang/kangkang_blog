@@ -33,8 +33,11 @@ module.exports = [
         link: "/web-basic/",
       }],
     }, {
-      text: "浏览器基础",
-      link: "/browser/",
+      text: "浏览器",
+      children: [{
+        text: "浏览器基础",
+        link: "browser/",
+      }],
     }],
   }, {
     text: "前端框架",
