@@ -419,6 +419,8 @@ module.exports = {
       "/framework/vue/interview/1",
       "/framework/vue/interview/2",
       "/framework/vue/interview/3",
+      "/framework/vue/interview/4",
+      "/framework/vue/interview/5",
     ]
   }],
   "/framework/uni-app/": [{
