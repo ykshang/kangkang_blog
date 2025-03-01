@@ -417,6 +417,8 @@ module.exports = {
     collapsible: false,
     children: [
       "/framework/vue/interview/1",
+      "/framework/vue/interview/2",
+      "/framework/vue/interview/3",
     ]
   }],
   "/framework/uni-app/": [{
