@@ -345,6 +345,8 @@ module.exports = {
       "/computer/network/17",
       "/computer/network/18",
       "/computer/network/19",
+      "/computer/network/20",
+      "/computer/network/21",
     ],
   }],
   "/computer/security/": [{
@@ -363,6 +365,8 @@ module.exports = {
       "/computer/security/10",
       "/computer/security/11",
       "/computer/security/12",
+      "/computer/security/13",
+      "/computer/security/14",
     ],
   }],
   "/browser/": [{
