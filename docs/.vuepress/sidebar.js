@@ -422,6 +422,7 @@ module.exports = {
       "/framework/vue/interview/3",
       "/framework/vue/interview/4",
       "/framework/vue/interview/5",
+      "/framework/vue/interview/6",
     ]
   }],
   "/framework/uni-app/": [{
