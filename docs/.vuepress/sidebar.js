@@ -362,6 +362,7 @@ module.exports = {
       "/computer/security/9",
       "/computer/security/10",
       "/computer/security/11",
+      "/computer/security/12",
     ],
   }],
   "/browser/": [{
