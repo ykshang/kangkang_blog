@@ -180,6 +180,7 @@ module.exports = {
         "/tool/base/11.md",
         "/tool/base/12.md",
         "/tool/base/13.md",
+        "/tool/base/14.md",
       ]
     },
   ],
@@ -371,6 +372,8 @@ module.exports = {
       "/browser/3",
       "/browser/4",
       "/browser/5",
+      "/browser/6",
+      "/browser/7",
     ],
   }],
   "/framework/vue/vue": [{
