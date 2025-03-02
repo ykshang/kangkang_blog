@@ -300,6 +300,7 @@ module.exports = {
       "/JavaScript/interview/41",
       "/JavaScript/interview/42",
       "/JavaScript/interview/43",
+      "/JavaScript/interview/44",
     ],
   }],
   "/Algorithm/Algorithm/": [{
