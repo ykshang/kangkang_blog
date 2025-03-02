@@ -36,7 +36,7 @@ module.exports = [
       text: "浏览器",
       children: [{
         text: "浏览器基础",
-        link: "browser/",
+        link: "/browser/",
       }],
     }],
   }, {
