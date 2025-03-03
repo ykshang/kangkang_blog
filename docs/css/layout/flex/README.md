@@ -6,12 +6,10 @@ CSS 弹性盒子布局是 CSS 的模块之一，定义了一种针对用户界�
 
 # 例子
 
-----
 
-<el-button type="primary" @click="changeFlexFlag">{{"切换弹性元素: " + flg}}</el-button>
-<el-button type="primary" @click="changeDiv">{{"当前为: " + isDiv + ""}}</el-button>
+<button style="margin: 5px 10px 5px 0px" type="primary" @click="changeFlexFlag">{{"切换弹性元素: " + flg}}</button>
+<button type="primary" @click="changeDiv">{{"当前为: " + isDiv + ""}}</button>
 
-----
 
 <div v-if="isDiv ==='div'" :class="'container' + flexFlag">
   <div class="item">弹性元素1</div>
@@ -30,39 +28,11 @@ export default {
       flexFlag: "",
       flg: true,
       isDiv: "div",
-      cssContent: [],
-      cssContent1: [],
       isCollapse: true
     };
   },
   mounted () {
     this.flg = false;
-    this.cssContent = [{
-      name: "容器",
-      cssContent: "```css \n.container {\n  width: 1200px;\n  height: 400px;\n  background: yellow;\n}\n```"
-    }, {
-      name: "弹性元素1",
-      cssContent: "```css \n.item {\n  border: dashed 1px;\n  flex: 1;\n}\n ```"
-    }, {
-      name: "弹性元素2",
-      cssContent: "```css \n.item {\n  border: dashed 1px;\n  flex: 1;\n}\n ```"
-    }, {
-      name: "弹性元素3",
-      cssContent: "```css \n.item {\n  border: dashed 1px;\n  flex: 1;\n}\n ```"
-    }];
-    this.cssContent1 = [{
-      name: "容器",
-      cssContent: "```css \n.container {\n  width: 1200px;\n  height: 400px;\n  background: yellow;\n}\n.flex {\n  display: flex;\n}\n ```"
-    }, {
-      name: "弹性元素1",
-      cssContent: "```css \n.item\n  border: dashed 1px;\n  flex: 1;\n}\n ```"
-    }, {
-      name: "弹性元素2",
-      cssContent: "```css \n.item\n  border: dashed 1px;\n  flex: 1;\n}\n ```"
-    }, {
-      name: "弹性元素3",
-      cssContent: "```css \n.item\n  border: dashed 1px;\n  flex: 1;\n}\n ```"
-    }];
   },
   methods: {
     changeDiv () {
