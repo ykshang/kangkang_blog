@@ -1,14 +1,14 @@
 <!-- src/.vuepress/components/MyComponent.vue -->
 <template>
   <div class="my-component">
-    <h1>{{ title }}</h1>
-    <p>{{ description }}</p>
+    <h1>{{ 1111 }}</h1>
+    <p>{{ 11 }}</p>
   </div>
 </template>
  
 <script>
 export default {
-  name: 'MyComponent',
+  name: 'demo',
   props: {
     title: {
       type: String,
