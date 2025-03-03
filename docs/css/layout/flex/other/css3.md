@@ -1,20 +1,28 @@
-# 3、css属性direction对flex布局的影响
+# 3、css 属性 direction 对 flex 布局的影响
 
 ```css
-direction：ltr | rtl 
+direction：ltr | rtl
 ```
 
-<div style="display: flex">
-  <div class="form-label">direction</div>
-  <el-select v-model="formInline.value" placeholder="请选择" @change="changeItem" clearable>
-    <el-option v-for="item in options" :key="item.value" :label="item.label" :value="item.value"></el-option>
-  </el-select>
-  <div class="form-label">flex-direction</div>
-  <el-select v-model="formInline.value1" placeholder="请选择" @change="changeItem1" clearable>
-    <el-option v-for="item in options1" :key="item.value" :label="item.label" :value="item.value"></el-option>
-  </el-select>
+<div style="display: flex;flex-direction: row;align-items: center;">
+  <div>direction：</div>
+  <div class="dropdown" :key="'1'">
+    <button class="dropdown-btn" :key="'1-1'" @click="this.isOpen = !this.isOpen"> {{ selectedOption || "请选择" }} </button>
+    <ul v-if="isOpen" class="dropdown-menu" :key="'1-1-1'">
+      <li v-for="(option, index) in options" :key="index" @click="selectOption(option.value)"> {{ option.label }} </li>
+    </ul>
+  </div>
+  <div>flex-direction：</div>
+  <div class="dropdown" :key="'2'">
+    <button class="dropdown-btn" :key="'2-1'" @click="this.flexOpen = !this.flexOpen"> {{ selectedOption1 || "请选择" }} </button>
+    <ul v-if="flexOpen" class="dropdown-menu" :key="'2-1-1'">
+      <li v-for="(option, index) in options1" :key="index" @click="selectOption1(option.value)"> {{ option.label }} </li>
+    </ul>
+  </div>
 </div>
-<br/>
+
+<br/><!--  -->
+
 <div :class="'flex container' + css + css1">
   <div class="item">1</div>
   <div class="item">2</div>
@@ -27,13 +35,11 @@ direction：ltr | rtl
 export default {
   data () {
     return {
-      formInline: {
-        value: "",
-        value1: ""
-      },
-      msg1: "```css\n direction：ltr | rtl \n```",
-      css: "",
-      css1: "",
+      css: '',
+      css1: '',
+      isOpen: false,
+      flexOpen: false,
+      selectedOption: '',
       options: [
         {label: "ltr", value: "ltr"},
         {label: "rtl", value: "rtl"}
@@ -49,14 +55,18 @@ export default {
   mounted () {
   },
   methods: {
-    changeItem (value) {
+    // 选择选项
+    selectOption(value) {
+      this.selectedOption = value;
       this.css = " " + value;
-      console.log(value);
+      this.isOpen = false; // 选择后关闭下拉菜单
     },
-    changeItem1 (value) {
+        // 选择选项
+    selectOption1(value) {
+      this.selectedOption1 = value;
       this.css1 = " " + value;
-      console.log(value);
-    }
+      this.flexOpen = false; // 选择后关闭下拉菜单
+    },
   }
 };
 </script>
@@ -77,14 +87,6 @@ export default {
 .column {
   flex-direction: column;
 }
-.form-label {
-  vertical-align: middle;
-  font-size: 14px;
-  color: #606266;
-  line-height: 40px;
-  padding: 0 5px;
-  box-sizing: border-box;
-}
 .column-reverse {
   flex-direction: column-reverse;
 }
@@ -98,6 +100,7 @@ img {
 .container {
   width: 100%;
   background: yellow;
+  box-sizing: border-box;
 }
 .item {
   border: dashed 1px;
@@ -108,5 +111,54 @@ img {
   align-items: center;
   justify-content: center;
   background: cyan;
+  box-sizing: border-box;
+}
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-btn {
+  min-width: 100px;
+  margin: 5px 10px 5px 0;
+  display: inline-block;
+  font-size: 14px;
+  color: #42b883;
+  line-height: 1;
+  font-weight: bold;
+  text-align: center;
+  white-space: nowrap;
+  cursor: pointer;
+  background: #fff;
+  border: 1px solid #42b883;
+  border-radius: 4px;
+  box-sizing: border-box;
+  transition: .1s;
+  padding: 8px 14px;
+}
+.dropdown-btn:hover {
+  border-color: #dcdfe6;
+  background: #ecf5ff
+}
+.dropdown-menu {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+  border-radius: 5px;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.dropdown-menu li {
+  padding: 10px;
+  text-align: left;
+  cursor: pointer;
+}
+.dropdown-menu li:hover {
+  background-color: #ddd;
 }
 </style>

@@ -1,6 +1,6 @@
 # 4、margin
 
-## 在第一个和第三个元素上加margin: auto
+## 在第一个和第三个元素上加 margin: auto
 
 <div class="container">
     <div class="item" style="margin:auto">111111</div>
@@ -10,7 +10,7 @@
     <div class="item">11111</div>
   </div>
 
-## 在第一、二、三个元素上加margin: auto
+## 在第一、二、三个元素上加 margin: auto
 
 <div class="container">
     <div class="item" style="margin:auto">111111</div>
@@ -20,7 +20,7 @@
     <div class="item">111</div>
   </div>
 
-## 在第一个和第三个元素上加margin-left: auto
+## 在第一个和第三个元素上加 margin-left: auto
 
 <div class="container">
     <div class="item" style="margin-left:auto">11111</div>
