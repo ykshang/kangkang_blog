@@ -13,8 +13,6 @@
 
 ![示意图](./assets/init.png)
 
-<el-divider>一条分割线</el-divider>
-
 ## 初始化的计算过程
 
 1. 确定弹性容器和元素
