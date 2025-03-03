@@ -43,8 +43,6 @@ width: max-content;
 
 ### 2、设置 display: flex 和 flex: 1
 
-![max-content](../assets/css13.png)
-
 - 假设容器的宽度为 1000px，且在设置成 flex 属性前：
 
   有多个元素（假设是 5 个）均设置的了 flex：1，那么一般情况他们的伸缩比例是相同的，且强制设置其在主轴上的空间为 0。

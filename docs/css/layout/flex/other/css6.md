@@ -1,4 +1,4 @@
-# overflow
+# 6、overflow
 
 给第二个元素添加overflow: hidden,效果类似min-width，但是多余的部分被遮挡了
 

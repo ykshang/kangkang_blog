@@ -1,4 +1,4 @@
-# css属性direction对flex布局的影响
+# 3、css属性direction对flex布局的影响
 
 ```css
 direction：ltr | rtl 
