@@ -75,7 +75,7 @@ export default {
   text-align: center;
   white-space: nowrap;
   cursor: pointer;
-  background: #fff;1
+  background: #fff;
   border: 1px solid #42b883;
   border-radius: 4px;
   box-sizing: border-box;
