@@ -231,6 +231,13 @@ module.exports = {
       "/babel/interview/2",
     ]
   }],
+  "/vite/interview/": [{
+    text: 'Vite 常见面试题',
+    collapsible: false,
+    children: [
+      "/vite/interview/1",
+    ]
+  }],
   "/database/": [{
     text: 'MongoDB',
     collapsible: false,

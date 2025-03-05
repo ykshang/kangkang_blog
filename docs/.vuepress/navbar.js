@@ -90,6 +90,12 @@ module.exports = [
         link: "/tool/webpack-interview/",
       }],
     }, {
+      text: "Vite",
+      children: [{
+        text: "常见面试题",
+        link: "/vite/interview/",
+      }],
+    }, {
       text: "Babel",
       children: [{
         text: "常见面试题",
