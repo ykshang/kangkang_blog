@@ -108,14 +108,11 @@ module.exports = [
         link: "/babel/interview/",
       }],
     }, {
-      text: "Glup",
+      text: "其他工具",
       children: [{
         text: "Glup",
         link: "/Glup/",
-      }],
-    }, {
-      text: "Grunt",
-      children: [{
+      }, {
         text: "Grunt",
         link: "/Grunt/",
       }],
