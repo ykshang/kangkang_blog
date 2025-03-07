@@ -499,6 +499,7 @@ module.exports = {
       '/nodejs/node/17',
       "/nodejs/node/18",
       "/nodejs/node/19",
+      "/nodejs/node/20",
     ]
   }],
   "/nodejs/express/": [{
