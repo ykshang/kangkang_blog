@@ -107,6 +107,18 @@ module.exports = [
         text: "常见面试题",
         link: "/babel/interview/",
       }],
+    }, {
+      text: "Glup",
+      children: [{
+        text: "Glup",
+        link: "/Glup/",
+      }],
+    }, {
+      text: "Grunt",
+      children: [{
+        text: "Grunt",
+        link: "/Grunt/",
+      }],
     }],
   }, {
     text: "计算机基础",
