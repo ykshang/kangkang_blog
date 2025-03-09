@@ -500,6 +500,9 @@ module.exports = {
       "/nodejs/node/18",
       "/nodejs/node/19",
       "/nodejs/node/20",
+      "/nodejs/node/21",
+      "/nodejs/node/22",
+      "/nodejs/node/23",
     ]
   }],
   "/nodejs/express/": [{
